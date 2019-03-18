@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:FABControls="clr-namespace:CAN.FABControls;assembly=CAN"
+             Title="Monthly Monitoring"
+             x:Class="CAN.ListOfMonthlyMonitoring">
+   
+    <StackLayout Orientation="Vertical">
+    <StackLayout Orientation="Horizontal" Margin="0,0,0,-14">
+            <Picker x:Name="ddlDataMonth"  Title=" Select Data Month"  ItemDisplayBinding="{Binding Datamonth}"  SelectedIndexChanged="DdlDataMonth_SelectedIndexChanged"   HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <AbsoluteLayout>
+            <Grid>
+                <ListView x:Name="listView" SeparatorVisibility="None"   ItemsSource="{Binding People}" HasUnevenRows="True" BackgroundColor="#2c2d2c" SeparatorColor="White">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Frame  
+                                   BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="40"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="50"/>
+                                                <RowDefinition Height="50"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="270"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <StackLayout Grid.Row="0"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="No Of Days Distribution AAY For Mothers :- "  Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="WordWrap" 
+                                                FontAttributes="Bold"/>
+                                                <Label Text="{Binding NoOfDaysDistributionAAYForMothers}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="No Of Days Distribution AAY For Child :-     " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
+                                                 FontAttributes="Bold"/>
+                                                <Label Text="{Binding NoOfDaysDistributionAAYForChild}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="Pregnantand Lactating Mothers:-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
+                                                 FontAttributes="Bold"/>
+                                                <Label Text="{Binding PregnantandLactatingMothers}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
+                                                <Image x:Name="{Binding MonthlyMonitorId}"  Grid.Column="1"  Source="ic_Edit.png" WidthRequest="40" Aspect="AspectFill">
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer   NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"  />
+                                                    </Image.GestureRecognizers>
+                                                </Image>
+                                                <Label Text="Edit" TextColor="Black" Grid.Column="2"   WidthRequest="200" VerticalOptions="Center" HorizontalTextAlignment="Start">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1" />
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                            </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+            <FABControls:ImageButton Source="IconFAB.png" ItemTapped="BtnAdd_ItemTapped"  x:Name="btnAdd"
+                                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                                        AbsoluteLayout.LayoutBounds="1.0,1.0,-1,-1"
+                                        Margin="10" />
+        </AbsoluteLayout>
+
+  </StackLayout>
+</ContentPage>

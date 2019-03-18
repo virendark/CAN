@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:CAN.Effects"
+             x:Class="CAN.LoginPage">
+    <ScrollView>
+        <AbsoluteLayout Padding="0" VerticalOptions="StartAndExpand">
+            <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0,1,200" AbsoluteLayout.LayoutFlags="WidthProportional">
+                <Image Source="IC_Logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="200" ></Image>
+                <!--<Label Text="Sign In" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="40"/>-->
+            </StackLayout>
+            <Entry x:Name="txtUserId" IsTextPredictionEnabled="False" ReturnType="Done"  Placeholder="Enter UserID" TextColor="Black" PlaceholderColor="#737a78" AbsoluteLayout.LayoutBounds="0,230,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Margin="2"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Enter Password" IsPassword="True" ReturnType="Done" TextColor="Black" PlaceholderColor="#737a78" AbsoluteLayout.LayoutBounds="0,280,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Margin="2">
+                <Entry.Effects>
+                    <local:ShowHidePassEffect />
+                </Entry.Effects>
+            </Entry>
+            <Button Margin="20,20,20,0" BackgroundColor="#ffbf00" AbsoluteLayout.LayoutBounds="0,330,1,60" AbsoluteLayout.LayoutFlags="WidthProportional"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Sign In" x:Name="btnSignIn" Clicked="btnsubmit_Click">
+            </Button>
+            <Label x:Name="lblErrorMessage" Text="Your id is block" AbsoluteLayout.LayoutBounds="0,410,1,40" AbsoluteLayout.LayoutFlags="WidthProportional" TextColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="40"/>
+            <ActivityIndicator x:Name="txtInductor" Color="Red"  AbsoluteLayout.LayoutBounds="0,410,1,50" AbsoluteLayout.LayoutFlags="WidthProportional"></ActivityIndicator>
+
+            <Label x:Name="lblmessage" Text="Data Sync....." Font="17" HorizontalTextAlignment="Center" TextColor="Black" AbsoluteLayout.LayoutBounds="0,460,1,20" AbsoluteLayout.LayoutFlags="WidthProportional"></Label>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

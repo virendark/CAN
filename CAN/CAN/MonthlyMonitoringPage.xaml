@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.MonthlyMonitoringPage"
+              Title="Monthly Monitoring Entry">
+    <ScrollView Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lblNoOfDaysDistributionAAYForMothers" Text="No Of Days Distribution AAY For Mothers" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtNoOfDaysDistributionAAYForMothers" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lblNoOfDaysDistributionAAYForChild" Text="No Of Days Distribution AAY For Child" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtNoOfDaysDistributionAAYForChild" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lblPregnantandLactatingMothers" Text="Pregnantand Lactating Mothers" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtPregnantandLactatingMothers" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lblChildrenfrom3yrsto6yrs" Text="Children from 3 years to 6 years" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtChildrenfrom3yrsto6yrs" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lblDidMalnourishedChildrenReceiveBenifits" Text="Did Malnourished Children Receive Benifits" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtDidMalnourishedChildrenReceiveBenifits" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblImmunisationforchildrencondutedlastmonthANM" Text="Immunisation for children conduted last month ANM" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlImmunisationforchildrencondutedlastmonthANM" Title="-Select Immunisation for children Month ANM-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblHealthCheckupsforpregnantwomenconductedmonthlyAW" Text="Health Checkups for pregnant women conducted monthly AW" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlHealthCheckupsforpregnantwomenconductedmonthlyAW" Title="-Select Health Checkups women monthly AW-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblVHNDconductedlastmonth" Text="VHND conducted last month" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlVHNDconductedlastmonth" Title="-Select VHND conducted last month-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAWfunctions4hoursdaily" Text="AW functions 4 hours daily" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlAWfunctions4hoursdaily" Title="-Select AW functions 4 hours daily-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReceivedAAYamountpregnantandlactatingwomen35" Text="Received AAY amount pregnant and lactatin gwomen 35" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtReceivedAAYamountpregnantandlactatingwomen35" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+           
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReceivedAAYamountforchildren5" Text="Received AAY amount for children 5" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtReceivedAAYamountforchildren5" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReceivedAWWremunerationforpreparingAAY500" Text="Received AWW remuneration for preparing AAY 500" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtReceivedAWWremunerationforpreparingAAY500" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReceivedHelperremunerationpreparingAAY500" Text="Received Helper remuneration preparing AAY 500" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtReceivedHelperremunerationpreparingAAY500" ReturnType="Done" Keyboard="Numeric" TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblRemarks" Text="Remarks" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtRemarks" ReturnType="Done"  TextColor="Black" Placeholder="Remarks" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <Button Margin="20,20,20,10" BackgroundColor="#ffbf00"   CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Save" x:Name="btnSave" Clicked="BtnSave_Clicked">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

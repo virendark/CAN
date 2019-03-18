@@ -1,0 +1,203 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Plugin.RestClient" Version="1.1.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="1.1.5.180" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+    <PackageReference Include="Toasts.Forms.Plugin" Version="3.3.2" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
+    <PackageReference Include="XLabs.Forms" Version="2.0.5782" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="MasterDetailPage1MenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ANCCheckupsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ANMMarkHighRiskScreeningPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AssetsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CameraPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ChildPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FamilyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="GrowthRegisterMother.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HeaderTabbed.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HeaderTabbed1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="HighRiskMotherHistoryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Homepage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImmunisationCardpage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfChildInRedFlag.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfChildPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfEntryPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfFamilyPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfGrowthRegisterMother.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfMonthlydataPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfMonthlyMonitoring.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfRedFlagPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ListOfVillage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MasterDetailPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MonthlyMonitoringPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MonthlyRegisterPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="navigationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PinPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RedFlagPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CardViews.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="VillagePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="CameraPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ChildPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="EntryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="FamilyPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="GrowthRegisterMother.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="HeaderTabbed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Homepage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfChildPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfEntryPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfFamilyPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfGrowthRegisterMother.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfMonthlydataPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfRedFlagPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="ListOfVillage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="LoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MasterDetailPage1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MonthlyRegisterPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="navigationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="PinPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="RedFlagPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="TestPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="VillagePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+</Project>

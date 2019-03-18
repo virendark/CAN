@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.GrowthRegisterMother"
+             Title="Beneficiary Tracker"
+            >
+    
+    <ScrollView Orientation="Vertical">
+        <StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30" IsVisible="False">
+                <Label x:Name="lblDataMonth" Text="Data Month" TextColor="Black"    HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50" IsVisible="False">
+                <Picker x:Name="ddlDataMonth"  Title="-Select Data Month-" IsEnabled="False" ItemDisplayBinding="{Binding Datamonth}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+
+                <Label x:Name="lblDateOfMeasurement" Text="First Entry in Register Date" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout   Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <DatePicker x:Name="txtDateOfMeasurement" TextColor="Black"   VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </DatePicker>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblChildExpected" Text="Currently Pregnant" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddChildExpected" Title="-Select Currently Pregnant-"  SelectedIndexChanged="DdChildExpected_SelectedIndexChanged"     ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"    HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+             <StackLayout Margin="15,0,15,0" x:Name="stacShowAndHide">
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblIsFirstPregnancy" Text="Is First Pregnancy" TextColor="Black"    HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="50">
+
+                    <Picker x:Name="ddlIsFirstPregnancy" Title="-Select Is First Pregnancy-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"     HorizontalOptions="FillAndExpand">
+                    </Picker>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblExpectedDeliveryDate"  Text="Expected Delivery Date" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Vertical" HeightRequest="50">
+
+                    <!--<DatePicker x:Name="txtExpectedDeliveryDate"  Format="dd/MM/yyyy"   TextColor="Black"   VerticalOptions="FillAndExpand"    HorizontalOptions="FillAndExpand">
+                </DatePicker>-->
+                    <StackLayout Orientation="Vertical" x:Name="txtExpectedDeliveryDate11">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="txtExpectedDeliveryDate1" Text="DD/MM/YYYY" TextColor="Black" HorizontalOptions="StartAndExpand">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                        </StackLayout>
+                        <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" x:Name="txtExpectedDeliveryDate2" HorizontalOptions="FillAndExpand">
+                        <DatePicker x:Name="txtExpectedDeliveryDate" TextColor="Black" DateSelected="TxtExpectedDeliveryDate_DateSelected"  Format="dd/MM/yyyy" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                        </DatePicker>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="30" >
+                    <Label x:Name="lblTotalPregnancyMonths" Text="Calculate total pregency month completed" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="50">
+                    <Entry x:Name="txtTotalPregnancyMonths" Keyboard="Numeric" MaxLength="1" TextChanged="TxtTotalPregnancyMonths_TextChanged"  TextColor="Black" Placeholder="Total Pregnancy Months Completed" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblAncregistraionDate" Text="after how many months mother got registered for ANC" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                    <Entry x:Name="txtancregister" ReturnType="Done" Keyboard="Numeric"  TextColor="Black" Placeholder="Not registered" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+                <StackLayout  Orientation="Vertical" HeightRequest="50">
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="txtANCCheckups"  BackgroundColor="Transparent" TextColor="#2c2d2c" Clicked="TxtANCCheckups_Clicked" HorizontalOptions="StartAndExpand" Text="Select ANC Checkups" ></Button>
+                        <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+                    </StackLayout>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="30" >
+                    <Label x:Name="lblMealFromAwcunderAay" Text="Received Meal From AWC under AAY" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="50" >
+                    <Picker x:Name="ddlMealFromAwcunderAay" Title="-Select Received Meal From AW Under AAY-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"    AbsoluteLayout.LayoutBounds="0,30,1,40"  AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"   HorizontalOptions="End"></Image>
+                   
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblReceivedMealFromAwcunderAay" Text="How many months receive meal From AW under AAY" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="50">
+                    <Entry x:Name="ddlReceivedMealFromAwcunderAay" Keyboard="Numeric" TextChanged="DdlReceivedMealFromAwcunderAay_TextChanged" TextColor="Black" Placeholder="How many months receive meal" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblMotherWeightIn1Trimester" Text="Mother Weight In 1 Trimester (KG) " TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="50">
+                    <Entry x:Name="txtMotherWeightIn1Trimesterr" Keyboard="Numeric"  TextColor="Black" Placeholder="Not registered" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblMotherWeightInDeliveryTime" Text="Mother Weight In Delivery Time (KG)" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="50">
+                    <Entry x:Name="txtMotherWeightInDeliveryTime" Keyboard="Numeric" TextChanged="TxtMotherWeightInDeliveryTime_TextChanged"  TextColor="Black" Placeholder="Not registered" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lbldifferentweight" Text="Registration - Delivery weight(KG)" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                    <Entry x:Name="txtdifferentweigh" ReturnType="Done" Keyboard="Numeric"  TextColor="Black" Placeholder="Not registered" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    </Entry>
+                </StackLayout>
+            </StackLayout>
+            
+
+            
+            <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblAwcregistrationDate" Text="Is Mother Registered in AW" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlAwcregister" Title="-Select Mother Registered in AW-" SelectedIndexChanged="DdlIsLactating_SelectedIndexChanged" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"    HorizontalOptions="End"></Image>
+            </StackLayout>
+            
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50" >
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="txtHighRiskMotherHistory"  BackgroundColor="Transparent" TextColor="#2c2d2c" Clicked="TxtHighRiskMotherHistory_Clicked" HorizontalOptions="StartAndExpand" Text="Select Is mother having history" ></Button>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+                 </StackLayout>
+                <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblIsLactating" Text="Is Lactating" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlIsLactating" Title="-Select Is Lactating-" SelectedIndexChanged="DdlIsLactating_SelectedIndexChanged" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"    HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblLastDeliveryDate" Text="Last Delivery Date" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Vertical" HeightRequest="50" Margin="15,0,15,0">
+                <StackLayout Orientation="Vertical" x:Name="txtLastDeliveryDate11">
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="txtLastDeliveryDate1" Text="DD/MM/YYYY" TextColor="Black" HorizontalOptions="StartAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </StackLayout>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" x:Name="txtLastDeliveryDate2" HorizontalOptions="FillAndExpand">
+                    <DatePicker x:Name="txtLastDeliveryDate" TextColor="Black" DateSelected="TxtLastDeliveryDate_DateSelected_1"  Format="dd/MM/yyyy" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </DatePicker>
+                </StackLayout>
+
+                <!--<DatePicker x:Name="txtLastDeliveryDate" TextColor="Black"   VerticalOptions="FillAndExpand" DateSelected="TxtLastDeliveryDate_DateSelected"  HorizontalOptions="FillAndExpand">
+                </DatePicker>-->
+            </StackLayout>
+        
+             <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="txtANMMarkHighRiskScreening"  BackgroundColor="Transparent" TextColor="#2c2d2c" Clicked="TxtANMMarkHighRiskScreening_Clicked" HorizontalOptions="StartAndExpand" Text="Select ANM  Mark High Risk" ></Button>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+                </StackLayout>
+                <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblGetMealAwcUnderAay" Text="Do you get meal from AW under AAY" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlGetMealAwcUnderAay" Title="-Select get meal from AW under AAY-"   ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblReceivedDietUnderAay" Text="Have you receive diet under AAY month" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlReceivedDietUnderAay" Title="-Select you receive diet under AAY-"   ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblTypeOfMeal" Text="Type of meal mother get daily" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlTypeOfMeal" Title="-Select Type of meal mother get daily-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+            </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblEggReceived" Text="Do you get egg AAY diet" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlEggReceived" Title="-Select Do you get egg AAY diet-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblReceivedSnacksUnderAay" Text="Do you get snacks under AAY" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlReceivedSnacksUnderAay"  Title="-Select Do you get snacks under AAY-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblReceivedSnacksFromAwc" Text="Received Snacks From AW" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlReceivedSnacksFromAwc" Title="-Select Received Snacks From AW-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblEatMealRegularlyFromAwc" Text="Do you eat meal regularly from AW" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlEatMealRegularlyFromAwc" Title="-Select Do you eat meal regularly from AW-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblIsMealEnough" Text="Is the meal sufficient in quantity" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlIsMealEnough" Title="-Select Is the meal sufficient in quantity-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblQualityOfAwcfood" Text="Quality and taste of food distributed from AW under AAY" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlQualityOfAwcfood" Title="-Select Quality and taste of food -"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"    HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
+                <Label x:Name="lblResonForNotEatingAwcmeal" Text="Reson For Not Eating AWC meal" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
+                <Picker x:Name="ddlResonForNotEatingAwcmeal" Title="-Select Reson For Not Eating AWC meal-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+           <Button  Margin="20,20,20,10" BackgroundColor="#ffbf00"  AbsoluteLayout.LayoutFlags="WidthProportional"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Save" x:Name="btnSave" Clicked="BtnSave_Clicked">
+            </Button>
+           
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

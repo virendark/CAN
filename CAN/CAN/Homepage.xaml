@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.Homepage"
+           Title="DashBoard">
+  <AbsoluteLayout BackgroundColor="White">
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" >
+            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,0,1,60" AbsoluteLayout.LayoutFlags="WidthProportional">
+                <Picker x:Name="ddlState" Title="Select State" VerticalOptions="FillAndExpand"    AbsoluteLayout.LayoutBounds="0,20,0.4,20"  AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddl"  AbsoluteLayout.LayoutBounds="0,20,0.4,20" AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="End"></Image>
+                <Picker x:Name="ddlDistic" Title="Select Distic" VerticalOptions="FillAndExpand"    AbsoluteLayout.LayoutBounds="0,20,0.4,20"  AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ImgDistic"  AbsoluteLayout.LayoutBounds="0,20,0.4,20" AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,60,1,60" AbsoluteLayout.LayoutFlags="WidthProportional">
+                <Picker x:Name="ddlState1" Title="Select Block" VerticalOptions="FillAndExpand"    AbsoluteLayout.LayoutBounds="0,20,0.4,20"  AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddl1"  AbsoluteLayout.LayoutBounds="0,20,0.4,20" AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="End"></Image>
+                <Picker x:Name="ddlDistic1" Title="Select Village" VerticalOptions="FillAndExpand"    AbsoluteLayout.LayoutBounds="0,20,0.4,20"  AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ImgDistic1"  AbsoluteLayout.LayoutBounds="0,20,0.4,20" AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="End"></Image>
+            </StackLayout>
+
+            <!--<StackLayout Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,120,1,80" AbsoluteLayout.LayoutFlags="WidthProportional">
+                <Button x:Name="btnAddFamily" Text="Add New Family" TextColor="White" BackgroundColor="#ffbf00" AbsoluteLayout.LayoutBounds="0,50,0.5,80" BorderRadius="10" AbsoluteLayout.LayoutFlags="WidthProportional" Margin="20" HorizontalOptions="FillAndExpand" Clicked="btnAddFamily_Clicked"></Button>
+                <Button x:Name="btnAddChild" Text="Add New Child" TextColor="White" BackgroundColor="#ffbf00" AbsoluteLayout.LayoutBounds="0,50,0.5,80" BorderRadius="10" AbsoluteLayout.LayoutFlags="WidthProportional" Margin="10,20,20,20" HorizontalOptions="FillAndExpand" Clicked="btnAddChild_Clicked"></Button>
+                
+            </StackLayout>-->
+
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Style="{StaticResource StackLayoutStyle}">
+
+                    <ListView x:Name="listView" ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White" IsPullToRefreshEnabled="True" SelectionMode="None">
+                        <ListView.Header>
+                            <StackLayout x:Name="HeaderStackLayouts" Orientation="Horizontal" BackgroundColor="#2c2d2c" HeightRequest="40">
+                                <Label  Text="Child Name" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Family Type" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Father Name" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Mother Name" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Aadhar Id" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="School Name" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Birth Weight" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Blood Group" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Register Date" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Gender" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="DOB" TextColor="White"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                <Label  Text="Add Child" TextColor="White"  HorizontalTextAlignment="End" WidthRequest="230"></Label>
+                            </StackLayout>
+                        </ListView.Header>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <StackLayout x:Name="MainStackLayouts" Orientation="Horizontal">
+                                            <Label  Text="{Binding ChildName}" TextColor="White" LineBreakMode="WordWrap"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding FamilyType}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding FatherName}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding MotherName}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding AadhaaId}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding SchoolName}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding BirthWeight}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding BloodGroup}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding RegisterDate}" TextColor="White" LineBreakMode="WordWrap"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding Gender}" TextColor="White" LineBreakMode="WordWrap"   HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label  Text="{Binding DOB}" TextColor="White"  LineBreakMode="WordWrap"  HorizontalTextAlignment="Start" Style="{StaticResource lblWidthHeader}"></Label>
+                                            <Label   Text="Edit" TextColor="Blue" FontSize="Large"   HorizontalTextAlignment="End" WidthRequest="180"></Label>
+                                        </StackLayout>
+
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </AbsoluteLayout>
+
+
+
+</ContentPage>

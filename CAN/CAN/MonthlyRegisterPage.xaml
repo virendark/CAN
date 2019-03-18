@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.MonthlyRegisterPage"
+             Title="Groth Monitoring">
+    <ScrollView Orientation="Vertical" >
+        <StackLayout Orientation="Vertical">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblDataMonth" Text="Data Month" TextColor="Black"    HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlDataMonth" Title="-Select Data Month-" IsEnabled="False"  ItemDisplayBinding="{Binding Datamonth}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMeasurementdate" Text="Date of entry in register" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <DatePicker x:Name="txtMeasurementdate" TextColor="Black"   VerticalOptions="FillAndExpand" Format="dd/MM/yyyy"  HorizontalOptions="FillAndExpand">
+                </DatePicker>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblGender" Text="Gender" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlGender" Title="-Select Gender-" IsEnabled="False"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"   HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAgeInDays" Text="Age In Months" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtAgeInDays"  TextColor="Black" Keyboard="Numeric" IsEnabled="False" Placeholder="Age In Months" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAnyDisability" Text="Any Disability" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtAnyDisability"  TextColor="Black" ReturnType="Done" IsEnabled="False" Placeholder="Any Disability" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAnyIllness" Text="Any illness" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="ddlAnyIllness"  TextColor="Black" ReturnType="Done" IsEnabled="False" Placeholder="Any illness" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblIsBreastfeeding" Text="Is Breast feeding" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlIsBreastfeeding" Title="-Select Is Breast feeding-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"   HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblHealthCheckUpDone" Text="Health CheckUp Done" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlHealthCheckUpDone" Title="-Select Health CheckUp Done-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"   HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblImmunisationcard" Text="Immunisation card" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <!--<StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlImmunisationcard" Title="-Select Immunisation card-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+            </StackLayout>-->
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50" >
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="ddlImmunisationcard"  BackgroundColor="Transparent" TextColor="#2c2d2c" Clicked="DdlImmunisationcard_Clicked"  HorizontalOptions="StartAndExpand" Text="Select  Record From  Immunisation Card" ></Button>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+                </StackLayout>
+                <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblwaightkg" Text="Weight in kg" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtwaightkg" TextChanged="Txtwaightkg_TextChanged"  TextColor="Black" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblLHinCMS" Text="Length/Height in cms" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtLHinCMS"  TextColor="Black" TextChanged="TxtLHinCMS_TextChanged" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
+                       HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMUACincms" Text="MUAC in cms" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtMUACincms"  TextColor="Black" TextChanged="TxtMUACincms_TextChanged" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblw4az" Text="Weight for age " TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txtw4az"  TextColor="Black" IsEnabled="False" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblh4az" Text=" Weight for Height  " TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Entry x:Name="txth4az"  TextColor="Black" IsEnabled="False" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0"  Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblHaschildill" Text="Has child ill in previous month" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlHaschildill"  Title="Not Recorded"  SelectedIndexChanged="DdlHaschildill_SelectedIndexChanged"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout  Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblTypeOfIllness" Text="Type Of Illness" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Margin="15,0,15,0"  Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtTypeOfIllness"  TextColor="Black" ReturnType="Done" Placeholder="Not Recorded" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0"  Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblNumberofDaysIll" Text="Number of Days Ill" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtNumberofDaysIll"  TextColor="Black" Keyboard="Numeric" Placeholder="Not Recorded" VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0"  Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReasonAnthropometryNotTaken" Text="Reason Anthropometry Not Taken" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlReasonAnthropometryNotTaken" Title="-Select Reason Anthropometry Not Taken-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout x:Name="stackthr">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblreceivedration" Text="Received Take Home Ration" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlreceivedration"  Title="-Select Received Take Home Ration-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"    HorizontalOptions="End"></Image>
+            </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="stackcoockedfood">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReceiveCookedFood" Text="Receive Cooked Food" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlReceiveCookedFood"  Title="-Select Receive Cooked Food-"  SelectedIndexChanged="DdlReceiveCookedFood_SelectedIndexChanged" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+            </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblCurrentlyAttends" Text="Currently Attends" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlCurrentlyAttends" Title="-Select Currently Attends-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlcurre" HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout x:Name="stack27" Orientation="Vertical" Margin="15,0,15,0">
+                <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                    <Label x:Name="lblReceiveAAY" Text="Receive AAY From AW" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                    <Picker x:Name="ddlReceiveAAY" Title="-Select Receive AAY-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </Picker>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+                </StackLayout>
+            </StackLayout>
+            <!--<StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMUACMeasurementDate" Text="MUAC Measurement Date" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <DatePicker x:Name="txtMUACMeasurementDate" TextColor="Black"   VerticalOptions="FillAndExpand" Format="dd/MM/yyyy" HorizontalOptions="FillAndExpand">
+                </DatePicker>
+            </StackLayout>-->
+            
+            <!--<StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAnyRedFlag" Text="Any Red Flag" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlAnyRedFlag" Title="-Select Any Red Flag-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"   AbsoluteLayout.LayoutBounds="0,20,0.4,20" AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="End"></Image>
+             </StackLayout>-->
+           
+            <!--<StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblCurrentlyadmitted" Text="Currently Admitted" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlCurrentlyadmitted" Title="-Select Currently Admitted-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>-->
+           
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30" IsVisible="False">
+                <Label x:Name="lblAdmittedToAWC" Text="Admitted To AWC" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50" IsVisible="False">
+                <Picker x:Name="ddlAdmittedToAWC" Title="-Select Admitted To AWC-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlwater"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+           
+           
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblremark" Text="Remark" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtremark"  TextColor="Black" Placeholder="Remark" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <Button  Margin="20,20,20,10" BackgroundColor="#ffbf00"  AbsoluteLayout.LayoutFlags="WidthProportional"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Save" x:Name="btnSave" Clicked="BtnSave_Clicked">
+            </Button>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

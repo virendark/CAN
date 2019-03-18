@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.HeaderTabbed"
+            xmlns:Pages="clr-namespace:CAN;assembly=CAN" 
+            BarBackgroundColor="#ffbf00"
+            >
+    <Pages:ListOfFamilyPage Title="Family/Mothers Register"/>
+    <Pages:ListOfGrowthRegisterMother Title="Beneficiary Tracker"/>
+    <Pages:ListOfMonthlydataPage Title="Basic CAN"/>
+    <Pages:ListOfRedFlagPage Title="Intense CAN" />
+    <!--<Pages:ListOfFamilyPage Title="Family/Mothers Register"/>
+    <Pages:ListOfGrowthRegisterMother Title="Beneficiary(Mothers) Tracker - Monthly"/>
+    <Pages:ListOfMonthlydataPage Title="Basic CAN - Monthly"/>
+    <Pages:ListOfRedFlagPage Title="Intense CAN - 4 Times a Month" />-->
+</TabbedPage>

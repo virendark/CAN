@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.TestPage">
+
+    <StackLayout Orientation="Vertical">
+       
+            <Button x:Name="btnSelectPic" Text="Select picture" Clicked="BtnSelectPic_Clicked"  BackgroundColor="DodgerBlue" TextColor="White" />
+            <Button x:Name="btnTakePic" Text="Take picture" Clicked="BtnTakePic_Clicked"  BackgroundColor="DodgerBlue" TextColor="White" />
+       
+        <Image x:Name="imageView" HeightRequest="300" WidthRequest="400" />
+        <ActivityIndicator x:Name="uploadIndicator" IsVisible="False" IsRunning="False" Color="DodgerBlue" />
+        <Button Text="Upload to Blob" Clicked="BtnUpload_Clicked"  x:Name="btnUpload" BackgroundColor="Green" TextColor="White" />
+        <Editor x:Name="UploadedUrl" TextColor="Black" HeightRequest="85" Text="Image URL:" />
+       
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.ListOfEntryPage"
+              BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="Fregister" Clicked="Fregister_Clicked"  Margin="4"  BackgroundColor="#ffbf00" HeightRequest="70"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Family Register">
+            </Button>
+            <Button x:Name="CRegister" Clicked="CRegister_Clicked"  Margin="4,0,4,4"  BackgroundColor="#ffbf00" HeightRequest="70"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Child Register">
+            </Button>
+            <Button x:Name="Mregister" Clicked="Mregister_Clicked"  Margin="4,0,4,4"  BackgroundColor="#ffbf00" HeightRequest="70"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Monthly Register">
+            </Button>
+            <Button x:Name="RedRegister" Clicked="RedRegister_Clicked"  Margin="4,0,4,4"  BackgroundColor="#ffbf00" HeightRequest="70"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Red Flag Register">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

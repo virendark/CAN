@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:FABControls="clr-namespace:CAN.FABControls;assembly=CAN"
+               xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="CAN.ListOfChildPage"
+            >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="MenuItem1" Order="Primary" Icon="ic_home.png" Clicked="MenuItem1_Clicked" Priority="0" />
+
+    </ContentPage.ToolbarItems>
+    <AbsoluteLayout>
+        <Grid>
+            <ListView x:Name="listView" SeparatorVisibility="None" ItemsSource="{Binding People}" HasUnevenRows="True" BackgroundColor="#2c2d2c" SeparatorColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <Grid>
+                               <Frame  BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="60"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="270"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Grid.Row="0"  Spacing="1" Orientation="Horizontal">
+                                            <controls:CircleImage  HeightRequest="100" WidthRequest="100"  HorizontalOptions="Start" Source="{Binding PhotoData}"   Aspect="AspectFill" VerticalOptions="Start">
+                                                
+                                            </controls:CircleImage>
+                                            <Image x:Name="{Binding ChildId}" Grid.Column="2"  Source="ic_Edit.png" WidthRequest="40" Aspect="AspectFill">
+                                                <Image.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1" />
+                                                </Image.GestureRecognizers>
+                                            </Image>
+                                            <Label Text="" TextColor="Black" Grid.Column="3"  WidthRequest="200" VerticalOptions="Center" HorizontalTextAlignment="Center"></Label>
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="Child Name :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="TailTruncation" 
+                                                FontAttributes="Bold"/>
+                                            <Label Text="{Binding ChildName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="Gender :-        " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                            <Label Text="{Binding Gender}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="Birth Weight :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                            <Label Text="{Binding BirthWeightInKg}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="AWC Entry W4AZ :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                            <Label Text="{Binding W4AZ}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="5"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="AWC Entry W4HZ :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                            <Label Text="{Binding W4HZ}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        <!--<StackLayout Orientation="Vertical">
+       
+         <ListView x:Name="listView" ItemsSource="{Binding Monkeys}" Style="{StaticResource ListViewStyle}" BackgroundColor="#2c2d2c" SeparatorColor="White" IsPullToRefreshEnabled="True" SelectionMode="None">
+                <ListView.Header>
+
+                    <StackLayout x:Name="HeaderStackLayouts" Orientation="Horizontal" BackgroundColor="#2c2d2c" HeightRequest="40">
+                       <Label  Text="Child Name" TextColor="White"  LineBreakMode="WordWrap" Style="{StaticResource lblsize}"     HorizontalTextAlignment="Start" WidthRequest="200"></Label>
+                            <Label  Text="Gender" TextColor="White" LineBreakMode="WordWrap" Style="{StaticResource lblsize}"  HorizontalTextAlignment="Start" WidthRequest="150"></Label>
+                      
+                        <Label  Text="Birth Weight" TextColor="White"   LineBreakMode="WordWrap" Style="{StaticResource lblsize}"  HorizontalTextAlignment="Start" WidthRequest="170" ></Label>
+                        <Label  Text="Edit" TextColor="White"       LineBreakMode="WordWrap"  Style="{StaticResource lblsize}"     HorizontalTextAlignment="Start" WidthRequest="100" ></Label>
+
+                    </StackLayout>
+
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                <StackLayout x:Name="MainStackLayouts" Orientation="Horizontal" HeightRequest="100">
+                                   
+                                        <Label  Text="{Binding ChildName}" TextColor="White" LineBreakMode="WordWrap" Style="{StaticResource lblsize}" WidthRequest="200"  HorizontalTextAlignment="Start" ></Label>
+                                    <Label  Text="{Binding Gender}" TextColor="White" LineBreakMode="WordWrap" WidthRequest="150" Style="{StaticResource lblsize}"  HorizontalTextAlignment="Start" ></Label>
+
+                                    <Label  Text="{Binding BirthWeightInKg}" TextColor="White" LineBreakMode="WordWrap" WidthRequest="170" Style="{StaticResource lblsize}"   HorizontalTextAlignment="Start" ></Label>
+                                    <Image x:Name="{Binding ChildId}"  Source="ic_Edit.png" WidthRequest="40" Aspect="AspectFill">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                    <Label Text="hello" TextColor="#2c2d2c" BackgroundColor="#2c2d2c" WidthRequest="60"></Label>
+                                </StackLayout>
+
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>-->
+        <FABControls:ImageButton x:Name="btnAdd" Source="IconFAB.png" ItemTapped="ImageButton_ItemTapped"
+                                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                                        AbsoluteLayout.LayoutBounds="1.0,1.0,-1,-1"
+                                        Margin="10" />
+    </AbsoluteLayout>
+
+</ContentPage>

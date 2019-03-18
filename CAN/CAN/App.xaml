@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#ffbf00" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="1500" Tablet="1100"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="500" Tablet="850"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="ScrollViewStyle" TargetType="ScrollView">
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="1500" Tablet="800"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="600" Tablet="850"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="ListViewStyle" TargetType="ListView">
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="1500" Tablet="800"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="600" Tablet="850"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="lblWidthHeader" TargetType="Label">
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="150" Tablet="500"/>
+                    </Setter.Value>
+
+                </Setter>
+            </Style>
+            <Style x:Key="lblWidthBody" TargetType="Label">
+                <Setter Property="WidthRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="120" Tablet="300"/>
+                    </Setter.Value>
+
+                </Setter>
+            </Style>
+            <Style x:Key="lblsize" TargetType="Label">
+                <Setter Property="FontSize">
+
+                    <OnIdiom x:TypeArguments="x:Double" Phone="12" Tablet="22"/>
+                </Setter>
+                <Setter Property="WidthRequest">
+                    <OnIdiom x:TypeArguments="x:Double" Phone="140" Tablet="200"/>
+                </Setter>
+            </Style>
+            <Style x:Key="listviewHeader" TargetType="StackLayout">
+                
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="40" Tablet="55"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style x:Key="listviewBoady" TargetType="StackLayout">
+
+                <Setter Property="HeightRequest">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="100" Tablet="200"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+
+
+    </Application.Resources>
+</Application>

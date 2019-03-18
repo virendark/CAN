@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:FABControls="clr-namespace:CAN.FABControls;assembly=CAN"
+             x:Class="CAN.ListOfChildInRedFlag">
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,-14">
+            <Picker x:Name="ddlDataMonth"  Title=" Select Data Month" IsEnabled="False" ItemDisplayBinding="{Binding Datamonth}"  SelectedIndexChanged="DdlDataMonth_SelectedIndexChanged"   HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+        <AbsoluteLayout>
+            <Grid>
+                <ListView x:Name="listView" SeparatorVisibility="None"   ItemsSource="{Binding People}" HasUnevenRows="True" BackgroundColor="#2c2d2c" SeparatorColor="White">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Frame  
+                                   BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="25"/>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="50"/>
+                                                <RowDefinition Height="50"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="270"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <StackLayout Grid.Row="0"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="Child Name :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="TailTruncation" 
+                                                FontAttributes="Bold"/>
+                                                <Label Text="{Binding ChildName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="Gender :-     " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                                <Label Text="{Binding GenderName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="Data Month :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                                <Label Text="{Binding DataMonth}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
+                                                <Image x:Name="{Binding RedFlagId}" IsVisible="{Binding IsvisuaEdit}" Grid.Column="1"  Source="ic_Edit.png" WidthRequest="40" Aspect="AspectFill">
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer   NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped" />
+                                                    </Image.GestureRecognizers>
+                                                </Image>
+                                                <Label Text="Edit" TextColor="Black" Grid.Column="2" IsVisible="{Binding IsvisuaEdit}"  WidthRequest="200" VerticalOptions="Center" HorizontalTextAlignment="Start">
+                                                    <Label.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1"/>
+                                                    </Label.GestureRecognizers>
+                                                </Label>
+                                               </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+            <FABControls:ImageButton Source="IconFAB.png" ItemTapped="ImageButton_ItemTapped" x:Name="btnAdd"
+                                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                                        AbsoluteLayout.LayoutBounds="1.0,1.0,-1,-1"
+                                        Margin="10" />
+        </AbsoluteLayout>
+
+    </StackLayout>
+</ContentPage>

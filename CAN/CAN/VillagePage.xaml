@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.VillagePage"
+            Title="List Of Village">
+    <StackLayout Orientation="Vertical">
+
+        <ListView x:Name="listView" ItemSelected="listView_ItemSelected"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
+                                <Label  Text="{Binding VillageName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center" FontSize="22"></Label>
+
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

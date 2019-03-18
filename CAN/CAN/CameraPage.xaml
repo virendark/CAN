@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.CameraPage">
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal" HeightRequest="80" Margin="20,20,20,0">
+            <Image x:Name="ic_Camera"  Source="ic_Camera.png" WidthRequest="80" Aspect="AspectFill">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Image.GestureRecognizers>
+            </Image>
+            <Image x:Name="ic_Galary"  Source="ic_Galary.png" WidthRequest="80" Aspect="AspectFill">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <Image x:Name="childimg" HeightRequest="80" WidthRequest="80"></Image>
+            
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

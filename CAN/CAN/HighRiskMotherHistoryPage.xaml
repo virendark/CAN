@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                  xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="CAN.HighRiskMotherHistoryPage">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="50, 100, 50, 100">
+       <StackLayout BackgroundColor="White">
+            <Label  Text="Select High Risk Mother History" HeightRequest="20" WidthRequest="150" TextColor="Black" HorizontalTextAlignment="Center"></Label>
+            <ListView x:Name="listView" ItemSelected="ListView_ItemSelected" SelectionMode="None"  ItemsSource="{Binding Assets}" BackgroundColor="White"  SeparatorColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout x:Name="MainStackLayouts">
+                                    <!--<Label  Text="{Binding columnValue}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center"></Label>-->
+                                    <controls:CheckBox x:Name="{Binding Id}" DefaultText="{Binding Name}"  Checked="{Binding Flag}" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" >
+                <Label x:Name="lblCancel" Text="CANCEL" TextColor="#339933" Margin="0,4,2,6">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label x:Name="lblConfirm" Text="CONFIRM" Margin="6" TextColor="#339933">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+        </StackLayout>
+
+    </StackLayout>
+</pages:PopupPage>

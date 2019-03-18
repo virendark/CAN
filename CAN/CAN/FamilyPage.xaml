@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.FamilyPage"
+             Title="Family Register"
+          >
+    <ScrollView Orientation="Vertical" >
+        <StackLayout Orientation="Vertical">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFType" Text="Family Type" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlFType" Title="-Select Family Type-"   SelectedItem="{Binding columnValueId, Mode=TwoWay}" SelectedIndex="{Binding columnValueId}" ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"     HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblNoOfChild" Text="No Of Children Live" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtNoOfChild" Keyboard="Numeric" ReturnType="Done" MaxLength="2" TextColor="Black" TextChanged="TxtNoOfChild_TextChanged" Placeholder="No Of  Children Live" VerticalOptions="FillAndExpand"    HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblNoOfchildDied" Text="No Of Children Died in Past" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtNoOfchildDied" Keyboard="Numeric"   ReturnType="Done" MaxLength="2" TextChanged="TxtNoOfchildDied_TextChanged" TextColor="Black" Placeholder="No Of Children Died in Past" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFName" Text="Father's Name" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal"  HeightRequest="50">
+                <Entry x:Name="txtFName" ReturnType="Done" TextColor="Black" Placeholder="Father's Name" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFEducation" Text="Father's Education" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddFEducation"  Title="-Select Father's Education-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFOccupation" Text="Father's Occupation" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+           <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                    <Picker x:Name="ddlFOccupation"  Title="-Select Father's Occupation-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </Picker>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+                </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFPDisease" Text="Father' Past Disease" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtFPDisease" ReturnType="Done" TextColor="Black" Placeholder="Father's Past Disease" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMName" Text="Mother's Name" TextColor="Black" HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtMName" ReturnType="Done" TextColor="Black" Placeholder="Mother's Name" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMDOB" Text="Mother's DOB" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
+             <StackLayout Orientation="Vertical" x:Name="txtMDOB1">
+                    <StackLayout Orientation="Horizontal">  
+                     <Label x:Name="txtMDOB2" Text="DD/MM/YYYY" TextColor="Black" HorizontalOptions="StartAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                      
+                    </StackLayout>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
+               
+                <StackLayout Orientation="Horizontal" x:Name="txtMDOBP" HorizontalOptions="FillAndExpand">
+                <DatePicker x:Name="txtMDOB" TextColor="Black" DateSelected="TxtMDOB_DateSelected"   VerticalOptions="FillAndExpand"  Format="dd/MM/yyyy"  HorizontalOptions="FillAndExpand">
+                </DatePicker>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMotherAge" Text="Mother Age" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtMotherAge" ReturnType="Done" MaxLength="2" Keyboard="Numeric" TextChanged="TxtMotherAge_TextChanged"  TextColor="Black" Placeholder="Mother Age" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMEducation" Text="Mother's Education" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlMEducation" Title="-Select Mother's Education-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMOccupation" Text="Mother's Occupation" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+               <Picker x:Name="ddlMOccupation" Title="-Select Mother's Occupation-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+         </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMPDisease" Text="Mother's Past Disease" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtMPDisease" ReturnType="Done" TextColor="Black" Placeholder="Mother's Past Disease" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lbloutforWork" Text="Does Mother go out for  Work" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlIsMotherWork" Title="-Select Does Mother go out for  Work-" SelectedIndexChanged="DdlIsMotherWork_SelectedIndexChanged" ItemDisplayBinding="{Binding columnValue}"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlWork"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout x:Name="stacmotherwork" HeightRequest="160" Margin="15,0,15,0">
+            <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMotherWorkType" Text="Mother Work Type" TextColor="Black"  HorizontalOptions="Start"></Label>
+                    
+                </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlMotherWorkType" Title="-Select Mother Work Type-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+           
+            <StackLayout  Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMotherWorkHours" Text="Duration Of Work" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50">
+
+                    <Picker x:Name="ddlMotherWorkHours" Title="-Select Duration Of Work-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblcast" Text="Cast/Tribe" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <!--<Entry x:Name="txtcast" ReturnType="Done" TextColor="Black" Placeholder="Cast/Tribe" VerticalOptions="FillAndExpand" Focused="txtcast_Focused" Unfocused="txtcast_Unfocused" AbsoluteLayout.LayoutBounds="0,30,1,40"  AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="FillAndExpand">
+                </Entry>-->
+                <Picker x:Name="ddlcast" Title="-Select Cast/Tribe-"  ItemDisplayBinding="{Binding columnValue}" SelectedIndexChanged="Ddlcast_SelectedIndexChanged" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout HeightRequest="80" Margin="15,0,15,0"  x:Name="staccastName">
+            <StackLayout Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblcasttriblename" Text="Caste/Tribe Name" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtcasttriblename" ReturnType="Done" TextColor="Black" Placeholder="Caste/Tribe Name" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblReligion" Text="Religion" TextColor="Black" HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlReligion" Title="-Select Religion-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblTofRation" Text="Ration Card Type" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlTofRation" Title="-Select Ration Card Type-" ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAgriculturalLand" Text="Own Agricultural land" TextColor="Black" HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlAgriculturalLand" Title="-Select Own Agricultural land-" ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblHouseType" Text="House Type" TextColor="Black" HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlHouseType" Title="-Select House Type-" ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblWaterType" Text="Water Supply Type" TextColor="Black"  HorizontalOptions="Start"></Label>
+                
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlWaterType"  Title="-Select Water Supply Type-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlwater" HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblSourceWater" Text="Source of Drinking Water" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlSourceWater"  Title="-Select Source of Drinking Water-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlSourcewater" HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblToiletFacility" Text="Toilet Facility" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlToiletFacility" Title="-Select Toilet Facility-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal">
+                <Label x:Name="lblElictricityAvailable" Text="Electricity Supply Available" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlElictricityAvailable" Title="-Select Electricity Supply Available-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlwater1"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <!--<StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lblAssetsDetails" Text="Assets Details" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>-->
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="txtAssetsDetails"  BackgroundColor="Transparent" TextColor="#2c2d2c" HorizontalOptions="StartAndExpand" Text="-Select Assets Details-" Clicked="TxtAssetsDetails_Clicked"></Button>
+                    <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+                    
+                </StackLayout>
+                <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFamilyMigrateToEarn" Text="Does Family Migrate To Earning" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlFamilyMigrateToEarn" Title="-Select Does Family Migrate To Earning-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMigrationMonthsPerYear" Text="Period of Migration in Year (in months)" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtMigrationMonthsPerYear" Keyboard="Numeric" ReturnType="Done" TextColor="Black" MaxLength="2" TextChanged="TxtMigrationMonthsPerYear_TextChanged" Placeholder="Not Applicable" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblMigrationFor" Text="Where Family Migrate" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Picker x:Name="ddlMigrationFor" Title="-Select Where Family Migrate-"  ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblFamilyCode" Text="Family Code" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <Entry x:Name="txtFamilyCode"  ReturnType="Done" TextColor="Black" Placeholder="Family Code" VerticalOptions="FillAndExpand" Focused="TxtFamilyCode_Focused"  Unfocused="TxtFamilyCode_Unfocused" HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+           
+            <StackLayout Margin="15,0,15,0" IsVisible="False"  Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblmotherlactating" Text="Location" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" IsVisible="False"  Orientation="Horizontal"  HeightRequest="50">
+                <Entry x:Name="ddlLocation" IsEnabled="False" TextColor="Black"  VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                </Entry>
+            </StackLayout>
+
+           <StackLayout Margin="15,0,15,0" x:Name="StcDRbl" Orientation="Horizontal" HeightRequest="30">
+
+                <Label x:Name="lbldateofEntry" Text="Date of Entry in Register" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" x:Name="StcDRbtxt" Orientation="Horizontal" HeightRequest="50">
+                <DatePicker x:Name="txtdateofEntry" TextColor="Black"   VerticalOptions="FillAndExpand" Format="dd/MM/yyyy"  HorizontalOptions="FillAndExpand">
+                </DatePicker>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblStatus" Text="Status" TextColor="Black"  HorizontalOptions="Start"></Label>
+                <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+
+                <Picker x:Name="ddlStatus" Title="-Select Status-"  SelectedItem="{Binding columnValueId, Mode=TwoWay}" SelectedIndex="{Binding columnValueId}" ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                </Picker>
+                <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
+
+            </StackLayout>
+            <Button Margin="20,20,20,10" BackgroundColor="#ffbf00"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Save" x:Name="btnSave" Clicked="btnSave_Clicked">
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
