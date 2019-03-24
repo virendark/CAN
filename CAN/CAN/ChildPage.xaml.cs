@@ -158,6 +158,20 @@ namespace CAN
                 txtBOrder.Placeholder = "Birth Order";
                 lblBOrder.IsVisible = false;
             }
+            var checkNoOfChild = App.DAUtil.FindFamilyId(StaticClass.PageData).FirstOrDefault();
+            if(Convert.ToInt32(txtBOrder.Text) <= checkNoOfChild.NumberofChildenAlive)
+            {
+
+            }
+            else
+            {
+                txtBOrder.Text = "";
+                DependencyService.Get<Toast>().Show("Please Enter currect number of child alive");
+                IsValidate = false;
+                txtBOrder.Focus();
+                return;
+            }
+
         }
         private void btnSave_Clicked(object sender, EventArgs e)
         {
@@ -225,7 +239,7 @@ namespace CAN
                     childRegister.AWCEntryW4HZ = Convert.ToDecimal(w4hz);
                     childRegister.ChildCode = txtChildCode.Text;
                     childRegister.Photograph = aBC.imgName;
-                    childRegister.AnyDisability = txtAnyDisability.Text;
+                    childRegister.AnyDisability = txtAnyDisability.Text==null? "Not Applicable": txtAnyDisability.Text;
                     childRegister.AnyIllness = txtAnyIllness.Text;
                     childRegister.AnyLongTermIllnessInFamily = txtAnyLongTermIllnessInFamily.Text;
                     var SelectedChildrecorded = (ColumnValue)ddlChildrecorded.SelectedItem;
@@ -578,7 +592,21 @@ namespace CAN
         }
         private void TxtBirthLengthHeightInCms_Unfocused(object sender, FocusEventArgs e)
         {
+            if (Convert.ToDouble(txtBirthLengthHeightInCms.Text) < 45)
+            {
+                txtBirthLengthHeightInCms.Text = "45";
+            }
+            else
+            {
+                if (Convert.ToDouble(txtBirthLengthHeightInCms.Text) <= 120)
+                {
 
+                }
+                else
+                {
+                    txtBirthLengthHeightInCms.Text = "45";
+                }
+            }
         }
         private void TxtAWCEntryWeightInKG_Focused(object sender, FocusEventArgs e)
         {
@@ -867,28 +895,28 @@ namespace CAN
             }
         }
 
-        private void TxtBirthLengthHeightInCms_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            try
-            {
-                Regex regex = new Regex(@"^\d{0,3}(\.\d{1,2})?$");
-                var match = regex.Match(txtBirthLengthHeightInCms.Text);
-                if (match.Success)
-                {
-                    txtBirthLengthHeightInCms.Text = match.Value;
-                    txtBirthLengthHeightInCms.TextColor = Color.Black;
+        //private void TxtBirthLengthHeightInCms_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    try
+        //    {
+        //        Regex regex = new Regex(@"^\d{0,3}(\.\d{1,2})?$");
+        //        var match = regex.Match(txtBirthLengthHeightInCms.Text);
+        //        if (match.Success)
+        //        {
+        //            txtBirthLengthHeightInCms.Text = match.Value;
+        //            txtBirthLengthHeightInCms.TextColor = Color.Black;
                     
-                }
-                else
-                {
-                    txtBirthLengthHeightInCms.TextColor = Color.Red;
-                }
-            }
-            catch
-            {
+        //        }
+        //        else
+        //        {
+        //            txtBirthLengthHeightInCms.TextColor = Color.Red;
+        //        }
+        //    }
+        //    catch
+        //    {
 
-            }
-        }
+        //    }
+        //}
 
         private void TxtAWCEntryMUAC_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -903,7 +931,8 @@ namespace CAN
                     if (match.Success)
                     {
                         txtAWCEntryMUAC.Text = match.Value;
-                        txtAWCEntryMUAC.TextColor = Color.Red;
+                        txtAWCEntryMUAC.BackgroundColor = Color.Red;
+                        txtAWCEntryMUAC.TextColor = Color.White;
                     }
                     else
                     {
@@ -920,7 +949,8 @@ namespace CAN
                     if (match.Success)
                     {
                         txtAWCEntryMUAC.Text = match.Value;
-                        txtAWCEntryMUAC.TextColor = Color.Green;
+                        txtAWCEntryMUAC.BackgroundColor = Color.Green;
+                        txtAWCEntryMUAC.TextColor = Color.White;
                     }
                     else
                     {
@@ -936,7 +966,8 @@ namespace CAN
                     if (match.Success)
                     {
                         txtAWCEntryMUAC.Text = match.Value;
-                        txtAWCEntryMUAC.TextColor = Color.Yellow;
+                        txtAWCEntryMUAC.BackgroundColor = Color.Yellow;
+                        txtAWCEntryMUAC.TextColor = Color.White;
                     }
                     else
                     {

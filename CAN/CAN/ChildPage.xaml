@@ -76,14 +76,14 @@
                 <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtBirthLengthHeightInCms" ReturnType="Done" Keyboard="Numeric" Focused="TxtBirthLengthHeightInCms_Focused" TextChanged="TxtBirthLengthHeightInCms_TextChanged"  Unfocused="TxtBirthLengthHeightInCms_Unfocused"  TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"    HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtBirthLengthHeightInCms" ReturnType="Done" Keyboard="Numeric" Focused="TxtBirthLengthHeightInCms_Focused"   Unfocused="TxtBirthLengthHeightInCms_Unfocused"  TextColor="Black" Placeholder="Not recorded" VerticalOptions="FillAndExpand"    HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
                 <Label x:Name="lblBOrder" Text="Birth Order" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtBOrder" ReturnType="Done" Keyboard="Numeric" Focused="txtBOrder_Focused" Unfocused="txtBOrder_Unfocused" TextColor="Black" Placeholder="Birth Order" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtBOrder" ReturnType="Done" Keyboard="Numeric" MaxLength="3" Focused="txtBOrder_Focused" Unfocused="txtBOrder_Unfocused" TextColor="Black" Placeholder="Birth Order" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
@@ -193,7 +193,7 @@
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
                 <StackLayout Orientation="Vertical">
-                    <Label x:Name="txtAWCEntryW4AZ"  Text="Not Calculated" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                    <Label x:Name="txtAWCEntryW4AZ"  Text="Not Applicable" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
                     <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
                 </StackLayout>
             </StackLayout>
@@ -206,7 +206,7 @@
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
                 <StackLayout Orientation="Vertical">
-                    <Label x:Name="txtAWCEntryW4HZ"  Text="Not Calculated" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                    <Label x:Name="txtAWCEntryW4HZ"  Text="Not Applicable" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
                     <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
                 </StackLayout>
             </StackLayout>

@@ -49,7 +49,8 @@
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="25"/>
                                             <RowDefinition Height="*"/>
-                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="25"/>
                                             <RowDefinition Height="50"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
@@ -79,12 +80,18 @@
                                             <Label Text="{Binding NumberofChildenAlive}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
                                         <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="Family Code :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                            <Label Text="{Binding FamilyCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">
                                             <Image x:Name="{Binding FamilyId}" Grid.Column="1"  Source="ic_Edit.png" WidthRequest="30" Aspect="AspectFill">
                                                 <Image.GestureRecognizers>
                                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1" />
                                                 </Image.GestureRecognizers>
                                             </Image>
-                                            <Label x:Name="{Binding FamilyId}" Text="Edit" TextColor="Black" Grid.Column="2"  WidthRequest="100" VerticalOptions="Center" HorizontalTextAlignment="Start">
+                                            <Label x:Name="{Binding FamilyId}"  Margin="5,0,0,0" Text="Edit" TextColor="Black" Grid.Column="2"  WidthRequest="100" VerticalOptions="Center" HorizontalTextAlignment="Start">
                                                 <Label.GestureRecognizers>
                                                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_3"/>
                                                 </Label.GestureRecognizers>
@@ -94,7 +101,7 @@
                                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  NumberOfTapsRequired="1" />
                                                 </Image.GestureRecognizers>
                                             </Image>
-                                            <Label x:Name="{Binding FamilyId}"  Text="List/Add Child" TextColor="Black" Grid.Column="4" VerticalOptions="Center" HorizontalTextAlignment="Start"  WidthRequest="150">
+                                            <Label x:Name="{Binding FamilyId}" Margin="5,0,0,0"  Text="List/Add Child" TextColor="Black" Grid.Column="4" VerticalOptions="Center" HorizontalTextAlignment="Start"  WidthRequest="150">
                                                 <Label.GestureRecognizers>
                                                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_2"/>
                                                 </Label.GestureRecognizers>

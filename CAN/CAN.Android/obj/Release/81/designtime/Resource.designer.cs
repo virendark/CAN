@@ -5202,8 +5202,8 @@ namespace CAN.Droid
 			// aapt resource value: 0x7F010002
 			public const int AcconIcon = 2130771970;
 			
-			// aapt resource value: 0x7F010334
-			public const int ad16 = 2130772788;
+			// aapt resource value: 0x7F010335
+			public const int ad16 = 2130772789;
 			
 			// aapt resource value: 0x7F010003
 			public const int Add_launcher = 2130771971;
@@ -5214,8 +5214,8 @@ namespace CAN.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
-			// aapt resource value: 0x7F010335
-			public const int calendar_bg_selector = 2130772789;
+			// aapt resource value: 0x7F010336
+			public const int calendar_bg_selector = 2130772790;
 			
 			// aapt resource value: 0x7F010004
 			public const int ddarrow = 2130771972;
@@ -5389,13 +5389,16 @@ namespace CAN.Droid
 			public const int ic_launcher = 2130771992;
 			
 			// aapt resource value: 0x7F010019
-			public const int ic_List = 2130771993;
+			public const int ic_launcherr = 2130771993;
 			
 			// aapt resource value: 0x7F010020
-			public const int IC_Logo = 2130772000;
+			public const int ic_List = 2130772000;
 			
 			// aapt resource value: 0x7F010021
-			public const int ic_Logout = 2130772001;
+			public const int IC_Logo = 2130772001;
+			
+			// aapt resource value: 0x7F010022
+			public const int ic_Logout = 2130772002;
 			
 			// aapt resource value: 0x7F090078
 			public const int ic_media_pause_dark = 2131296376;
@@ -5415,8 +5418,8 @@ namespace CAN.Droid
 			// aapt resource value: 0x7F09007D
 			public const int ic_media_stop_light = 2131296381;
 			
-			// aapt resource value: 0x7F010022
-			public const int ic_monthly = 2130772002;
+			// aapt resource value: 0x7F010023
+			public const int ic_monthly = 2130772003;
 			
 			// aapt resource value: 0x7F09007E
 			public const int ic_mr_button_connected_00_dark = 2131296382;
@@ -5805,11 +5808,11 @@ namespace CAN.Droid
 			// aapt resource value: 0x7F0900FE
 			public const int ic_mr_button_grey = 2131296510;
 			
-			// aapt resource value: 0x7F010023
-			public const int ic_PushData = 2130772003;
-			
 			// aapt resource value: 0x7F010024
-			public const int ic_Sync = 2130772004;
+			public const int ic_PushData = 2130772004;
+			
+			// aapt resource value: 0x7F010025
+			public const int ic_Sync = 2130772005;
 			
 			// aapt resource value: 0x7F0900FF
 			public const int ic_vol_type_speaker_dark = 2131296511;
@@ -5829,11 +5832,11 @@ namespace CAN.Droid
 			// aapt resource value: 0x7F090104
 			public const int ic_vol_type_tv_light = 2131296516;
 			
-			// aapt resource value: 0x7F010025
-			public const int ImgUser = 2130772005;
-			
 			// aapt resource value: 0x7F010026
-			public const int KidsIcon = 2130772006;
+			public const int ImgUser = 2130772006;
+			
+			// aapt resource value: 0x7F010027
+			public const int KidsIcon = 2130772007;
 			
 			// aapt resource value: 0x7F090105
 			public const int mr_button_connected_dark = 2131296517;
@@ -5934,17 +5937,17 @@ namespace CAN.Droid
 			// aapt resource value: 0x7F09000C
 			public const int notify_panel_notification_icon_bg = 2131296268;
 			
-			// aapt resource value: 0x7F010027
-			public const int RadioSelected = 2130772007;
-			
 			// aapt resource value: 0x7F010028
-			public const int RadioUnselect = 2130772008;
+			public const int RadioSelected = 2130772008;
 			
 			// aapt resource value: 0x7F010029
-			public const int show_pass = 2130772009;
+			public const int RadioUnselect = 2130772009;
 			
 			// aapt resource value: 0x7F010030
-			public const int TheamEntry = 2130772016;
+			public const int show_pass = 2130772016;
+			
+			// aapt resource value: 0x7F010031
+			public const int TheamEntry = 2130772017;
 			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;

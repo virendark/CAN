@@ -377,8 +377,6 @@ D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Toasts.Forms.Plugin.Droid
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\res\drawable\ic_launcherr.png
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\res\drawable\ic_launcher.jpg
-D:\15-12-2018\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
-D:\15-12-2018\CAN\CAN\CAN.Android\bin\Debug\CAN.dll.mdb
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\CAN.dll.mdb
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\FormsViewGroup.dll.mdb
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb

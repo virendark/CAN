@@ -18,7 +18,7 @@
                 <Label x:Name="lblMeasurementdate" Text="Date of entry in register" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <DatePicker x:Name="txtMeasurementdate" TextColor="Black"   VerticalOptions="FillAndExpand" Format="dd/MM/yyyy"  HorizontalOptions="FillAndExpand">
+                <DatePicker x:Name="txtMeasurementdate" TextColor="Black" DateSelected="TxtMeasurementdate_DateSelected"   VerticalOptions="FillAndExpand" Format="dd/MM/yyyy"  HorizontalOptions="FillAndExpand">
                 </DatePicker>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
@@ -111,7 +111,7 @@
                         HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
-            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+            <!--<StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
                 <Label x:Name="lblw4az" Text="Weight for age " TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
@@ -128,6 +128,24 @@
                 <Entry x:Name="txth4az"  TextColor="Black" IsEnabled="False" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
                         HorizontalOptions="FillAndExpand">
                 </Entry>
+            </StackLayout>-->
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblw4az" Text="AW Entry W4AZ" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
+                <StackLayout Orientation="Vertical">
+                    <Label x:Name="txtw4az"  Text="Not Applicable" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblh4az" Text="AW Entry W4HZ" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
+                <StackLayout Orientation="Vertical">
+                    <Label x:Name="txth4az"  Text="Not Applicable" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
             </StackLayout>
             <StackLayout Margin="15,0,15,0"  Orientation="Horizontal" HeightRequest="30">
                 <Label x:Name="lblHaschildill" Text="Has child ill in previous month" TextColor="Black" HorizontalOptions="FillAndExpand"></Label>
@@ -233,17 +251,15 @@
                 <Picker x:Name="ddlAdmittedToAWC" Title="-Select Admitted To AWC-"  ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Picker>
                 <Image Margin="-30,0,0,0"  Source="ddarrow.png" x:Name="ddlwater"  HorizontalOptions="End"></Image>
-
             </StackLayout>
-           
-           
-            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+           <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
                 <Label x:Name="lblremark" Text="Remark" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
                 <Entry x:Name="txtremark"  TextColor="Black" Placeholder="Remark" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
+           
             <Button  Margin="20,20,20,10" BackgroundColor="#ffbf00"  AbsoluteLayout.LayoutFlags="WidthProportional"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Save" x:Name="btnSave" Clicked="BtnSave_Clicked">
             </Button>
         </StackLayout>

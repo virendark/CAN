@@ -63,10 +63,10 @@
 
                 </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
-                <Label x:Name="lblFPDisease" Text="Father' Past Disease" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                <Label x:Name="lblFPDisease" Text="Father's Past Disease" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtFPDisease" ReturnType="Done" TextColor="Black" Placeholder="Father's Past Disease" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtFPDisease" ReturnType="Done" TextColor="Black" Placeholder="No Past Disease" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
@@ -131,7 +131,7 @@
                 <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtMPDisease" ReturnType="Done" TextColor="Black" Placeholder="Mother's Past Disease" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtMPDisease" ReturnType="Done" TextColor="Black" Placeholder="No Past Disease" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">

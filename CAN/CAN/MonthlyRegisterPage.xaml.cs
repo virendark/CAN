@@ -18,6 +18,7 @@ namespace CAN
 	{
         bool IsValidate = true;
         int TempAgeInDays = 0;
+        int Gender = 0;
         public MonthlyRegisterPage ()
 		{
 			InitializeComponent ();
@@ -48,7 +49,9 @@ namespace CAN
             stackcoockedfood.IsVisible =false;
             ShowAndHideStackLayou();
             BindIllness();
+           
         }
+       
         private void ShowAndHideStackLayou()
         {
             try
@@ -57,7 +60,7 @@ namespace CAN
                 {
                     var entry = txtAgeInDays.Text;
                     int value = Convert.ToInt32(entry);
-                    if (value >= 5.99 && value <= 72)
+                    if (value >= 5.99 && value <= 36)
                     {
                         stackthr.IsVisible = true;
                     }
@@ -66,7 +69,7 @@ namespace CAN
                 {
                     var entry = txtAgeInDays.Text;
                     int value = Convert.ToInt32(entry);
-                    if (value >= 35.99 && value <= 69.99)
+                    if (value >= 35.99 && value <= 72)
                     {
                         stackcoockedfood.IsVisible = true;
                     }
@@ -85,14 +88,26 @@ namespace CAN
                 txtAnyDisability.Text = checkChildata[0].AnyDisability;
                 ddlAnyIllness.Text = checkChildata[0].AnyIllness;
                 DateTime dtcurrent = new DateTime();
-                dtcurrent = DateTime.Now;
+                dtcurrent= txtMeasurementdate.Date;
+               // dtcurrent = DateTime.Now;
                 DateTime dtDob = checkChildata[0].DOB;
                     TimeSpan ts = dtcurrent - dtDob;
                 int Mts = (dtcurrent.Year - dtDob.Year) * 12 + dtcurrent.Month - dtDob.Month;
                  int Age = ts.Days;
                 TempAgeInDays= Age;
                 txtAgeInDays.Text = Mts.ToString();
+                if(Mts>=6 && Mts<=72)
+                {
+                    stack27.IsVisible = true;
+                }
+                else
+                {
+                    stack27.IsVisible = false;
+                }
+                
             }
+            var selectedGender = (ColumnValue)ddlGender.SelectedItem;
+             Gender = selectedGender.columnValueId;
         }
         private void BindGender()
         {
@@ -638,8 +653,7 @@ namespace CAN
                         if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
                         {
                             CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                            
-                            double W4A = calculationvalueClass.W4AZValue(ddlGender.SelectedIndex, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
+                            double W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
                             if (W4A < -3) 
                             {
                                 txtw4az.Text = "SUW(Severely Under Weight)";
@@ -657,6 +671,7 @@ namespace CAN
                                    
                                 }
                             }
+                            H4AZCalculation();
                         }
                     }
                     else
@@ -689,7 +704,7 @@ namespace CAN
                     if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
                     {
                         CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                        double w4hz = calculationvalueClass.W4LHZValue(ddlGender.SelectedIndex, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+                        double w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
 
                         if (w4hz < -3)
                         {
@@ -719,6 +734,32 @@ namespace CAN
             catch
             {
 
+            }
+        }
+
+        private void H4AZCalculation()
+        {
+            if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
+            {
+                CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                double w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+               if (w4hz < -3)
+                {
+                    txth4az.Text = "SAM(Severely Acute Malnutrition)";
+                }
+                else
+                {
+                    if (w4hz <= -2)
+                    {
+                        txth4az.Text = "MAM(Moderately Acute Malnutrition)";
+                    }
+                    else
+                    {
+
+                        txth4az.Text = "Normal";
+
+                    }
+                }
             }
         }
 
@@ -792,6 +833,11 @@ namespace CAN
         {
             var page = new ImmunisationCardpage();
             await Navigation.PushPopupAsync(page);
+        }
+
+        private void TxtMeasurementdate_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            BindIllness();
         }
     }
 }
