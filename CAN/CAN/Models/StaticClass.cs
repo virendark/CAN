@@ -32,5 +32,10 @@ namespace CAN.Models
         public static string ANMMarkHighRiskScreening { get; set; }
         public static int DataMonthId { get; set; }
         public static int GenderId {get;set;}
+        public static int TabbedIndex = 0;
+        public static int TempTabbedIndix = 11;
+        public static int MotherStatus = 0;
+        public static int GrouthStatus = 0;
+        public static string ResponceStatus { get; set; }
     }
 }

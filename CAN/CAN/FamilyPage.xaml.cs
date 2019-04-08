@@ -24,6 +24,8 @@ namespace CAN
             // LabelHide();
             txtMDOBP.IsVisible = false;
             staccastName.IsVisible = false;
+            stacmothergooutforwork.IsVisible = false;
+            stacmigrate.IsVisible = false;
             this.Title = StaticClass.LocationName;
             BindFamilyType();
             BingWaterType();
@@ -146,6 +148,7 @@ namespace CAN
            
             var ListStatus = App.DAUtil.GetColumnValuesBytext(55);
             ddlStatus.ItemsSource = ListStatus;
+            ddlStatus.SelectedIndex = 0;
 
         }
         public void BindWorkType()
@@ -231,7 +234,7 @@ namespace CAN
                     var selectedFamilyType = (ColumnValue)ddlFType.SelectedItem;
                     int familyType = selectedFamilyType.columnValueId;
                     var selectedMotherWork = (ColumnValue)ddlIsMotherWork.SelectedItem;
-                    int MotherWorks = selectedMotherWork.columnValueId;
+                    int MotherWorks = selectedMotherWork==null?0: selectedMotherWork.columnValueId;
                     var selectedAgriculturalLand = (OwnAgriculturalLand)ddlAgriculturalLand.SelectedItem;
                     string AgriculturalLand = selectedAgriculturalLand.Name;
                     var selectedHouse = (ColumnValue)ddlHouseType.SelectedItem;
@@ -262,7 +265,7 @@ namespace CAN
 
 
                     var selecteFEducation = (ColumnValue)ddFEducation.SelectedItem;
-                    int selecteFEducationID = selecteFEducation.columnValueId;
+                    int selecteFEducationID = selecteFEducation==null?0: selecteFEducation.columnValueId;
                     familyRegister.FatherEducation = selecteFEducationID;
                     var selectedFOccupation = (ColumnValue)ddlFOccupation.SelectedItem;
                     familyRegister.FatherOccupation = selectedFOccupation == null ? 0 : selectedFOccupation.columnValueId;
@@ -280,7 +283,7 @@ namespace CAN
 
                     }
                     var selecteMEducation = (ColumnValue)ddlMEducation.SelectedItem;
-                    int selecteMEducationID = selecteMEducation.columnValueId;
+                    int selecteMEducationID = selecteMEducation==null?0: selecteMEducation.columnValueId;
                     familyRegister.MotherEducation = selecteMEducationID;
                     var selectedMOccupation = (ColumnValue)ddlMOccupation.SelectedItem;
                     familyRegister.MotherOccupation = selectedMOccupation == null ? 0 : selectedMOccupation.columnValueId;
@@ -301,7 +304,7 @@ namespace CAN
                     familyRegister.SourceDrinkingWater = SourceWater == null ? 0 : SourceWater.columnValueId;
                     familyRegister.CasteTribeName = txtcasttriblename.Text;
                                         var selectedReligion = (ColumnValue)ddlReligion.SelectedItem;
-                    int selectedReligionID = selectedReligion.columnValueId;
+                    int selectedReligionID = selectedReligion==null?0: selectedReligion.columnValueId;
                     familyRegister.Religion = selectedReligionID;
                     var selectedRationcard = (ColumnValue)ddlTofRation.SelectedItem;
                    // int RationType = selectedRationcard.columnValueId;
@@ -342,12 +345,14 @@ namespace CAN
                     familyRegister.FamilyCode = txtFamilyCode.Text;
                     familyRegister.LocationId = StaticClass.VillageID;
                     var selecteStatus = (ColumnValue)ddlStatus.SelectedItem;
-                  //  int selecteStatusId = selecteStatus.columnValueId;
+                    
+                    //  int selecteStatusId = selecteStatus.columnValueId;
                     familyRegister.status = selecteStatus == null ? 0 : selecteStatus.columnValueId;
                    // familyRegister.MotherWorkType = selecteMotherWorkTypeId;
                     App.DAUtil.SaveFamilyData(familyRegister);
                     StaticClass.txtAssetsDetails = null;
                     StaticClass.FamilyEdit = "False";
+                    StaticClass.TabbedIndex = 0;
                     EmptyText();
                     StaticClass.PageName = "HomePage";
 
@@ -429,19 +434,22 @@ namespace CAN
                 ddlMOccupation.Focus();
                 return;
             }
-            if (string.IsNullOrEmpty(txtMPDisease.Text))
+            //if (string.IsNullOrEmpty(txtMPDisease.Text))
+            //{
+            //    DependencyService.Get<Toast>().Show("Please enter mother's past disease");
+            //    IsValidation = false;
+            //    txtMPDisease.Focus();
+            //    return;
+            //}
+            if (stacmothergooutforwork.IsVisible == true)
             {
-                DependencyService.Get<Toast>().Show("Please enter mother's past disease");
-                IsValidation = false;
-                txtMPDisease.Focus();
-                return;
-            }
-            if ((ColumnValue)ddlIsMotherWork.SelectedItem == null)
-            {
-                DependencyService.Get<Toast>().Show(" Please select is mother working");
-                IsValidation = false;
-                ddlIsMotherWork.Focus();
-                return;
+                if ((ColumnValue)ddlIsMotherWork.SelectedItem == null)
+                {
+                    DependencyService.Get<Toast>().Show(" Please select is mother working");
+                    IsValidation = false;
+                    ddlIsMotherWork.Focus();
+                    return;
+                }
             }
             //if ((ColumnValue)ddlMotherWorkType.SelectedItem == null)
             //{
@@ -511,26 +519,29 @@ namespace CAN
             //    IsValidation = false;
             //    return;
             //}
-            if ((ColumnValue)ddlFamilyMigrateToEarn.SelectedItem == null)
+            if (stacmigrate.IsVisible == true)
             {
-                DependencyService.Get<Toast>().Show("Please select family migrate to earn");
-                IsValidation = false;
-                ddlFamilyMigrateToEarn.Focus();
-                return;
-            }
-            if (string.IsNullOrEmpty(txtMigrationMonthsPerYear.Text))
-            {
+                if ((ColumnValue)ddlFamilyMigrateToEarn.SelectedItem == null)
+                {
+                    DependencyService.Get<Toast>().Show("Please select family migrate to earn");
+                    IsValidation = false;
+                    ddlFamilyMigrateToEarn.Focus();
+                    return;
+                }
+                if (string.IsNullOrEmpty(txtMigrationMonthsPerYear.Text))
+                {
 
-                DependencyService.Get<Toast>().Show("Please enter migration months per year");
-                IsValidation = false;
-                txtMigrationMonthsPerYear.Focus();
-                return;
-            }
-            if (txtMigrationMonthsPerYear.TextColor == Color.Red)
-            {
-                DependencyService.Get<Toast>().Show("Please enter valid migration months per year in month");
-                IsValidation = false;
-                return;
+                    DependencyService.Get<Toast>().Show("Please enter migration months per year");
+                    IsValidation = false;
+                    txtMigrationMonthsPerYear.Focus();
+                    return;
+                }
+                if (txtMigrationMonthsPerYear.TextColor == Color.Red)
+                {
+                    DependencyService.Get<Toast>().Show("Please enter valid migration months per year in month");
+                    IsValidation = false;
+                    return;
+                }
             }
             //if ((ColumnValue)ddlMigrationFor.SelectedItem == null)
             //{
@@ -819,9 +830,16 @@ namespace CAN
                             ddlMigrationFor.SelectedIndex = i;
                         }
                     }
-                  //  ddlMigrationFor.SelectedIndex = checkFamilydata[0].MigrationFor;
-                    txtMigrationMonthsPerYear.Text = checkFamilydata[0].MigrationMonthsPerYear.ToString();
-                    txtFamilyCode.Text = checkFamilydata[0].FamilyCode;
+                    //  ddlMigrationFor.SelectedIndex = checkFamilydata[0].MigrationFor;
+                    if (checkFamilydata[0].MigrationMonthsPerYear == 0)
+                    {
+                        txtMigrationMonthsPerYear.Text = "";
+                    }
+                    else
+                    {
+                        txtMigrationMonthsPerYear.Text = checkFamilydata[0].MigrationMonthsPerYear.ToString();
+                        txtFamilyCode.Text = checkFamilydata[0].FamilyCode;
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -1008,6 +1026,35 @@ namespace CAN
             {
 
             }
+        }
+
+        private void DdlMOccupation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedMotherWork = (ColumnValue)ddlMOccupation.SelectedItem;
+            string MotherWorks = selectedMotherWork.columnValue;
+            if (MotherWorks == "Not working")
+            {
+                stacmothergooutforwork.IsVisible = false;
+            }
+            else
+            {
+                stacmothergooutforwork.IsVisible = true;
+            }
+        }
+
+        private void DdlFamilyMigrateToEarn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectedFamilyMigrateToEarn = (ColumnValue)ddlFamilyMigrateToEarn.SelectedItem;
+            string MigrateToEarn = selectedFamilyMigrateToEarn.columnValue;
+            if (MigrateToEarn == "Don't migrate")
+            {
+                stacmigrate.IsVisible = false;
+            }
+            else
+            {
+                stacmigrate.IsVisible = true;
+            }
+            
         }
     }
 }

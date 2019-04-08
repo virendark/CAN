@@ -35,6 +35,7 @@ namespace CAN
             InitializeComponent();
 
             txtDOB2.IsVisible = false;
+            txtAWDOB2.IsVisible = false;
             // lblFCName.IsVisible = false;
             // lblBWeight.IsVisible = false;
 
@@ -80,6 +81,7 @@ namespace CAN
         {
             var ListofCStatus = App.DAUtil.GetColumnValuesBytext(12);
             ddlChildStatus.ItemsSource = ListofCStatus;
+            ddlChildStatus.SelectedIndex = 0;
         }
         private void BindChildrecordeds()
         {
@@ -146,30 +148,38 @@ namespace CAN
         private void txtBOrder_Focused(object sender, FocusEventArgs e)
         {
             lblBOrder.IsVisible = true;
-            if (txtBOrder.Text == null || txtBOrder.Text.Length == 0)
-            {
-                txtBOrder.Placeholder = string.Empty;
-            }
+            //if (txtBOrder.Text == null || txtBOrder.Text.Length == 0)
+            //{
+            //    txtBOrder.Placeholder = string.Empty;
+            //}
         }
         private void txtBOrder_Unfocused(object sender, FocusEventArgs e)
         {
-            if (txtBOrder.Text == null || txtBOrder.Text.Length == 0)
+            //if (txtBOrder.Text == null || txtBOrder.Text.Length == 0)
+            //{
+            //    txtBOrder.Placeholder = "Birth Order";
+            //    lblBOrder.IsVisible = false;
+            //}
+            try
             {
-                txtBOrder.Placeholder = "Birth Order";
-                lblBOrder.IsVisible = false;
+                
+                var checkNoOfChild = App.DAUtil.FindFamilyId(StaticClass.PageData).FirstOrDefault();
+                if (Convert.ToInt32(txtBOrder.Text) <= checkNoOfChild.NumberofChildenAlive)
+                {
+
+                }
+                else
+                {
+                    txtBOrder.Text = "";
+                    DependencyService.Get<Toast>().Show("Please Enter currect number of child alive");
+                    IsValidate = false;
+                    txtBOrder.Focus();
+                    return;
+                }
             }
-            var checkNoOfChild = App.DAUtil.FindFamilyId(StaticClass.PageData).FirstOrDefault();
-            if(Convert.ToInt32(txtBOrder.Text) <= checkNoOfChild.NumberofChildenAlive)
+            catch
             {
 
-            }
-            else
-            {
-                txtBOrder.Text = "";
-                DependencyService.Get<Toast>().Show("Please Enter currect number of child alive");
-                IsValidate = false;
-                txtBOrder.Focus();
-                return;
             }
 
         }
@@ -246,6 +256,14 @@ namespace CAN
                     childRegister.GrowthChartGrade = SelectedChildrecorded == null ? 0 : SelectedChildrecorded.columnValueId;
                     var SelectedChildrecordedWeightforHeight = (ColumnValue)ddlChildrecordedWeightforHeight.SelectedItem;
                     childRegister.GradeOfChild = SelectedChildrecordedWeightforHeight == null ? 0 : SelectedChildrecordedWeightforHeight.columnValueId;
+                    if (txtAWDOB2.IsVisible == true)
+                    {
+                        childRegister.AWCEntryDate = txtAWDOB.Date;
+                    }
+                   else
+                    {
+                        childRegister.AWCEntryDate = null;
+                    }
                     App.DAUtil.SaveChildData(childRegister);
                     Navigation.PushAsync(new ListOfChildPage());
                     // StaticClass.PageName = "ChildPage";
@@ -527,6 +545,18 @@ namespace CAN
                    // txtAWCEntryW4AZ.Text = checkChildata[0].AWCEntryW4AZ.ToString();
                     txtAnyDisability.Text = checkChildata[0].AnyDisability;
                     txtAnyIllness.Text = checkChildata[0].AnyIllness;
+                    if(checkChildata[0].AWCEntryDate!=null)
+                    {
+                        txtAWDOB2.IsVisible = true;
+                        txtAWDOB11.IsVisible = false;
+                        childRegister.AWCEntryDate = txtAWDOB.Date;
+                    }
+                   else
+                    {
+
+                        txtAWDOB11.IsVisible = true;
+                        txtAWDOB2.IsVisible = false;
+                    }
                     w4az = Convert.ToDouble(checkChildata[0].AWCEntryW4AZ);
                     if (w4az < -3)
                     {
@@ -592,19 +622,19 @@ namespace CAN
         }
         private void TxtBirthLengthHeightInCms_Unfocused(object sender, FocusEventArgs e)
         {
-            if (Convert.ToDouble(txtBirthLengthHeightInCms.Text) < 45)
+            if (Convert.ToDouble(txtBirthLengthHeightInCms.Text) <= 45)
             {
                 txtBirthLengthHeightInCms.Text = "45";
             }
             else
             {
-                if (Convert.ToDouble(txtBirthLengthHeightInCms.Text) <= 120)
+                if (Convert.ToDouble(txtBirthLengthHeightInCms.Text) <= 120 && Convert.ToDouble(txtBirthLengthHeightInCms.Text)>45)
                 {
 
                 }
                 else
                 {
-                    txtBirthLengthHeightInCms.Text = "45";
+                    txtBirthLengthHeightInCms.Text = "120";
                 }
             }
         }
@@ -614,7 +644,23 @@ namespace CAN
         }
         private void TxtAWCEntryWeightInKG_Unfocused(object sender, FocusEventArgs e)
         {
+           try
+            {
+                var entry = (Entry)sender;
+                double value = Convert.ToDouble(entry.Text);
+                if (value >= 2 && value < 26)
+                {
 
+                }
+                else
+                {
+                    entry.Text = "";
+                }
+            }
+            catch
+            {
+
+            }
         }
         private void TxtAWCEntryHeightInCms_Focused(object sender, FocusEventArgs e)
         {
@@ -622,6 +668,28 @@ namespace CAN
         }
         private void TxtAWCEntryHeightInCms_Unfocused(object sender, FocusEventArgs e)
         {
+            try
+            {
+                if (Convert.ToDouble(txtAWCEntryHeightInCms.Text) <= 45)
+                {
+                    txtAWCEntryHeightInCms.Text = "45";
+                }
+                else
+                {
+                    if (Convert.ToDouble(txtAWCEntryHeightInCms.Text) <= 120 && Convert.ToDouble(txtAWCEntryHeightInCms.Text) > 45)
+                    {
+
+                    }
+                    else
+                    {
+                        txtAWCEntryHeightInCms.Text = "120";
+                    }
+                }
+            }
+            catch
+            {
+
+            }
 
         }
         private void TxtAWCEntryMUAC_Focused(object sender, FocusEventArgs e)
@@ -757,7 +825,7 @@ namespace CAN
             {
                 var entry = (Entry)sender;
                 double value = Convert.ToDouble(entry.Text);
-                if (value >= 0 && value <= 15)
+                if (value >= 2 && value < 26)
                 {
 
                     Regex regex = new Regex(@"^\d{0,2}(\.\d{1,3})?$");
@@ -773,7 +841,15 @@ namespace CAN
                             CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
                             
                             DateTime dtcurrent = new DateTime();
-                            dtcurrent = DateTime.Now;
+                            //  dtcurrent = DateTime.Now;
+                            if (txtAWDOB2.IsVisible == true)
+                            {
+                                dtcurrent = txtAWDOB.Date;
+                            }
+                            else
+                            {
+                                dtcurrent = txtEntryRegistor.Date;
+                            }
                             DateTime dtDob = txtDOB.Date;
                             TimeSpan ts = dtcurrent - dtDob;
                             int Mts = (dtcurrent.Year - dtDob.Year) * 12 + dtcurrent.Month - dtDob.Month;
@@ -862,6 +938,14 @@ namespace CAN
                 try
                 {
                     DateTime dtcurrent = txtEntryRegistor.Date;
+                    if(txtAWDOB2.IsVisible == true)
+                    {
+                        dtcurrent = txtAWDOB.Date;
+                    }
+                    else
+                    {
+                        dtcurrent = txtEntryRegistor.Date;
+                    }
                     // dtcurrent = DateTime.Now;
                     DateTime dtDob = txtDOB.Date;
                     TimeSpan ts = dtcurrent - dtDob;
@@ -932,7 +1016,7 @@ namespace CAN
                     {
                         txtAWCEntryMUAC.Text = match.Value;
                         txtAWCEntryMUAC.BackgroundColor = Color.Red;
-                        txtAWCEntryMUAC.TextColor = Color.White;
+                        txtAWCEntryMUAC.TextColor = Color.Black;
                     }
                     else
                     {
@@ -950,7 +1034,7 @@ namespace CAN
                     {
                         txtAWCEntryMUAC.Text = match.Value;
                         txtAWCEntryMUAC.BackgroundColor = Color.Green;
-                        txtAWCEntryMUAC.TextColor = Color.White;
+                        txtAWCEntryMUAC.TextColor = Color.Black;
                     }
                     else
                     {
@@ -967,7 +1051,7 @@ namespace CAN
                     {
                         txtAWCEntryMUAC.Text = match.Value;
                         txtAWCEntryMUAC.BackgroundColor = Color.Yellow;
-                        txtAWCEntryMUAC.TextColor = Color.White;
+                        txtAWCEntryMUAC.TextColor = Color.Black;
                     }
                     else
                     {
@@ -1025,6 +1109,84 @@ namespace CAN
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             txtDOB.Focus();
+        }
+
+        private void TxtBOrder_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (Convert.ToInt32(txtBOrder.Text) <= 0)
+                {
+                    txtBOrder.Text = "";
+
+                }
+            }
+            catch
+            {
+                txtBOrder.Text = "";
+            }
+        }
+
+        private void TxtAWDOB_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            txtAWDOB2.IsVisible = true;
+            txtAWDOB11.IsVisible = false;
+            CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+            var selectedGender = (ColumnValue)ddlGender.SelectedItem;
+            int Gender = selectedGender.columnValueId;
+            if (txtAWCEntryHeightInCms.Text != null)
+            {
+                try
+                {
+                    DateTime dtcurrent = txtAWDOB.Date;
+                    // dtcurrent = DateTime.Now;
+                    DateTime dtDob = txtDOB.Date;
+                    TimeSpan ts = dtcurrent - dtDob;
+                    int days = ts.Days;
+                    double W4LHZ = calculationvalueClass.W4LHZValue(Gender, days, Convert.ToDouble(txtAWCEntryHeightInCms.Text), Convert.ToDouble(txtAWCEntryWeightInKG.Text));
+                    w4hz = Math.Round(W4LHZ);
+                    if (w4hz < -3)
+                    {
+                        txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
+                        txtAWCEntryW4HZ.TextColor = Color.Black;
+                    }
+                    else
+                    {
+                        if (w4hz <= -2)
+                        {
+                            txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                            txtAWCEntryW4HZ.TextColor = Color.Black;
+                        }
+                        else
+                        {
+
+                            txtAWCEntryW4HZ.Text = "Normal";
+                            txtAWCEntryW4HZ.TextColor = Color.Black;
+                        }
+                    }
+                }
+                catch
+                {
+
+                }
+            }
+        }
+
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+            txtAWDOB.Focus();
+        }
+
+        private void TxtEntryRegistor_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            try
+            {
+                H4AZCalculation();
+            }
+            catch
+            {
+
+            }
         }
         //public double W4AZValue(int Gender, int AgeInDays, double WeightInKG)
         //{

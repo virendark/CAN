@@ -19,7 +19,7 @@
                 <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <DatePicker x:Name="txtEntryRegistor" TextColor="Black" Format="dd/MM/yyyy"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <DatePicker x:Name="txtEntryRegistor" TextColor="Black" DateSelected="TxtEntryRegistor_DateSelected" Format="dd/MM/yyyy"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                 </DatePicker>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
@@ -83,7 +83,7 @@
                 <Label x:Name="lblBOrder" Text="Birth Order" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtBOrder" ReturnType="Done" Keyboard="Numeric" MaxLength="3" Focused="txtBOrder_Focused" Unfocused="txtBOrder_Unfocused" TextColor="Black" Placeholder="Birth Order" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtBOrder" ReturnType="Done" Keyboard="Numeric" MaxLength="2" TextChanged="TxtBOrder_TextChanged" Focused="txtBOrder_Focused" Unfocused="txtBOrder_Unfocused" TextColor="Black" Placeholder="Birth Order" VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
@@ -143,6 +143,28 @@
                 </Entry>
             </StackLayout>-->
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblAWDOB" Text="AWC Entry Date" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
+                <StackLayout Orientation="Vertical" x:Name="txtAWDOB11">
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="txtAWDOB1" Text="DD/MM/YYYY" TextColor="Black" HorizontalOptions="StartAndExpand">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </StackLayout>
+                    <BoxView BackgroundColor="Black" HeightRequest="1" HorizontalOptions="FillAndExpand"></BoxView>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" x:Name="txtAWDOB2" HorizontalOptions="FillAndExpand">
+                    <DatePicker x:Name="txtAWDOB" TextColor="Black" DateSelected="TxtAWDOB_DateSelected"  Format="dd/MM/yyyy" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    </DatePicker>
+                </StackLayout>
+
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
                 <Label x:Name="lblAWCEntryWeightInKG" Text="AW Entry Weight In KG" TextColor="Black"  HorizontalOptions="Start"></Label>
                 <Label Text="*" TextColor="Red" HorizontalTextAlignment="Start"></Label>
             </StackLayout>
@@ -179,10 +201,10 @@
 
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
-                <Label x:Name="lblChildrecordedWeightforHeight" Text="Grade of the child recorded  AW at the time of first entry  Weight fot Height" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                <Label x:Name="lblChildrecordedWeightforHeight" Text="AWC Entry W4HZ Interpolation" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-               <Picker x:Name="ddlChildrecordedWeightforHeight" Title="-Select Child recorded Weight for Height-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                <Picker x:Name="ddlChildrecordedWeightforHeight" Title="-Select AWC Entry W4HZ Interpolation-"   ItemDisplayBinding="{Binding columnValue}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Picker>
                 <Image Margin="-30,0,0,0"  Source="ddarrow.png"  HorizontalOptions="End"></Image>
 

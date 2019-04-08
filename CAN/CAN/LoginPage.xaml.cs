@@ -50,12 +50,23 @@ namespace CAN
                         var GetMasterData = await getLogin.PullNewData(userLoginById);
                         if (GetMasterData == true)
                         {
-                        Application.Current.MainPage = new NavigationPage(new PinPage())
-                        {
-                            BarBackgroundColor = Color.FromHex("ffbf00"),
-                            BarTextColor = Color.White
+                            if (StaticClass.ResponceStatus == "Not Found")
+                            {
+                                
+                                DependencyService.Get<Toast>().Show("The server is not responding. Please try again later.");
+                                txtInductor.IsRunning = false;
+                                txtInductor.IsVisible = false;
+                                lblmessage.IsVisible = false;
+                            }
+                            else
+                            {
+                                Application.Current.MainPage = new NavigationPage(new PinPage())
+                                {
+                                    BarBackgroundColor = Color.FromHex("ffbf00"),
+                                    BarTextColor = Color.White
 
-                        };
+                                };
+                            }
                         }
                         else
                         {
@@ -68,9 +79,18 @@ namespace CAN
                     else
                     {
 
-                        DependencyService.Get<Toast>().Show("Incorrect UserName or Password.");
-                        txtInductor.IsVisible = false;
-                        lblmessage.IsVisible = false;
+                        if (StaticClass.ResponceStatus == "Not Found")
+                        {
+                            DependencyService.Get<Toast>().Show("The server is not responding. Please try again later.");
+                            txtInductor.IsVisible = false;
+                            lblmessage.IsVisible = false;
+                        }
+                        else
+                        {
+                            DependencyService.Get<Toast>().Show("Incorrect UserName or Password.");
+                            txtInductor.IsVisible = false;
+                            lblmessage.IsVisible = false;
+                        }
                     }
                 }
                 else

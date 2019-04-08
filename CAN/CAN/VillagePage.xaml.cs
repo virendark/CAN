@@ -22,11 +22,11 @@ namespace CAN
         private void BindList()
         {
             List<VillageClass> BindVillageList = new List<VillageClass>();
-            var villagelist = App.DAUtil.GetVillageLocations(9);
+            var villagelist = App.DAUtil.GetVillageLocations(9).OrderBy(v=>v.locationName).ToList();
             for (int i = 0; i<villagelist.Count; i++)
             {
                 VillageClass villageClass = new VillageClass();
-                if (villagelist[i].DCType == "Intensive")
+                if (villagelist[i].DCType == "I")
                 {
                     villageClass.Id = villagelist[i].locationId;
                     villageClass.TabId = 0;

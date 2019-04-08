@@ -19,9 +19,9 @@
                                         <Grid>
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="25"/>
-                                                <RowDefinition Height="*"/>
-                                                <RowDefinition Height="50"/>
-                                                <RowDefinition Height="50"/>
+                                                <RowDefinition Height="25"/>
+                                                <RowDefinition Height="25"/>
+                                                <RowDefinition Height="25"/>
                                             </Grid.RowDefinitions>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="270"/>
@@ -45,9 +45,9 @@
                                             </StackLayout>
                                             <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
 
-                                                <Label Text="Data Month :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                <Label Text="Child Code :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
                                                  FontAttributes="Bold"/>
-                                                <Label Text="{Binding DataMonth}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                                <Label Text="{Binding ChildCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
 
                                             </StackLayout>
                                             <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">

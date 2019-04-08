@@ -47,7 +47,7 @@ namespace CAN
         {
             List<DataM> listdataMonths = new List<DataM>();
 
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
             for (int i = 0; i < ListOfDatamonth.Count; i++)
             {
                 DataM dataMonths = new DataM();
@@ -76,7 +76,9 @@ namespace CAN
         {
             var ListOfddlStatusCheck = App.DAUtil.GetColumnValuesBytext(12);
             ddlStatusCheck.ItemsSource = ListOfddlStatusCheck;
-            ddlStatusCheck.SelectedIndex = 0;
+         //   ddlStatusCheck.SelectedIndex = 0;
+            StaticClass.GrouthStatus = ddlStatusCheck.SelectedIndex;
+            ddlStatusCheck.SelectedIndex = StaticClass.GrouthStatus == -1 ? 0 : StaticClass.GrouthStatus;
         }
 
         private void BindList()
@@ -104,6 +106,7 @@ namespace CAN
                                 MonthlyData.GrowthId = childMonthlyData[j].GrowthId;
                                 MonthlyData.ChildId = childMonthlyData[j].ChildId;
                                 MonthlyData.GenderID = childMonthlyData[j].GenderID;
+                            MonthlyData.ChildCode = childMonthlyData[j].ChildCode;
                                 if (childMonthlyData[j].GenderID != 0)
                                 {
                                     var ListofGender = App.DAUtil.GetColumnValuesBytext(3);
@@ -125,9 +128,12 @@ namespace CAN
                                 }
                                 else
                                 {
+                                if (childMonthlyData[j].ChildStatus == 49)
+                                {
                                     MonthlyData.IsvisuaEdit = false;
                                     MonthlyData.IsvisuaAdd = true;
                                     MonthlyData.DataMonth = "Null";
+                                }
                                 }
                                 ListChildMonthlyData.Add(MonthlyData);
                          }
@@ -190,6 +196,7 @@ namespace CAN
 
             var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
             int id = selectedStatusId.columnValueId;
+            StaticClass.GrouthStatus = ddlStatusCheck.SelectedIndex;
             BindList();
         }
 
@@ -234,5 +241,6 @@ namespace CAN
         public bool IsvisuaAdd { get; set; }
         public bool IsvisuaEdit { get; set; }
         public bool AnyRedFlag { get; set; }
+        public string ChildCode { get; set; }
     }
 }

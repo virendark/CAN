@@ -23,7 +23,7 @@ namespace CAN
         {
             List<DataM> listdataMonths = new List<DataM>();
             int index = 0;
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
             for (int i = 0; i < ListOfDatamonth.Count; i++)
             {
                 DateTime dt = new DateTime();

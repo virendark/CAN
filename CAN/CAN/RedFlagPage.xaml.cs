@@ -215,7 +215,7 @@ namespace CAN
         {
             List<DataM> listdataMonths = new List<DataM>();
 
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
             for (int i = 0; i < ListOfDatamonth.Count; i++)
             {
                 DataM dataMonths = new DataM();
@@ -667,6 +667,7 @@ namespace CAN
                    
                     App.DAUtil.SaveRedFlagRegister(redFlagRegister);
                     StaticClass.PageName = "HomePage";
+                    StaticClass.TabbedIndex = 3;
                     Application.Current.MainPage = new MasterDetailPage1();
                 }
                 catch (Exception ex)

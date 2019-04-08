@@ -27,7 +27,7 @@ namespace CAN
         {
             List<DataM> listdataMonths = new List<DataM>();
 
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
             for (int i = 0; i < ListOfDatamonth.Count; i++)
             {
                 DataM dataMonths = new DataM();
@@ -57,13 +57,14 @@ namespace CAN
         {
             var ListOfddlStatusCheck = App.DAUtil.GetColumnValuesBytext(55);
             ddlStatusCheck.ItemsSource = ListOfddlStatusCheck;
-            ddlStatusCheck.SelectedIndex = 0;
+            StaticClass.MotherStatus = ddlStatusCheck.SelectedIndex;
+            ddlStatusCheck.SelectedIndex = StaticClass.MotherStatus==-1?0: StaticClass.MotherStatus;
+            
         }
        
         private void BindList()
         {
-            
-                try
+              try
                 {
                     long id = StaticClass.VillageID;
                     var ListData = App.DAUtil.GetAllFamilyByLocation(id);
@@ -78,16 +79,26 @@ namespace CAN
                         int DataID = DataMId.Datamonthid;
                     // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
                     MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId);
-                  
+                    int check = 0;
                         for (int i = 0; i < MotherWithChildDetails.Count; i++)
                         {
-
+                        check = i;
                             MotherMonthlyData motherWithChildDetails = new MotherMonthlyData();
                             motherWithChildDetails.ChildExpected = MotherWithChildDetails[i].ChildExpected == null ? MotherWithChildDetails[i].ChildExpected : null;
                             motherWithChildDetails.FamilyId = MotherWithChildDetails[i].FamilyId;
                             motherWithChildDetails.FatherName = MotherWithChildDetails[i].FatherName;
                             motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
                             motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
+                        motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
+                       if(MotherWithChildDetails[i].HighRiskMotherHistory!=null)
+                        {
+
+                            motherWithChildDetails.colobind = "PaleVioletRed";
+                        }
+                        else
+                        {
+                            motherWithChildDetails.colobind = "White";
+                        }
                             motherWithChildDetails.HighRiskMotherHistory = MotherWithChildDetails[i].HighRiskMotherHistory == null?"Normal":"HighRisk";
                             if (MotherWithChildDetails[i].DataMonthId != 0)
                             {
@@ -101,9 +112,17 @@ namespace CAN
                             }
                             else
                             {
-                            motherWithChildDetails.IsvisuaAdd = true;
-                            motherWithChildDetails.IsvisuaEdit = false;
-                            motherWithChildDetails.DataMonthId = "Null";
+                            if(MotherWithChildDetails[i].status ==122)
+                            {
+                                motherWithChildDetails.IsvisuaAdd = true;
+                                motherWithChildDetails.IsvisuaEdit = false;
+                                motherWithChildDetails.DataMonthId = "Null";
+                            }
+                            else
+                            {
+                                motherWithChildDetails.IsvisuaEdit = true;
+                            }
+                            
                             }
 
 
@@ -169,6 +188,7 @@ namespace CAN
            
             var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
             int id = selectedStatusId.columnValueId;
+            StaticClass.MotherStatus = ddlStatusCheck.SelectedIndex;
             BindList();
         }
 
@@ -221,10 +241,11 @@ namespace CAN
         public int LocationId { get; set; }
         public bool ?  ChildExpected { get; set; }
         public DateTime ? AwcregistrationDate { get; set; }
-
+        public string FamilyCode { get; set; }
         public string DataMonthId { get; set; }
         public bool IsvisuaAdd { get; set; }
         public bool IsvisuaEdit { get; set; }
         public string HighRiskMotherHistory { get; set; }
+        public string colobind { get; set; }
     }
 }

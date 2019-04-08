@@ -21,8 +21,16 @@ namespace CAN
        
             this.Title = StaticClass.LocationName;
             BindChildList();
+            NavigationPage.SetHasBackButton(this, false);
         }
+        protected override bool OnBackButtonPressed()
+        {
+            StaticClass.TabbedIndex = 0;
+            Application.Current.MainPage = new MasterDetailPage1();
+            return base.OnBackButtonPressed();
 
+        }
+        
         private void BindChildList()
         {
             try

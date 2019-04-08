@@ -51,5 +51,7 @@ namespace CAN.Models
         public string AnyLongTermIllnessInFamily { get; set; }
         public int GrowthChartGrade { get; set; }
         public int GradeOfChild { get; set; }
+        public DateTime? AWCEntryDate { get; set; }
+        
     }
 }

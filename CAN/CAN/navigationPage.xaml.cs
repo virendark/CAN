@@ -100,12 +100,22 @@ namespace CAN
                 RestClient<UserLoginById> getLogin = new RestClient<UserLoginById>();
                 var GetData = await getLogin.synData(userLoginById);
                     // var GetMasterData = await getLogin.PullNewData(userLoginById);
-                    DependencyService.Get<Toast>().Show("Sync Master Data Success");
-                    txtactive.IsVisible = false;
-                lblmessage.IsVisible = false;
-                    StaticClass.PageName = "VillagePage";
+                    if (StaticClass.ResponceStatus == "Not Found")
+                    {
 
-                    Application.Current.MainPage = new MasterDetailPage1();
+                        DependencyService.Get<Toast>().Show("The server is not responding. Please try again later.");
+                        txtactive.IsRunning = false;
+                        txtactive.IsVisible = false;
+                        lblmessage.IsVisible = false;
+                    }
+                    else
+                    {
+                        DependencyService.Get<Toast>().Show("Sync Master Data Success");
+                        txtactive.IsVisible = false;
+                        lblmessage.IsVisible = false;
+                        StaticClass.PageName = "VillagePage";
+                        Application.Current.MainPage = new MasterDetailPage1();
+                    }
                 }
                 else
                 {
@@ -138,64 +148,79 @@ namespace CAN
                         };
                         RestClient<LoginData> restClient = new RestClient<LoginData>();
                         var TokenUpdate = await restClient.UserLogin(loginData);
-                        long idd = StaticClass.VillageID;
-                        if(CheckDate.Count>0)
+                        if (StaticClass.ResponceStatus == "Not Found")
                         {
-                             checkdateFlag = CheckDate[0].CheckDate;
-                           
-                        }
-
-                        if (CheckDate.Count > 0 && CheckDate[0].Flage == true)
-                        {
-                            // var ListData = App.DAUtil.GetAllFamilyByLocation(idd);
-                            var ListOfFamilyData = App.DAUtil.GetAllFamily().Where(x => x.DOU >= checkdateFlag).ToList(); ;
-                            //  var ListOfChildData = App.DAUtil.GetAllChildDatetime(checkdateFlag);
-                            var ListOfChildData = App.DAUtil.GetAllChild().Where(x=>x.DOU>= checkdateFlag).ToList();
-                            // var Listmonthlydata = App.DAUtil.GetGrowthRegistersDateTime(checkdateFlag);
-                            var Listmonthlydata = App.DAUtil.GetGrowthRegisters().Where(x=>x.Dou>=checkdateFlag).ToList();
-                            // var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMotherDateTime(checkdateFlag);
-                            var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMother().Where(x=>x.DOU>=checkdateFlag).ToList();
-                            //  var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegisterDateTime(checkdateFlag);
-                            var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegister().Where(x=>x.Dou>=checkdateFlag).ToList();
-                            pushData.childData = ListOfChildData;
-                            pushData.familyData = ListOfFamilyData;
-                            pushData.growthData = Listmonthlydata;
-                            pushData.growthRegisterMotherData = ListofMotherData;
-                            pushData.redFlagData = ListOfredFlagData;
+                            DependencyService.Get<Toast>().Show("The server is not responding. Please try again later.");
                         }
                         else
                         {
-                            var ListOfFamilyData = App.DAUtil.GetAllFamily();
-                            var ListOfChildData = App.DAUtil.GetAllChild();
-                            var Listmonthlydata = App.DAUtil.GetGrowthRegisters();
-                            var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMother();
-                            var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegister();
-                            pushData.childData = ListOfChildData;
-                            pushData.familyData = ListOfFamilyData;
-                            pushData.growthData = Listmonthlydata;
-                            pushData.growthRegisterMotherData = ListofMotherData;
-                            pushData.redFlagData = ListOfredFlagData;
-                        }
-                        
-                        RestClient<PushData> getLogin = new RestClient<PushData>();
-                        var GetData = await getLogin.PushNewData(pushData);
-                        if (GetData == true)
-                        {
+                            long idd = StaticClass.VillageID;
                             if (CheckDate.Count > 0)
-                                App.DAUtil.deletepushdatatime();
+                            {
+                                checkdateFlag = CheckDate[0].CheckDate;
+                            }
 
-                            TblPushDataTime tblPushDataTime = new TblPushDataTime();
-                            tblPushDataTime.Flage = true;
-                            tblPushDataTime.CheckDate = DateTime.Now;
-                            App.DAUtil.SavepushDataTime(tblPushDataTime);
-                           
-                            DependencyService.Get<Toast>().Show("Data Push Success");
-                            txtactive.IsVisible = false;
-                            lblmessage.IsVisible = false;
-                        }
-                        else
-                        {
-                            DependencyService.Get<Toast>().Show("Data Push Fail Please try again");
+                            if (CheckDate.Count > 0 && CheckDate[0].Flage == true)
+                            {
+                                // var ListData = App.DAUtil.GetAllFamilyByLocation(idd);
+                                var ListOfFamilyData = App.DAUtil.GetAllFamily().Where(x => x.DOU >= checkdateFlag).ToList(); ;
+                                //  var ListOfChildData = App.DAUtil.GetAllChildDatetime(checkdateFlag);
+                                var ListOfChildData = App.DAUtil.GetAllChild().Where(x => x.DOU >= checkdateFlag).ToList();
+                                // var Listmonthlydata = App.DAUtil.GetGrowthRegistersDateTime(checkdateFlag);
+                                var Listmonthlydata = App.DAUtil.GetGrowthRegisters().Where(x => x.Dou >= checkdateFlag).ToList();
+                                // var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMotherDateTime(checkdateFlag);
+                                var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMother().Where(x => x.DOU >= checkdateFlag).ToList();
+                                //  var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegisterDateTime(checkdateFlag);
+                                var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegister().Where(x => x.Dou >= checkdateFlag).ToList();
+                                pushData.childData = ListOfChildData;
+                                pushData.familyData = ListOfFamilyData;
+                                pushData.growthData = Listmonthlydata;
+                                pushData.growthRegisterMotherData = ListofMotherData;
+                                pushData.redFlagData = ListOfredFlagData;
+                            }
+                            else
+                            {
+                                var ListOfFamilyData = App.DAUtil.GetAllFamily();
+                                var ListOfChildData = App.DAUtil.GetAllChild();
+                                var Listmonthlydata = App.DAUtil.GetGrowthRegisters();
+                                var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMother();
+                                var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegister();
+                                pushData.childData = ListOfChildData;
+                                pushData.familyData = ListOfFamilyData;
+                                pushData.growthData = Listmonthlydata;
+                                pushData.growthRegisterMotherData = ListofMotherData;
+                                pushData.redFlagData = ListOfredFlagData;
+                            }
+
+                            RestClient<PushData> getLogin = new RestClient<PushData>();
+                            var GetData = await getLogin.PushNewData(pushData);
+                            if (StaticClass.ResponceStatus == "Not Found")
+                            {
+                                DependencyService.Get<Toast>().Show("The server is not responding. Please try again later.");
+                                txtactive.IsVisible = false;
+                                lblmessage.IsVisible = false;
+                            }
+                            else
+                            {
+                                if (GetData == true)
+                                {
+                                    if (CheckDate.Count > 0)
+                                        App.DAUtil.deletepushdatatime();
+                                    TblPushDataTime tblPushDataTime = new TblPushDataTime();
+                                    tblPushDataTime.Flage = true;
+                                    tblPushDataTime.CheckDate = DateTime.Now;
+                                    App.DAUtil.SavepushDataTime(tblPushDataTime);
+                                    DependencyService.Get<Toast>().Show("Data Push Success");
+                                    txtactive.IsVisible = false;
+                                    lblmessage.IsVisible = false;
+                                }
+                                else
+                                {
+                                    DependencyService.Get<Toast>().Show("Data Push Fail Please try again");
+                                    txtactive.IsVisible = false;
+                                    lblmessage.IsVisible = false;
+                                }
+                            }
                         }
                     }
                     else

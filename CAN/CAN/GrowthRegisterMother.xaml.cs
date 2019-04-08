@@ -48,6 +48,15 @@ namespace CAN
             {
                 EditMGrouth();
             }
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().Where(d => d.Datamonthid == StaticClass.DataMonthId).FirstOrDefault();
+            DateTime tempDate = ListOfDatamonth.Datamonth;
+            int year = tempDate.Year;
+            int month = tempDate.Month;
+            txtDateOfMeasurement.MinimumDate = new DateTime(year, month, 1);
+            txtDateOfMeasurement.MaximumDate = tempDate;
+            DateTime dateTime = txtDateOfMeasurement.Date;
+            txtExpectedDeliveryDate.MinimumDate = dateTime;
+            txtLastDeliveryDate.MinimumDate = dateTime;
             //BindLastData();
         }
         //private void BindLastData()
@@ -91,7 +100,7 @@ namespace CAN
         {
             List<DataM> listdataMonths = new List<DataM>();
 
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
             for (int i = 0; i < ListOfDatamonth.Count; i++)
             {
                 DataM dataMonths = new DataM();
@@ -249,6 +258,10 @@ namespace CAN
             own.Id = 0;
             own.Name = "No";
             ListownAgriculturalLandk.Add(own);
+            OwnAgriculturalLand ownnull = new OwnAgriculturalLand();
+            ownnull.Id = 2;
+            ownnull.Name = "";
+            ListownAgriculturalLandk.Add(ownnull);
             ddlIsFirstPregnancy.ItemsSource = ListownAgriculturalLandk;
         }
         private void validation()
@@ -302,15 +315,6 @@ namespace CAN
                         }
                       }
                    
-                    //if (checkFamilydata[0].TotalPregnancyMonths.ToString() == null)
-                    //{
-                    //    txtTotalPregnancyMonths.Text = "";
-
-                    //}
-                    //else
-                    //{
-                    //    txtTotalPregnancyMonths.Text = checkFamilydata[0].TotalPregnancyMonths.ToString();
-                    //}
                     ddChildExpected.SelectedIndex = checkFamilydata[0].ChildExpected == true ? 0 : 1;
                     ddlReceivedDietUnderAay.SelectedIndex = checkFamilydata[0].ReceivedDietUnderAay == true ? 0 : 1;
                     ddlGetMealAwcUnderAay.SelectedIndex = checkFamilydata[0].GetMealAwcUnderAay == true ? 0 : 1;
@@ -422,7 +426,17 @@ namespace CAN
                             ddlResonForNotEatingAwcmeal.SelectedIndex = i;
                         }
                     }
-                  
+                    if (!string.IsNullOrEmpty(checkFamilydata[0].MotherWeightInDeliveryTime.ToString()) && !string.IsNullOrEmpty(checkFamilydata[0].MotherWeightIn1Trimester.ToString()))
+                    {
+                        double DWeight = 0;
+                        DWeight = Convert.ToDouble(txtMotherWeightInDeliveryTime.Text);
+                        double MWT = 0;
+                        MWT = Convert.ToDouble(txtMotherWeightIn1Trimesterr.Text);
+                        if (MWT != 0 && DWeight != 0)
+                        {
+                            txtdifferentweigh.Text = (DWeight - MWT).ToString();
+                        }
+                    }
                 }
                 catch (Exception ex)
                     {
@@ -513,6 +527,7 @@ namespace CAN
                        tblGrowthRegisterMother.ANMMarkHighRiskScreening = StaticClass.ANMMarkHighRiskScreening;
                        tblGrowthRegisterMother.HighRiskMotherHistory = StaticClass.HighRiskMother;
                        tblGrowthRegisterMother.TotalPregnancyMonths = txtTotalPregnancyMonths.Text;
+
                         tblGrowthRegisterMother.CreatedBy = 0;
                         tblGrowthRegisterMother.UpdatedBy = 0;
 
@@ -521,7 +536,7 @@ namespace CAN
                     StaticClass.ANMMarkHighRiskScreening = null;
                     StaticClass.HighRiskMother = null;
                         StaticClass.PageName = "HomePage";
-
+                    StaticClass.TabbedIndex = 1;
                         Application.Current.MainPage = new MasterDetailPage1();
                    
                 }
@@ -555,7 +570,9 @@ namespace CAN
             }
             else
             {
+
                 stacShowAndHide.IsVisible = false;
+                ddlIsFirstPregnancy.SelectedIndex = 2;
             }
             
           
@@ -637,7 +654,7 @@ namespace CAN
             txtExpectedDeliveryDate2.IsVisible = true;
             txtExpectedDeliveryDate11.IsVisible = false;
 
-            // Expectdate = txtExpectedDeliveryDate.Date;
+             Expectdate = txtExpectedDeliveryDate.Date;
         }
 
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
@@ -663,7 +680,7 @@ namespace CAN
             //}
             txtLastDeliveryDate2.IsVisible = true;
             txtLastDeliveryDate11.IsVisible = false;
-             // lastdDate = txtLastDeliveryDate.Date; 
+             lastdDate = txtLastDeliveryDate.Date; 
            
         }
 
@@ -734,6 +751,31 @@ namespace CAN
 
                 }
             }
+        }
+
+        private void TxtDateOfMeasurement_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            if (txtExpectedDeliveryDate2.IsVisible == false)
+            {
+                DateTime dateTime = txtDateOfMeasurement.Date;
+                txtExpectedDeliveryDate.MinimumDate = dateTime;
+                txtExpectedDeliveryDate2.IsVisible = false;
+                txtExpectedDeliveryDate11.IsVisible = true;
+                txtLastDeliveryDate.MinimumDate = dateTime;
+                txtLastDeliveryDate11.IsVisible = true;
+                txtLastDeliveryDate2.IsVisible = false;
+            }
+            else
+            {
+                DateTime dateTime = txtDateOfMeasurement.Date;
+                txtExpectedDeliveryDate.MinimumDate = dateTime;
+                txtExpectedDeliveryDate2.IsVisible = true;
+                txtExpectedDeliveryDate11.IsVisible = false;
+                txtLastDeliveryDate.MinimumDate = dateTime;
+                txtLastDeliveryDate11.IsVisible = false;
+                txtLastDeliveryDate2.IsVisible = true;
+            }
+            
         }
     }
 }

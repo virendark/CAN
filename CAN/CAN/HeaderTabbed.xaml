@@ -7,7 +7,7 @@
             >
     <Pages:ListOfFamilyPage Title="Family/Mothers Register"/>
     <Pages:ListOfGrowthRegisterMother Title="Beneficiary Tracker"/>
-    <Pages:ListOfMonthlydataPage Title="Basic CAN"/>
+    <Pages:ListOfMonthlydataPage  Title="Basic CAN"/>
     <Pages:ListOfRedFlagPage Title="Intense CAN" />
     <!--<Pages:ListOfFamilyPage Title="Family/Mothers Register"/>
     <Pages:ListOfGrowthRegisterMother Title="Beneficiary(Mothers) Tracker - Monthly"/>

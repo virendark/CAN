@@ -17,7 +17,8 @@ namespace CAN
         {
             InitializeComponent();
             this.Title = StaticClass.LocationName;
-           
+            
+            CurrentPage = Children[StaticClass.TabbedIndex];
         }
     }
 }

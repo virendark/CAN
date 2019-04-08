@@ -19,7 +19,7 @@ namespace CAN.ViewModels
         public int status { get; set; }
         public int DataMonthId { get; set; }
         public string HighRiskMotherHistory { get; set; }
-
+        public string FamilyCode { get; set; }
 
     }
 }

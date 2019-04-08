@@ -41,17 +41,32 @@ namespace CAN
             BindAdmittedToAWC();
             BindddlHaschildill();
             btnSave.Text = StaticClass.PageButtonText;
-            if(StaticClass.PageButtonText== "Update")
+            BindLHinCMS();
+            if (StaticClass.PageButtonText== "Update")
             {
                 EditData();
             }
+            stackwasChild.IsVisible = false;
             stackthr.IsVisible = false;
             stackcoockedfood.IsVisible =false;
             ShowAndHideStackLayou();
             BindIllness();
            
         }
-       
+        private void BindLHinCMS()
+        {
+            try
+            {
+                var LHinCMS = App.DAUtil.GetGrowthRegisters().Where(h => h.LengthHeight != null && h.LengthHeight != 0).LastOrDefault();
+                txtLHinCMS.Text = LHinCMS.LengthHeight.ToString();
+            }
+            catch
+            {
+
+            }
+        }
+
+
         private void ShowAndHideStackLayou()
         {
             try
@@ -69,7 +84,7 @@ namespace CAN
                 {
                     var entry = txtAgeInDays.Text;
                     int value = Convert.ToInt32(entry);
-                    if (value >= 35.99 && value <= 72)
+                    if (value >= 36.99 && value <= 72)
                     {
                         stackcoockedfood.IsVisible = true;
                     }
@@ -82,32 +97,39 @@ namespace CAN
         }
         private void BindIllness()
         {
-            var checkChildata = App.DAUtil.FindChildByData(StaticClass.GrouthChildID.ToString());
-            if(checkChildata.Count>0)
+            try
             {
-                txtAnyDisability.Text = checkChildata[0].AnyDisability;
-                ddlAnyIllness.Text = checkChildata[0].AnyIllness;
-                DateTime dtcurrent = new DateTime();
-                dtcurrent= txtMeasurementdate.Date;
-               // dtcurrent = DateTime.Now;
-                DateTime dtDob = checkChildata[0].DOB;
+                var checkChildata = App.DAUtil.FindChildByData(StaticClass.GrouthChildID.ToString());
+                if (checkChildata.Count > 0)
+                {
+                    txtAnyDisability.Text = checkChildata[0].AnyDisability;
+                    ddlAnyIllness.Text = checkChildata[0].AnyIllness;
+                    DateTime dtcurrent = new DateTime();
+                    dtcurrent = txtMeasurementdate.Date;
+                    // dtcurrent = DateTime.Now;
+                    DateTime dtDob = checkChildata[0].DOB;
                     TimeSpan ts = dtcurrent - dtDob;
-                int Mts = (dtcurrent.Year - dtDob.Year) * 12 + dtcurrent.Month - dtDob.Month;
-                 int Age = ts.Days;
-                TempAgeInDays= Age;
-                txtAgeInDays.Text = Mts.ToString();
-                if(Mts>=6 && Mts<=72)
-                {
-                    stack27.IsVisible = true;
+                    int Mts = (dtcurrent.Year - dtDob.Year) * 12 + dtcurrent.Month - dtDob.Month;
+                    int Age = ts.Days;
+                    TempAgeInDays = Age;
+                    txtAgeInDays.Text = Mts.ToString();
+                    if (Mts >= 6 && Mts <= 72)
+                    {
+                        stack27.IsVisible = true;
+                    }
+                    else
+                    {
+                        stack27.IsVisible = false;
+                    }
+
                 }
-                else
-                {
-                    stack27.IsVisible = false;
-                }
-                
+                var selectedGender = (ColumnValue)ddlGender.SelectedItem;
+                Gender = selectedGender.columnValueId;
             }
-            var selectedGender = (ColumnValue)ddlGender.SelectedItem;
-             Gender = selectedGender.columnValueId;
+            catch
+            {
+
+            }
         }
         private void BindGender()
         {
@@ -149,7 +171,7 @@ namespace CAN
         {
             List<DataM> listdataMonths = new List<DataM>();
 
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
             for (int i = 0; i < ListOfDatamonth.Count; i++)
             {
                 DataM dataMonths = new DataM();
@@ -167,6 +189,10 @@ namespace CAN
                     ddlDataMonth.SelectedIndex = j;
                 }
             }
+            var MinDate = App.DAUtil.GetDataMonthsFormate().Where(d => d.Datamonthid == StaticClass.DataMonthId).FirstOrDefault();
+            int month = MinDate.Datamonth.Month;
+            int year = MinDate.Datamonth.Year;
+            txtMeasurementdate.MinimumDate = new DateTime(year, month, 1);
         }
         
         public void BindReceiveCookedFood()
@@ -404,6 +430,7 @@ namespace CAN
                     //txtremark.Text;
                     App.DAUtil.SaveGrowthRegister(growthRegister);
                     StaticClass.PageName = "HomePage";
+                    StaticClass.TabbedIndex = 2;
                     Application.Current.MainPage = new MasterDetailPage1();
                 }
                 catch(Exception ex)
@@ -431,9 +458,13 @@ namespace CAN
                         }
                     }
                     txtMeasurementdate.Date = checkMonthlydata[0].MeasurementDate.Date;
-                    txtwaightkg.Text = checkMonthlydata[0].WeightInKg.ToString()==null?"": checkMonthlydata[0].WeightInKg.ToString();
-                    txtLHinCMS.Text = checkMonthlydata[0].LengthHeight.ToString()==null?"": checkMonthlydata[0].LengthHeight.ToString();
-                    txtMUACincms.Text = checkMonthlydata[0].MUAC.ToString()==null?"": checkMonthlydata[0].MUAC.ToString();
+                    int month = txtMeasurementdate.Date.Month;
+                    int year = txtMeasurementdate.Date.Year;
+                    txtMeasurementdate.MinimumDate = new DateTime(year, month, 1);
+                    txtMeasurementdate.MaximumDate= new DateTime(year, month, 1);
+                    txtwaightkg.Text = checkMonthlydata[0].WeightInKg==0?"": checkMonthlydata[0].WeightInKg.ToString();
+                    txtLHinCMS.Text = checkMonthlydata[0].LengthHeight==0?"": checkMonthlydata[0].LengthHeight.ToString();
+                    txtMUACincms.Text = checkMonthlydata[0].MUAC==0?"": checkMonthlydata[0].MUAC.ToString();
                  
                     var GenderId = App.DAUtil.GetColumnValuesBytext(3);
                     for (int i = 0; i < GenderId.Count; i++)
@@ -559,24 +590,27 @@ namespace CAN
             //    DependencyService.Get<Toast>().Show("Please select Any Red Flag");
             //    return;
             //}
-            if (txtwaightkg.TextColor == Color.Red)
-            {
-                DependencyService.Get<Toast>().Show("Please Enter valid Weight in kg");
-                IsValidate = false;
-                return;
-            }
-            if (txtLHinCMS.TextColor == Color.Red)
-            {
-                DependencyService.Get<Toast>().Show("Please Enter valid Length/Height in cms");
-                IsValidate = false;
-                return;
-            }
-            if (txtMUACincms.TextColor == Color.DarkRed)
-            {
-                DependencyService.Get<Toast>().Show("Please Enter valid MUAC in cms");
-                IsValidate = false;
-                return;
-            }
+            //if (txtwaightkg.TextColor == Color.Red)
+            //{
+            //    DependencyService.Get<Toast>().Show("Please Enter valid Weight in kg");
+            //    IsValidate = false;
+            //    txtwaightkg.Focus();
+            //    return;
+            //}
+            //if (txtLHinCMS.TextColor == Color.Red)
+            //{
+            //    DependencyService.Get<Toast>().Show("Please Enter valid Length/Height in cms");
+            //    IsValidate = false;
+            //    txtLHinCMS.Focus();
+            //    return;
+            //}
+            //if (txtMUACincms.TextColor == Color.DarkRed)
+            //{
+            //    DependencyService.Get<Toast>().Show("Please Enter valid MUAC in cms");
+            //    IsValidate = false;
+            //    txtMUACincms.Focus();
+            //    return;
+            //}
             //if ((RedFlag)ddlAnyIllness.SelectedItem == null)
             //{
             //    IsValidate = false;
@@ -642,7 +676,7 @@ namespace CAN
             {
                 var entry = (Entry)sender;
                 double value = Convert.ToDouble(entry.Text);
-                if (value >= 0 && value <25)
+                if (value >= 2.0 && value <=25.9)
                 {
                     Regex regex = new Regex(@"^\d{0,2}(\.\d{1,3})?$");
                     var match = regex.Match(txtwaightkg.Text);
@@ -776,7 +810,8 @@ namespace CAN
                     if (match.Success)
                     {
                         txtMUACincms.Text = match.Value;
-                        txtMUACincms.TextColor = Color.Red;
+                        txtMUACincms.BackgroundColor = Color.Red;
+                        txtMUACincms.TextColor = Color.Black;
                     }
                     else
                     {
@@ -793,7 +828,8 @@ namespace CAN
                     if (match.Success)
                     {
                         txtMUACincms.Text = match.Value;
-                        txtMUACincms.TextColor = Color.Green;
+                        txtMUACincms.BackgroundColor = Color.Green;
+                        txtMUACincms.TextColor = Color.Black;
                     }
                     else
                     {
@@ -809,7 +845,8 @@ namespace CAN
                     if (match.Success)
                     {
                         txtMUACincms.Text = match.Value;
-                        txtMUACincms.TextColor = Color.Yellow;
+                        txtMUACincms.BackgroundColor = Color.Yellow;
+                        txtMUACincms.TextColor = Color.Black;
                     }
                     else
                     {
@@ -826,7 +863,19 @@ namespace CAN
 
         private void DdlHaschildill_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
+            var waschildill = (RedFlag)ddlHaschildill.SelectedItem;
+            string IsChildill = waschildill.Name;
+            if (IsChildill == "Yes")
+            {
+                stackwasChild.IsVisible = true;
+            }
+            else
+            {
+                stackwasChild.IsVisible = false;
+                txtTypeOfIllness.Text = "";
+                txtNumberofDaysIll.Text = "";
+            }
         }
 
         private async void DdlImmunisationcard_Clicked(object sender, EventArgs e)
@@ -838,6 +887,26 @@ namespace CAN
         private void TxtMeasurementdate_DateSelected(object sender, DateChangedEventArgs e)
         {
             BindIllness();
+        }
+
+        private void TxtLHinCMS_Unfocused(object sender, FocusEventArgs e)
+        {
+            if (Convert.ToDouble(txtLHinCMS.Text) <= 45)
+            {
+                txtLHinCMS.Text = "45";
+            }
+            else
+            {
+                if (Convert.ToDouble(txtLHinCMS.Text) <= 120 && Convert.ToDouble(txtLHinCMS.Text) > 45)
+                {
+
+                }
+                else
+                {
+                    txtLHinCMS.Text = "120";
+                }
+            }
+            H4AZCalculation();
         }
     }
 }

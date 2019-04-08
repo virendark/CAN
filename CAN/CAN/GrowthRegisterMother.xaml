@@ -18,10 +18,10 @@
             </StackLayout>
             <StackLayout  Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
 
-                <Label x:Name="lblDateOfMeasurement" Text="First Entry in Register Date" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                <Label x:Name="lblDateOfMeasurement" Text="Tracking Date" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout   Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
-                <DatePicker x:Name="txtDateOfMeasurement" TextColor="Black"   VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
+                <DatePicker x:Name="txtDateOfMeasurement" TextColor="Black" DateSelected="TxtDateOfMeasurement_DateSelected"  VerticalOptions="FillAndExpand"   HorizontalOptions="FillAndExpand">
                 </DatePicker>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
@@ -198,10 +198,10 @@
 
             </StackLayout>
             <StackLayout Orientation="Horizontal" HeightRequest="30" Margin="15,0,15,0">
-                <Label x:Name="lblReceivedDietUnderAay" Text="Have you receive diet under AAY month" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+                <Label x:Name="lblReceivedDietUnderAay" Text="Have you received diet under" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout  Orientation="Horizontal" HeightRequest="50" Margin="15,0,15,0">
-                <Picker x:Name="ddlReceivedDietUnderAay" Title="-Select you receive diet under AAY-"   ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                <Picker x:Name="ddlReceivedDietUnderAay" Title="-Select Have you received diet under-"   ItemDisplayBinding="{Binding Name}" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Picker>
                 <Image Margin="-30,0,0,0"  Source="ddarrow.png" HorizontalOptions="End"></Image>
 
