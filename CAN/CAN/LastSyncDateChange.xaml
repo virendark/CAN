@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CAN.LastSyncDateChange">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="30">
+                <Label x:Name="lblsyncdata" Text="Update Current  Date and Time" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
+            </StackLayout>
+            <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
+                <DatePicker x:Name="txtsyncdata" TextColor="Black"    VerticalOptions="FillAndExpand" Format="dd/MM/yyyy"   HorizontalOptions="FillAndExpand">
+                </DatePicker>
+            </StackLayout>
+            <Button Margin="20,20,20,0" BackgroundColor="#088da5"  HeightRequest="60" CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Update Date" x:Name="btnsave" Clicked="Btnsave_Clicked" >
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

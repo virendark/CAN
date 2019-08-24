@@ -5,10 +5,10 @@
             xmlns:Pages="clr-namespace:CAN;assembly=CAN" 
             BarBackgroundColor="#ffbf00"
             >
-    <Pages:ListOfFamilyPage Title="Family/Mothers Register"/>
-    <Pages:ListOfGrowthRegisterMother Title="Beneficiary Tracker"/>
-    <Pages:ListOfMonthlydataPage  Title="Basic CAN"/>
-    <Pages:ListOfRedFlagPage Title="Intense CAN" />
+    <Pages:ListOfFamilyPage Title="कौटुंबिक माहिती"/>
+    <Pages:ListOfGrowthRegisterMother Title="गरोदर/स्तनदा"/>
+    <Pages:ListOfMonthlydataPage  Title="मासिक नोंद"/>
+    <Pages:ListOfRedFlagPage Title="कुपोषित पाठपुरावा" />
     <!--<Pages:ListOfFamilyPage Title="Family/Mothers Register"/>
     <Pages:ListOfGrowthRegisterMother Title="Beneficiary(Mothers) Tracker - Monthly"/>
     <Pages:ListOfMonthlydataPage Title="Basic CAN - Monthly"/>

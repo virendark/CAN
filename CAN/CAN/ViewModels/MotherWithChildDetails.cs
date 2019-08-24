@@ -20,6 +20,6 @@ namespace CAN.ViewModels
         public int DataMonthId { get; set; }
         public string HighRiskMotherHistory { get; set; }
         public string FamilyCode { get; set; }
-
+        public bool? IsLactating { get;set; }
     }
 }

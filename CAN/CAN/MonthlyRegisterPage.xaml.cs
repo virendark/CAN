@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,8 +21,9 @@ namespace CAN
         public MonthlyRegisterPage ()
 		{
 			InitializeComponent ();
-          //  BindRedFlag();
-          //  BingschoolType();
+            //  BindRedFlag();
+            //  BingschoolType();
+            txtchildname.Text = StaticClass.ChildName;
             Bindtakeration();
             
             BindDatamonths();
@@ -46,19 +46,39 @@ namespace CAN
             {
                 EditData();
             }
+            stackaay.IsVisible = false;
             stackwasChild.IsVisible = false;
-            stackthr.IsVisible = false;
+            stackthr.IsVisible = true;
             stackcoockedfood.IsVisible =false;
+            if (StaticClass.PageButtonText != "Update")
+            {
+                BindIllness();
+            }
+            
             ShowAndHideStackLayou();
-            BindIllness();
-           
+            checkHightByDefault();
+
+
+        }
+        private void checkHightByDefault()
+        {
+            var CheckMonthlyData = App.DAUtil.GetGrowthChildById(StaticClass.GrouthChildID.ToString()).Where(x=>x.LengthHeight!=null &&x.LengthHeight!=0).LastOrDefault();
+            if(CheckMonthlyData!=null)
+            {
+                txtLHinCMS.Text= CheckMonthlyData.LengthHeight.ToString();
+            }
         }
         private void BindLHinCMS()
         {
             try
             {
-                var LHinCMS = App.DAUtil.GetGrowthRegisters().Where(h => h.LengthHeight != null && h.LengthHeight != 0).LastOrDefault();
-                txtLHinCMS.Text = LHinCMS.LengthHeight.ToString();
+                var LHinCMS = App.DAUtil.GetGrowthRegisterById(StaticClass.GrouthMonthlyId.ToString()).LastOrDefault();
+                if(LHinCMS!=null)
+                {
+                    txtLHinCMS.Text = LHinCMS.LengthHeight.ToString();
+                }
+             //   var LHinCMS = App.DAUtil.GetGrowthRegisters().Where(h => h.LengthHeight != null && h.LengthHeight != 0).LastOrDefault();
+               // txtLHinCMS.Text = LHinCMS.LengthHeight.ToString();
             }
             catch
             {
@@ -71,24 +91,24 @@ namespace CAN
         {
             try
             {
-                if (txtAgeInDays.Text != null)
-                {
-                    var entry = txtAgeInDays.Text;
-                    int value = Convert.ToInt32(entry);
-                    if (value >= 5.99 && value <= 36)
-                    {
-                        stackthr.IsVisible = true;
-                    }
-                }
-                if (txtAgeInDays.Text != null)
-                {
-                    var entry = txtAgeInDays.Text;
-                    int value = Convert.ToInt32(entry);
-                    if (value >= 36.99 && value <= 72)
-                    {
-                        stackcoockedfood.IsVisible = true;
-                    }
-                }
+                //if (txtAgeInDays.Text != null)
+                //{
+                //    var entry = txtAgeInDays.Text;
+                //    int value = Convert.ToInt32(entry);
+                //    if (value >= 5.99 && value <= 36)
+                //    {
+                //        stackthr.IsVisible = true;
+                //    }
+                //}
+                //if (txtAgeInDays.Text != null)
+                //{
+                //    var entry = txtAgeInDays.Text;
+                //    int value = Convert.ToInt32(entry);
+                //    if (value >= 36.99 && value <= 72)
+                //    {
+                //        stackcoockedfood.IsVisible = true;
+                //    }
+                //}
             }
             catch
             {
@@ -193,6 +213,8 @@ namespace CAN
             int month = MinDate.Datamonth.Month;
             int year = MinDate.Datamonth.Year;
             txtMeasurementdate.MinimumDate = new DateTime(year, month, 1);
+            DateTime tempDate = MinDate.Datamonth;
+            txtMeasurementdate.MaximumDate = tempDate;
         }
         
         public void BindReceiveCookedFood()
@@ -310,16 +332,9 @@ namespace CAN
         //}
         public void Bindtakeration()
         {
-            List<RedFlag> ListRedflag = new List<RedFlag>();
-            RedFlag redFlag = new RedFlag();
-            redFlag.Id = 1;
-            redFlag.Name = "Yes";
-            ListRedflag.Add(redFlag);
-            RedFlag redFlag1 = new RedFlag();
-            redFlag1.Id = 0;
-            redFlag1.Name = "No";
-            ListRedflag.Add(redFlag1);
-            ddlreceivedration.ItemsSource = ListRedflag;
+            var Listofration = App.DAUtil.GetColumnValuesBytext(72);
+            ddlreceivedration.ItemsSource = Listofration;
+            
         }
 
         private void BtnSave_Clicked(object sender, EventArgs e)
@@ -350,9 +365,31 @@ namespace CAN
                     var selectedDataMonth = (DataM)ddlDataMonth.SelectedItem;
                     growthRegister.DataMonthId = selectedDataMonth.Datamonthid;
                     growthRegister.MeasurementDate = txtMeasurementdate.Date;
-                    growthRegister.WeightInKg = Convert.ToDecimal(txtwaightkg.Text);
-                    growthRegister.LengthHeight = Convert.ToDecimal(txtLHinCMS.Text);
-                    growthRegister.MUAC = Convert.ToDecimal(txtMUACincms.Text);
+                    if(string.IsNullOrEmpty(txtwaightkg.Text))
+                    {
+                        growthRegister.WeightInKg =null;
+                    }
+                    else
+                    {
+                        growthRegister.WeightInKg = Convert.ToDecimal(txtwaightkg.Text);
+                    }
+                    if(string.IsNullOrEmpty(txtLHinCMS.Text))
+                    {
+                        growthRegister.LengthHeight = null;
+                    }
+                    else
+                    {
+                        growthRegister.LengthHeight =  Convert.ToDecimal(txtLHinCMS.Text);
+                    }
+                    if(string.IsNullOrEmpty(txtMUACincms.Text))
+                    {
+                        growthRegister.MUAC =null;
+                    }
+                    else
+                    {
+                        growthRegister.MUAC = Convert.ToDecimal(txtMUACincms.Text);
+                    }
+                    
                     
                     growthRegister.Dou = DateTime.Now;
                     growthRegister.CreatedBy = 0;
@@ -360,17 +397,15 @@ namespace CAN
                     var selectedGenderId = (ColumnValue)ddlGender.SelectedItem;
                    
                     growthRegister.GenderID = selectedGenderId == null ? 0 : selectedGenderId.columnValueId;
-                    var selectedreceivedration = (RedFlag)ddlreceivedration.SelectedItem;
-                    string IsReceiveRation= selectedreceivedration == null ? "No" : selectedreceivedration.Name;
-                    growthRegister.ReceiveTakeHomeRation = IsReceiveRation == "Yes" ? true : false;
+                    var selectedreceivedration = (ColumnValue)ddlreceivedration.SelectedItem;
+                    growthRegister.ReceiveTakeHomeRation = selectedreceivedration == null ?0 : selectedreceivedration.columnValueId;
+                   
                     var selectedddlHaschildill = (RedFlag)ddlHaschildill.SelectedItem;
                     string IsddlHaschildill = selectedddlHaschildill == null ? "No" : selectedddlHaschildill.Name;
                     growthRegister.ChildIllPreviousMonth = IsddlHaschildill == "Yes" ? true : false;
 
                     growthRegister.ImmunisationCard = StaticClass.Immunisation;
-
-
-                    growthRegister.ReceiveTakeHomeRation = IsReceiveRation == "Yes" ? true : false;
+                    
                     var AdmittedToAWC = (RedFlag)ddlAdmittedToAWC.SelectedItem;
                     string IsAdmittedToAWC = AdmittedToAWC == null ? "No" : AdmittedToAWC.Name;
                    // string IsAdmittedToAWC = AdmittedToAWC.Name;
@@ -394,7 +429,10 @@ namespace CAN
                     //string IsAnyIllness = SelectedAnyIllness == null ? "No" : SelectedAnyIllness.Name;
                     // string IsAnyIllness = SelectedAnyIllness.Name;
                     growthRegister.AnyIllness = ddlAnyIllness.Text;
-                    growthRegister.NumberofDaysIll = Convert.ToInt32(txtNumberofDaysIll.Text);
+                    if (!string.IsNullOrEmpty(txtNumberofDaysIll.Text))
+                    {
+                        growthRegister.NumberofDaysIll = Convert.ToInt32(txtNumberofDaysIll.Text);
+                    }
                     growthRegister.TypeOfIllness = txtTypeOfIllness.Text;
                     var selectedReasonAnthropometryNotTaken = (ColumnValue)ddlReasonAnthropometryNotTaken.SelectedItem;
                     growthRegister.ReasonAnthropometryNotTaken = selectedReasonAnthropometryNotTaken == null ? 0 : selectedReasonAnthropometryNotTaken.columnValueId;
@@ -409,22 +447,73 @@ namespace CAN
                     growthRegister.Remark = txtremark.Text;
                    var ChildData = App.DAUtil.FindSingleChildDetails(StaticClass.GrouthChildID.ToString());
                     int tempnofdays = TempAgeInDays; //(int)(txtMeasurementdate.Date.Subtract(ChildData[0].DOB).TotalDays);
-                    ZScores zScores = new ZScores(ChildData[0].GenderID, Convert.ToInt16(tempnofdays), Convert.ToDouble(txtwaightkg.Text), Convert.ToDouble(txtLHinCMS.Text));
-                    CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                    growthRegister.W4LHZ = calculationvalueClass.W4LHZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
-                    growthRegister.W4AZ = calculationvalueClass.W4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtwaightkg.Text));
-                    growthRegister.H4AZ = calculationvalueClass.H4AZValue(ChildData[0].GenderID,tempnofdays,Convert.ToDouble(txtLHinCMS.Text));
-                    growthRegister.BMI = calculationvalueClass.BMIValue(Convert.ToDouble(txtwaightkg.Text),Convert.ToDouble(txtLHinCMS.Text));
-                    growthRegister.BMIZ = calculationvalueClass.BMIZValue(ChildData[0].GenderID,tempnofdays, Convert.ToDouble(txtwaightkg.Text), Convert.ToDouble(txtLHinCMS.Text));
-                  if(growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2 || growthRegister.H4AZ <= -2 || growthRegister.BMI <= -2 || growthRegister.BMIZ <= -2)
+                    if (!string.IsNullOrEmpty(txtwaightkg.Text) && !string.IsNullOrEmpty(txtLHinCMS.Text))
                     {
-                        growthRegister.AnyRedFlag =true;
-                        growthRegister.IsZScoreRedFlag = true;
+                        ZScores zScores = new ZScores(ChildData[0].GenderID, Convert.ToInt16(tempnofdays), Convert.ToDouble(txtwaightkg.Text), Convert.ToDouble(txtLHinCMS.Text));
                     }
-                  else
+                    CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                    if (!string.IsNullOrEmpty(txtLHinCMS.Text) && !string.IsNullOrEmpty(txtwaightkg.Text))
                     {
-                        growthRegister.IsZScoreRedFlag = false;
-                        //growthRegister.AnyRedFlag = false;
+                        growthRegister.W4LHZ = calculationvalueClass.W4LHZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+                    }
+                    if (!string.IsNullOrEmpty(txtwaightkg.Text))
+                    {
+                        growthRegister.W4AZ = calculationvalueClass.W4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtwaightkg.Text));
+                    }
+                    //if (!string.IsNullOrEmpty(txtLHinCMS.Text))
+                    //{
+                    //    growthRegister.H4AZ = calculationvalueClass.H4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtLHinCMS.Text));
+                    //}
+                    //growthRegister.BMI = calculationvalueClass.BMIValue(Convert.ToDouble(txtwaightkg.Text),Convert.ToDouble(txtLHinCMS.Text));
+                    // growthRegister.BMIZ = calculationvalueClass.BMIZValue(ChildData[0].GenderID,tempnofdays, Convert.ToDouble(txtwaightkg.Text), Convert.ToDouble(txtLHinCMS.Text));
+                    //if(growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2 || growthRegister.H4AZ <= -2 || growthRegister.BMI <= -2 || growthRegister.BMIZ <= -2)
+                    //  {
+                    //      growthRegister.AnyRedFlag =true;
+                    //      growthRegister.IsZScoreRedFlag = true;
+                    //  }
+                    if (!string.IsNullOrEmpty(txtMUACincms.Text))
+                    {
+                        double Muacvalue = Convert.ToDouble(txtMUACincms.Text);
+                        if (growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2 || Muacvalue <12.6)
+                        {
+                            growthRegister.AnyRedFlag = true;
+                            growthRegister.IsZScoreRedFlag = true;
+                        }
+                        else
+                        {
+                            growthRegister.IsZScoreRedFlag = false;
+                            growthRegister.AnyRedFlag = false;
+                        }
+                    }
+                    else
+                    {
+                        if (growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2)
+                        {
+                            growthRegister.AnyRedFlag = true;
+                            growthRegister.IsZScoreRedFlag = true;
+                        }
+                        else
+                        {
+                            growthRegister.IsZScoreRedFlag = false;
+                            growthRegister.AnyRedFlag = false;
+                        }
+                    }
+                    if(string.IsNullOrEmpty(txtegg.Text))
+                    {
+                        growthRegister.ReceiveAAYEggInDays = 0;
+                    }
+                    else
+                    {
+                        growthRegister.ReceiveAAYEggInDays =  Convert.ToInt32(txtegg.Text);
+                    }
+                    
+                    if (string.IsNullOrEmpty(txtbanana.Text))
+                    {
+                        growthRegister.ReceiveAAYBananaInDays = 0;
+                    }
+                    else
+                    {
+                        growthRegister.ReceiveAAYBananaInDays = Convert.ToInt32(txtbanana.Text);
                     }
                    // growthRegister.Muac = Convert.ToDecimal(txtMUACincms.Text);
                     //txtremark.Text;
@@ -442,12 +531,14 @@ namespace CAN
 
         private void EditData()
         {
+        
             var checkMonthlydata = App.DAUtil.GetGrowthRegisterById(StaticClass.GrouthMonthlyId.ToString());
             if (checkMonthlydata.Count > 0)
             {
                 try
                 {
-                    var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+                    txtMeasurementdate.IsEnabled = false;
+                    var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
                     for (int i = 0; i < ListOfDatamonth.Count; i++)
                     {
                         DataM dataMonths = new DataM();
@@ -457,14 +548,14 @@ namespace CAN
                             ddlDataMonth.SelectedIndex = i;
                         }
                     }
-                    txtMeasurementdate.Date = checkMonthlydata[0].MeasurementDate.Date;
+                    txtMeasurementdate.Date = checkMonthlydata[0].MeasurementDate;
                     int month = txtMeasurementdate.Date.Month;
                     int year = txtMeasurementdate.Date.Year;
                     txtMeasurementdate.MinimumDate = new DateTime(year, month, 1);
-                    txtMeasurementdate.MaximumDate= new DateTime(year, month, 1);
-                    txtwaightkg.Text = checkMonthlydata[0].WeightInKg==0?"": checkMonthlydata[0].WeightInKg.ToString();
-                    txtLHinCMS.Text = checkMonthlydata[0].LengthHeight==0?"": checkMonthlydata[0].LengthHeight.ToString();
-                    txtMUACincms.Text = checkMonthlydata[0].MUAC==0?"": checkMonthlydata[0].MUAC.ToString();
+                    txtMeasurementdate.MaximumDate= new DateTime(year, month, 31);
+                    txtwaightkg.Text = checkMonthlydata[0].WeightInKg==null?null: checkMonthlydata[0].WeightInKg.ToString();
+                    txtLHinCMS.Text = checkMonthlydata[0].LengthHeight==null?null: checkMonthlydata[0].LengthHeight.ToString();
+                    txtMUACincms.Text = checkMonthlydata[0].MUAC==null?null: checkMonthlydata[0].MUAC.ToString();
                  
                     var GenderId = App.DAUtil.GetColumnValuesBytext(3);
                     for (int i = 0; i < GenderId.Count; i++)
@@ -475,7 +566,15 @@ namespace CAN
                         }
                     }
                     ddlHaschildill.SelectedIndex = checkMonthlydata[0].ChildIllPreviousMonth == true ? 0 : 1;
-                    ddlreceivedration.SelectedIndex = checkMonthlydata[0].ReceiveTakeHomeRation == true ? 0 : 1;
+                    var Receivedration = App.DAUtil.GetColumnValuesBytext(72);
+                    for (int i = 0; i < Receivedration.Count; i++)
+                    {
+                        if (Receivedration[i].columnValueId == checkMonthlydata[0].ReceiveTakeHomeRation)
+                        {
+                            ddlreceivedration.SelectedIndex = i;
+                        }
+                    }
+                    //ddlreceivedration.SelectedIndex = checkMonthlydata[0].ReceiveTakeHomeRation == true ? 0 : 1;
                    ddlAdmittedToAWC.SelectedIndex = checkMonthlydata[0].AdmittedToAWC == true ? 0 : 1;
                      txtAgeInDays.Text = checkMonthlydata[0].AgeInDays.ToString()==null?"": checkMonthlydata[0].AgeInDays.ToString();
                     ddlIsBreastfeeding.SelectedIndex = checkMonthlydata[0].IsBreastfeeding == true ? 0 : 1;
@@ -550,21 +649,26 @@ namespace CAN
                     //{
                     //    stack27.IsVisible = false;
                     //}
+                    txtegg.Text = checkMonthlydata[0].ReceiveAAYEggInDays == 0 ? null : checkMonthlydata[0].ReceiveAAYEggInDays.ToString();
+                    txtbanana.Text = checkMonthlydata[0].ReceiveAAYBananaInDays == 0 ? null : checkMonthlydata[0].ReceiveAAYBananaInDays.ToString();
                     var ReceiveAAY = App.DAUtil.GetColumnValuesBytext(54);
                     for (int i = 0; i < ReceiveAAY.Count; i++)
                     {
                         if (ReceiveAAY[i].columnValueId == checkMonthlydata[0].ReceiveAAY)
                         {
                             ddlReceiveAAY.SelectedIndex = i;
+                            stackaay.IsVisible = true;
                         }
                     }
-                    txtremark.Text = checkMonthlydata[0].Remark.ToString()==null?"": checkMonthlydata[0].Remark.ToString();
+                    BindIllness();
+                    GetWeight();
+                   
                     txtTypeOfIllness.Text = checkMonthlydata[0].TypeOfIllness.ToString() == null ? "" : checkMonthlydata[0].TypeOfIllness.ToString();
-                    
+                    txtremark.Text = checkMonthlydata[0].Remark.ToString() == null ? "" : checkMonthlydata[0].Remark.ToString();
                 }
                 catch (Exception ex)
                 {
-
+                    GetWeight();
                 }
 
 
@@ -583,6 +687,16 @@ namespace CAN
                 IsValidate = false;
                 DependencyService.Get<Toast>().Show("Please select Data Month");
                 return;
+            }
+            if (string.IsNullOrEmpty(txtwaightkg.Text))
+            {
+                if ((ColumnValue)ddlReasonAnthropometryNotTaken.SelectedItem == null)
+                {
+                    IsValidate = false;
+                    DependencyService.Get<Toast>().Show("Please select Reason Anthropometry Not Taken");
+                    //ddlReasonAnthropometryNotTaken.Focus();
+                    return;
+                }
             }
             //if ((RedFlag)ddlAnyRedFlag.SelectedItem == null)
             //{
@@ -676,7 +790,7 @@ namespace CAN
             {
                 var entry = (Entry)sender;
                 double value = Convert.ToDouble(entry.Text);
-                if (value >= 2.0 && value <=25.9)
+                if (value >= 2 && value < 26)
                 {
                     Regex regex = new Regex(@"^\d{0,2}(\.\d{1,3})?$");
                     var match = regex.Match(txtwaightkg.Text);
@@ -687,25 +801,38 @@ namespace CAN
                         if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
                         {
                             CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                            double W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
-                            if (W4A < -3) 
+                            double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
+                            if (W4A != null)
                             {
-                                txtw4az.Text = "SUW(Severely Under Weight)";
-                            }
-                            else
-                            {
-                                if (W4A <= -2)
+                                W4A = Math.Round(W4A.Value);
+                                if (W4A < -3)
                                 {
-                                    txtw4az.Text = "MUW(Moderately Under Weight)";
+                                    txtw4az.Text = "SUW(Severely Under Weight)";
+                                    txtw4az.TextColor = Color.Black;
+                                    txtw4az.BackgroundColor = Color.Red;
                                 }
                                 else
                                 {
-                                   
-                                    txtw4az.Text = "Normal";
-                                   
+                                    if (W4A <= -2)
+                                    {
+                                        txtw4az.Text = "MUW(Moderately Under Weight)";
+                                        txtw4az.TextColor = Color.Black;
+                                        txtw4az.BackgroundColor = Color.Yellow;
+                                    }
+                                    else
+                                    {
+
+                                        txtw4az.Text = "Normal";
+                                        txtw4az.TextColor = Color.Black;
+                                        txtw4az.BackgroundColor = Color.Green;
+                                    }
                                 }
+                                H4AZCalculation();
                             }
-                            H4AZCalculation();
+                            else
+                            {
+
+                            }
                         }
                     }
                     else
@@ -729,71 +856,109 @@ namespace CAN
         {
             try
             {
-                Regex regex = new Regex(@"^\d{0,3}(\.\d{1,2})?$");
+                Regex regex = new Regex(@"^\d{0,3}(\.\d{1,3})?$");
                 var match = regex.Match(txtLHinCMS.Text);
                 if (match.Success)
                 {
                     txtLHinCMS.Text = match.Value;
                     txtLHinCMS.TextColor = Color.Black;
-                    if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
-                    {
-                        CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                        double w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+                    H4AZCalculation();
+                }
+                else
+                {
+                    txtLHinCMS.TextColor = Color.Red;
+                }
+            }
+            catch
+            {
 
+            }
+            //try
+            //{
+            //    Regex regex = new Regex(@"^\d{0,3}(\.\d{1,2})?$");
+            //    var match = regex.Match(txtLHinCMS.Text);
+            //    if (match.Success)
+            //    {
+            //        txtLHinCMS.Text = match.Value;
+            //        txtLHinCMS.TextColor = Color.Black;
+            //        if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
+            //        {
+            //            CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+            //            double w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+
+            //            if (w4hz < -3)
+            //            {
+            //                txth4az.Text = "SAM(Severely Acute Malnutrition)";
+            //            }
+            //            else
+            //            {
+            //                if (w4hz <= -2)
+            //                {
+            //                    txth4az.Text = "MAM(Moderately Acute Malnutrition)";
+            //                }
+            //                else
+            //                {
+
+            //                    txth4az.Text = "Normal";
+
+            //                }
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+            //        txtLHinCMS.TextColor = Color.Red;
+            //    }
+
+            //}
+            //catch
+            //{
+
+            //}
+        }
+
+        private void H4AZCalculation()
+        {
+            try
+            {
+                if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
+                {
+                    CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                    double ? w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+                    if(w4hz!=null)
+                    {
                         if (w4hz < -3)
                         {
                             txth4az.Text = "SAM(Severely Acute Malnutrition)";
+                            txtLHinCMS.TextColor = Color.Black;
+                            txth4az.BackgroundColor = Color.Red;
                         }
                         else
                         {
                             if (w4hz <= -2)
                             {
                                 txth4az.Text = "MAM(Moderately Acute Malnutrition)";
+                                txtLHinCMS.TextColor = Color.Black;
+                                txth4az.BackgroundColor = Color.Yellow;
                             }
                             else
                             {
-                              
+
                                 txth4az.Text = "Normal";
-                               
+                                txtLHinCMS.TextColor = Color.Black;
+                                txth4az.BackgroundColor = Color.Green;
                             }
                         }
-                    }
-                }
-                else
-                {
-                    txtLHinCMS.TextColor = Color.Red;
-                }
-               
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void H4AZCalculation()
-        {
-            if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
-            {
-                CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                double w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
-               if (w4hz < -3)
-                {
-                    txth4az.Text = "SAM(Severely Acute Malnutrition)";
-                }
-                else
-                {
-                    if (w4hz <= -2)
-                    {
-                        txth4az.Text = "MAM(Moderately Acute Malnutrition)";
                     }
                     else
                     {
 
-                        txth4az.Text = "Normal";
-
                     }
                 }
+            }
+            catch
+            {
+
             }
         }
 
@@ -891,22 +1056,131 @@ namespace CAN
 
         private void TxtLHinCMS_Unfocused(object sender, FocusEventArgs e)
         {
-            if (Convert.ToDouble(txtLHinCMS.Text) <= 45)
+            try
             {
-                txtLHinCMS.Text = "45";
-            }
-            else
-            {
-                if (Convert.ToDouble(txtLHinCMS.Text) <= 120 && Convert.ToDouble(txtLHinCMS.Text) > 45)
+                if (Convert.ToDouble(txtLHinCMS.Text) <= 45)
                 {
-
+                    txtLHinCMS.Text = "45";
                 }
                 else
                 {
-                    txtLHinCMS.Text = "120";
+                    if (Convert.ToDouble(txtLHinCMS.Text) <= 120 && Convert.ToDouble(txtLHinCMS.Text) > 45)
+                    {
+
+                    }
+                    else
+                    {
+                        txtLHinCMS.Text = "120";
+                    }
+                }
+                H4AZCalculation();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Txtegg_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                string txtnoofegg = txtegg.Text.Replace(".", "");
+                txtegg.Text = txtnoofegg;
+            }
+            catch
+            {
+
+            }
+        }
+        private void GetWeight()
+        {
+            try
+            {
+                if (!string.IsNullOrEmpty(txtwaightkg.Text))
+                {
+                    double value = Convert.ToDouble(txtwaightkg.Text);
+                    if (value >= 2 && value < 26)
+                    {
+                        Regex regex = new Regex(@"^\d{0,2}(\.\d{1,3})?$");
+                        var match = regex.Match(txtwaightkg.Text);
+                        if (match.Success)
+                        {
+                            txtwaightkg.Text = match.Value;
+                            txtwaightkg.TextColor = Color.Black;
+                            if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
+                            {
+                                CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                                double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
+                                if (W4A != null)
+                                {
+                                    W4A = Math.Round(W4A.Value);
+                                    if (W4A < -3)
+                                    {
+                                        txtw4az.Text = "SUW(Severely Under Weight)";
+                                        txtw4az.TextColor = Color.Black;
+                                        txtw4az.BackgroundColor = Color.Red;
+                                    }
+                                    else
+                                    {
+                                        if (W4A <= -2)
+                                        {
+                                            txtw4az.Text = "MUW(Moderately Under Weight)";
+                                            txtw4az.TextColor = Color.Black;
+                                            txtw4az.BackgroundColor = Color.Yellow;
+                                        }
+                                        else
+                                        {
+
+                                            txtw4az.Text = "Normal";
+                                            txtw4az.TextColor = Color.Black;
+                                            txtw4az.BackgroundColor = Color.Green;
+                                        }
+                                    }
+                                    if (!string.IsNullOrEmpty(txtLHinCMS.Text))
+                                    {
+                                        H4AZCalculation();
+                                    }
+                                }
+                                else
+                                {
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            txtwaightkg.TextColor = Color.Red;
+                        }
+                    }
+                    else
+                    {
+                        txtwaightkg.TextColor = Color.Red;
+                    }
                 }
             }
-            H4AZCalculation();
+            catch
+            {
+
+            }
+        }
+
+        private void Txtbanana_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                string txtnoofbanana = txtbanana.Text.Replace(".", "");
+                txtbanana.Text = txtnoofbanana;
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void DdlReceiveAAY_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            stackaay.IsVisible = true;
         }
     }
 }

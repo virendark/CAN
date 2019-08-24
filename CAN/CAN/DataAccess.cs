@@ -34,14 +34,18 @@ namespace CAN
             dbConn.CreateTable<TblPushDataTime>();
             dbConn.CreateTable<MonthlyMonitoring>();
         }
+        //public List<RedFlagDetails> GetRedFlagChildData(string ChildId, bool RedFlag, int DataMonthId)
+        //{
+        //    return dbConn.Query<RedFlagDetails>("select GrowthRegister.GenderID, GrowthRegister.GrowthId,GrowthRegister.ChildId, GrowthRegister.AnyRedFlag,RedFlagRegister.DateMonthId,RedFlagRegister.RedFlagId from [GrowthRegister] left outer join [RedFlagRegister] on GrowthRegister.ChildId=RedFlagRegister.ChildId  and RedFlagRegister.DateMonthId='" + DataMonthId + "' where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
+        //}
+        public List<GrowthRegister> GetListOfRedFlag(string ChildId,int DataMonthId)
+        {
+            return dbConn.Query<GrowthRegister>("select * from [GrowthRegister]  where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
+        }
         public List<RedFlagDetails> GetRedFlagChildData(string ChildId, bool RedFlag, int DataMonthId)
         {
             return dbConn.Query<RedFlagDetails>("select GrowthRegister.GenderID, GrowthRegister.GrowthId,GrowthRegister.ChildId, GrowthRegister.AnyRedFlag,RedFlagRegister.DateMonthId,RedFlagRegister.RedFlagId from [GrowthRegister] left outer join [RedFlagRegister] on GrowthRegister.ChildId=RedFlagRegister.ChildId  and RedFlagRegister.DateMonthId='" + DataMonthId + "' where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
         }
-        //public List<ChildMonthlyData> GetRedFlagChildData(string FamilyId, bool RedFlag, int DataMonthId)
-        //{
-        //    return dbConn.Query<ChildMonthlyData>("select ChildRegister.ChildId,ChildRegister.GenderID,ChildRegister.ChildName,ChildRegister.ChildStatus,ChildRegister.DOB,GrowthRegister.GrowthId,GrowthRegister.DataMonthId,  GrowthRegister.AnyRedFlag from [ChildRegister] left outer join [GrowthRegister] on ChildRegister.ChildId=GrowthRegister.ChildId  and GrowthRegister.DataMonthId='" + DataMonthId + "' and GrowthRegister.AnyRedFlag='"+RedFlag+"' where ChildRegister.FamilyId='" + FamilyId + "'");
-        //}
         public List<ChildMonthlyData> GetChildMonthlyData(string FamilyId,  int StatusId,int DataMonthId)
         {
             return dbConn.Query<ChildMonthlyData>("select  ChildRegister.ChildCode,ChildRegister.ChildId,ChildRegister.GenderID,ChildRegister.ChildName,ChildRegister.ChildStatus,ChildRegister.DOB,GrowthRegister.GrowthId,GrowthRegister.DataMonthId,  GrowthRegister.AnyRedFlag from [ChildRegister] left outer join [GrowthRegister] on ChildRegister.ChildId=GrowthRegister.ChildId  and GrowthRegister.DataMonthId='" + DataMonthId + "' where ChildRegister.FamilyId='" + FamilyId + "'  and ChildRegister.ChildStatus='" + StatusId + "'");
@@ -65,7 +69,7 @@ namespace CAN
         }
         public List<TblPushDataTime> deletepushdatatime()
         {
-            return dbConn.Query<TblPushDataTime>("delete from  from [TblPushDataTime]");
+            return dbConn.Query<TblPushDataTime>("delete  from [TblPushDataTime]");
         }
         public List<TblGrowthRegisterMother> FindGrowthRegisterMotherSingleData(string GId)
         {
@@ -207,6 +211,10 @@ namespace CAN
         public List<GrowthRegister> GetGrowthRegisterById(string GId)
         {
             return dbConn.Query<GrowthRegister>("select *  from GrowthRegister where GrowthId='" + GId + "'");
+        }
+        public List<GrowthRegister> GetGrowthChildById(string CId)
+        {
+            return dbConn.Query<GrowthRegister>("select *  from GrowthRegister where ChildId='" + CId + "'");
         }
         public int SaveGrowthRegister(GrowthRegister growthRegister)
         {
@@ -360,7 +368,7 @@ namespace CAN
         }
         public List<ChildRegister> FindSingleChildDetails(string CID)
         {
-            return dbConn.Query<ChildRegister>("Select DISTINCT  * From [ChildRegister] where ChildId='" + CID + "'");
+            return dbConn.Query<ChildRegister>("Select   * From [ChildRegister] where ChildId='" + CID + "'");
         }
         public List<LMSWAZ> GetLMSWAZ(int Gender, int Ageindays)
         {
@@ -413,9 +421,13 @@ namespace CAN
         {
             return dbConn.Query<RedFlagRegister>("select *  from RedFlagRegister where RedFlagId='" + GId + "'");
         }
-        public List<ListOfChildInRedFlagDetails> GetListOfChildInRedFlagData(string id,int DataMonthId)
+        //public List<ListOfChildInRedFlagDetails> GetListOfChildInRedFlagData(string id,int DataMonthId)
+        //{
+        // return dbConn.Query<ListOfChildInRedFlagDetails>("Select DISTINCT  * From [ChildRegister]  inner join [RedFlagRegister]  on ChildRegister.ChildId == RedFlagRegister.ChildId where RedFlagRegister.ChildId='" + id + "' and RedFlagRegister.DateMonthId='" + DataMonthId + "' ");
+        //}
+        public List<RedFlagRegister> GetListOfChildInRedFlagData(string id, int DataMonthId)
         {
-         return dbConn.Query<ListOfChildInRedFlagDetails>("Select DISTINCT  * From [ChildRegister] as c inner join [RedFlagRegister] as r on c.ChildId == r.ChildId where r.ChildId='" + id + "' and r.DateMonthId='" + DataMonthId + "' ");
+            return dbConn.Query<RedFlagRegister>("Select   * From  [RedFlagRegister]   where ChildId='" + id + "' and DateMonthId='" + DataMonthId + "' ");
         }
         public List<RedFlagRegister> GetRedFlagRegistercheckFlowup(string GId, int DataMonthId)
         {

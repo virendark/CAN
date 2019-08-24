@@ -362,10 +362,456 @@ D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Xa
 D:\15-12-2018\CAN\CAN\CAN.Android\bin\Release\com.companynameSaathi.CAN.apk
 D:\15-12-2018\CAN\CAN\CAN.Android\bin\Release\com.companynameSaathi.CAN-Signed.apk
 D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\android\bin\com.companynameSaathi.CAN.apk
-D:\15-12-2018\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll
-D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.Android.dll.mdb
-D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\linksrc\FormsViewGroup.dll.mdb
-D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.dll.mdb
-D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
-D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
-D:\15-12-2018\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\com.companynameSaathi.CAN.apk
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\com.companynameSaathi.CAN-Signed.apk
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.nuget.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\libraryimports.cache.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res.flag
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\XamlC.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CopyComplete
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\bin\com.companynameSaathi.CAN.apk
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\layout\tabbar.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\layout\toolbar.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\values\styles.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\values\colors.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-anydpi-v26\icon.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-anydpi-v26\icon_round.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-hdpi\icon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-hdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-mdpi\icon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-mdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xhdpi\icon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xhdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxhdpi\icon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxhdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxxhdpi\icon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxxhdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ddarrow.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\editbutton.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\editingicon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\show_pass.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_launcherr.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_logo.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\radioselected.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\radiounselect.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\hide_pass.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\kidsicon.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\add_launcher.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\edit_launcher.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_edit.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_add.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_camera.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_galary.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\theamentry.jpg
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\iconfab.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_allvillage.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_pushdata.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_sync.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_logout.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\imguser.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\defaultaccount.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_list.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\xml\file_paths.xml
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_close.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\acconicon.jpg
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_monthly.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_home.png
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_launcher.jpg
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\R.cs.flag
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\R.txt
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\uploadflags.txt
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Mono.Android.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Mono.Android.Export.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\mscorlib.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Net.Http.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Xml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Xml.Linq.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Data.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Numerics.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Transactions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.IO.Compression.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.IO.Compression.FileSystem.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.ComponentModel.Composition.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Runtime.Serialization.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.ServiceModel.Internals.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Web.Services.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Mono.Security.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Android.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Android.Export.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\mscorlib.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Net.Http.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Xml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Xml.Linq.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Data.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Numerics.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Transactions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.IO.Compression.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.IO.Compression.FileSystem.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.ComponentModel.Composition.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Runtime.Serialization.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.ServiceModel.Internals.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Web.Services.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Security.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\FormsViewGroup.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Plugin.Connectivity.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Rg.Plugins.Popup.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Toasts.Forms.Plugin.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\FormsViewGroup.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\CAN.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\FormsViewGroup.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Plugin.Connectivity.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Rg.Plugins.Popup.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Toasts.Forms.Plugin.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Android.Export.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Android.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Security.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\mscorlib.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Net.Http.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Runtime.Serialization.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.ServiceModel.Internals.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Xml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.nuget.stamp
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\libraryimports.cache.stamp
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res.flag
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\com.companynameSaathi.CAN.apk
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\com.companynameSaathi.CAN-Signed.apk
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\XamlC.stamp
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CopyComplete
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\bin\com.companynameSaathi.CAN.apk
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\layout\tabbar.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\layout\toolbar.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\values\styles.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\values\colors.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-anydpi-v26\icon.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-anydpi-v26\icon_round.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-hdpi\icon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-hdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-mdpi\icon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-mdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xhdpi\icon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xhdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxhdpi\icon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxhdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxxhdpi\icon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxxhdpi\launcher_foreground.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ddarrow.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\editbutton.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\editingicon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\show_pass.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_launcherr.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_logo.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\radioselected.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\radiounselect.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\hide_pass.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\kidsicon.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\add_launcher.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\edit_launcher.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_edit.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_add.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_camera.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_galary.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\theamentry.jpg
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\iconfab.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_allvillage.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_pushdata.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_sync.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_logout.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\imguser.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\defaultaccount.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_list.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\xml\file_paths.xml
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_close.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\acconicon.jpg
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_monthly.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_home.png
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_launcher.jpg
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\R.cs.flag
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\R.txt
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\uploadflags.txt
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Mono.Android.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Mono.Android.Export.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\mscorlib.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Net.Http.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Xml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Xml.Linq.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Data.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Numerics.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Transactions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.IO.Compression.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.IO.Compression.FileSystem.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.ComponentModel.Composition.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Runtime.Serialization.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.ServiceModel.Internals.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\System.Web.Services.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Mono.Security.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Android.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Android.Export.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\mscorlib.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Net.Http.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Xml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Xml.Linq.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Data.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Numerics.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Transactions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.IO.Compression.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.IO.Compression.FileSystem.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.ComponentModel.Composition.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Runtime.Serialization.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.ServiceModel.Internals.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Web.Services.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Security.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\FormsViewGroup.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Plugin.Connectivity.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Rg.Plugins.Popup.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Toasts.Forms.Plugin.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.Android.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\FormsViewGroup.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\CAN.Android.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\FormsViewGroup.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Plugin.Connectivity.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Rg.Plugins.Popup.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Toasts.Forms.Plugin.Droid.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\CAN.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Android.Export.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Android.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Security.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\mscorlib.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Net.Http.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Runtime.Serialization.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.ServiceModel.Internals.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Xml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.nuget.stamp
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csprojAssemblyReference.cache
+F:\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll
+F:\CAN\CAN\CAN.Android\bin\Release\CAN.Android.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\com.CompaNYNAMECANSathi.CAN.apk
+F:\CAN\CAN\CAN.Android\bin\Release\com.CompaNYNAMECANSathi.CAN-Signed.apk
+F:\CAN\CAN\CAN.Android\bin\Release\CAN.dll
+F:\CAN\CAN\CAN.Android\bin\Release\CAN.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+F:\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.nuget.stamp
+F:\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csprojAssemblyReference.cache
+F:\CAN\CAN\CAN.Android\obj\Release\81\libraryimports.cache.stamp
+F:\CAN\CAN\CAN.Android\obj\Release\81\res.flag
+F:\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CoreCompileInputs.cache
+F:\CAN\CAN\CAN.Android\obj\Release\81\XamlC.stamp
+F:\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CopyComplete
+F:\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.dll
+F:\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\bin\com.CompaNYNAMECANSathi.CAN.apk
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\layout\tabbar.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\layout\toolbar.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\values\styles.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\values\colors.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-anydpi-v26\icon.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-anydpi-v26\icon_round.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-hdpi\icon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-hdpi\launcher_foreground.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-mdpi\icon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-mdpi\launcher_foreground.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xhdpi\icon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xhdpi\launcher_foreground.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxhdpi\icon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxhdpi\launcher_foreground.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxxhdpi\icon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\mipmap-xxxhdpi\launcher_foreground.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ddarrow.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\editbutton.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\editingicon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\show_pass.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\radioselected.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\radiounselect.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\hide_pass.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\kidsicon.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\add_launcher.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\edit_launcher.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_edit.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_add.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_camera.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_galary.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\theamentry.jpg
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\iconfab.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_allvillage.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_pushdata.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_sync.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_logout.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\imguser.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\defaultaccount.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_list.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\xml\file_paths.xml
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_close.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\acconicon.jpg
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_monthly.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_home.png
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\ic_launcher.jpg
+F:\CAN\CAN\CAN.Android\obj\Release\81\res\drawable\sathi_logo.jpg
+F:\CAN\CAN\CAN.Android\obj\Release\81\R.cs.flag
+F:\CAN\CAN\CAN.Android\obj\Release\81\R.txt
+F:\CAN\CAN\CAN.Android\obj\Release\81\uploadflags.txt
+F:\CAN\CAN\CAN.Android\bin\Release\Mono.Android.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Mono.Android.Export.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\mscorlib.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Plugin.Connectivity.Abstractions.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Rg.Plugins.Popup.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Core.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Net.Http.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Xml.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Xml.Linq.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Toasts.Forms.Plugin.Abstractions.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Core.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Xaml.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Data.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Numerics.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Transactions.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.IO.Compression.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.IO.Compression.FileSystem.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.ComponentModel.Composition.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Runtime.Serialization.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.ServiceModel.Internals.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\System.Web.Services.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\Mono.Security.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Android.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Android.Export.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\mscorlib.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.Abstractions.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Core.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Net.Http.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Xml.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Xml.Linq.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Abstractions.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Core.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Xaml.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Data.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Numerics.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Transactions.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.IO.Compression.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.IO.Compression.FileSystem.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.ComponentModel.Composition.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Runtime.Serialization.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.ServiceModel.Internals.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\System.Web.Services.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Mono.Security.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\FormsViewGroup.dll.mdb
+F:\CAN\CAN\CAN.Android\bin\Release\Plugin.Connectivity.dll.mdb
+F:\CAN\CAN\CAN.Android\bin\Release\Rg.Plugins.Popup.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\bin\Release\Toasts.Forms.Plugin.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\bin\Release\Xamarin.Forms.Platform.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\FormsViewGroup.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\CAN.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\FormsViewGroup.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Plugin.Connectivity.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Rg.Plugins.Popup.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Toasts.Forms.Plugin.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\CAN.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Android.Export.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Android.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Mono.Security.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\mscorlib.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Plugin.Connectivity.Abstractions.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Rg.Plugins.Popup.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Core.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Net.Http.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Runtime.Serialization.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.ServiceModel.Internals.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\System.Xml.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Core.pdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Xaml.pdb
+F:\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\CAN.Android.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\FormsViewGroup.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Plugin.Connectivity.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+F:\CAN\CAN\CAN.Android\obj\Release\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

@@ -20,9 +20,9 @@
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="60"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="25"/>
+                                            <RowDefinition Height="40"/>
+                                            <RowDefinition Height="40"/>
+                                            <RowDefinition Height="40"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="270"/>
@@ -43,26 +43,26 @@
                                         </StackLayout>
                                         <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Child Name :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="बालकाचे नाव (Child Name) :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="WordWrap" 
                                                 FontAttributes="Bold"/>
                                             <Label Text="{Binding ChildName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
 
                                         </StackLayout>
                                         <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Gender :-        " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="4. लिंग(Gender) :-        " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding Gender}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
                                         <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Birth Weight :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="5. बालकाचे जन्मत: वजन (Birth Weight) :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding BirthWeightInKg}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
                                         <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="AWC Entry W4AZ :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="AWC Entry W4AZ :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding W4AZ}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>

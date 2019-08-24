@@ -74,47 +74,137 @@ namespace CAN
             }
             else
             {
-                if (StaticClass.HighRiskMother == null)
+                var checkFamilydata = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString()).LastOrDefault();
+                if (checkFamilydata!=null)
                 {
-                    var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
-                    for (int i = 0; i < ListOfHighRiskMother.Count; i++)
+                    string Assets = checkFamilydata.HighRiskMotherHistory;
+                    if (Assets != null)
                     {
-                        Ass ass = new Ass();
-                        ass.Id = ListOfHighRiskMother[i].columnValueId;
-                        ass.Name = ListOfHighRiskMother[i].columnValue;
-                        ass.Flag = "false";
-                        listass.Add(ass);
+                        var numbers = Assets.Split(',');
+                        List<string> Lass = new List<string>();
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            string data = numbers[i];
+                            Lass.Add(data);
+                        }
+                        var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
+                        for (int i = 0; i < ListOfHighRiskMother.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfHighRiskMother[i].columnValueId;
+                            ass.Name = ListOfHighRiskMother[i].columnValue;
+                            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                            if (check != null)
+                            {
+                                ass.Flag = "true";
+                            }
+                            else
+                            {
+                                ass.Flag = "false";
+                            }
+                            listass.Add(ass);
+                        }
+                    }
+                    else
+                    {
+                        var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
+                        for (int i = 0; i < ListOfHighRiskMother.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfHighRiskMother[i].columnValueId;
+                            ass.Name = ListOfHighRiskMother[i].columnValue;
+                            ass.Flag = "false";
+                            listass.Add(ass);
+                        }
                     }
                 }
                 else
                 {
-                    var numbers = StaticClass.HighRiskMother.Split(',');
-                    List<string> Lass = new List<string>();
-                    for (int i = 0; i < numbers.Length; i++)
+                    if (StaticClass.HighRiskMother == null)
                     {
-                        string data = numbers[i];
-                        Lass.Add(data);
-                    }
-                    var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
-                    for (int i = 0; i < ListOfHighRiskMother.Count; i++)
-                    {
-                        Ass ass = new Ass();
-                        ass.Id = ListOfHighRiskMother[i].columnValueId;
-                        ass.Name = ListOfHighRiskMother[i].columnValue;
-                        var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
-                        if (check != null)
+                        var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
+                        for (int i = 0; i < ListOfHighRiskMother.Count; i++)
                         {
-                            ass.Flag = "true";
-                        }
-                        else
-                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfHighRiskMother[i].columnValueId;
+                            ass.Name = ListOfHighRiskMother[i].columnValue;
                             ass.Flag = "false";
+                            listass.Add(ass);
                         }
-                        listass.Add(ass);
+                    }
+                    else
+                    {
+                        var numbers = StaticClass.HighRiskMother.Split(',');
+                        List<string> Lass = new List<string>();
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            string data = numbers[i];
+                            Lass.Add(data);
+                        }
+                        var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
+                        for (int i = 0; i < ListOfHighRiskMother.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfHighRiskMother[i].columnValueId;
+                            ass.Name = ListOfHighRiskMother[i].columnValue;
+                            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                            if (check != null)
+                            {
+                                ass.Flag = "true";
+                            }
+                            else
+                            {
+                                ass.Flag = "false";
+                            }
+                            listass.Add(ass);
+                        }
                     }
                 }
             }
-            
+            #region add
+            //else
+            //{
+            //    if (StaticClass.HighRiskMother == null)
+            //    {
+            //        var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
+            //        for (int i = 0; i < ListOfHighRiskMother.Count; i++)
+            //        {
+            //            Ass ass = new Ass();
+            //            ass.Id = ListOfHighRiskMother[i].columnValueId;
+            //            ass.Name = ListOfHighRiskMother[i].columnValue;
+            //            ass.Flag = "false";
+            //            listass.Add(ass);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        var numbers = StaticClass.HighRiskMother.Split(',');
+            //        List<string> Lass = new List<string>();
+            //        for (int i = 0; i < numbers.Length; i++)
+            //        {
+            //            string data = numbers[i];
+            //            Lass.Add(data);
+            //        }
+            //        var ListOfHighRiskMother = App.DAUtil.GetColumnValuesBytext(61);
+            //        for (int i = 0; i < ListOfHighRiskMother.Count; i++)
+            //        {
+            //            Ass ass = new Ass();
+            //            ass.Id = ListOfHighRiskMother[i].columnValueId;
+            //            ass.Name = ListOfHighRiskMother[i].columnValue;
+            //            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+            //            if (check != null)
+            //            {
+            //                ass.Flag = "true";
+            //            }
+            //            else
+            //            {
+            //                ass.Flag = "false";
+            //            }
+            //            listass.Add(ass);
+            //        }
+            //    }
+            //}
+            #endregion
             listView.ItemsSource = listass;
         }
 

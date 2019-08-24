@@ -42,6 +42,7 @@ namespace CAN
                     new MasterDetailPage1MenuItem { Id = 0, Title = "Change Current Village",ImgIcon="ic_allVillage.png" },
                     new MasterDetailPage1MenuItem { Id = 1, Title = "Sync Master Data",ImgIcon="ic_Sync.png" },
                     new MasterDetailPage1MenuItem { Id = 2, Title = "Push Data to Server", ImgIcon="ic_PushData.png" },
+                     new MasterDetailPage1MenuItem { Id = 4, Title ="Change The Last Sync Date",ImgIcon="ic_Sync.png" },
                     new MasterDetailPage1MenuItem { Id = 3, Title = "Monthly Monitoring", ImgIcon="ic_monthly.png" },
                    // new MasterDetailPage1MenuItem { Id = 3, Title = "Add Monthly Data" },
                    // new MasterDetailPage1MenuItem { Id = 4, Title = "Add Red Flag Data" },
@@ -163,7 +164,7 @@ namespace CAN
                             if (CheckDate.Count > 0 && CheckDate[0].Flage == true)
                             {
                                 // var ListData = App.DAUtil.GetAllFamilyByLocation(idd);
-                                var ListOfFamilyData = App.DAUtil.GetAllFamily().Where(x => x.DOU >= checkdateFlag).ToList(); ;
+                                var ListOfFamilyData = App.DAUtil.GetAllFamily().Where(x => x.DOU >= checkdateFlag).ToList();
                                 //  var ListOfChildData = App.DAUtil.GetAllChildDatetime(checkdateFlag);
                                 var ListOfChildData = App.DAUtil.GetAllChild().Where(x => x.DOU >= checkdateFlag).ToList();
                                 // var Listmonthlydata = App.DAUtil.GetGrowthRegistersDateTime(checkdateFlag);
@@ -182,6 +183,7 @@ namespace CAN
                             {
                                 var ListOfFamilyData = App.DAUtil.GetAllFamily();
                                 var ListOfChildData = App.DAUtil.GetAllChild();
+                                DateTime dt = ListOfChildData[0].AWCEntryDate.Value;
                                 var Listmonthlydata = App.DAUtil.GetGrowthRegisters();
                                 var ListofMotherData = App.DAUtil.GetAllGrowthRegisterMother();
                                 var ListOfredFlagData = App.DAUtil.GetAllRedFlagRegister();
@@ -244,6 +246,31 @@ namespace CAN
                 StaticClass.PageName = "MonthlyMonitoring";
                 StaticClass.MonthlyMonitoringName = "a";
                 Application.Current.MainPage = new MasterDetailPage1();
+            }
+            if (item.Id == 4)
+            {
+                try
+                {
+                    StaticClass.LastsyncDateChange = "y";
+                    if (CrossConnectivity.Current.IsConnected)
+                    {
+                        Application.Current.MainPage = new NavigationPage(new PinPage())
+                        {
+                            BarBackgroundColor = Color.FromHex("#ffbf00"),
+                            BarTextColor = Color.White
+                        };
+                    }
+                    else
+                    {
+                        DependencyService.Get<Toast>().Show("There is no  internet connection");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    
+                    DependencyService.Get<Toast>().Show("Date Push Success");
+                    
+                }
             }
             if (item.Id == 5)
             {

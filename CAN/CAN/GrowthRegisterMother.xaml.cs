@@ -11,21 +11,21 @@ using Rg.Plugins.Popup.Extensions;
 
 namespace CAN
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class GrowthRegisterMother : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class GrowthRegisterMother : ContentPage
+    {
         bool IsValidation = true;
         DateTime? lastdDate = new DateTime?();
         DateTime? Expectdate = new DateTime?();
-        public GrowthRegisterMother ()
-		{
-			InitializeComponent ();
+        public GrowthRegisterMother()
+        {
+            InitializeComponent();
             showandhidePageLoadStacklayout();
             this.Title = StaticClass.LocationName;
             BindDatamonths();
             BindddChildExpected();
             BindddlIsLactating();
-            
+
             BindddlReceivedDietUnderAay();
             BindddlGetMealAwcUnderAay();
             BindddlReceivedMealFromAwcunderAay();
@@ -39,54 +39,44 @@ namespace CAN
             BindddlResonForNotEatingAwcmeal();
             BindddlIsFirstPregnancy();
             BindddlAwcregister();
-            btnSave .Text= StaticClass.PageButtonText;
+            btnSave.Text = StaticClass.PageButtonText;
             txtExpectedDeliveryDate2.IsVisible = false;
             txtLastDeliveryDate2.IsVisible = false;
             stacShowAndHide.IsVisible = false;
             Bindpreviousdata();
-            if (StaticClass.PageButtonText =="Update")
+            if (StaticClass.PageButtonText == "Update")
             {
                 EditMGrouth();
             }
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().Where(d => d.Datamonthid == StaticClass.DataMonthId).FirstOrDefault();
-            DateTime tempDate = ListOfDatamonth.Datamonth;
-            int year = tempDate.Year;
-            int month = tempDate.Month;
-            txtDateOfMeasurement.MinimumDate = new DateTime(year, month, 1);
-            txtDateOfMeasurement.MaximumDate = tempDate;
-            DateTime dateTime = txtDateOfMeasurement.Date;
-            txtExpectedDeliveryDate.MinimumDate = dateTime;
-            txtLastDeliveryDate.MinimumDate = dateTime;
+            else
+            {
+                lastMGrouth();
+            }
+            try
+            {
+                var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().Where(d => d.Datamonthid == StaticClass.DataMonthId).FirstOrDefault();
+                DateTime tempDate = ListOfDatamonth.Datamonth;
+                int year = tempDate.Year;
+                int month = tempDate.Month;
+                txtDateOfMeasurement.MinimumDate = new DateTime(year, month, 1);
+                txtDateOfMeasurement.MaximumDate = tempDate;
+                DateTime dateTime = txtDateOfMeasurement.Date;
+                txtExpectedDeliveryDate.MinimumDate = dateTime;
+                txtLastDeliveryDate.MaximumDate = new DateTime(year, month, tempDate.Day);
+                txtExpectedDeliveryDate.MaximumDate = new DateTime(year, month += 5, tempDate.Day);
+                // txtLastDeliveryDate.MinimumDate = dateTime;
+                 //new DateTime(year, month, tempDate.Day);
+            }
+            catch
+            {
+
+            }
             //BindLastData();
         }
-        //private void BindLastData()
-        //{
-        //    var checkFamilydata = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString());
-        //    if(checkFamilydata.Count>0)
-        //    {
-        //     var   LastData=checkFamilydata.LastOrDefault();
-        //        ddChildExpected.IsEnabled = false;
-        //        ddChildExpected.SelectedIndex = LastData.ChildExpected == true ? 0 : 1;
-                
-        //        ddlIsFirstPregnancy.IsEnabled = false;
-        //        ddlIsFirstPregnancy.SelectedIndex = LastData.IsFirstPregnancy == true ? 0 : 1;
-        //        txtExpectedDeliveryDate.IsEnabled = false;
-        //        txtExpectedDeliveryDate.Date = LastData.ExpectedDeliveryDate;
-        //        txtAwcregistrationDate.IsEnabled = false;
-        //        txtAwcregistrationDate.Date = LastData.AwcregistrationDate;
-        //        txtAncregistraionDate.IsEnabled = false;
-        //        txtAncregistraionDate.Date = LastData.AncregistraionDate;
-               
-        //        ddlIsLactating.IsEnabled = false;
-        //        ddlIsLactating.SelectedIndex = LastData.IsLactating == true ? 0 : 1;
-               
-        //    }
-        //}
-
-        private  void Bindpreviousdata()
+        private void Bindpreviousdata()
         {
-         var MotherRecord= App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString());
-            if (MotherRecord != null && MotherRecord.Count!=0)
+            var MotherRecord = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString());
+            if (MotherRecord != null && MotherRecord.Count != 0)
             {
                 var MotherData = MotherRecord.LastOrDefault();
                 if (MotherData.MotherWeightIn1Trimester != 0)
@@ -109,7 +99,7 @@ namespace CAN
                 dataMonths.Datamonth = formatted;
                 listdataMonths.Add(dataMonths);
             }
-            
+
             ddlDataMonth.ItemsSource = listdataMonths;
             for (int j = 0; j < ListOfDatamonth.Count; j++)
             {
@@ -224,7 +214,7 @@ namespace CAN
         {
             var ListOfWaterType = App.DAUtil.GetColumnValuesBytext(42);
             ddlReceivedSnacksFromAwc.ItemsSource = ListOfWaterType;
-           
+
         }
         public void BindddlEatMealRegularlyFromAwc()
         {
@@ -235,7 +225,7 @@ namespace CAN
         {
             var ListOfWaterType = App.DAUtil.GetColumnValuesBytext(44);
             ddlIsMealEnough.ItemsSource = ListOfWaterType;
-           
+
         }
         public void BindddlQualityOfAwcfood()
         {
@@ -266,68 +256,75 @@ namespace CAN
         }
         private void validation()
         {
-            var selectedDataMonth = (DataM)ddlDataMonth.SelectedItem;
-            int MId= selectedDataMonth == null ? 0 : selectedDataMonth.Datamonthid;
-            if (MId==0)
+            try
             {
-                IsValidation = false;
-                DependencyService.Get<Toast>().Show("Please select Data Month");
-                return;
+                var selectedDataMonth = (DataM)ddlDataMonth.SelectedItem;
+                int MId = selectedDataMonth == null ? 0 : selectedDataMonth.Datamonthid;
+                if (MId == 0)
+                {
+                    IsValidation = false;
+                    DependencyService.Get<Toast>().Show("Please select Data Month");
+                    return;
+                }
+                //var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
+                //if (ChildExpectedid == null)
+                //{
+                //    IsValidation = false;
+                //    DependencyService.Get<Toast>().Show("Please select Child Expected");
+                //    return;
+                //}
+                //var Lactating = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
+                //if (Lactating == null)
+                //{
+                //    IsValidation = false;
+                //    DependencyService.Get<Toast>().Show("Please select Lactating");
+                //    return;
+                //}
+                if (ddlReceivedMealFromAwcunderAay.TextColor == Color.Red)
+                {
+                    IsValidation = false;
+                    DependencyService.Get<Toast>().Show("Please enter received meal from AWC under AAY between 0 to 6 months");
+                    return;
+                }
             }
-            var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
-            if(ChildExpectedid==null)
+            catch
             {
-                IsValidation = false;
-                DependencyService.Get<Toast>().Show("Please select Child Expected");
-                return;
+
             }
-            var Lactating = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
-            if(Lactating==null)
-            {
-                IsValidation = false;
-                DependencyService.Get<Toast>().Show("Please select Lactating");
-                return;
-            }
-            if (ddlReceivedMealFromAwcunderAay.TextColor == Color.Red)
-            {
-                IsValidation = false;
-                DependencyService.Get<Toast>().Show("Please enter received meal from AWC under AAY between 0 to 6 months");
-                return;
-            }
-            
 
         }
-       private void  EditMGrouth()
+        private void EditMGrouth()
         {
-             var checkFamilydata = App.DAUtil.FindGrowthRegisterMotherSingleData(StaticClass.GrouthMotherID.ToString());
-              if (checkFamilydata.Count > 0)
-                {
-                   try
-                    {
-                    var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate();
+            try
+            {
+                var checkFamilydata = App.DAUtil.FindGrowthRegisterMotherSingleData(StaticClass.GrouthMotherID.ToString());
+            if (checkFamilydata.Count > 0)
+            {
+                
+                    var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
                     for (int i = 0; i < ListOfDatamonth.Count; i++)
                     {
                         DataM dataMonths = new DataM();
                         dataMonths.Datamonthid = ListOfDatamonth[i].Datamonthid;
-                        if(ListOfDatamonth[i].Datamonthid== checkFamilydata[0].DataMonthId)
+                        if (ListOfDatamonth[i].Datamonthid == checkFamilydata[0].DataMonthId)
                         {
-                           ddlDataMonth.SelectedIndex = i;
+                            ddlDataMonth.SelectedIndex = i;
                         }
-                      }
-                   
+                    }
+
                     ddChildExpected.SelectedIndex = checkFamilydata[0].ChildExpected == true ? 0 : 1;
                     ddlReceivedDietUnderAay.SelectedIndex = checkFamilydata[0].ReceivedDietUnderAay == true ? 0 : 1;
                     ddlGetMealAwcUnderAay.SelectedIndex = checkFamilydata[0].GetMealAwcUnderAay == true ? 0 : 1;
                     ddlMealFromAwcunderAay.SelectedIndex = checkFamilydata[0].ReceivedMealFromAwcunderAay == true ? 0 : 1;
                     if (checkFamilydata[0].ExpectedDeliveryDate == null)
                     {
-                       txtExpectedDeliveryDate2.IsVisible = false;
-                       txtExpectedDeliveryDate11.IsVisible = true;
+                        txtExpectedDeliveryDate2.IsVisible = false;
+                        txtExpectedDeliveryDate11.IsVisible = true;
                     }
                     else
                     {
                         txtExpectedDeliveryDate.Date = Convert.ToDateTime(checkFamilydata[0].ExpectedDeliveryDate);
-                       txtExpectedDeliveryDate2.IsVisible = true;
+                        txtExpectedDeliveryDate2.IsVisible = true;
                         txtExpectedDeliveryDate11.IsVisible = false;
                     }
                     if (checkFamilydata[0].LastDeliveryDate == null)
@@ -341,19 +338,20 @@ namespace CAN
                         txtLastDeliveryDate2.IsVisible = true;
                         txtLastDeliveryDate11.IsVisible = false;
                     }
-                   // txtLastDeliveryDate.Date = checkFamilydata[0].LastDeliveryDate;
-                    ddlAwcregister.SelectedIndex = checkFamilydata[0].AwcregistrationDate==true?0:1;
-                    txtancregister.Text= checkFamilydata[0].AncregistraionDate.ToString();
-                   
+                    // txtLastDeliveryDate.Date = checkFamilydata[0].LastDeliveryDate;
+                    ddlAwcregister.SelectedIndex = checkFamilydata[0].AwcregistrationDate == true ? 0 : 1;
+                    txtancregister.Text = checkFamilydata[0].AncregistraionDate.ToString();
+
                     txtMotherWeightInDeliveryTime.Text = checkFamilydata[0].MotherWeightInDeliveryTime.ToString();
+                    txtDateOfMeasurement.IsEnabled = false;
                     txtDateOfMeasurement.Date = checkFamilydata[0].DateOfMeasurement;
-                   
-                   // ddlReceivedDietUnderAay.SelectedIndex = checkFamilydata[0].ReceivedDietUnderAay == true ? 0 : 1;
+
+                    // ddlReceivedDietUnderAay.SelectedIndex = checkFamilydata[0].ReceivedDietUnderAay == true ? 0 : 1;
                     ddlReceivedMealFromAwcunderAay.Text = checkFamilydata[0].HowManyReceivedMealFromAwcunderAay.ToString();
                     ddlReceivedSnacksUnderAay.SelectedIndex = checkFamilydata[0].ReceivedSnacksUnderAay == true ? 0 : 1;
                     // ddlReceivedSnacksFromAwc.SelectedIndex = checkFamilydata[0].ReceivedSnacksFromAwc == true ? 0 : 1;
-                    
-                         txtMotherWeightIn1Trimesterr.Text = checkFamilydata[0].MotherWeightIn1Trimester.ToString();
+
+                    txtMotherWeightIn1Trimesterr.Text = checkFamilydata[0].MotherWeightIn1Trimester.ToString();
                     var TypeOfReceivedSnacksFromAwc = App.DAUtil.GetColumnValuesBytext(42);
                     for (int i = 0; i < TypeOfReceivedSnacksFromAwc.Count; i++)
                     {
@@ -381,7 +379,7 @@ namespace CAN
                         }
                     }
 
-                    
+
                     var TypeEggReceived = App.DAUtil.GetColumnValuesBytext(41);
                     for (int i = 0; i < TypeEggReceived.Count; i++)
                     {
@@ -390,8 +388,8 @@ namespace CAN
                             ddlEggReceived.SelectedIndex = i;
                         }
                     }
-                    
-                   // ddlEggReceived.SelectedIndex = checkFamilydata[0].EggReceived == true ? 0 : 1;
+
+                    // ddlEggReceived.SelectedIndex = checkFamilydata[0].EggReceived == true ? 0 : 1;
                     ddlIsLactating.SelectedIndex = checkFamilydata[0].IsLactating == true ? 0 : 1;
                     ddlIsFirstPregnancy.SelectedIndex = checkFamilydata[0].IsFirstPregnancy == true ? 0 : 1;
                     var EatMealRegularlyFromAwc = App.DAUtil.GetColumnValuesBytext(43);
@@ -438,13 +436,12 @@ namespace CAN
                         }
                     }
                 }
-                catch (Exception ex)
-                    {
-
-                    }
-                
+              }
+            catch (Exception ex)
+            {
 
             }
+
         }
         private void BtnSave_Clicked(object sender, EventArgs e)
         {
@@ -454,16 +451,17 @@ namespace CAN
                 validation();
                 if (IsValidation)
                 {
-                    
-                        TblGrowthRegisterMother tblGrowthRegisterMother = new TblGrowthRegisterMother();
-                    if (btnSave.Text== "Update")
+
+                    TblGrowthRegisterMother tblGrowthRegisterMother = new TblGrowthRegisterMother();
+                    if (btnSave.Text == "Update")
                     {
-                      var CheckMotherGroth=  App.DAUtil.FindGrowthRegisterMotherSingleData(StaticClass.GrouthMotherID.ToString());
+                        var CheckMotherGroth = App.DAUtil.FindGrowthRegisterMotherSingleData(StaticClass.GrouthMotherID.ToString());
                         tblGrowthRegisterMother.GrowthId = CheckMotherGroth[0].GrowthId; //StaticClass.GrouthMotherID;
                         tblGrowthRegisterMother.FamilyId = CheckMotherGroth[0].FamilyId; //StaticClass.GrouthFamilyId;
+                        StaticClass.GrouthFamilyId= CheckMotherGroth[0].FamilyId;
                         tblGrowthRegisterMother.DOE = CheckMotherGroth[0].DOE;// DateTime.Now;
                         App.DAUtil.deleteGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString(), StaticClass.GrouthMotherID.ToString());
-                       
+
                     }
                     else
                     {
@@ -471,88 +469,89 @@ namespace CAN
                         tblGrowthRegisterMother.FamilyId = StaticClass.GrouthFamilyId;
                         tblGrowthRegisterMother.DOE = DateTime.Now;
                     }
-                       
-                        var selectedDataMonth = (DataM)ddlDataMonth.SelectedItem;
-                        tblGrowthRegisterMother.DataMonthId = selectedDataMonth.Datamonthid;
-                        var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
-                        string IsChildExpected = ChildExpectedid.Name;
-                        tblGrowthRegisterMother.ChildExpected = IsChildExpected == "Yes" ? true : false;
-                        tblGrowthRegisterMother.ExpectedDeliveryDate =Expectdate==null?Expectdate:txtExpectedDeliveryDate.Date;
-                        var SelectedIsLactatingid = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
-                        string IsLactating = SelectedIsLactatingid.Name;
-                        tblGrowthRegisterMother.IsLactating = IsLactating == "Yes" ? true : false;
-                        tblGrowthRegisterMother.LastDeliveryDate =lastdDate==null?lastdDate:txtLastDeliveryDate.Date;
+
+                    var selectedDataMonth = (DataM)ddlDataMonth.SelectedItem;
+                    tblGrowthRegisterMother.DataMonthId = selectedDataMonth.Datamonthid;
+                    var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
+                    string IsChildExpected = ChildExpectedid==null?"No": ChildExpectedid.Name;
+                    tblGrowthRegisterMother.ChildExpected = IsChildExpected == "Yes" ? true : false;
+                    tblGrowthRegisterMother.ExpectedDeliveryDate = Expectdate == null ? (DateTime?)null : txtExpectedDeliveryDate.Date;
+                    var SelectedIsLactatingid = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
+                    string IsLactating = SelectedIsLactatingid==null?"No": SelectedIsLactatingid.Name;
+                    tblGrowthRegisterMother.IsLactating = IsLactating == "Yes" ? true : false;
+                    tblGrowthRegisterMother.LastDeliveryDate = lastdDate == null ? (DateTime?)null : txtLastDeliveryDate.Date;
                     var SelectedddlAwcregister = (OwnAgriculturalLand)ddlAwcregister.SelectedItem;
-                    tblGrowthRegisterMother.AwcregistrationDate = SelectedddlAwcregister.Name == "Yes" ?true :false ;
-                    tblGrowthRegisterMother.AncregistraionDate = Convert.ToInt32(txtancregister.Text) ;
-                       tblGrowthRegisterMother.MotherWeightIn1Trimester = Convert.ToDecimal(txtMotherWeightIn1Trimesterr.Text);
-                       
-                        tblGrowthRegisterMother.MotherWeightInDeliveryTime = Convert.ToDecimal(txtMotherWeightInDeliveryTime.Text);
-                        tblGrowthRegisterMother.DateOfMeasurement = txtDateOfMeasurement.Date;
-                       var SelectedReceivedDietUnderAay = (OwnAgriculturalLand)ddlReceivedDietUnderAay.SelectedItem;
-                        string IsSelectedReceivedDietUnderAay = SelectedReceivedDietUnderAay == null ? "No" : SelectedReceivedDietUnderAay.Name;
-                        tblGrowthRegisterMother.ReceivedDietUnderAay = IsSelectedReceivedDietUnderAay == "Yes" ? true : false;
+                    string awcregistrationDate = SelectedddlAwcregister == null ? "No" : SelectedddlAwcregister.Name;
+                    tblGrowthRegisterMother.AwcregistrationDate= awcregistrationDate == "Yes" ? true : false;
+                    tblGrowthRegisterMother.AncregistraionDate = Convert.ToInt32(txtancregister.Text);
+                    tblGrowthRegisterMother.MotherWeightIn1Trimester = Convert.ToDecimal(txtMotherWeightIn1Trimesterr.Text);
+
+                    tblGrowthRegisterMother.MotherWeightInDeliveryTime = Convert.ToDecimal(txtMotherWeightInDeliveryTime.Text);
+                    tblGrowthRegisterMother.DateOfMeasurement = txtDateOfMeasurement.Date;
+                    var SelectedReceivedDietUnderAay = (OwnAgriculturalLand)ddlReceivedDietUnderAay.SelectedItem;
+                    string IsSelectedReceivedDietUnderAay = SelectedReceivedDietUnderAay == null ? "No" : SelectedReceivedDietUnderAay.Name;
+                    tblGrowthRegisterMother.ReceivedDietUnderAay = IsSelectedReceivedDietUnderAay == "Yes" ? true : false;
                     var SelectedGetMealAwcUnderAay = (OwnAgriculturalLand)ddlGetMealAwcUnderAay.SelectedItem;
                     string IsSelectedGetMealAwcUnderAay = SelectedGetMealAwcUnderAay == null ? "No" : SelectedGetMealAwcUnderAay.Name;
                     tblGrowthRegisterMother.GetMealAwcUnderAay = IsSelectedGetMealAwcUnderAay == "Yes" ? true : false;
 
                     var SelectedReceivedMealFromAwcunderAay = (OwnAgriculturalLand)ddlMealFromAwcunderAay.SelectedItem;
-                        string IsSelectedReceivedMealFromAwcunderAay = SelectedReceivedMealFromAwcunderAay == null ? "No" : SelectedReceivedMealFromAwcunderAay.Name;
-                    tblGrowthRegisterMother.ReceivedMealFromAwcunderAay= IsSelectedReceivedMealFromAwcunderAay == "Yes" ? true : false;
+                    string IsSelectedReceivedMealFromAwcunderAay = SelectedReceivedMealFromAwcunderAay == null ? "No" : SelectedReceivedMealFromAwcunderAay.Name;
+                    tblGrowthRegisterMother.ReceivedMealFromAwcunderAay = IsSelectedReceivedMealFromAwcunderAay == "Yes" ? true : false;
                     tblGrowthRegisterMother.HowManyReceivedMealFromAwcunderAay = Convert.ToInt32(ddlReceivedMealFromAwcunderAay.Text);
-                        var SelectedReceivedSnacksUnderAay = (OwnAgriculturalLand)ddlReceivedSnacksUnderAay.SelectedItem;
-                        string IsSelectedReceivedSnacksUnderAay = SelectedReceivedSnacksUnderAay == null ? "No" : SelectedReceivedSnacksUnderAay.Name;
-                        tblGrowthRegisterMother.ReceivedSnacksUnderAay = IsSelectedReceivedSnacksUnderAay == "Yes" ? true : false;
-                        var SelectedReceivedSnacksFromAwc = (ColumnValue)ddlReceivedSnacksFromAwc.SelectedItem;
-                        tblGrowthRegisterMother.ReceivedSnacksFromAwc = SelectedReceivedSnacksFromAwc == null ? 0 : SelectedReceivedSnacksFromAwc.columnValueId;
+                    var SelectedReceivedSnacksUnderAay = (OwnAgriculturalLand)ddlReceivedSnacksUnderAay.SelectedItem;
+                    string IsSelectedReceivedSnacksUnderAay = SelectedReceivedSnacksUnderAay == null ? "No" : SelectedReceivedSnacksUnderAay.Name;
+                    tblGrowthRegisterMother.ReceivedSnacksUnderAay = IsSelectedReceivedSnacksUnderAay == "Yes" ? true : false;
+                    var SelectedReceivedSnacksFromAwc = (ColumnValue)ddlReceivedSnacksFromAwc.SelectedItem;
+                    tblGrowthRegisterMother.ReceivedSnacksFromAwc = SelectedReceivedSnacksFromAwc == null ? 0 : SelectedReceivedSnacksFromAwc.columnValueId;
                     var selectedTypeOfMeal = (ColumnValue)ddlTypeOfMeal.SelectedItem;
-                        tblGrowthRegisterMother.TypeOfMeal = selectedTypeOfMeal == null ? 0 : selectedTypeOfMeal.columnValueId;
+                    tblGrowthRegisterMother.TypeOfMeal = selectedTypeOfMeal == null ? 0 : selectedTypeOfMeal.columnValueId;
                     //  var selectedEggReceived = (ColumnValue)ddlEggReceived.SelectedItem;
                     // tblGrowthRegisterMother.EggReceived = selectedEggReceived.columnValueId;
                     var selectedEggReceived = (ColumnValue)ddlEggReceived.SelectedItem;
-                       tblGrowthRegisterMother.EggReceived = selectedEggReceived == null ? 0 : selectedEggReceived.columnValueId;
-                        var selectedEatMealRegularlyFromAwc = (ColumnValue)ddlEatMealRegularlyFromAwc.SelectedItem;
-                        tblGrowthRegisterMother.EatMealRegularlyFromAwc = selectedEatMealRegularlyFromAwc == null ? 0 : selectedEatMealRegularlyFromAwc.columnValueId;
-                        var selectedIsMealEnough = (ColumnValue)ddlIsMealEnough.SelectedItem;
-                        tblGrowthRegisterMother.IsMealEnough = selectedIsMealEnough == null ? 0 : selectedIsMealEnough.columnValueId;
-                        var selectedQualityOfAwcfood = (ColumnValue)ddlQualityOfAwcfood.SelectedItem;
-                        tblGrowthRegisterMother.QualityOfAwcfood = selectedQualityOfAwcfood == null ? 0 : selectedQualityOfAwcfood.columnValueId;
-                        var selectedResonForNotEatingAwcmeal = (ColumnValue)ddlResonForNotEatingAwcmeal.SelectedItem;
-                        tblGrowthRegisterMother.ResonForNotEatingAwcmeal = selectedResonForNotEatingAwcmeal == null ? 0 : selectedResonForNotEatingAwcmeal.columnValueId;
-                        var SelectedIsFirstPregnancy = (OwnAgriculturalLand)ddlIsFirstPregnancy.SelectedItem;
-                        string SelectFirstPregnancy = SelectedIsFirstPregnancy == null ? "No" : SelectedIsFirstPregnancy.Name;
-                        tblGrowthRegisterMother.IsFirstPregnancy = SelectFirstPregnancy == "Yes" ? true : false;
-                        tblGrowthRegisterMother.DOU = DateTime.Now;
-                       tblGrowthRegisterMother.ANCCheckups = StaticClass.ANCCheckups;
-                       tblGrowthRegisterMother.ANMMarkHighRiskScreening = StaticClass.ANMMarkHighRiskScreening;
-                       tblGrowthRegisterMother.HighRiskMotherHistory = StaticClass.HighRiskMother;
-                       tblGrowthRegisterMother.TotalPregnancyMonths = txtTotalPregnancyMonths.Text;
+                    tblGrowthRegisterMother.EggReceived = selectedEggReceived == null ? 0 : selectedEggReceived.columnValueId;
+                    var selectedEatMealRegularlyFromAwc = (ColumnValue)ddlEatMealRegularlyFromAwc.SelectedItem;
+                    tblGrowthRegisterMother.EatMealRegularlyFromAwc = selectedEatMealRegularlyFromAwc == null ? 0 : selectedEatMealRegularlyFromAwc.columnValueId;
+                    var selectedIsMealEnough = (ColumnValue)ddlIsMealEnough.SelectedItem;
+                    tblGrowthRegisterMother.IsMealEnough = selectedIsMealEnough == null ? 0 : selectedIsMealEnough.columnValueId;
+                    var selectedQualityOfAwcfood = (ColumnValue)ddlQualityOfAwcfood.SelectedItem;
+                    tblGrowthRegisterMother.QualityOfAwcfood = selectedQualityOfAwcfood == null ? 0 : selectedQualityOfAwcfood.columnValueId;
+                    var selectedResonForNotEatingAwcmeal = (ColumnValue)ddlResonForNotEatingAwcmeal.SelectedItem;
+                    tblGrowthRegisterMother.ResonForNotEatingAwcmeal = selectedResonForNotEatingAwcmeal == null ? 0 : selectedResonForNotEatingAwcmeal.columnValueId;
+                    var SelectedIsFirstPregnancy = (OwnAgriculturalLand)ddlIsFirstPregnancy.SelectedItem;
+                    string SelectFirstPregnancy = SelectedIsFirstPregnancy == null ? "No" : SelectedIsFirstPregnancy.Name;
+                    tblGrowthRegisterMother.IsFirstPregnancy = SelectFirstPregnancy == "Yes" ? true : false;
+                    tblGrowthRegisterMother.DOU = DateTime.Now;
+                    tblGrowthRegisterMother.ANCCheckups = StaticClass.ANCCheckups;
+                    tblGrowthRegisterMother.ANMMarkHighRiskScreening = StaticClass.ANMMarkHighRiskScreening;
+                    tblGrowthRegisterMother.HighRiskMotherHistory = StaticClass.HighRiskMother;
+                    tblGrowthRegisterMother.TotalPregnancyMonths = txtTotalPregnancyMonths.Text;
 
-                        tblGrowthRegisterMother.CreatedBy = 0;
-                        tblGrowthRegisterMother.UpdatedBy = 0;
+                    tblGrowthRegisterMother.CreatedBy = 0;
+                    tblGrowthRegisterMother.UpdatedBy = 0;
 
-                        App.DAUtil.SaveGrowthRegisterMother(tblGrowthRegisterMother);
+                    App.DAUtil.SaveGrowthRegisterMother(tblGrowthRegisterMother);
                     StaticClass.ANCCheckups = null;
                     StaticClass.ANMMarkHighRiskScreening = null;
                     StaticClass.HighRiskMother = null;
-                        StaticClass.PageName = "HomePage";
+                    StaticClass.PageName = "HomePage";
                     StaticClass.TabbedIndex = 1;
-                        Application.Current.MainPage = new MasterDetailPage1();
-                   
+                    Application.Current.MainPage = new MasterDetailPage1();
+
                 }
                 else
                 {
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
         }
         private void showandhidePageLoadStacklayout()
         {
-          //  stck4.IsVisible = false;
+            //  stck4.IsVisible = false;
             //stack8.IsVisible = false;
             //stack41.IsVisible = false;
             //stac4truwithin6month.IsVisible = false;
@@ -564,7 +563,7 @@ namespace CAN
         {
             var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
             string IsChildExpected = ChildExpectedid.Name;
-            if(IsChildExpected=="Yes")
+            if (IsChildExpected == "Yes")
             {
                 stacShowAndHide.IsVisible = true;
             }
@@ -574,8 +573,8 @@ namespace CAN
                 stacShowAndHide.IsVisible = false;
                 ddlIsFirstPregnancy.SelectedIndex = 2;
             }
-            
-          
+
+
         }
 
         private void DdlIsLactating_SelectedIndexChanged(object sender, EventArgs e)
@@ -588,28 +587,28 @@ namespace CAN
             }
             else
             {
-             //   var IsLactating = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
+                //   var IsLactating = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
 
-               // string Lactating = IsLactating.Name;
-               
+                // string Lactating = IsLactating.Name;
+
             }
         }
 
         private void DdlIsGettingTreatment_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
-           // var Lactating = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
-           
-            
-          
+            // var ChildExpectedid = (OwnAgriculturalLand)ddChildExpected.SelectedItem;
+            // var Lactating = (OwnAgriculturalLand)ddlIsLactating.SelectedItem;
+
+
+
         }
 
-       
+
         //private void DdlReceivedMealFromAwcunderAay_SelectedIndexChanged(object sender, EventArgs e)
         //{
         //    var ReceivedMealFromAwcunderAay = (OwnAgriculturalLand)ddlReceivedMealFromAwcunderAay.SelectedItem;
         //   string ReceivedMealFromAwc = ReceivedMealFromAwcunderAay.Name;
-           
+
         //}
 
         private async void TxtHighRiskMotherHistory_Clicked(object sender, EventArgs e)
@@ -630,7 +629,7 @@ namespace CAN
             await Navigation.PushPopupAsync(page);
         }
 
-        
+
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
@@ -654,7 +653,7 @@ namespace CAN
             txtExpectedDeliveryDate2.IsVisible = true;
             txtExpectedDeliveryDate11.IsVisible = false;
 
-             Expectdate = txtExpectedDeliveryDate.Date;
+            Expectdate = txtExpectedDeliveryDate.Date;
         }
 
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
@@ -680,8 +679,8 @@ namespace CAN
             //}
             txtLastDeliveryDate2.IsVisible = true;
             txtLastDeliveryDate11.IsVisible = false;
-             lastdDate = txtLastDeliveryDate.Date; 
-           
+            lastdDate = txtLastDeliveryDate.Date;
+
         }
 
         private void DdlReceivedMealFromAwcunderAay_TextChanged(object sender, TextChangedEventArgs e)
@@ -728,7 +727,7 @@ namespace CAN
             {
                 txtExpectedDeliveryDate11.IsVisible = true;
                 txtExpectedDeliveryDate2.IsVisible = false;
-                
+
             }
             else
             {
@@ -755,27 +754,134 @@ namespace CAN
 
         private void TxtDateOfMeasurement_DateSelected(object sender, DateChangedEventArgs e)
         {
-            if (txtExpectedDeliveryDate2.IsVisible == false)
+            try
             {
-                DateTime dateTime = txtDateOfMeasurement.Date;
-                txtExpectedDeliveryDate.MinimumDate = dateTime;
-                txtExpectedDeliveryDate2.IsVisible = false;
-                txtExpectedDeliveryDate11.IsVisible = true;
-                txtLastDeliveryDate.MinimumDate = dateTime;
-                txtLastDeliveryDate11.IsVisible = true;
-                txtLastDeliveryDate2.IsVisible = false;
+                if (txtExpectedDeliveryDate2.IsVisible == false)
+                {
+                    DateTime dateTime = txtDateOfMeasurement.Date;
+                    txtExpectedDeliveryDate.MinimumDate = dateTime;
+                    int month = dateTime.Month;
+                    txtExpectedDeliveryDate.MaximumDate = new DateTime(dateTime.Year, month += 5, dateTime.Day);
+                    txtLastDeliveryDate.MaximumDate = DateTime.Now;
+                    txtExpectedDeliveryDate2.IsVisible = false;
+                    txtExpectedDeliveryDate11.IsVisible = true;
+                   // txtLastDeliveryDate.MinimumDate = dateTime;
+                    txtLastDeliveryDate11.IsVisible = true;
+                    txtLastDeliveryDate2.IsVisible = false;
+                }
+                else
+                {
+                    DateTime dateTime = txtDateOfMeasurement.Date;
+                    txtExpectedDeliveryDate.MinimumDate = dateTime;
+                    int month = dateTime.Month;
+                    txtExpectedDeliveryDate.MaximumDate = new DateTime(dateTime.Year, month += 5, dateTime.Day);
+                    txtExpectedDeliveryDate2.IsVisible = true;
+                    txtExpectedDeliveryDate11.IsVisible = false;
+                    //  txtLastDeliveryDate.MinimumDate = dateTime;
+                    txtLastDeliveryDate.MaximumDate = DateTime.Now; //new DateTime(dateTime.Year, month, dateTime.Day);
+                    txtLastDeliveryDate11.IsVisible = false;
+                    txtLastDeliveryDate2.IsVisible = true;
+                }
             }
-            else
+            catch
             {
-                DateTime dateTime = txtDateOfMeasurement.Date;
-                txtExpectedDeliveryDate.MinimumDate = dateTime;
-                txtExpectedDeliveryDate2.IsVisible = true;
-                txtExpectedDeliveryDate11.IsVisible = false;
-                txtLastDeliveryDate.MinimumDate = dateTime;
-                txtLastDeliveryDate11.IsVisible = false;
-                txtLastDeliveryDate2.IsVisible = true;
+
             }
-            
+
         }
+        private void lastMGrouth()
+        {
+            try
+            {
+                var checkFamilydata = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString()).LastOrDefault();
+                if (checkFamilydata != null)
+                {
+                    try
+                    {
+                        ddChildExpected.SelectedIndex = checkFamilydata.ChildExpected == true ? 0 : 1;
+                        ddlIsFirstPregnancy.SelectedIndex = checkFamilydata.IsFirstPregnancy == true ? 0 : 1;
+                        ddlMealFromAwcunderAay.SelectedIndex = checkFamilydata.ReceivedMealFromAwcunderAay == true ? 0 : 1;
+                        txtancregister.Text = checkFamilydata.AncregistraionDate.ToString();
+                        ddlGetMealAwcUnderAay.SelectedIndex = checkFamilydata.GetMealAwcUnderAay == true ? 0 : 1;
+                        if (checkFamilydata.ExpectedDeliveryDate == null)
+                        {
+                            txtExpectedDeliveryDate2.IsVisible = false;
+                            txtExpectedDeliveryDate11.IsVisible = true;
+                        }
+                        else
+                        {
+                            txtExpectedDeliveryDate.Date = Convert.ToDateTime(checkFamilydata.ExpectedDeliveryDate);
+                            txtExpectedDeliveryDate2.IsVisible = true;
+                            txtExpectedDeliveryDate11.IsVisible = false;
+                        }
+                        if (checkFamilydata.LastDeliveryDate == null)
+                        {
+                            txtLastDeliveryDate2.IsVisible = false;
+                            txtLastDeliveryDate11.IsVisible = true;
+                        }
+                        else
+                        {
+                            txtLastDeliveryDate.Date = Convert.ToDateTime(checkFamilydata.LastDeliveryDate);
+                            txtLastDeliveryDate2.IsVisible = true;
+                            txtLastDeliveryDate11.IsVisible = false;
+                        }
+                        txtMotherWeightIn1Trimesterr.Text = checkFamilydata.MotherWeightIn1Trimester.ToString();
+                        var TypeOfReceivedSnacksFromAwc = App.DAUtil.GetColumnValuesBytext(42);
+                        for (int i = 0; i < TypeOfReceivedSnacksFromAwc.Count; i++)
+                        {
+                            if (TypeOfReceivedSnacksFromAwc[i].columnValueId == checkFamilydata.ReceivedSnacksFromAwc)
+                            {
+                                ddlReceivedSnacksFromAwc.SelectedIndex = i;
+                            }
+                        }
+                        txtMotherWeightIn1Trimesterr.Text = checkFamilydata.MotherWeightIn1Trimester.ToString();
+                        var TypeOfMeal = App.DAUtil.GetColumnValuesBytext(40);
+                        for (int i = 0; i < TypeOfMeal.Count; i++)
+                        {
+                            if (TypeOfMeal[i].columnValueId == checkFamilydata.TypeOfMeal)
+                            {
+                                ddlTypeOfMeal.SelectedIndex = i;
+                            }
+                        }
+                        txtMotherWeightIn1Trimesterr.Text = checkFamilydata.MotherWeightIn1Trimester.ToString();
+                        var typeEatMealRegularlyFromAwc = App.DAUtil.GetColumnValuesBytext(43);
+                        for (int i = 0; i < typeEatMealRegularlyFromAwc.Count; i++)
+                        {
+                            if (typeEatMealRegularlyFromAwc[i].columnValueId == checkFamilydata.EatMealRegularlyFromAwc)
+                            {
+                                ddlEatMealRegularlyFromAwc.SelectedIndex = i;
+                            }
+                        }
+
+
+                        //  txtLastDeliveryDate.Date = checkFamilydata[0].LastDeliveryDate;
+                        ddlAwcregister.SelectedIndex = checkFamilydata.AwcregistrationDate == true ? 0 : 1;
+                        ddlIsLactating.SelectedIndex = checkFamilydata.IsLactating == true ? 0 : 1;
+
+                        if (!string.IsNullOrEmpty(checkFamilydata.MotherWeightInDeliveryTime.ToString()) && !string.IsNullOrEmpty(checkFamilydata.MotherWeightIn1Trimester.ToString()))
+                        {
+                            double DWeight = 0;
+                            DWeight = Convert.ToDouble(txtMotherWeightInDeliveryTime.Text);
+                            double MWT = 0;
+                            MWT = Convert.ToDouble(txtMotherWeightIn1Trimesterr.Text);
+                            if (MWT != 0 && DWeight != 0)
+                            {
+                                txtdifferentweigh.Text = (DWeight - MWT).ToString();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+
+
+                }
+            }
+            catch
+            {
+
+            }
+            }
     }
 }

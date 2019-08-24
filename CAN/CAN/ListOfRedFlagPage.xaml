@@ -17,10 +17,10 @@
                                    BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
                                         <Grid>
                                             <Grid.RowDefinitions>
-                                                <RowDefinition Height="25"/>
-                                                <RowDefinition Height="*"/>
-                                                <RowDefinition Height="50"/>
-                                                <RowDefinition Height="50"/>
+                                                <RowDefinition Height="40"/>
+                                                <RowDefinition Height="40"/>
+                                                <RowDefinition Height="40"/>
+                                                <RowDefinition Height="40"/>
                                             </Grid.RowDefinitions>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="270"/>
@@ -31,25 +31,32 @@
 
                                             <StackLayout Grid.Row="0"  Spacing="1" Orientation="Horizontal">
 
-                                                <Label Text="Child Name :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="TailTruncation" 
+                                                <Label Text="बालकाचे नाव (Child Name) :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="TailTruncation" 
                                                 FontAttributes="Bold"/>
                                                 <Label Text="{Binding ChildName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
 
                                             </StackLayout>
                                             <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
 
-                                                <Label Text="Gender :-     " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                <Label Text="लिंग (Gender) :-     " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
                                                  FontAttributes="Bold"/>
                                                 <Label Text="{Binding GenderName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                             </StackLayout>
                                             <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
 
-                                                <Label Text="Data Month :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                <Label Text="माहितीचा महिना (Data Month) :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
                                                  FontAttributes="Bold"/>
                                                 <Label Text="{Binding DataMonth}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
 
                                             </StackLayout>
                                             <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
+
+                                                <Label Text="बालकाचा कोड (Child Code) :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                                 FontAttributes="Bold"/>
+                                                <Label Text="{Binding ChildCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+
+                                            </StackLayout>
+                                            <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">
                                                 <Image x:Name="{Binding RedFlagId}" IsVisible="{Binding IsvisuaEdit}" Grid.Column="1"  Source="ic_List.png" WidthRequest="40" Aspect="AspectFill">
                                                     <Image.GestureRecognizers>
                                                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1" />

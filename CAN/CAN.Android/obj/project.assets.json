@@ -845,7 +845,6 @@
       "sha512": "zjVy7Np8MDbCP9yeeScjgiJMlQuSQJxc+VgLymCR9/LZiYfGR+F6t/UMnSOnnXQ1c5SrKkunsewzbL/wWNOFpQ==",
       "type": "package",
       "path": "newtonsoft.json/8.0.2",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1765,11 +1764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\15-12-2018\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
+      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
       "projectName": "CAN.Android",
-      "projectPath": "D:\\15-12-2018\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
+      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
       "packagesPath": "C:\\Users\\viru\\.nuget\\packages\\",
-      "outputPath": "D:\\15-12-2018\\CAN\\CAN\\CAN.Android\\obj\\",
+      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1786,8 +1785,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "D:\\15-12-2018\\CAN\\CAN\\CAN\\CAN.csproj": {
-              "projectPath": "D:\\15-12-2018\\CAN\\CAN\\CAN\\CAN.csproj"
+            "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.csproj": {
+              "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.csproj"
             }
           }
         }

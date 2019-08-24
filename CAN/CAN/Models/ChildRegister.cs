@@ -22,11 +22,11 @@ namespace CAN.Models
         public int GenderID { get; set; }
 
         //public string SchoolName { get; set; } // extra
-        public decimal BirthWeightInKg { get; set; }
+        public decimal? BirthWeightInKg { get; set; }
 
         //public int BloodGroup { get; set; } // extra
         //public string AnyExistingDisease { get; set; } // extra
-        public int BirthOrder { get; set; }  //Entry
+        public int? BirthOrder { get; set; }  //Entry
         public DateTime RegisterDate { get; set; }
 
         public DateTime DOE { get; set; }
@@ -35,22 +35,22 @@ namespace CAN.Models
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }
         public int ChildStatus { get; set; }
-        public decimal BirthLengthHeightInCms { get; set; }
-        public int BirthPlace { get; set; } //dropdown
-        public int BirthDeliveryType { get; set; }
-        public int DeliveryTerm { get; set; }
-        public decimal AWCEntryWeightInKG { get; set; } //doute
-        public decimal AWCEntryHeightInCms { get; set; }
-        public decimal AWCEntryMUAC { get; set; }
-        public decimal AWCEntryW4AZ { get; set; }
-        public decimal AWCEntryW4HZ { get; set; }
+        public decimal? BirthLengthHeightInCms { get; set; }
+        public int? BirthPlace { get; set; } //dropdown
+        public int? BirthDeliveryType { get; set; }
+        public int? DeliveryTerm { get; set; }
+        public decimal? AWCEntryWeightInKG { get; set; } //doute
+        public decimal? AWCEntryHeightInCms { get; set; }
+        public decimal? AWCEntryMUAC { get; set; }
+        public decimal? AWCEntryW4AZ { get; set; }
+        public decimal? AWCEntryW4HZ { get; set; }
         public byte[] Photograph { get; set; }
         public string ChildCode { get; set; }
         public string AnyDisability { get; set; }
         public string AnyIllness { get; set; }
         public string AnyLongTermIllnessInFamily { get; set; }
-        public int GrowthChartGrade { get; set; }
-        public int GradeOfChild { get; set; }
+        public int? GrowthChartGrade { get; set; }
+        public int? GradeOfChild { get; set; }
         public DateTime? AWCEntryDate { get; set; }
         
     }

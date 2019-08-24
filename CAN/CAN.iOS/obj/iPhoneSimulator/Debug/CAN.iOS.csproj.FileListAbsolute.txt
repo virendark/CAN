@@ -66,74 +66,6 @@ D:\25-11-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
 D:\25-11-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
 D:\25-11-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
 D:\25-11-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll
-F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.pdb
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\optimized\
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csprojAssemblyReference.cache
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CoreCompileInputs.cache
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
-F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
 D:\15-12-2018\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
 D:\15-12-2018\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
 D:\15-12-2018\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ExifLib.dll
@@ -222,3 +154,441 @@ D:\15-12-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
 D:\15-12-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
 D:\15-12-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
 D:\15-12-2018\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ExifLib.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Core.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Ioc.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Serialization.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ExifLib.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Core.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Ioc.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.iOS.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Serialization.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll.mdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ExifLib.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.iOS.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Core.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.iOS.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Ioc.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.iOS.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Serialization.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll.mdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ExifLib.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.iOS.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Core.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.iOS.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Ioc.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.iOS.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Serialization.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll
+F:\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.pdb
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\optimized\
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csprojAssemblyReference.cache
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CoreCompileInputs.cache
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
+F:\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\optimized\
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csprojAssemblyReference.cache
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CoreCompileInputs.cache
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.exe
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.exe
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.iOS.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ExifLib.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Permissions.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.Abstractions.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Toasts.Forms.Plugin.iOS.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.Abstractions.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Connectivity.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Plugin.Media.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Core.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Forms.iOS.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Ioc.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Platform.iOS.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\XLabs.Serialization.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.dll
+E:\Testing CAN\CAN\CAN\CAN.iOS\bin\iPhoneSimulator\Debug\CAN.pdb
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+E:\Testing CAN\CAN\CAN\CAN.iOS\obj\iPhoneSimulator\Debug\CAN.iOS.csproj.CopyComplete

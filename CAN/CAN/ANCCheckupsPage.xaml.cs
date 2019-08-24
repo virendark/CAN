@@ -75,47 +75,138 @@ namespace CAN
             }
             else
             {
-                if (StaticClass.ANCCheckups == null)
+                var checkFamilydata = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString()).LastOrDefault();
+                if (checkFamilydata!=null)
                 {
-                    var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
-                    for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
+                    string Assets = checkFamilydata.ANCCheckups;
+                    if (Assets != null)
                     {
-                        Ass ass = new Ass();
-                        ass.Id = ListOfListOfANCCheckup[i].columnValueId;
-                        ass.Name = ListOfListOfANCCheckup[i].columnValue;
-                        ass.Flag = "false";
-                        listass.Add(ass);
+                        var numbers = Assets.Split(',');
+                        List<string> Lass = new List<string>();
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            string data = numbers[i];
+                            Lass.Add(data);
+                        }
+                        var ListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
+                        for (int i = 0; i < ListOfANCCheckup.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfANCCheckup[i].columnValueId;
+                            ass.Name = ListOfANCCheckup[i].columnValue;
+                            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                            if (check != null)
+                            {
+                                ass.Flag = "true";
+                            }
+                            else
+                            {
+                                ass.Flag = "false";
+                            }
+                            listass.Add(ass);
+                        }
+                    }
+                    else
+                    {
+
+                        var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
+                        for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfListOfANCCheckup[i].columnValueId;
+                            ass.Name = ListOfListOfANCCheckup[i].columnValue;
+                            ass.Flag = "false";
+                            listass.Add(ass);
+                        }
                     }
                 }
                 else
                 {
-                    var numbers = StaticClass.ANCCheckups.Split(',');
-                    List<string> Lass = new List<string>();
-                    for (int i = 0; i < numbers.Length; i++)
+                    if (StaticClass.ANCCheckups == null)
                     {
-                        string data = numbers[i];
-                        Lass.Add(data);
-                    }
-                    var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
-                    for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
-                    {
-                        Ass ass = new Ass();
-                        ass.Id = ListOfListOfANCCheckup[i].columnValueId;
-                        ass.Name = ListOfListOfANCCheckup[i].columnValue;
-                        var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
-                        if (check != null)
+                        var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
+                        for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
                         {
-                            ass.Flag = "true";
-                        }
-                        else
-                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfListOfANCCheckup[i].columnValueId;
+                            ass.Name = ListOfListOfANCCheckup[i].columnValue;
                             ass.Flag = "false";
+                            listass.Add(ass);
                         }
-                        listass.Add(ass);
+                    }
+                    else
+                    {
+                        var numbers = StaticClass.ANCCheckups.Split(',');
+                        List<string> Lass = new List<string>();
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            string data = numbers[i];
+                            Lass.Add(data);
+                        }
+                        var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
+                        for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfListOfANCCheckup[i].columnValueId;
+                            ass.Name = ListOfListOfANCCheckup[i].columnValue;
+                            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                            if (check != null)
+                            {
+                                ass.Flag = "true";
+                            }
+                            else
+                            {
+                                ass.Flag = "false";
+                            }
+                            listass.Add(ass);
+                        }
                     }
                 }
             }
-            
+            #region add 
+            //else
+            //{
+            //    if (StaticClass.ANCCheckups == null)
+            //    {
+            //        var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
+            //        for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
+            //        {
+            //            Ass ass = new Ass();
+            //            ass.Id = ListOfListOfANCCheckup[i].columnValueId;
+            //            ass.Name = ListOfListOfANCCheckup[i].columnValue;
+            //            ass.Flag = "false";
+            //            listass.Add(ass);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        var numbers = StaticClass.ANCCheckups.Split(',');
+            //        List<string> Lass = new List<string>();
+            //        for (int i = 0; i < numbers.Length; i++)
+            //        {
+            //            string data = numbers[i];
+            //            Lass.Add(data);
+            //        }
+            //        var ListOfListOfANCCheckup = App.DAUtil.GetColumnValuesBytext(62);
+            //        for (int i = 0; i < ListOfListOfANCCheckup.Count; i++)
+            //        {
+            //            Ass ass = new Ass();
+            //            ass.Id = ListOfListOfANCCheckup[i].columnValueId;
+            //            ass.Name = ListOfListOfANCCheckup[i].columnValue;
+            //            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+            //            if (check != null)
+            //            {
+            //                ass.Flag = "true";
+            //            }
+            //            else
+            //            {
+            //                ass.Flag = "false";
+            //            }
+            //            listass.Add(ass);
+            //        }
+            //    }
+            //}
+            #endregion
             listView.ItemsSource = listass;
         }
      

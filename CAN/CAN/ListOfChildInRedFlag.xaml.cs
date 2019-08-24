@@ -51,27 +51,44 @@ namespace CAN
             //}
                 var DataMId = (DataM)ddlDataMonth.SelectedItem;
             int DataID = DataMId.Datamonthid;
+           
             var ChildList = App.DAUtil.GetListOfChildInRedFlagData(StaticClass.RedFlagChildId.ToString(), DataID);
             List<ListOfChildInRedFlagDetails> RedflagList = new List<ListOfChildInRedFlagDetails>(); 
             for (int j = 0; j < ChildList.Count; j++)
              {
+                var ChildDetails = App.DAUtil.FindChildByData(StaticClass.RedFlagChildId.ToString()).FirstOrDefault();
                 ListOfChildInRedFlagDetails listOfChildInRedFlagDetails = new ListOfChildInRedFlagDetails();
-                listOfChildInRedFlagDetails.ChildName = ChildList[j].ChildName;
+                listOfChildInRedFlagDetails.ChildName = ChildDetails==null?null: ChildDetails.ChildName;
                 listOfChildInRedFlagDetails.ChildId = ChildList[j].ChildId;
                 listOfChildInRedFlagDetails.DateMonthId = ChildList[j].DateMonthId;
                 listOfChildInRedFlagDetails.RedFlagId = ChildList[j].RedFlagId;
-
-                        if (ChildList[j].GenderID != 0)
+                listOfChildInRedFlagDetails.ChildCode = ChildDetails==null?null: ChildDetails.ChildCode;
+                if (ChildList[j].OutcomeofReferralbyASHA != 0)
+                {
+                    var ReferradTo = App.DAUtil.GetColumnValuesBytext(70);
+                    for (int i = 0; i < ReferradTo.Count; i++)
+                    {
+                        if (ReferradTo[i].columnValueId == ChildList[j].OutcomeofReferralbyASHA)
                         {
-                            var ListofGender = App.DAUtil.GetColumnValuesBytext(3);
-                            for (int k = 0; k < ListofGender.Count; k++)
+                            listOfChildInRedFlagDetails.OutcomeofReferralbyASHAName = ReferradTo[i].columnValue;
+                        }
+                      
+                    }
+                }
+                if (ChildDetails != null)
+                {
+                    if (ChildDetails.GenderID != 0)
+                    {
+                        var ListofGender = App.DAUtil.GetColumnValuesBytext(3);
+                        for (int k = 0; k < ListofGender.Count; k++)
+                        {
+                            if (ListofGender[k].columnValueId == ChildDetails.GenderID)
                             {
-                                if (ListofGender[k].columnValueId == ChildList[j].GenderID)
-                                {
-                            listOfChildInRedFlagDetails.GenderName = ListofGender[k].columnValue;
-                                }
+                                listOfChildInRedFlagDetails.GenderName = ListofGender[k].columnValue;
                             }
                         }
+                    }
+                }
                         if (ChildList[j].DateMonthId != 0)
                         {
                             var dateId = App.DAUtil.GetDataMonthByID(ChildList[j].DateMonthId);
@@ -143,6 +160,9 @@ namespace CAN
         public int ChildStatus { get; set; }
         public bool IsvisuaAdd { get; set; }
         public bool IsvisuaEdit { get; set; }
+        public string ChildCode { get; set; }
+        public int  OutcomeofReferralbyASHA { get; set; }
+        public string OutcomeofReferralbyASHAName { get; set; }
 
     }
 }

@@ -47,11 +47,11 @@
                       BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
                                     <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="*"/>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="25"/>
-                                            <RowDefinition Height="50"/>
+                                            <RowDefinition Height="45"/>
+                                            <RowDefinition Height="45"/>
+                                            <RowDefinition Height="45"/>
+                                            <RowDefinition Height="45"/>
+                                            <RowDefinition Height="45"/>
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="270"/>
@@ -62,26 +62,26 @@
 
                                         <StackLayout Grid.Row="0"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Father Name :-    " Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="वडिलांचे पूर्ण नाव (Father Name) :-" Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="WordWrap" 
                                                 FontAttributes="Bold"/>
                                             <Label Text="{Binding FatherName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
 
                                             </StackLayout>
                                           <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Mother Name :-     " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="आईचे पूर्ण नाव (Mother Name):-" TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding MotherName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
                                         <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Number of Childen :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="Number of Childen :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding NumberofChildenAlive}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
                                         <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="Family Code :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
+                                            <Label Text="कुटुंब क्र.(Family Code):- " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding FamilyCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
@@ -91,7 +91,7 @@
                                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"  NumberOfTapsRequired="1" />
                                                 </Image.GestureRecognizers>
                                             </Image>
-                                            <Label x:Name="{Binding FamilyId}"  Margin="5,0,0,0" Text="Edit" TextColor="Black" Grid.Column="2"  WidthRequest="100" VerticalOptions="Center" HorizontalTextAlignment="Start">
+                                            <Label x:Name="{Binding FamilyId}"  Margin="5,0,0,0" Text="संपादन करणे" TextColor="Black" Grid.Column="2"  WidthRequest="100" VerticalOptions="Center" HorizontalTextAlignment="Start">
                                                 <Label.GestureRecognizers>
                                                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_3"/>
                                                 </Label.GestureRecognizers>
@@ -101,7 +101,7 @@
                                                     <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"  NumberOfTapsRequired="1" />
                                                 </Image.GestureRecognizers>
                                             </Image>
-                                            <Label x:Name="{Binding FamilyId}" Margin="5,0,0,0"  Text="List/Add Child" TextColor="Black" Grid.Column="4" VerticalOptions="Center" HorizontalTextAlignment="Start"  WidthRequest="150">
+                                            <Label x:Name="{Binding FamilyId}" Margin="5,0,0,0"  Text="प्राथमिक माहिती" TextColor="Black" Grid.Column="4" VerticalOptions="Center" HorizontalTextAlignment="Start"  WidthRequest="150">
                                                 <Label.GestureRecognizers>
                                                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_2"/>
                                                 </Label.GestureRecognizers>

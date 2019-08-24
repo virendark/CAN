@@ -28,8 +28,8 @@ namespace CAN
         public double H4AZ;
         public double BMI;
         public double BMIZ;
-        double w4az;
-        double w4hz;
+        double? w4az;
+        double? w4hz;
         public ChildPage()
         {
             InitializeComponent();
@@ -59,6 +59,17 @@ namespace CAN
 
                 }
             }
+            FlagMaxAndMinDate();
+        }
+        private void FlagMaxAndMinDate()
+        {
+            DateTime dateTime = DateTime.Now;
+            int year = dateTime.Year;
+            int month = dateTime.Month;
+            int day = dateTime.Day;
+            txtDOB.MaximumDate = new DateTime(year, month, day);
+            txtAWDOB.MaximumDate= new DateTime(year, month, day);
+            txtEntryRegistor.MaximumDate= new DateTime(year, month, day);
         }
         private void bindIllness()
         {
@@ -160,27 +171,27 @@ namespace CAN
             //    txtBOrder.Placeholder = "Birth Order";
             //    lblBOrder.IsVisible = false;
             //}
-            try
-            {
+            //try
+            //{
                 
-                var checkNoOfChild = App.DAUtil.FindFamilyId(StaticClass.PageData).FirstOrDefault();
-                if (Convert.ToInt32(txtBOrder.Text) <= checkNoOfChild.NumberofChildenAlive)
-                {
+            //    var checkNoOfChild = App.DAUtil.FindFamilyId(StaticClass.PageData).FirstOrDefault();
+            //    if (Convert.ToInt32(txtBOrder.Text) <= checkNoOfChild.NumberofChildenAlive)
+            //    {
 
-                }
-                else
-                {
-                    txtBOrder.Text = "";
-                    DependencyService.Get<Toast>().Show("Please Enter currect number of child alive");
-                    IsValidate = false;
-                    txtBOrder.Focus();
-                    return;
-                }
-            }
-            catch
-            {
+            //    }
+            //    else
+            //    {
+            //        txtBOrder.Text = "";
+            //        DependencyService.Get<Toast>().Show("Please Enter currect number of child alive");
+            //        IsValidate = false;
+            //        txtBOrder.Focus();
+            //        return;
+            //    }
+            //}
+            //catch
+            //{
 
-            }
+            //}
 
         }
         private void btnSave_Clicked(object sender, EventArgs e)
@@ -192,9 +203,9 @@ namespace CAN
                 if (IsValidate == true)
                 {
                     var selectedGender = (ColumnValue)ddlGender.SelectedItem;
-                    int GenderName = selectedGender.columnValueId;
+                    int GenderName = selectedGender==null?0: selectedGender.columnValueId;
                     var selectedDeliveryTerm = (ColumnValue)ddlDeliveryTerm.SelectedItem;
-                    int DeliveryTerm = selectedDeliveryTerm == null ? 0 : selectedDeliveryTerm.columnValueId;
+                    int ? DeliveryTerm = selectedDeliveryTerm == null ? (int?)null : selectedDeliveryTerm.columnValueId;
                     ChildRegister childRegister = new ChildRegister();
                     if (StaticClass.PageButtonText == "Update")
                     {
@@ -218,13 +229,13 @@ namespace CAN
                     childRegister.DOB = txtDOB.Date;
 
                     childRegister.GenderID = GenderName;
-                    if (txtBOrder.Text != null)
+                    if (!String.IsNullOrEmpty(txtBOrder.Text))
                     {
                         childRegister.BirthOrder = Convert.ToInt32(txtBOrder.Text);
                     }
                     else
                     {
-                        childRegister.BirthOrder = 0;
+                        childRegister.BirthOrder = null;
                     }
                     childRegister.RegisterDate = txtEntryRegistor.Date;
 
@@ -234,31 +245,32 @@ namespace CAN
                     childRegister.ChildStatus = CStatusID;
                     childRegister.CreatedBy = 0;
                     childRegister.UpdatedBy = 0;
-                    childRegister.BirthLengthHeightInCms = Convert.ToDecimal(txtBirthLengthHeightInCms.Text);
-                    childRegister.BirthWeightInKg = Convert.ToDecimal(txtBWeight.Text);
+                    childRegister.BirthLengthHeightInCms = txtBirthLengthHeightInCms.Text==null?(decimal?)null: Convert.ToDecimal(txtBirthLengthHeightInCms.Text);
+                    childRegister.BirthWeightInKg = txtBWeight.Text==null?(decimal?)null: Convert.ToDecimal(txtBWeight.Text);
                     var selectedBirthPlace = (ColumnValue)ddlBirthPlace.SelectedItem;
-                    int selectedBirthPlaceId = selectedBirthPlace.columnValueId;
+                    int? selectedBirthPlaceId = selectedBirthPlace==null?(int?)null: selectedBirthPlace.columnValueId;
                     childRegister.BirthPlace = selectedBirthPlaceId;
                     var selectedBirthDeliveryType = (ColumnValue)ddlBirthDeliveryType.SelectedItem;
-                    int selectedBirthDeliveryTypeId = selectedBirthDeliveryType.columnValueId;
+                    int? selectedBirthDeliveryTypeId = selectedBirthDeliveryType==null?(int?)null: selectedBirthDeliveryType.columnValueId;
                     childRegister.BirthDeliveryType = selectedBirthDeliveryTypeId;
-                    childRegister.AWCEntryWeightInKG = Convert.ToDecimal(txtAWCEntryWeightInKG.Text);
-                    childRegister.AWCEntryHeightInCms = Convert.ToDecimal(txtAWCEntryHeightInCms.Text);
-                    childRegister.AWCEntryMUAC = Convert.ToDecimal(txtAWCEntryMUAC.Text);
-                    childRegister.AWCEntryW4AZ = Convert.ToDecimal(w4az);
-                    childRegister.AWCEntryW4HZ = Convert.ToDecimal(w4hz);
+                    childRegister.AWCEntryWeightInKG = txtAWCEntryWeightInKG.Text==null?(decimal?)null: Convert.ToDecimal(txtAWCEntryWeightInKG.Text);
+                    childRegister.AWCEntryHeightInCms = txtAWCEntryHeightInCms.Text==null?(decimal?)null: Convert.ToDecimal(txtAWCEntryHeightInCms.Text);
+                    childRegister.AWCEntryMUAC = txtAWCEntryMUAC.Text==null?(decimal?)null: Convert.ToDecimal(txtAWCEntryMUAC.Text);
+                    childRegister.AWCEntryW4AZ = w4az==null?(decimal?)null: Convert.ToDecimal(w4az);
+                    childRegister.AWCEntryW4HZ = w4hz==null?(decimal?)null: Convert.ToDecimal(w4hz);
                     childRegister.ChildCode = txtChildCode.Text;
                     childRegister.Photograph = aBC.imgName;
                     childRegister.AnyDisability = txtAnyDisability.Text==null? "Not Applicable": txtAnyDisability.Text;
                     childRegister.AnyIllness = txtAnyIllness.Text;
                     childRegister.AnyLongTermIllnessInFamily = txtAnyLongTermIllnessInFamily.Text;
                     var SelectedChildrecorded = (ColumnValue)ddlChildrecorded.SelectedItem;
-                    childRegister.GrowthChartGrade = SelectedChildrecorded == null ? 0 : SelectedChildrecorded.columnValueId;
+                    childRegister.GrowthChartGrade = SelectedChildrecorded == null ? (int?)null : SelectedChildrecorded.columnValueId;
                     var SelectedChildrecordedWeightforHeight = (ColumnValue)ddlChildrecordedWeightforHeight.SelectedItem;
-                    childRegister.GradeOfChild = SelectedChildrecordedWeightforHeight == null ? 0 : SelectedChildrecordedWeightforHeight.columnValueId;
+                    childRegister.GradeOfChild = SelectedChildrecordedWeightforHeight == null ? (int?)null : SelectedChildrecordedWeightforHeight.columnValueId;
                     if (txtAWDOB2.IsVisible == true)
                     {
-                        childRegister.AWCEntryDate = txtAWDOB.Date;
+                       // childRegister.AWCEntryDate = txtAWDOB.Date;
+                        childRegister.AWCEntryDate = Convert.ToDateTime(txtAWDOB.Date);
                     }
                    else
                     {
@@ -281,36 +293,18 @@ namespace CAN
             try
             {
                 IsValidate = true;
-                //if (StaticClass.PageData != null)
-                //{
-
-                //    IsValidate = true;
-                //    var FamilyTypeId = from f in App.DAUtil.GetAllFamily() where f.FamilyId == StaticClass.PageData select new { FamilyId = f.FamilyId };
-                //    if (FamilyTypeId == null)
-                //    {
-                //        DependencyService.Get<Toast>().Show("Please select family type");
-                //        IsValidate = false;
-                //        return;
-                //     }
-                //}
-                //else
-                //{
-                //    IsValidate = true;
-                //    Guid IDF = StaticClass.PageData;
-                //    var FamilyTypeId = App.DAUtil.FindFamilyId(IDF);
-                //    if (FamilyTypeId.Count == 0)
-                //    {
-                //        IsValidate = false;
-                //        DisplayAlert("", "Please select Family", "Ok");
-                //    }
-
-                //}
-               
                 if (string.IsNullOrEmpty(txtFCName.Text))
                 {
                     DependencyService.Get<Toast>().Show("Please Enter Child Name");
                     IsValidate = false;
                     txtFCName.Focus();
+                    return;
+                }
+                if (txtDOB2.IsVisible ==false)
+                {
+                    DependencyService.Get<Toast>().Show("Please select DOB");
+                    IsValidate = false;
+                   
                     return;
                 }
                 if ((ColumnValue)ddlGender.SelectedItem == null)
@@ -320,85 +314,85 @@ namespace CAN
                     ddlGender.Focus();
                     return;
                 }
-                if (string.IsNullOrEmpty(txtBWeight.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter Birth Weight");
-                    IsValidate = false;
-                    txtBWeight.Focus();
-                    return;
-                }
-                if (txtBWeight.TextColor==Color.Red)
-                {
-                    DependencyService.Get<Toast>().Show("Please valid Enter Birth Weight");
-                    IsValidate = false;
-                    return;
-                }
-                if (string.IsNullOrEmpty(txtBirthLengthHeightInCms.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter Birth Length Height");
-                    IsValidate = false;
-                    txtBirthLengthHeightInCms.Focus();
-                    return;
-                }
-                if (txtBirthLengthHeightInCms.TextColor == Color.Red)
-                {
-                    DependencyService.Get<Toast>().Show("Please valid Enter Birth Length Height");
-                    IsValidate = false;
-                    return;
-                }
-                if ((ColumnValue)ddlBirthPlace.SelectedItem == null)
-                {
-                    DependencyService.Get<Toast>().Show("Please select Birth Place");
-                    IsValidate = false;
-                    ddlBirthPlace.Focus();
-                    return;
-                }
-                if ((ColumnValue)ddlBirthDeliveryType.SelectedItem == null)
-                {
-                    DependencyService.Get<Toast>().Show("Please select Birth Delivery Type");
-                    IsValidate = false;
-                    ddlBirthDeliveryType.Focus();
-                    return;
-                }
-                if (string.IsNullOrEmpty(txtAWCEntryWeightInKG.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter  AWC Entry Weight");
-                    IsValidate = false;
-                    txtAWCEntryWeightInKG.Focus();
-                    return;
-                }
-                if (txtAWCEntryWeightInKG.TextColor == Color.Red)
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter valid  AWC Entry Weight");
-                    IsValidate = false;
-                    return;
-                }
-                if (string.IsNullOrEmpty(txtAWCEntryHeightInCms.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter  AWC Entry Height");
-                    IsValidate = false;
-                    txtAWCEntryHeightInCms.Focus();
-                    return;
-                }
-                if (txtAWCEntryHeightInCms.TextColor == Color.Red)
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry Height");
-                    IsValidate = false;
-                    return;
-                }
-                if (string.IsNullOrEmpty(txtAWCEntryMUAC.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter AWC Entry MUAC");
-                    IsValidate = false;
-                    txtAWCEntryMUAC.Focus();
-                    return;
-                }
-                if (txtAWCEntryMUAC.TextColor == Color.DarkRed)
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry MUAC");
-                    IsValidate = false;
-                    return;
-                }
+                //if (string.IsNullOrEmpty(txtBWeight.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter Birth Weight");
+                //    IsValidate = false;
+                //    txtBWeight.Focus();
+                //    return;
+                //}
+                //if (txtBWeight.TextColor==Color.Red)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please valid Enter Birth Weight");
+                //    IsValidate = false;
+                //    return;
+                //}
+                //if (string.IsNullOrEmpty(txtBirthLengthHeightInCms.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter Birth Length Height");
+                //    IsValidate = false;
+                //    txtBirthLengthHeightInCms.Focus();
+                //    return;
+                //}
+                //if (txtBirthLengthHeightInCms.TextColor == Color.Red)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please valid Enter Birth Length Height");
+                //    IsValidate = false;
+                //    return;
+                //}
+                //if ((ColumnValue)ddlBirthPlace.SelectedItem == null)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please select Birth Place");
+                //    IsValidate = false;
+                //    ddlBirthPlace.Focus();
+                //    return;
+                //}
+                //if ((ColumnValue)ddlBirthDeliveryType.SelectedItem == null)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please select Birth Delivery Type");
+                //    IsValidate = false;
+                //    ddlBirthDeliveryType.Focus();
+                //    return;
+                //}
+                //if (string.IsNullOrEmpty(txtAWCEntryWeightInKG.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter  AWC Entry Weight");
+                //    IsValidate = false;
+                //    txtAWCEntryWeightInKG.Focus();
+                //    return;
+                //}
+                //if (txtAWCEntryWeightInKG.TextColor == Color.Red)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter valid  AWC Entry Weight");
+                //    IsValidate = false;
+                //    return;
+                //}
+                //if (string.IsNullOrEmpty(txtAWCEntryHeightInCms.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter  AWC Entry Height");
+                //    IsValidate = false;
+                //    txtAWCEntryHeightInCms.Focus();
+                //    return;
+                //}
+                //if (txtAWCEntryHeightInCms.TextColor == Color.Red)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry Height");
+                //    IsValidate = false;
+                //    return;
+                //}
+                //if (string.IsNullOrEmpty(txtAWCEntryMUAC.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter AWC Entry MUAC");
+                //    IsValidate = false;
+                //    txtAWCEntryMUAC.Focus();
+                //    return;
+                //}
+                //if (txtAWCEntryMUAC.TextColor == Color.DarkRed)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry MUAC");
+                //    IsValidate = false;
+                //    return;
+                //}
                 //if (string.IsNullOrEmpty(txtBOrder.Text))
                 //{
                 //    DependencyService.Get<Toast>().Show("Please Enter Birth Order");
@@ -413,36 +407,36 @@ namespace CAN
                     return;
                 }
                
-                if (string.IsNullOrEmpty(txtAWCEntryW4AZ.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter AWC Entry W4AZ");
-                    IsValidate = false;
-                    return;
-                }
-                if (txtAWCEntryW4AZ.TextColor==Color.Red)
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry W4AZ");
-                    IsValidate = false;
-                    return;
-                }
+                //if (string.IsNullOrEmpty(txtAWCEntryW4AZ.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter AWC Entry W4AZ");
+                //    IsValidate = false;
+                //    return;
+                //}
+                //if (txtAWCEntryW4AZ.TextColor==Color.Red)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry W4AZ");
+                //    IsValidate = false;
+                //    return;
+                //}
                 if (string.IsNullOrEmpty(txtChildCode.Text))
                 {
                     DependencyService.Get<Toast>().Show("Please Enter Child Code");
                     IsValidate = false;
                     return;
                 }
-                if (string.IsNullOrEmpty(txtAWCEntryW4HZ.Text))
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter AWC Entry W4HZ");
-                    IsValidate = false;
-                    return;
-                }
-                if (txtAWCEntryW4HZ.TextColor==Color.Red)
-                {
-                    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry W4HZ");
-                    IsValidate = false;
-                    return;
-                }
+                //if (string.IsNullOrEmpty(txtAWCEntryW4HZ.Text))
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter AWC Entry W4HZ");
+                //    IsValidate = false;
+                //    return;
+                //}
+                //if (txtAWCEntryW4HZ.TextColor==Color.Red)
+                //{
+                //    DependencyService.Get<Toast>().Show("Please Enter valid AWC Entry W4HZ");
+                //    IsValidate = false;
+                //    return;
+                //}
                
             }
             catch
@@ -467,6 +461,8 @@ namespace CAN
 
                     txtFCName.Text = checkChildata[0].ChildName;
                     txtDOB.Date = checkChildata[0].DOB;
+                    txtDOB.IsEnabled = false;
+                    txtEntryRegistor.IsEnabled = false;
                     var Childrecorded = App.DAUtil.GetColumnValuesBytext(66);
                     for (int i = 0; i < Childrecorded.Count; i++)
                     {
@@ -491,6 +487,7 @@ namespace CAN
                             ddlGender.SelectedIndex = i;
                         }
                     }
+                    ddlGender.IsEnabled = false;
                     var ListofDeliveryTerm = App.DAUtil.GetColumnValuesBytext(56);
                     for (int i = 0; i < ListofDeliveryTerm.Count; i++)
                     {
@@ -500,8 +497,8 @@ namespace CAN
                         }
                     }
                     // ddlGender.SelectedIndex = checkChildata[0].GenderID;
-                    txtBOrder.Text = checkChildata[0].BirthOrder.ToString();
-                    txtEntryRegistor.Date = checkChildata[0].DOE;
+                    txtBOrder.Text = checkChildata[0].BirthOrder.HasValue? checkChildata[0].BirthOrder.ToString():null;
+                    txtEntryRegistor.Date = checkChildata[0].RegisterDate;
                     var ListofCStatus = App.DAUtil.GetColumnValuesBytext(12);
                     for (int i = 0; i < ListofCStatus.Count; i++)
                     {
@@ -519,8 +516,8 @@ namespace CAN
                         }
                     }
                     // ddlChildStatus.SelectedIndex = checkChildata[0].ChildStatus;
-                    txtBirthLengthHeightInCms.Text = checkChildata[0].BirthLengthHeightInCms.ToString();
-                    txtBWeight.Text = checkChildata[0].BirthWeightInKg.ToString();
+                    txtBirthLengthHeightInCms.Text = checkChildata[0].BirthLengthHeightInCms.HasValue? checkChildata[0].BirthLengthHeightInCms.ToString():null;
+                    txtBWeight.Text = checkChildata[0].BirthWeightInKg.HasValue? checkChildata[0].BirthWeightInKg.ToString():null;
                     var ListofBirthPlace = App.DAUtil.GetColumnValuesBytext(18);
                     for (int i = 0; i < ListofBirthPlace.Count; i++)
                     {
@@ -539,9 +536,9 @@ namespace CAN
                         }
                     }
                    // ddlBirthDeliveryType.SelectedIndex = checkChildata[0].BirthDeliveryType;
-                    txtAWCEntryWeightInKG.Text = checkChildata[0].AWCEntryWeightInKG.ToString();
-                    txtAWCEntryHeightInCms.Text = checkChildata[0].AWCEntryHeightInCms.ToString();
-                    txtAWCEntryMUAC.Text = checkChildata[0].AWCEntryMUAC.ToString();
+                    txtAWCEntryWeightInKG.Text = checkChildata[0].AWCEntryWeightInKG.HasValue? checkChildata[0].AWCEntryWeightInKG.ToString():null;
+                    txtAWCEntryHeightInCms.Text = checkChildata[0].AWCEntryHeightInCms.HasValue? checkChildata[0].AWCEntryHeightInCms.ToString():null;
+                    txtAWCEntryMUAC.Text = checkChildata[0].AWCEntryMUAC.HasValue? checkChildata[0].AWCEntryMUAC.ToString():null;
                    // txtAWCEntryW4AZ.Text = checkChildata[0].AWCEntryW4AZ.ToString();
                     txtAnyDisability.Text = checkChildata[0].AnyDisability;
                     txtAnyIllness.Text = checkChildata[0].AnyIllness;
@@ -549,7 +546,8 @@ namespace CAN
                     {
                         txtAWDOB2.IsVisible = true;
                         txtAWDOB11.IsVisible = false;
-                        childRegister.AWCEntryDate = txtAWDOB.Date;
+                        txtAWDOB.Date = Convert.ToDateTime(checkChildata[0].AWCEntryDate);
+                        
                     }
                    else
                     {
@@ -557,41 +555,58 @@ namespace CAN
                         txtAWDOB11.IsVisible = true;
                         txtAWDOB2.IsVisible = false;
                     }
-                    w4az = Convert.ToDouble(checkChildata[0].AWCEntryW4AZ);
-                    if (w4az < -3)
+                    if (checkChildata[0].AWCEntryW4AZ != null)
                     {
-                        txtAWCEntryW4AZ.Text = "SUW(Severely Under Weight)";
-                    }
-                    else
-                    {
-                        if (w4az <= -2)
+                        w4az = Convert.ToDouble(checkChildata[0].AWCEntryW4AZ);
+                        if (w4az < -3)
                         {
-                            txtAWCEntryW4AZ.Text = "MUW(Moderately Under Weight)";
+                            txtAWCEntryW4AZ.Text = "SUW(Severely Under Weight)";
+                            txtAWCEntryW4AZ.TextColor = Color.Black;
+                            txtAWCEntryW4AZ.BackgroundColor = Color.Red;
                         }
                         else
                         {
+                            if (w4az <= -2)
+                            {
+                                txtAWCEntryW4AZ.Text = "MUW(Moderately Under Weight)";
+                                txtAWCEntryW4AZ.TextColor = Color.Black;
+                                txtAWCEntryW4AZ.BackgroundColor = Color.Yellow;
+                            }
+                            else
+                            {
 
-                            txtAWCEntryW4AZ.Text = "Normal";
+                                txtAWCEntryW4AZ.Text = "Normal";
+                                txtAWCEntryW4AZ.TextColor = Color.Black;
+                                txtAWCEntryW4AZ.BackgroundColor = Color.Green;
 
+                            }
                         }
                     }
-                    
-                    w4hz = Math.Round(Convert.ToDouble(checkChildata[0].AWCEntryW4HZ));
-                    if (w4hz < -3)
+                    if (checkChildata[0].AWCEntryW4HZ != null)
                     {
-                        txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
-                    }
-                    else
-                    {
-                        if (w4hz <= -2)
+                        w4hz = Math.Round(Convert.ToDouble(checkChildata[0].AWCEntryW4HZ));
+                        if (w4hz < -3)
                         {
-                            txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                            txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
+                            txtAWCEntryW4HZ.TextColor = Color.Black;
+                            txtAWCEntryW4HZ.BackgroundColor = Color.Red;
                         }
                         else
                         {
+                            if (w4hz <= -2)
+                            {
+                                txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                                txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.BackgroundColor = Color.Yellow;
+                            }
+                            else
+                            {
 
-                            txtAWCEntryW4HZ.Text = "Normal";
+                                txtAWCEntryW4HZ.Text = "Normal";
+                                txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.BackgroundColor = Color.Green;
 
+                            }
                         }
                     }
                     //  txtAnyLongTermIllnessInFamily.Text = checkChildata[0].AnyLongTermIllnessInFamily;
@@ -833,13 +848,13 @@ namespace CAN
                     if (match.Success)
                     {
                         try
-                        { 
-                        txtAWCEntryWeightInKG.Text = match.Value;
-                        txtAWCEntryWeightInKG.TextColor = Color.Black;
+                        {
+                            txtAWCEntryWeightInKG.Text = match.Value;
+                            txtAWCEntryWeightInKG.TextColor = Color.Black;
                             var selectedGender = (ColumnValue)ddlGender.SelectedItem;
                             int Gender = selectedGender.columnValueId;
                             CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                            
+
                             DateTime dtcurrent = new DateTime();
                             //  dtcurrent = DateTime.Now;
                             if (txtAWDOB2.IsVisible == true)
@@ -853,15 +868,18 @@ namespace CAN
                             DateTime dtDob = txtDOB.Date;
                             TimeSpan ts = dtcurrent - dtDob;
                             int Mts = (dtcurrent.Year - dtDob.Year) * 12 + dtcurrent.Month - dtDob.Month;
-                            
+
                             int days = ts.Days;
-                            
-                            double W4AZ = calculationvalueClass.W4AZValue(Gender, days, Convert.ToDouble(txtAWCEntryWeightInKG.Text));
-                            w4az = Math.Round(W4AZ);
+
+                            double? W4AZ = calculationvalueClass.W4AZValue(Gender, days, Convert.ToDouble(txtAWCEntryWeightInKG.Text));
+                            if (W4AZ != null)
+                            { 
+                                w4az = Math.Round(W4AZ.Value);
                             if (w4az < -3)
                             {
                                 txtAWCEntryW4AZ.Text = "SUW(Severely Under Weight)";
                                 txtAWCEntryW4AZ.TextColor = Color.Black;
+                                txtAWCEntryW4AZ.BackgroundColor = Color.Red;
 
                             }
                             else
@@ -870,19 +888,21 @@ namespace CAN
                                 {
                                     txtAWCEntryW4AZ.Text = "MUW(Moderately Under Weight)";
                                     txtAWCEntryW4AZ.TextColor = Color.Black;
+                                    txtAWCEntryW4AZ.BackgroundColor = Color.Yellow;
 
                                 }
                                 else
                                 {
-                                    
+
                                     txtAWCEntryW4AZ.Text = "Normal";
                                     txtAWCEntryW4AZ.TextColor = Color.Black;
-                                    
+                                        txtAWCEntryW4AZ.BackgroundColor = Color.Green;
 
 
                                 }
                             }
                             H4AZCalculation();
+                        }
                         }
                         catch
                         {
@@ -950,25 +970,31 @@ namespace CAN
                     DateTime dtDob = txtDOB.Date;
                     TimeSpan ts = dtcurrent - dtDob;
                     int days = ts.Days;
-                    double W4LHZ = calculationvalueClass.W4LHZValue(Gender, days, Convert.ToDouble(txtAWCEntryHeightInCms.Text), Convert.ToDouble(txtAWCEntryWeightInKG.Text));
-                    w4hz = Math.Round(W4LHZ);
-                    if (w4hz < -3)
+                    double? W4LHZ = calculationvalueClass.W4LHZValue(Gender, days, Convert.ToDouble(txtAWCEntryHeightInCms.Text), Convert.ToDouble(txtAWCEntryWeightInKG.Text));
+                    if (W4LHZ != null)
                     {
-                        txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
-                        txtAWCEntryW4HZ.TextColor = Color.Black;
-                    }
-                    else
-                    {
-                        if (w4hz <= -2)
+                        w4hz = Math.Round(W4LHZ.Value);
+                        if (w4hz < -3)
                         {
-                            txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                            txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
                             txtAWCEntryW4HZ.TextColor = Color.Black;
+                            txtAWCEntryW4HZ.BackgroundColor = Color.Red;
                         }
                         else
                         {
+                            if (w4hz <= -2)
+                            {
+                                txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                                txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.BackgroundColor = Color.Yellow;
+                            }
+                            else
+                            {
 
-                            txtAWCEntryW4HZ.Text = "Normal";
-                            txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.Text = "Normal";
+                                txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.BackgroundColor = Color.Green;
+                            }
                         }
                     }
                 }
@@ -1113,18 +1139,18 @@ namespace CAN
 
         private void TxtBOrder_TextChanged(object sender, TextChangedEventArgs e)
         {
-            try
-            {
-                if (Convert.ToInt32(txtBOrder.Text) <= 0)
-                {
-                    txtBOrder.Text = "";
+            //try
+            //{
+            //    if (Convert.ToInt32(txtBOrder.Text) <= 0)
+            //    {
+            //        txtBOrder.Text = "";
 
-                }
-            }
-            catch
-            {
-                txtBOrder.Text = "";
-            }
+            //    }
+            //}
+            //catch
+            //{
+            //    txtBOrder.Text = "";
+            //}
         }
 
         private void TxtAWDOB_DateSelected(object sender, DateChangedEventArgs e)
@@ -1143,25 +1169,31 @@ namespace CAN
                     DateTime dtDob = txtDOB.Date;
                     TimeSpan ts = dtcurrent - dtDob;
                     int days = ts.Days;
-                    double W4LHZ = calculationvalueClass.W4LHZValue(Gender, days, Convert.ToDouble(txtAWCEntryHeightInCms.Text), Convert.ToDouble(txtAWCEntryWeightInKG.Text));
-                    w4hz = Math.Round(W4LHZ);
-                    if (w4hz < -3)
+                    double? W4LHZ = calculationvalueClass.W4LHZValue(Gender, days, Convert.ToDouble(txtAWCEntryHeightInCms.Text), Convert.ToDouble(txtAWCEntryWeightInKG.Text));
+                    if (W4LHZ != null)
                     {
-                        txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
-                        txtAWCEntryW4HZ.TextColor = Color.Black;
-                    }
-                    else
-                    {
-                        if (w4hz <= -2)
+                        w4hz = Math.Round(W4LHZ.Value);
+                        if (w4hz < -3)
                         {
-                            txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                            txtAWCEntryW4HZ.Text = "SAM(Severely Acute Malnutrition)";
                             txtAWCEntryW4HZ.TextColor = Color.Black;
+                            txtAWCEntryW4HZ.BackgroundColor = Color.Red;
                         }
                         else
                         {
+                            if (w4hz <= -2)
+                            {
+                                txtAWCEntryW4HZ.Text = "MAM(Moderately Acute Malnutrition)";
+                                txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.BackgroundColor = Color.Yellow;
+                            }
+                            else
+                            {
 
-                            txtAWCEntryW4HZ.Text = "Normal";
-                            txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.Text = "Normal";
+                                txtAWCEntryW4HZ.TextColor = Color.Black;
+                                txtAWCEntryW4HZ.BackgroundColor = Color.Green;
+                            }
                         }
                     }
                 }

@@ -90,7 +90,9 @@ namespace CAN
                             motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
                             motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
                         motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
-                       if(MotherWithChildDetails[i].HighRiskMotherHistory!=null)
+                        motherWithChildDetails.IsPregrent= MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
+                        motherWithChildDetails.IsLactating = MotherWithChildDetails[i].IsLactating == true ? "True" : "False";
+                        if (MotherWithChildDetails[i].HighRiskMotherHistory!=null)
                         {
 
                             motherWithChildDetails.colobind = "PaleVioletRed";
@@ -99,7 +101,7 @@ namespace CAN
                         {
                             motherWithChildDetails.colobind = "White";
                         }
-                            motherWithChildDetails.HighRiskMotherHistory = MotherWithChildDetails[i].HighRiskMotherHistory == null?"Normal":"HighRisk";
+                            motherWithChildDetails.HighRiskMotherHistory = MotherWithChildDetails[i].HighRiskMotherHistory == null? "Mother having history:- Normal" : "Mother having history:- HighRisk";
                             if (MotherWithChildDetails[i].DataMonthId != 0)
                             {
                                 var dateId = App.DAUtil.GetDataMonthByID(MotherWithChildDetails[i].DataMonthId);
@@ -247,5 +249,7 @@ namespace CAN
         public bool IsvisuaEdit { get; set; }
         public string HighRiskMotherHistory { get; set; }
         public string colobind { get; set; }
+        public string IsLactating { get; set; }
+        public string IsPregrent { get; set; }
     }
 }

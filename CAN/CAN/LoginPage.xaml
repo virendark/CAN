@@ -6,7 +6,7 @@
     <ScrollView>
         <AbsoluteLayout Padding="0" VerticalOptions="StartAndExpand">
             <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0,1,200" AbsoluteLayout.LayoutFlags="WidthProportional">
-                <Image Source="IC_Logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="200" ></Image>
+                <Image Source="ic_launcher.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="200" ></Image>
                 <!--<Label Text="Sign In" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="40"/>-->
             </StackLayout>
             <Entry x:Name="txtUserId" IsTextPredictionEnabled="False" ReturnType="Done"  Placeholder="Enter UserID" TextColor="Black" PlaceholderColor="#737a78" AbsoluteLayout.LayoutBounds="0,230,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Margin="2"></Entry>

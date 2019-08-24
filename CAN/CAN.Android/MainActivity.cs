@@ -14,15 +14,14 @@ using Plugin.Media;
 
 namespace CAN.Droid
 {
-    [Activity(Label = "Saathi-CAN", Icon = "@drawable/ic_launcher", Theme = "@style/MainTheme", ScreenOrientation = ScreenOrientation.Portrait, MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SATHI-CAN", Icon = "@drawable/sathi_logo", Theme = "@style/MainTheme", ScreenOrientation = ScreenOrientation.Portrait, MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
-            base.OnCreate(savedInstanceState);
+             base.OnCreate(savedInstanceState);
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             CrossMedia.Current.Initialize();
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);

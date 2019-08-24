@@ -31,7 +31,14 @@ namespace CAN
                 {
                     if (Convert.ToInt32(txtPin.Text) == ChickPin[0].SetPin)
                     {
-                        Application.Current.MainPage = new VillagePage();
+                        if (!string.IsNullOrEmpty(StaticClass.LastsyncDateChange))
+                        {
+                            Application.Current.MainPage = new LastSyncDateChange();
+                        }
+                        else
+                        {
+                            Application.Current.MainPage = new VillagePage();
+                        }
                     }
                     else
                     {

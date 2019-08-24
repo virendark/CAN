@@ -6,7 +6,10 @@
              BackgroundColor="White"
              Title="Enter Pin">
     <AbsoluteLayout Padding="0" VerticalOptions="StartAndExpand">
-
+        <StackLayout Orientation="Vertical" AbsoluteLayout.LayoutBounds="0,0,1,200" AbsoluteLayout.LayoutFlags="WidthProportional">
+            <Image Source="ic_launcher.jpg" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="200" ></Image>
+            <!--<Label Text="Sign In" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="40"/>-->
+        </StackLayout>
         <Frame BackgroundColor="Transparent" HasShadow="False" AbsoluteLayout.LayoutBounds="0,250,1,90" AbsoluteLayout.LayoutFlags="WidthProportional" >
             <Entry x:Name="txtPin"  Keyboard="Numeric"  Placeholder="Enter Pin" IsPassword="True" ReturnType="Done" TextColor="Black" PlaceholderColor="Black" AbsoluteLayout.LayoutBounds="0,280,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Margin="2">
                 <Entry.Effects>
@@ -17,7 +20,8 @@
         <Button Margin="20,20,20,0" FontAttributes="Bold" FontSize="Large"  BackgroundColor="#088da5" AbsoluteLayout.LayoutBounds="0,340,1,70" AbsoluteLayout.LayoutFlags="WidthProportional"  CornerRadius="17" VerticalOptions="End" Opacity="1" TextColor="White"  Text="Login" x:Name="btnSignIn" Clicked="BtnSignIn_Clicked">
         </Button>
         <Label x:Name="lblErrorMessage" Text="Your pin"  AbsoluteLayout.LayoutBounds="0,430,1,40" AbsoluteLayout.LayoutFlags="WidthProportional" TextColor="Red" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" HeightRequest="40"/>
-       
+      
+        
     </AbsoluteLayout>
    
 </ContentPage>

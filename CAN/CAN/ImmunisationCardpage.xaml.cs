@@ -28,7 +28,7 @@ namespace CAN
 
             if (StaticClass.PageButtonText == "Update")
             {
-                var checkGrowthdata =  App.DAUtil.GetGrowthRegisterById(StaticClass.GrouthMonthlyId.ToString());
+                var checkGrowthdata = App.DAUtil.GetGrowthRegisterById(StaticClass.GrouthMonthlyId.ToString());
                 if (checkGrowthdata.Count > 0)
                 {
                     string Assets = checkGrowthdata[0].ImmunisationCard;
@@ -75,6 +75,51 @@ namespace CAN
             }
             else
             {
+                var checkGrowthdata = App.DAUtil.GetGrowthChildById(StaticClass.GrouthChildID.ToString()).LastOrDefault();
+                if (checkGrowthdata != null)
+                {
+                    string Assets = checkGrowthdata.ImmunisationCard;
+                    if (Assets != null)
+                    {
+                        var numbers = Assets.Split(',');
+                        List<string> Lass = new List<string>();
+                        for (int i = 0; i < numbers.Length; i++)
+                        {
+                            string data = numbers[i];
+                            Lass.Add(data);
+                        }
+                        var ListOfImmunisation = App.DAUtil.GetColumnValuesBytext(68);
+                        for (int i = 0; i < ListOfImmunisation.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfImmunisation[i].columnValueId;
+                            ass.Name = ListOfImmunisation[i].columnValue;
+                            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                            if (check != null)
+                            {
+                                ass.Flag = "true";
+                            }
+                            else
+                            {
+                                ass.Flag = "false";
+                            }
+                            listass.Add(ass);
+                        }
+                    }
+                    else
+                    {
+                        var ListOfImmunisation = App.DAUtil.GetColumnValuesBytext(68);
+                        for (int i = 0; i < ListOfImmunisation.Count; i++)
+                        {
+                            Ass ass = new Ass();
+                            ass.Id = ListOfImmunisation[i].columnValueId;
+                            ass.Name = ListOfImmunisation[i].columnValue;
+                            ass.Flag = "false";
+                            listass.Add(ass);
+                        }
+                    }
+
+                }
                 if (StaticClass.Immunisation == null)
                 {
                     var ListOfImmunisation = App.DAUtil.GetColumnValuesBytext(68);
@@ -115,7 +160,50 @@ namespace CAN
                     }
                 }
             }
-
+            #region Add
+            //else
+            //{
+            //    if (StaticClass.Immunisation == null)
+            //    {
+            //        var ListOfImmunisation = App.DAUtil.GetColumnValuesBytext(68);
+            //        for (int i = 0; i < ListOfImmunisation.Count; i++)
+            //        {
+            //            Ass ass = new Ass();
+            //            ass.Id = ListOfImmunisation[i].columnValueId;
+            //            ass.Name = ListOfImmunisation[i].columnValue;
+            //            ass.Flag = "false";
+            //            listass.Add(ass);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        var numbers = StaticClass.Immunisation.Split(',');
+            //        List<string> Lass = new List<string>();
+            //        for (int i = 0; i < numbers.Length; i++)
+            //        {
+            //            string data = numbers[i];
+            //            Lass.Add(data);
+            //        }
+            //        var ListOfImmunisation = App.DAUtil.GetColumnValuesBytext(68);
+            //        for (int i = 0; i < ListOfImmunisation.Count; i++)
+            //        {
+            //            Ass ass = new Ass();
+            //            ass.Id = ListOfImmunisation[i].columnValueId;
+            //            ass.Name = ListOfImmunisation[i].columnValue;
+            //            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+            //            if (check != null)
+            //            {
+            //                ass.Flag = "true";
+            //            }
+            //            else
+            //            {
+            //                ass.Flag = "false";
+            //            }
+            //            listass.Add(ass);
+            //        }
+            //    }
+            //}
+            #endregion
             listView.ItemsSource = listass;
         }
 

@@ -31,11 +31,22 @@ namespace CAN.Models
         public static string ANCCheckups { get; set; }
         public static string ANMMarkHighRiskScreening { get; set; }
         public static int DataMonthId { get; set; }
-        public static int GenderId {get;set;}
+        public static int GenderId { get; set; }
         public static int TabbedIndex = 0;
         public static int TempTabbedIndix = 11;
         public static int MotherStatus = 0;
         public static int GrouthStatus = 0;
         public static string ResponceStatus { get; set; }
+        public static DateTime AwcDate { get; set; }
+        public static DateTime chekmotherDob { get; set; }
+        public static DateTime chekExpectedDeliveryDate{ get; set; }
+        public static DateTime chekLastDeliveryDate { get; set; }
+        public static DateTime dateofAdmission { get; set; }
+        public static DateTime dateOfDischarge { get; set; }
+        public static string LastsyncDateChange { get; set; }
+        public static string ChildSeverlysymtoms { get; set; }
+        public static string MotherOccupation { get; set; }
+        public static string FatherOccupation { get; set; }
+        public static string ChildName { get; set; }
     }
 }

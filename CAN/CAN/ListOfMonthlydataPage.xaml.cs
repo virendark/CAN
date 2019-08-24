@@ -85,7 +85,10 @@ namespace CAN
         {
          try
             {
+
+                
                 long id = StaticClass.VillageID;
+
                 var ListData = App.DAUtil.GetAllFamilyByLocation(id);
                 List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
                 List<ChildMonthlyData> ListChildMonthlyData = new List<ChildMonthlyData>();
@@ -93,11 +96,13 @@ namespace CAN
                 {
                     var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
                     int StatusId = selectedStatusId.columnValueId;
-                    var DataMId = (DataM)ddlDataMonth.SelectedItem;
-                    int DataID = DataMId.Datamonthid;
+                    
                   for(int i=0;i< ListData.Count;i++)
                     {
+                        var DataMId = (DataM)ddlDataMonth.SelectedItem;
+                        int DataID = DataMId.Datamonthid;
                         childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID);
+                        var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                         for (int j = 0; j < childMonthlyData.Count; j++)
                         {
                                 ChildMonthlyData MonthlyData = new ChildMonthlyData();
@@ -106,6 +111,7 @@ namespace CAN
                                 MonthlyData.GrowthId = childMonthlyData[j].GrowthId;
                                 MonthlyData.ChildId = childMonthlyData[j].ChildId;
                                 MonthlyData.GenderID = childMonthlyData[j].GenderID;
+                                MonthlyData.FamilyCode = FCode.FamilyCode;
                             MonthlyData.ChildCode = childMonthlyData[j].ChildCode;
                                 if (childMonthlyData[j].GenderID != 0)
                                 {
@@ -160,6 +166,7 @@ namespace CAN
             ChildMonthlyData Child = (ChildMonthlyData)d;
             StaticClass.GrouthChildID = Child.ChildId;
             StaticClass.GrouthMonthlyId = Child.GrowthId;
+            StaticClass.ChildName = Child.ChildName;
            
              StaticClass.PageButtonText = "Update";
              Navigation.PushAsync(new MonthlyRegisterPage());
@@ -171,12 +178,14 @@ namespace CAN
             var DataMId = (DataM)ddlDataMonth.SelectedItem;
             int DataID = DataMId.Datamonthid;
             StaticClass.DataMonthId = DataID;
+           
             var item = (Xamarin.Forms.Image)sender;
            var d = item.Source.BindingContext;
          
             ChildMonthlyData child = (ChildMonthlyData)d;
             StaticClass.GrouthChildID = child.ChildId;
-            StaticClass.GenderId = child.GenderID;
+            StaticClass.ChildName = child.ChildName;
+           StaticClass.GenderId = child.GenderID;
          StaticClass.PageButtonText = "Save";
             Navigation.PushAsync(new MonthlyRegisterPage());
         }
@@ -211,7 +220,8 @@ namespace CAN
             ChildMonthlyData child = (ChildMonthlyData)d;
             StaticClass.GrouthChildID = child.ChildId;
             StaticClass.GenderId = child.GenderID;
-            StaticClass.PageButtonText = "Save";
+            StaticClass.ChildName = child.ChildName;
+           StaticClass.PageButtonText = "Save";
             Navigation.PushAsync(new MonthlyRegisterPage());
         }
 
@@ -222,7 +232,8 @@ namespace CAN
             ChildMonthlyData Child = (ChildMonthlyData)d;
             StaticClass.GrouthChildID = Child.ChildId;
             StaticClass.GrouthMonthlyId = Child.GrowthId;
-            StaticClass.PageButtonText = "Update";
+            StaticClass.ChildName = Child.ChildName;
+           StaticClass.PageButtonText = "Update";
             Navigation.PushAsync(new MonthlyRegisterPage());
         }
     }
@@ -242,5 +253,6 @@ namespace CAN
         public bool IsvisuaEdit { get; set; }
         public bool AnyRedFlag { get; set; }
         public string ChildCode { get; set; }
+        public string FamilyCode { get; set; }
     }
 }

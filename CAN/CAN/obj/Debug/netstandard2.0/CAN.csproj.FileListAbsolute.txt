@@ -42,3 +42,326 @@ D:\15-12-2018\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
 D:\15-12-2018\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
 D:\15-12-2018\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
 D:\15-12-2018\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LastSyncDateChange.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LastSyncDateChange.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LastSyncDateChange.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+D:\15-12-2018\New folder\New folder\CAN (Approve) (2)\CAN (Approve)\CAN\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildSeverelyUnderweightSymptoms.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildSeverelyUnderweightSymptoms.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\FatherOccoupation.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\LastSyncDateChange.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\MotherOccoupation.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+F:\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+F:\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+F:\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+F:\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Testing CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+E:\Testing CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+E:\Testing CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildSeverelyUnderweightSymptoms.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\FatherOccoupation.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LastSyncDateChange.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MotherOccoupation.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+E:\Testing CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+E:\Testing CAN\New folder\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.deps.json
+E:\Testing CAN\New folder\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
+E:\Testing CAN\New folder\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.pdb
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANCCheckupsPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\AssetsPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CameraPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ChildSeverelyUnderweightSymptoms.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\FamilyPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\FatherOccoupation.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\GrowthRegisterMother.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\HeaderTabbed1.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\HighRiskMotherHistoryPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\Homepage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ImmunisationCardpage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\LastSyncDateChange.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildInRedFlag.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfChildPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfEntryPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfFamilyPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfGrowthRegisterMother.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\MotherOccoupation.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\navigationPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\PinPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\RedFlagPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\TestPage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\Views\CardViews.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\VillagePage.xaml.g.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csproj.CoreCompileInputs.cache
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfoInputs.cache
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.AssemblyInfo.cs
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache

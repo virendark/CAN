@@ -607,7 +607,6 @@
       "sha512": "zjVy7Np8MDbCP9yeeScjgiJMlQuSQJxc+VgLymCR9/LZiYfGR+F6t/UMnSOnnXQ1c5SrKkunsewzbL/wWNOFpQ==",
       "type": "package",
       "path": "newtonsoft.json/8.0.2",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1208,11 +1207,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\15-12-2018\\CAN\\CAN\\CAN\\CAN.csproj",
+      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.csproj",
       "projectName": "CAN",
-      "projectPath": "D:\\15-12-2018\\CAN\\CAN\\CAN\\CAN.csproj",
+      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.csproj",
       "packagesPath": "C:\\Users\\viru\\.nuget\\packages\\",
-      "outputPath": "D:\\15-12-2018\\CAN\\CAN\\CAN\\obj\\",
+      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -42,7 +42,7 @@ namespace CAN
                 // StaticClass.PageData = FamilyId;
                 if (FamilyData.Count > 0)
                 {
-                    var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString());
+                    var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).OrderByDescending(x=>x.ChildCode).ToList();
                     if(ChildData.Count < FamilyData[0].NumberofChildenAlive)
                     {
                         btnAdd.IsVisible = true;

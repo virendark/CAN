@@ -26,10 +26,10 @@ namespace CAN
         {
 
             var MotherRecord = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString());
-           
-            if (MotherRecord != null && MotherRecord.Count!=0)
+
+            if (MotherRecord != null && MotherRecord.Count != 0)
             {
-                 var MotherData = MotherRecord.LastOrDefault();
+                var MotherData = MotherRecord.LastOrDefault();
                 var checkFamilydata = App.DAUtil.FindGrowthRegisterMotherSingleData(MotherData.GrowthId.ToString());
                 if (checkFamilydata.Count > 0)
                 {
@@ -126,49 +126,141 @@ namespace CAN
                 }
                 else
                 {
-                    if (StaticClass.ANMMarkHighRiskScreening == null)
+                    var checkFamilydata = App.DAUtil.FindGrowthRegisterMother(StaticClass.GrouthFamilyId.ToString()).LastOrDefault(); ;
+                    if (checkFamilydata != null)
                     {
-                        var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
-                        for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
+                        string Assets = checkFamilydata.ANMMarkHighRiskScreening;
+                        if (Assets != null)
                         {
-                            Ass ass = new Ass();
-                            ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
-                            ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
-                            ass.Flag = "false";
-                            listass.Add(ass);
+                            var numbers = Assets.Split(',');
+                            List<string> Lass = new List<string>();
+                            for (int i = 0; i < numbers.Length; i++)
+                            {
+                                string data = numbers[i];
+                                Lass.Add(data);
+                            }
+                            var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
+                            for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
+                            {
+                                Ass ass = new Ass();
+                                ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
+                                ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
+                                var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                                if (check != null)
+                                {
+                                    ass.Flag = "true";
+                                }
+                                else
+                                {
+                                    ass.Flag = "false";
+                                }
+                                listass.Add(ass);
+                            }
+                        }
+                        else
+                        {
+                            var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
+                            for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
+                            {
+                                Ass ass = new Ass();
+                                ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
+                                ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
+                                ass.Flag = "false";
+                                listass.Add(ass);
+                            }
                         }
                     }
                     else
                     {
-                        var numbers = StaticClass.ANMMarkHighRiskScreening.Split(',');
-                        List<string> Lass = new List<string>();
-                        for (int i = 0; i < numbers.Length; i++)
+                        if (StaticClass.ANMMarkHighRiskScreening == null)
                         {
-                            string data = numbers[i];
-                            Lass.Add(data);
-                        }
-                        var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
-                        for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
-                        {
-                            Ass ass = new Ass();
-                            ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
-                            ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
-                            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
-                            if (check != null)
+                            var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
+                            for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
                             {
-                                ass.Flag = "true";
-                            }
-                            else
-                            {
+                                Ass ass = new Ass();
+                                ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
+                                ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
                                 ass.Flag = "false";
+                                listass.Add(ass);
                             }
-                            listass.Add(ass);
+                        }
+                        else
+                        {
+                            var numbers = StaticClass.ANMMarkHighRiskScreening.Split(',');
+                            List<string> Lass = new List<string>();
+                            for (int i = 0; i < numbers.Length; i++)
+                            {
+                                string data = numbers[i];
+                                Lass.Add(data);
+                            }
+                            var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
+                            for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
+                            {
+                                Ass ass = new Ass();
+                                ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
+                                ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
+                                var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                                if (check != null)
+                                {
+                                    ass.Flag = "true";
+                                }
+                                else
+                                {
+                                    ass.Flag = "false";
+                                }
+                                listass.Add(ass);
+                            }
                         }
                     }
                 }
+
+                #region add
+                //else
+                //{
+                //    if (StaticClass.ANMMarkHighRiskScreening == null)
+                //    {
+                //        var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
+                //        for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
+                //        {
+                //            Ass ass = new Ass();
+                //            ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
+                //            ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
+                //            ass.Flag = "false";
+                //            listass.Add(ass);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        var numbers = StaticClass.ANMMarkHighRiskScreening.Split(',');
+                //        List<string> Lass = new List<string>();
+                //        for (int i = 0; i < numbers.Length; i++)
+                //        {
+                //            string data = numbers[i];
+                //            Lass.Add(data);
+                //        }
+                //        var ListOfANMMarkHighRiskScreening = App.DAUtil.GetColumnValuesBytext(63);
+                //        for (int i = 0; i < ListOfANMMarkHighRiskScreening.Count; i++)
+                //        {
+                //            Ass ass = new Ass();
+                //            ass.Id = ListOfANMMarkHighRiskScreening[i].columnValueId;
+                //            ass.Name = ListOfANMMarkHighRiskScreening[i].columnValue;
+                //            var check = Lass.FirstOrDefault(x => x.Contains(ass.Id.ToString()));
+                //            if (check != null)
+                //            {
+                //                ass.Flag = "true";
+                //            }
+                //            else
+                //            {
+                //                ass.Flag = "false";
+                //            }
+                //            listass.Add(ass);
+                //        }
+                //    }
+                //}
+                #endregion
             }
-               
-            
+
+
             listView.ItemsSource = listass;
         }
        

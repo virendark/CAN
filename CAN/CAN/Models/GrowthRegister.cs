@@ -12,21 +12,21 @@ namespace CAN.Models
         public Guid ChildId { get; set; }
         public int DataMonthId { get; set; }
         public DateTime MeasurementDate { get; set; }
-        public decimal WeightInKg { get; set; }
-        public decimal LengthHeight { get; set; }
-        public decimal MUAC { get; set; }
+        public decimal? WeightInKg { get; set; }
+        public decimal? LengthHeight { get; set; }
+        public decimal? MUAC { get; set; }
         public bool AnyRedFlag { get; set; }
-        public bool ReceiveTakeHomeRation { get; set; } // rename ReceiveTakeHomeRation
+        public int ReceiveTakeHomeRation { get; set; } // rename ReceiveTakeHomeRation
         public bool AdmittedToAWC { get; set; } // rename AdmittedToAWC
         public DateTime Doe { get; set; }
         public DateTime Dou { get; set; }
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }
-        public double W4LHZ { get; set; }
-        public double W4AZ { get; set; }
-        public double H4AZ { get; set; }
-        public double BMI { get; set; }
-        public double BMIZ { get; set; }
+        public double? W4LHZ { get; set; }
+        public double? W4AZ { get; set; }
+        public double? H4AZ { get; set; }
+        public double? BMI { get; set; }
+        public double? BMIZ { get; set; }
         public bool IsZScoreRedFlag { get; set; } // new
         public int AgeInDays { get; set; } //Entry
         public int GenderID { get; set; }
@@ -43,6 +43,8 @@ namespace CAN.Models
         public string Remark { get; set; }
         public bool ChildIllPreviousMonth { get; set; }
         public string ImmunisationCard { get; set; }
+        public int ReceiveAAYEggInDays { get; set; }
+        public int  ReceiveAAYBananaInDays { get; set; }
 
     }
 }
