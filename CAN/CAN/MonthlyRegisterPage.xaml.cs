@@ -552,7 +552,7 @@ namespace CAN
                     int month = txtMeasurementdate.Date.Month;
                     int year = txtMeasurementdate.Date.Year;
                     txtMeasurementdate.MinimumDate = new DateTime(year, month, 1);
-                    txtMeasurementdate.MaximumDate= new DateTime(year, month, 31);
+                   // txtMeasurementdate.MaximumDate = new DateTime(year, month, 31);
                     txtwaightkg.Text = checkMonthlydata[0].WeightInKg==null?null: checkMonthlydata[0].WeightInKg.ToString();
                     txtLHinCMS.Text = checkMonthlydata[0].LengthHeight==null?null: checkMonthlydata[0].LengthHeight.ToString();
                     txtMUACincms.Text = checkMonthlydata[0].MUAC==null?null: checkMonthlydata[0].MUAC.ToString();
