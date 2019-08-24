@@ -277,7 +277,6 @@ E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Release\netstandard2.0\XamlC.stamp
 E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.dll
 E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.pdb
 E:\Testing CAN\New folder\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.csprojAssemblyReference.cache
-F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.csprojAssemblyReference.cache
 F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\ANCCheckupsPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\ANMMarkHighRiskScreeningPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\App.xaml.g.cs
@@ -321,3 +320,7 @@ F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.AssemblyInfoInputs.cach
 F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.AssemblyInfo.cs
 F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.dll
 F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\CAN.pdb
+F:\24-08-2019\CAN\CAN\CAN\bin\Release\netstandard2.0\CAN.deps.json
+F:\24-08-2019\CAN\CAN\CAN\bin\Release\netstandard2.0\CAN.dll
+F:\24-08-2019\CAN\CAN\CAN\bin\Release\netstandard2.0\CAN.pdb
+F:\24-08-2019\CAN\CAN\CAN\obj\Release\netstandard2.0\XamlC.stamp

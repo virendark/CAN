@@ -17,6 +17,7 @@ namespace CAN
         bool IsValidation = true;
         DateTime? lastdDate = new DateTime?();
         DateTime? Expectdate = new DateTime?();
+        int DDCheck = 0;
         public GrowthRegisterMother()
         {
             InitializeComponent();
@@ -326,6 +327,7 @@ namespace CAN
                         txtExpectedDeliveryDate.Date = Convert.ToDateTime(checkFamilydata[0].ExpectedDeliveryDate);
                         txtExpectedDeliveryDate2.IsVisible = true;
                         txtExpectedDeliveryDate11.IsVisible = false;
+                        DDCheck = 1;
                     }
                     if (checkFamilydata[0].LastDeliveryDate == null)
                     {
@@ -638,6 +640,20 @@ namespace CAN
 
         private void TxtExpectedDeliveryDate_DateSelected(object sender, DateChangedEventArgs e)
         {
+           
+               
+                txtExpectedDeliveryDate2.IsVisible = true;
+                txtExpectedDeliveryDate11.IsVisible = false;
+                Expectdate = txtExpectedDeliveryDate.Date;
+                if (DDCheck != 0)
+                {
+                    DaysCalculation();
+                }
+                DDCheck = 0;
+
+        }
+        private void DaysCalculation()
+        {
             try
             {
                 DateTime date_of_submission = Convert.ToDateTime(DateTime.Now.ToString("MM/dd/yyyy"));
@@ -650,12 +666,7 @@ namespace CAN
             {
 
             }
-            txtExpectedDeliveryDate2.IsVisible = true;
-            txtExpectedDeliveryDate11.IsVisible = false;
-
-            Expectdate = txtExpectedDeliveryDate.Date;
         }
-
         private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
         {
             txtLastDeliveryDate.Focus();
