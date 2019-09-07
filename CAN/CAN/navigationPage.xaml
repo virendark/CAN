@@ -3,34 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CAN.navigationPage"
              Title="DashBoard">
-    <StackLayout>
-        <ListView x:Name="MenuItemsListView" ItemSelected="MenuItemsListView_ItemSelected" 
+    <StackLayout Orientation="Vertical">
+        <AbsoluteLayout>
+            <ListView x:Name="MenuItemsListView" ItemSelected="MenuItemsListView_ItemSelected" 
               SeparatorVisibility="None"
               HasUnevenRows="true"
               ItemsSource="{Binding MenuItems}">
-            <ListView.Header>
+                <ListView.Header>
 
-                <StackLayout Orientation="Vertical" BackgroundColor="#ffbf00" HeightRequest="270">
+                    <StackLayout Orientation="Vertical" BackgroundColor="#ffbf00" HeightRequest="270">
                         <Image Source="ImgUser.png" HeightRequest="150"  WidthRequest="200" HorizontalOptions="Center"></Image>
                         <Label x:Name="lblusername" HeightRequest="200" FontSize="24"  HorizontalOptions="Center" TextColor="Black"></Label>
                     </StackLayout>
-            </ListView.Header>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell Height="60">
-                        <StackLayout Padding="1,10"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-                            <Image Source="{Binding ImgIcon}" WidthRequest="80"></Image>
-                            <Label VerticalOptions="FillAndExpand" 
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="60">
+                            <StackLayout Padding="1,10"  HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                                <Image Source="{Binding ImgIcon}" WidthRequest="80"></Image>
+                                <Label VerticalOptions="FillAndExpand" 
                     VerticalTextAlignment="Center" 
                     Text="{Binding Title}" 
                     FontSize="18"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-       
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </AbsoluteLayout>
+        
         <ActivityIndicator x:Name="txtactive" Color="Red" IsRunning="True" IsVisible="False"></ActivityIndicator>
+        <Label x:Name="lblmessagewait" Text="Wait....." Font="17" TextColor="Black" IsVisible="False"></Label>
         <Label x:Name="lblmessage" Text="Data Sync....." Font="17" TextColor="Black"></Label>
     </StackLayout>
 </ContentPage>

@@ -63,7 +63,7 @@ namespace CAN
             var d = item.Source.BindingContext;
             FamilyRegister family = (FamilyRegister)d;
             Guid FamilyId = family.FamilyId;
-            StaticClass.PageData = FamilyId;
+            StaticClass.FamilyAliveChildCount = family.NumberofChildenAlive;
             await Navigation.PushAsync(new ListOfChildPage());
         }
 
@@ -80,7 +80,7 @@ namespace CAN
             var d = item.BindingContext;
             FamilyRegister family = (FamilyRegister)d;
            Guid FamilyId = family.FamilyId;
-            StaticClass.PageData = FamilyId;
+            StaticClass.FamilyAliveChildCount = family.NumberofChildenAlive;
             await Navigation.PushAsync(new ListOfChildPage());
         }
 

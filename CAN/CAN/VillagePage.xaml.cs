@@ -16,8 +16,12 @@ namespace CAN
         
         public VillagePage()
         {
+            
             InitializeComponent();
+            
             BindList();
+            txtactive.IsVisible = false;
+            lblmessage.IsVisible = false;
         }
         private void BindList()
         {
@@ -45,8 +49,11 @@ namespace CAN
             listView.ItemsSource = BindVillageList;
         }
 
-        private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            txtactive.IsVisible = true;
+            lblmessage.IsVisible = true;
+            await Task.Delay(1000);
             VillageClass villageN = (VillageClass)listView.SelectedItem;
             string villageName = villageN.VillageName;
             StaticClass.LocationName = villageN.VillageName;
@@ -65,6 +72,7 @@ namespace CAN
                     StaticClass.RedFlagButton = "true";
                 }
                 Application.Current.MainPage = new MasterDetailPage1();
+
             }
             else
             {

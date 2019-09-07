@@ -26,6 +26,8 @@ namespace CAN
 
         private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            txtactive.IsVisible = true;
+            lblmessage.IsVisible = true;
             Location villageN = (Location)listView.SelectedItem;
             string villageName = villageN.locationName;
             StaticClass.VillageID = villageN.locationId;

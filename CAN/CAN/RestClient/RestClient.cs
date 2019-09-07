@@ -20,7 +20,8 @@ namespace Plugin.RestClient
     /// </summary>
     public class RestClient<T>
     {
-        public const string WebServiceUrl = "http://canapi.promptec.com/";
+        //public const string WebServiceUrl = "http://canapi.promptec.com/";
+        public const string WebServiceUrl = "http://prompteccan.azurewebsites.net/";
         public async Task<object> GetAsyncSchool(string url)
         {
 

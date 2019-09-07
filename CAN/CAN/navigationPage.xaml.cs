@@ -73,6 +73,10 @@ namespace CAN
                 return;
             if (item.Id == 0)
             {
+                lblmessage.IsVisible = false;
+                lblmessagewait.IsVisible = true;
+                txtactive.IsVisible = true;
+                await Task.Delay(1000);
                 StaticClass.PageName = "VillagePage";
                 StaticClass.MonthlyMonitoringName = "";
                 Application.Current.MainPage = new MasterDetailPage1();

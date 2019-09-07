@@ -4,21 +4,28 @@
              x:Class="CAN.ListOfVillage"
                Title="Village List">
     <StackLayout Orientation="Vertical">
+        <AbsoluteLayout>
+            <ListView x:Name="listView" ItemSelected="ListView_ItemSelected"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
+                                    <Label  Text="{Binding locationName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center"></Label>
 
-        <ListView x:Name="listView" ItemSelected="ListView_ItemSelected"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
-                                <Label  Text="{Binding locationName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center"></Label>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
 
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </AbsoluteLayout>
+        <StackLayout Orientation="Vertical"  AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" HeightRequest="50" AbsoluteLayout.LayoutBounds="0,1,1,20" Margin="10">
+            <ActivityIndicator x:Name="txtactive" Color="Red" IsRunning="True" Margin="0,0,0,10" IsVisible="False"></ActivityIndicator>
+            <Label x:Name="lblmessage" Text="wait....." Font="17" TextColor="White" IsVisible="False"></Label>
+        </StackLayout>
+        
 
-            </ListView.ItemTemplate>
-        </ListView>
     </StackLayout>
 </ContentPage>

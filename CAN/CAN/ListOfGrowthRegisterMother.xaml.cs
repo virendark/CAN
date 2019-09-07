@@ -69,12 +69,12 @@ namespace CAN
               try
                 {
                     long id = StaticClass.VillageID;
-                    var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+                 //   var ListData = App.DAUtil.GetAllFamilyByLocation(id);
                     List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
             
                 List<MotherMonthlyData> ListmotherWithChildDetails = new List<MotherMonthlyData>();
-                if (ListData != null)
-                    {
+                //if (ListData != null)
+                //    {
                         var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
                         int StatusId = selectedStatusId.columnValueId;
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
@@ -135,7 +135,7 @@ namespace CAN
                         listView.ItemsSource = ListmotherWithChildDetails;
                     }
                   
-                }
+               // }
                 catch
                 {
                

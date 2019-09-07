@@ -99,7 +99,7 @@ namespace CAN
                     {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                        childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID);
+                        childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID);
                         var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                         for (int j = 0; j < childMonthlyData.Count; j++)
                         {
@@ -149,7 +149,7 @@ namespace CAN
                 }
 
             }
-            catch
+            catch(Exception EX)
             {
 
             }
@@ -256,7 +256,7 @@ namespace CAN
                     {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                            childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
                         var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                         for (int j = 0; j < childMonthlyData.Count; j++)
                         {
@@ -337,6 +337,7 @@ namespace CAN
                     var ListData = App.DAUtil.GetAllFamilyByLocation(id);
                     List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
                     List<ChildMonthlyData> ListChildMonthlyData = new List<ChildMonthlyData>();
+
                     if (ListData != null)
                     {
                         var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
@@ -346,7 +347,8 @@ namespace CAN
                         {
                             var DataMId = (DataM)ddlDataMonth.SelectedItem;
                             int DataID = DataMId.Datamonthid;
-                            childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                            //childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
                             var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                             for (int j = 0; j < childMonthlyData.Count; j++)
                             {

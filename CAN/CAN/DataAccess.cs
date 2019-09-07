@@ -46,13 +46,17 @@ namespace CAN
         {
             return dbConn.Query<RedFlagDetails>("select GrowthRegister.GenderID, GrowthRegister.GrowthId,GrowthRegister.ChildId, GrowthRegister.AnyRedFlag,RedFlagRegister.DateMonthId,RedFlagRegister.RedFlagId from [GrowthRegister] left outer join [RedFlagRegister] on GrowthRegister.ChildId=RedFlagRegister.ChildId  and RedFlagRegister.DateMonthId='" + DataMonthId + "' where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
         }
-        public List<ChildMonthlyData> GetChildMonthlyData(string FamilyId,  int StatusId,int DataMonthId)
+        //public List<ChildMonthlyData> GetChildMonthlyData(string FamilyId,  int StatusId,int DataMonthId)
+        //{
+        //    return dbConn.Query<ChildMonthlyData>("select  ChildRegister.ChildCode,ChildRegister.ChildId,ChildRegister.GenderID,ChildRegister.ChildName,ChildRegister.ChildStatus,ChildRegister.DOB,GrowthRegister.GrowthId,GrowthRegister.DataMonthId,  GrowthRegister.AnyRedFlag from [ChildRegister] left outer join [GrowthRegister] on ChildRegister.ChildId=GrowthRegister.ChildId  and GrowthRegister.DataMonthId='" + DataMonthId + "' where ChildRegister.FamilyId='" + FamilyId + "'  and ChildRegister.ChildStatus='" + StatusId + "'");
+        //}
+        public List<ChildMonthlyData> GetChildMonthlyData(long LocationID, long StatusId, int DataMonthId)
         {
-            return dbConn.Query<ChildMonthlyData>("select  ChildRegister.ChildCode,ChildRegister.ChildId,ChildRegister.GenderID,ChildRegister.ChildName,ChildRegister.ChildStatus,ChildRegister.DOB,GrowthRegister.GrowthId,GrowthRegister.DataMonthId,  GrowthRegister.AnyRedFlag from [ChildRegister] left outer join [GrowthRegister] on ChildRegister.ChildId=GrowthRegister.ChildId  and GrowthRegister.DataMonthId='" + DataMonthId + "' where ChildRegister.FamilyId='" + FamilyId + "'  and ChildRegister.ChildStatus='" + StatusId + "'");
+            return dbConn.Query<ChildMonthlyData>("SELECT  ChildRegister.ChildName, ChildRegister.DOB, ChildRegister.ChildStatus, ChildRegister.GenderID,ColumnValue.ColumnValue as GenderName, ChildRegister.ChildCode, FamilyRegister.FamilyCode,GrowthRegister.GrowthId, ChildRegister.ChildId, GrowthRegister.DataMonthId FROM ColumnValue INNER JOIN  [ChildRegister] on ChildRegister.GenderId=ColumnValue.ColumnValueId INNER JOIN FamilyRegister on ChildRegister.FamilyId = FamilyRegister.FamilyId  LEFT OUTER JOIN GrowthRegister ON ChildRegister.ChildId = GrowthRegister.ChildId and GrowthRegister.DataMonthId = " + DataMonthId + " WHERE FamilyRegister.LocationId = " + LocationID + " AND ChildRegister.ChildStatus=" + StatusId);
         }
         public List<MotherWithChildDetails> GetMotherWithChildDetails(long LocationId,int DataId,int StatusId)
         {
-            return dbConn.Query<MotherWithChildDetails>("select FamilyRegister.FamilyCode,FamilyRegister.FamilyId,FamilyRegister.FamilyType,FamilyRegister.FatherName,FamilyRegister.MotherName,FamilyRegister.LocationId ,FamilyRegister.status,TblGrowthRegisterMother.GrowthId,TblGrowthRegisterMother.DataMonthId,TblGrowthRegisterMother.HighRiskMotherHistory,TblGrowthRegisterMother.ChildExpected  from [FamilyRegister] left outer join [TblGrowthRegisterMother] on FamilyRegister.FamilyId=TblGrowthRegisterMother.FamilyId  and TblGrowthRegisterMother.DataMonthId='" + DataId + "' where FamilyRegister.LocationId='" + LocationId+ "'  and FamilyRegister.status='" + StatusId + "'");
+            return dbConn.Query<MotherWithChildDetails>("select FamilyRegister.FamilyCode,FamilyRegister.FamilyId,FamilyRegister.FamilyType,FamilyRegister.FatherName,FamilyRegister.MotherName,FamilyRegister.LocationId ,FamilyRegister.status,TblGrowthRegisterMother.GrowthId,TblGrowthRegisterMother.DataMonthId,TblGrowthRegisterMother.HighRiskMotherHistory,TblGrowthRegisterMother.ChildExpected  from [FamilyRegister] left outer join [TblGrowthRegisterMother] on FamilyRegister.FamilyId=TblGrowthRegisterMother.FamilyId  and TblGrowthRegisterMother.DataMonthId=" + DataId + " where FamilyRegister.LocationId=" + LocationId+ "  and FamilyRegister.status=" + StatusId + "");
         }
         public List<MotherWithChildDetails> GetMotherWithChildDetailsWithOutDataId(long LocationId, int StatusId)
         {
@@ -130,11 +134,11 @@ namespace CAN
         }
         public List<FamilyRegister> GetAllFamilyByLocation(long LocationId)
         {
-            return dbConn.Query<FamilyRegister>("Select DISTINCT  * From [FamilyRegister] where LocationId=" + LocationId);
+            return dbConn.Query<FamilyRegister>("Select * From [FamilyRegister] where LocationId=" + LocationId);
         }
         public List<FamilyRegister> FindFamilyId(Guid FID)
         {
-            return dbConn.Query<FamilyRegister>("Select DISTINCT  * From [FamilyRegister] where FamilyId='"+FID+"'");
+            return dbConn.Query<FamilyRegister>("Select   * From [FamilyRegister] where FamilyId='"+FID+"'");
         }
         public int SaveFamilyData(FamilyRegister familyRegister)
         {
@@ -142,7 +146,7 @@ namespace CAN
         }
         public List<ChildRegister> FindChildId(string CID)
         {
-            return dbConn.Query<ChildRegister>("Select DISTINCT  * From [ChildRegister] where FamilyId='" + CID + "'");
+            return dbConn.Query<ChildRegister>("Select   * From [ChildRegister] where FamilyId='" + CID + "'");
         }
         public List<ChildRegister> FindChildByData(string CID)
         {

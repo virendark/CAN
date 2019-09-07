@@ -6,12 +6,14 @@ namespace CAN.Models
 {
     public static class StaticClass
     {
+        public static string pageIn { get; set; }
         public static string MonthlyMonitoringName { get; set; }
         public static Guid FId { get; set; }
         public static string PageName { get; set; }
         public static string RedFlagButton { get; set; }
         public static Guid PageData { get; set; }
         public static Guid FamilyId { get; set; }
+        public static int FamilyAliveChildCount{ get; set; }
         public static Guid ChildID { get; set; }
         public static int VillageID { get; set; }
         public static string LocationName { get; set; }

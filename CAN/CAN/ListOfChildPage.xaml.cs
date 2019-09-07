@@ -38,14 +38,13 @@ namespace CAN
             try
             {
                 long id = StaticClass.VillageID;
-                //var FamilyData = App.DAUtil.GetAllFamilyByLocation(id);
-                var FamilyData = App.DAUtil.FindFamilyId(StaticClass.PageData);
+              
+                //var FamilyData = App.DAUtil.FindFamilyId(StaticClass.PageData);
                 
-                // StaticClass.PageData = FamilyId;
-                if (FamilyData.Count > 0)
-                {
-                    var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).Take(5).OrderByDescending(x=>x.ChildCode).ToList();
-                    if (ChildData.Count < FamilyData[0].NumberofChildenAlive)
+                //if (FamilyData.Count > 0)
+                //{
+                    var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).OrderByDescending(x=>x.ChildCode).ToList();
+                    if (ChildData.Count < StaticClass.FamilyAliveChildCount)
                     {
                         btnAdd.IsVisible = true;
                     }
@@ -67,7 +66,7 @@ namespace CAN
                             {
                                 childViewModel.W4AZ = "SUW(Severely Under Weight)";
                             }
-                         else
+                           else
                             {
                                 if(child.AWCEntryW4AZ<=-2)
                                 {
@@ -142,10 +141,10 @@ namespace CAN
 
                         listView.IsVisible = true;
                         listView.ItemsSource = listchildViewModels;
-                        btnPrivious.IsEnabled = false;
-                        btnPriviousnext.IsVisible = true;
+                        //btnPrivious.IsEnabled = false;
+                        //btnPriviousnext.IsVisible = true;
                     }
-                }
+                //}
             }
             catch(Exception ex)
             {
@@ -179,53 +178,53 @@ namespace CAN
             Application.Current.MainPage = new MasterDetailPage1();
         }
 
-        private void BtnPriviousnext_Clicked(object sender, EventArgs e)
-        {
-            if (previousValue >= 0)
-            {
-                btnPrivious.IsEnabled = true;
-                previousValue += 5;
-                var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).Skip(previousValue).Take(5).OrderByDescending(x => x.ChildCode).ToList();
-                 if (ChildData.Count == 0)
-                {
-                    btnPriviousnext.IsEnabled = false;
+        //private void BtnPriviousnext_Clicked(object sender, EventArgs e)
+        //{
+        //    if (previousValue >= 0)
+        //    {
+        //        btnPrivious.IsEnabled = true;
+        //        previousValue += 5;
+        //        var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).Skip(previousValue).Take(5).OrderByDescending(x => x.ChildCode).ToList();
+        //         if (ChildData.Count == 0)
+        //        {
+        //            btnPriviousnext.IsEnabled = false;
 
-                }
-                else
-                {
-                    btnPriviousnext.IsEnabled = true;
+        //        }
+        //        else
+        //        {
+        //            btnPriviousnext.IsEnabled = true;
 
-                    listView.ItemsSource = null;
-                    listView.ItemsSource = ChildData;
-                }
-            }
-        }
+        //            listView.ItemsSource = null;
+        //            listView.ItemsSource = ChildData;
+        //        }
+        //    }
+        //}
 
-        private void BtnPrivious_Clicked(object sender, EventArgs e)
-        {
-            if (previousValue > 0)
-            {
-                previousValue -= 5;
+        //private void BtnPrivious_Clicked(object sender, EventArgs e)
+        //{
+        //    if (previousValue > 0)
+        //    {
+        //        previousValue -= 5;
                
-                var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).Skip(previousValue).Take(5).OrderByDescending(x => x.ChildCode).ToList();
-                if (ChildData.Count == 0)
-                {
-                    btnPrivious.IsEnabled = false;
-                    btnPriviousnext.IsEnabled = true;
-                }
-                else
-                {
-                    listView.ItemsSource = null;
-                    listView.ItemsSource = ChildData;
-                    btnPrivious.IsEnabled = true;
-                    btnPriviousnext.IsEnabled = true;
-                }
-            }
-            else
-            {
-                btnPrivious.IsEnabled = false;
-            }
-        }
+        //        var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).Skip(previousValue).Take(5).OrderByDescending(x => x.ChildCode).ToList();
+        //        if (ChildData.Count == 0)
+        //        {
+        //            btnPrivious.IsEnabled = false;
+        //            btnPriviousnext.IsEnabled = true;
+        //        }
+        //        else
+        //        {
+        //            listView.ItemsSource = null;
+        //            listView.ItemsSource = ChildData;
+        //            btnPrivious.IsEnabled = true;
+        //            btnPriviousnext.IsEnabled = true;
+        //        }
+        //    }
+        //    else
+        //    {
+        //        btnPrivious.IsEnabled = false;
+        //    }
+        //}
     }
 }
 //public class Chil
