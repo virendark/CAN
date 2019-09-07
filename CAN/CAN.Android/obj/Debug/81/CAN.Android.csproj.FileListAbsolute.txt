@@ -1290,6 +1290,12 @@ F:\24-08-2019\CAN\CAN\CAN.Android\bin\Debug\Plugin.Connectivity.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\bin\Debug\Rg.Plugins.Popup.Droid.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\bin\Debug\Toasts.Forms.Plugin.Droid.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\CAN.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\FormsViewGroup.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\CAN.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\FormsViewGroup.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\Plugin.Connectivity.dll.mdb
@@ -1320,12 +1326,6 @@ F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\System.Xml.pdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\Toasts.Forms.Plugin.Abstractions.pdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\CAN.dll.mdb
-F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\FormsViewGroup.dll.mdb
-F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
-F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
-F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
-F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
 F:\24-08-2019\CAN\CAN\CAN.Android\bin\Debug\CAN.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\CAN.dll.mdb

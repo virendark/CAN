@@ -11,6 +11,7 @@ using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Plugin.CurrentActivity;
 using Plugin.Media;
+using System.Net.Http;
 
 namespace CAN.Droid
 {
@@ -32,6 +33,15 @@ namespace CAN.Droid
         {
             (Xamarin.Forms.Forms.Context as Activity).Finish();
         }
+        //public HttpClientHandler GetHttpClientHandler()
+        //{
+
+        //    Xamarin.Android.Net.AndroidClientHandler http = new Xamarin.Android.Net.AndroidClientHandler();
+        //    http.ReadTimeout = TimeSpan.FromMinutes(15.0);
+
+
+        //    return http;
+        //}
         //public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         //{
         //    PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);

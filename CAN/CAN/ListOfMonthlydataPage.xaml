@@ -15,7 +15,7 @@
                             <ViewCell>
                                 <Grid>
                                     <Frame  
-                                   BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
+                                       BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
                                         <Grid>
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="45"/>
@@ -32,14 +32,11 @@
                                             </Grid.ColumnDefinitions>
 
                                             <StackLayout Grid.Row="0"  Spacing="1" Orientation="Horizontal">
-
                                                 <Label Text="बालकाचे नाव(Child Name):-" Grid.Column="1" TextColor="Black" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Start" FontSize="16" LineBreakMode="WordWrap" 
                                                 FontAttributes="Bold"/>
                                                 <Label Text="{Binding ChildName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
-
-                                            </StackLayout>
+                                             </StackLayout>
                                             <StackLayout Grid.Row="1"  Spacing="1" Orientation="Horizontal">
-
                                                 <Label Text="लिंग (Gender):-     " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
                                                  FontAttributes="Bold"/>
                                                 <Label Text="{Binding GenderName}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
@@ -88,9 +85,11 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </Grid>
-
-        </AbsoluteLayout>
-      
+         </AbsoluteLayout>
+        <StackLayout AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" Orientation="Horizontal" HeightRequest="50" AbsoluteLayout.LayoutBounds="0,1,1,20" Margin="10" >
+            <Button x:Name="btnPrivious" Clicked="BtnPrivious_Clicked"  Text="Previous" HeightRequest="20"  HorizontalOptions="FillAndExpand"  TextColor="White" BackgroundColor="#ffbf00"></Button>
+            <Button x:Name="btnPriviousnext" Clicked="BtnPriviousnext_Clicked"  Text="Next" HeightRequest="20"  HorizontalOptions="FillAndExpand" TextColor="White"  BackgroundColor="#ffbf00"></Button>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

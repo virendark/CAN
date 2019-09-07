@@ -13,9 +13,14 @@ namespace CAN
 	[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListOfFamilyPage : ContentPage
     {
+        int previousValue = 0;
+        
+        long id;
         public ListOfFamilyPage()
         {
             InitializeComponent();
+            //btnPrivious.IsVisible = false;
+            //btnPriviousnext.IsVisible = false;
             listView.IsVisible = false;
             this.Title = StaticClass.LocationName;
             BindList();
@@ -24,15 +29,15 @@ namespace CAN
 
         private void BindList()
         {
-           
-            long id = StaticClass.VillageID;
-            var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+            id = StaticClass.VillageID;
+            var ListData = App.DAUtil.GetAllFamilyByLocation(id).Take(5).OrderByDescending(x=>x.FamilyCode).ToList();
            
             if (ListData.Count > 0)
             {
-
+                btnPriviousnext.IsVisible = true;
                 listView.IsVisible = true;
                 listView.ItemsSource = ListData;
+                btnPrivious.IsEnabled = false;
             }
 
         }
@@ -90,6 +95,53 @@ namespace CAN
             StaticClass.FamilyId = FamilyId;
             StaticClass.PageButtonText = "Update";
             await Navigation.PushAsync(new FamilyPage());
+        }
+
+        private void BtnPrivious_Clicked(object sender, EventArgs e)
+        {
+            if (previousValue > 0)
+            {
+                previousValue -= 5;
+                var ListData = App.DAUtil.GetAllFamilyByLocation(id).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                if (ListData.Count == 0)
+                {
+                    btnPrivious.IsEnabled = false;
+                    btnPriviousnext.IsEnabled = true;
+                }
+                else
+                {
+                    listView.ItemsSource = null;
+                    listView.ItemsSource = ListData;
+                    btnPrivious.IsEnabled = true;
+                    btnPriviousnext.IsEnabled = true;
+                }
+            }
+            else
+            {
+                btnPrivious.IsEnabled = false;
+            }
+        }
+
+        private void BtnPriviousnext_Clicked(object sender, EventArgs e)
+        {
+            if (previousValue >= 0)
+            {
+                btnPrivious.IsEnabled = true;
+                previousValue += 5;
+                var ListData = App.DAUtil.GetAllFamilyByLocation(id).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                if (ListData.Count == 0)
+                {
+                    btnPriviousnext.IsEnabled = false;
+
+                }
+                else
+                {
+                    btnPriviousnext.IsEnabled = true;
+
+                    listView.ItemsSource = null;
+                    listView.ItemsSource = ListData;
+                }
+            }
         }
     }
 }

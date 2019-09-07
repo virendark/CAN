@@ -27,7 +27,7 @@ namespace CAN
             App.DAUtil.deletepushdatatime();
             TblPushDataTime tblPushDataTime = new TblPushDataTime();
             tblPushDataTime.Flage = true;
-            tblPushDataTime.CheckDate = DateTime.Now;
+            tblPushDataTime.CheckDate = txtsyncdata.Date;// DateTime.Now;
             App.DAUtil.SavepushDataTime(tblPushDataTime);
             StaticClass.LastsyncDateChange = "";
             Application.Current.MainPage = new VillagePage();

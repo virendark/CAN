@@ -182,7 +182,7 @@
                     <StackLayout Orientation="Horizontal">
                         <Label x:Name="txtLastDeliveryDate1" Text="DD/MM/YYYY" TextColor="Black" HorizontalOptions="StartAndExpand">
                             <Label.GestureRecognizers>
-                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1"/>
+                                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_2"/>
                             </Label.GestureRecognizers>
                         </Label>
 
@@ -191,7 +191,7 @@
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal" x:Name="txtLastDeliveryDate2" HorizontalOptions="FillAndExpand">
-                    <DatePicker x:Name="txtLastDeliveryDate" TextColor="Black" DateSelected="TxtLastDeliveryDate_DateSelected_1"  Format="dd/MM/yyyy" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                    <DatePicker x:Name="txtLastDeliveryDate" TextColor="Black" DateSelected="TxtLastDeliveryDate_DateSelected"  Format="dd/MM/yyyy" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                     </DatePicker>
                 </StackLayout>
 

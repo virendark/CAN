@@ -13,6 +13,8 @@ namespace CAN
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListOfGrowthRegisterMother : ContentPage
     {
+        int previousValue = 0;
+        long id;
         int a = 0;
         public ListOfGrowthRegisterMother()
         {
@@ -78,7 +80,7 @@ namespace CAN
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
                     // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
-                    MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId);
+                    MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Take(5).ToList(); ;
                     int check = 0;
                         for (int i = 0; i < MotherWithChildDetails.Count; i++)
                         {
@@ -126,10 +128,9 @@ namespace CAN
                             }
                             
                             }
-
-
-                            ListmotherWithChildDetails.Add(motherWithChildDetails);
+                             ListmotherWithChildDetails.Add(motherWithChildDetails);
                         }
+                    
                         listView.IsVisible = true;
                         listView.ItemsSource = ListmotherWithChildDetails;
                     }
@@ -223,6 +224,201 @@ namespace CAN
             {
                 DependencyService.Get<Toast>().Show("Can't be Edit Please Add");
                 return;
+            }
+        }
+
+        private void BtnPriviousnext_Clicked(object sender, EventArgs e)
+        {
+            if (previousValue >= 0)
+            {
+                btnPriviousnext.IsEnabled = true;
+                previousValue += 5;
+
+                try
+                {
+                    long id = StaticClass.VillageID;
+                    var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+                    List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
+                    List<MotherMonthlyData> ListmotherWithChildDetails = new List<MotherMonthlyData>();
+                    if (ListData != null)
+                    {
+                        var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
+                        int StatusId = selectedStatusId.columnValueId;
+                        var DataMId = (DataM)ddlDataMonth.SelectedItem;
+                        int DataID = DataMId.Datamonthid;
+                        // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
+                        MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                        int check = 0;
+                        for (int i = 0; i < MotherWithChildDetails.Count; i++)
+                        {
+                            check = i;
+                            MotherMonthlyData motherWithChildDetails = new MotherMonthlyData();
+                            motherWithChildDetails.ChildExpected = MotherWithChildDetails[i].ChildExpected == null ? MotherWithChildDetails[i].ChildExpected : null;
+                            motherWithChildDetails.FamilyId = MotherWithChildDetails[i].FamilyId;
+                            motherWithChildDetails.FatherName = MotherWithChildDetails[i].FatherName;
+                            motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
+                            motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
+                            motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
+                            motherWithChildDetails.IsPregrent = MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
+                            motherWithChildDetails.IsLactating = MotherWithChildDetails[i].IsLactating == true ? "True" : "False";
+                            if (MotherWithChildDetails[i].HighRiskMotherHistory != null)
+                            {
+
+                                motherWithChildDetails.colobind = "PaleVioletRed";
+                            }
+                            else
+                            {
+                                motherWithChildDetails.colobind = "White";
+                            }
+                            motherWithChildDetails.HighRiskMotherHistory = MotherWithChildDetails[i].HighRiskMotherHistory == null ? "Mother having history:- Normal" : "Mother having history:- HighRisk";
+                            if (MotherWithChildDetails[i].DataMonthId != 0)
+                            {
+                                var dateId = App.DAUtil.GetDataMonthByID(MotherWithChildDetails[i].DataMonthId);
+                                if (dateId.Count > 0)
+                                {
+                                    motherWithChildDetails.DataMonthId = dateId[0].Datamonth.ToString("MMM-yyyy");
+                                    motherWithChildDetails.IsvisuaAdd = false;
+                                    motherWithChildDetails.IsvisuaEdit = true;
+                                }
+                            }
+                            else
+                            {
+                                if (MotherWithChildDetails[i].status == 122)
+                                {
+                                    motherWithChildDetails.IsvisuaAdd = true;
+                                    motherWithChildDetails.IsvisuaEdit = false;
+                                    motherWithChildDetails.DataMonthId = "Null";
+                                }
+                                else
+                                {
+                                    motherWithChildDetails.IsvisuaEdit = true;
+                                }
+
+                            }
+
+
+                            ListmotherWithChildDetails.Add(motherWithChildDetails);
+                        }
+                        listView.IsVisible = true;
+
+                        if (ListmotherWithChildDetails.Count == 0)
+                        {
+                            btnPriviousnext.IsEnabled = false;
+
+                        }
+                        else
+                        {
+                            btnPriviousnext.IsEnabled = true;
+                             listView.ItemsSource = null;
+                            listView.ItemsSource = ListmotherWithChildDetails;
+                        }
+                    }
+
+
+                }
+                catch
+                {
+
+                }
+
+            }
+        }
+
+        private void BtnPrivious_Clicked(object sender, EventArgs e)
+        {
+            if (previousValue > 0)
+            {
+                btnPrivious.IsEnabled = true;
+                previousValue -= 5;
+               
+                try
+                {
+                    long id = StaticClass.VillageID;
+                    var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+                    List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
+                    List<MotherMonthlyData> ListmotherWithChildDetails = new List<MotherMonthlyData>();
+                    if (ListData != null)
+                    {
+                        var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
+                        int StatusId = selectedStatusId.columnValueId;
+                        var DataMId = (DataM)ddlDataMonth.SelectedItem;
+                        int DataID = DataMId.Datamonthid;
+                        // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
+                        MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                        int check = 0;
+                        for (int i = 0; i < MotherWithChildDetails.Count; i++)
+                        {
+                            check = i;
+                            MotherMonthlyData motherWithChildDetails = new MotherMonthlyData();
+                            motherWithChildDetails.ChildExpected = MotherWithChildDetails[i].ChildExpected == null ? MotherWithChildDetails[i].ChildExpected : null;
+                            motherWithChildDetails.FamilyId = MotherWithChildDetails[i].FamilyId;
+                            motherWithChildDetails.FatherName = MotherWithChildDetails[i].FatherName;
+                            motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
+                            motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
+                            motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
+                            motherWithChildDetails.IsPregrent = MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
+                            motherWithChildDetails.IsLactating = MotherWithChildDetails[i].IsLactating == true ? "True" : "False";
+                            if (MotherWithChildDetails[i].HighRiskMotherHistory != null)
+                            {
+
+                                motherWithChildDetails.colobind = "PaleVioletRed";
+                            }
+                            else
+                            {
+                                motherWithChildDetails.colobind = "White";
+                            }
+                            motherWithChildDetails.HighRiskMotherHistory = MotherWithChildDetails[i].HighRiskMotherHistory == null ? "Mother having history:- Normal" : "Mother having history:- HighRisk";
+                            if (MotherWithChildDetails[i].DataMonthId != 0)
+                            {
+                                var dateId = App.DAUtil.GetDataMonthByID(MotherWithChildDetails[i].DataMonthId);
+                                if (dateId.Count > 0)
+                                {
+                                    motherWithChildDetails.DataMonthId = dateId[0].Datamonth.ToString("MMM-yyyy");
+                                    motherWithChildDetails.IsvisuaAdd = false;
+                                    motherWithChildDetails.IsvisuaEdit = true;
+                                }
+                            }
+                            else
+                            {
+                                if (MotherWithChildDetails[i].status == 122)
+                                {
+                                    motherWithChildDetails.IsvisuaAdd = true;
+                                    motherWithChildDetails.IsvisuaEdit = false;
+                                    motherWithChildDetails.DataMonthId = "Null";
+                                }
+                                else
+                                {
+                                    motherWithChildDetails.IsvisuaEdit = true;
+                                }
+
+                            }
+
+
+                            ListmotherWithChildDetails.Add(motherWithChildDetails);
+                        }
+                        listView.IsVisible = true;
+                       
+                        if (ListmotherWithChildDetails.Count == 0)
+                        {
+                            btnPriviousnext.IsEnabled = false;
+
+                        }
+                        else
+                        {
+                            btnPriviousnext.IsEnabled = true;
+
+                            listView.ItemsSource = null;
+                            listView.ItemsSource = ListmotherWithChildDetails;
+                        }
+                    }
+                   
+
+                }
+                catch
+                {
+
+                }
+              
             }
         }
     }

@@ -10,6 +10,7 @@ using CAN;
 using CAN.ViewModels;
 using Xamarin.Forms;
 using Newtonsoft.Json.Linq;
+using System.Threading;
 
 namespace Plugin.RestClient
 {
@@ -104,8 +105,12 @@ namespace Plugin.RestClient
             bool Flag = false;
             try
             {
-                HttpClient client = new HttpClient();
-
+                HttpClient client = new HttpClient
+                {
+                    Timeout = TimeSpan.FromMinutes(20)
+                };
+                //HttpClient client = new HttpClient();
+                //client.Timeout = TimeSpan.FromSeconds(300);
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + userLoginById.Token);
               //  HttpResponseMessage response1 = await client.GetAsync(WebServiceUrl + "api/Sync/SyncGetEntryLevelDataForAPP?userId="+userLoginById.userId);
                HttpResponseMessage response1 = await client.GetAsync(WebServiceUrl + "api/Sync/SyncGetMasterDataForAPP?userId=" + userLoginById.userId);
@@ -268,17 +273,18 @@ namespace Plugin.RestClient
         }
         public async Task<bool> PullNewData(UserLoginById userLoginById)
         {
-
+            string responseBody = "";
             bool Flag = false;
             try
             {
-                HttpClient client = new HttpClient();
+                 HttpClient client = new HttpClient();
+                  client.Timeout = TimeSpan.FromHours(1.0);
+                   client.DefaultRequestHeaders.Add("Authorization", "Bearer " + userLoginById.Token);
+                    HttpResponseMessage response1 = await client.GetAsync(WebServiceUrl + "api/Sync/SyncGetEntryLevelDataForAPP?userId=" + userLoginById.userId);
 
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + userLoginById.Token);
-                  HttpResponseMessage response1 = await client.GetAsync(WebServiceUrl + "api/Sync/SyncGetEntryLevelDataForAPP?userId="+userLoginById.userId);
-               
-                HttpContent content = response1.Content;
-                string responseBody = content.ReadAsStringAsync().Result;
+                    HttpContent content = response1.Content;
+                     responseBody = content.ReadAsStringAsync().Result;
+                
                 if (!string.IsNullOrEmpty(responseBody))
                 {
                     JObject jobject = JObject.Parse(responseBody);
@@ -667,10 +673,15 @@ namespace Plugin.RestClient
             bool Flag = false;
             try
             {
-                HttpClient client = new HttpClient();
+                //HttpClient client = new HttpClient();
+                HttpClient client = new HttpClient
+                {
+                    Timeout = TimeSpan.FromMinutes(20)
+                };
                 var Userdata = App.DAUtil.GetUsers();
                 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + Userdata[0].Token);
-                var json = JsonConvert.SerializeObject(pushData);
+               // client.Timeout = TimeSpan.FromSeconds(300);
+                    var json = JsonConvert.SerializeObject(pushData);
                 HttpContent httpContent = new StringContent(json);
                 httpContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                 HttpResponseMessage response = await client.PostAsync(WebServiceUrl + "api/Sync/SyncSaveDataForAPP", httpContent);

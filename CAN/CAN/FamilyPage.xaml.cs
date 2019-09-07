@@ -14,6 +14,7 @@ namespace CAN
     public partial class FamilyPage : ContentPage
     {
         bool IsValidation = true;
+        bool IsShowDOB = false;
         List<OwnAgriculturalLand> ListownAgriculturalLandk = new List<OwnAgriculturalLand>();
         List<MotherWork> ListIsMotherWork = new List<MotherWork>();
         List<ElectricityAvailable> ListOfElectricityAvailable = new List<ElectricityAvailable>();
@@ -929,11 +930,12 @@ namespace CAN
         {
             txtMDOB1.IsVisible = false;
             txtMDOBP.IsVisible = true;
-
+            IsShowDOB = false;
             DateTime currentYear = DateTime.Now;
             int MDob = txtMDOB.Date.Year;
             int yearNumber = currentYear.Year - MDob;
             txtMotherAge.Text = yearNumber.ToString();
+         
 
 
         }
@@ -960,13 +962,38 @@ namespace CAN
             }
             else
             {
-                txtMDOB1.IsVisible = false;
-                txtMDOBP.IsVisible = true;
-                DateTime currentYear = DateTime.Now;
+                if (btnSave.Text == "Update")
+                {
+                    if (IsShowDOB == false)
+                    {
+                        txtMDOB1.IsVisible = false;
+                        txtMDOBP.IsVisible = true;
+                        txtMDOB.Date = txtMDOB.Date;
+                        IsShowDOB = true;
+                    }
+                    else
+                    {
+                        txtMDOB1.IsVisible = false;
+                        txtMDOBP.IsVisible = true;
+                        DateTime currentYear = DateTime.Now;
 
-                int yearNumber = currentYear.Year - Convert.ToInt32(txtMotherAge.Text);
-                DateTime DOB = new DateTime(yearNumber, 1, 1);
-                txtMDOB.Date = DOB;
+                        int yearNumber = currentYear.Year - Convert.ToInt32(txtMotherAge.Text);
+                        DateTime DOB = new DateTime(yearNumber, 1, 1);
+                        txtMDOB.Date = DOB;
+                    }
+                }
+                else
+                {
+                    txtMDOB1.IsVisible = false;
+                    txtMDOBP.IsVisible = true;
+                    DateTime currentYear = DateTime.Now;
+
+                    int yearNumber = currentYear.Year - Convert.ToInt32(txtMotherAge.Text);
+                    DateTime DOB = new DateTime(yearNumber, 1, 1);
+                    txtMDOB.Date = DOB;
+
+                }
+               
             }
 
         }

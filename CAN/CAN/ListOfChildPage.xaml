@@ -125,6 +125,10 @@
                                          AbsoluteLayout.LayoutFlags="PositionProportional"
                                         AbsoluteLayout.LayoutBounds="1.0,1.0,-1,-1"
                                         Margin="10" />
+        <StackLayout AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,1,1,40" >
+            <Button x:Name="btnPrivious" Clicked="BtnPrivious_Clicked"  Text="Previous" HeightRequest="20"  HorizontalOptions="FillAndExpand"  TextColor="White" BackgroundColor="#ffbf00"></Button>
+            <Button x:Name="btnPriviousnext" Clicked="BtnPriviousnext_Clicked"  Text="Next" HeightRequest="20"    HorizontalOptions="FillAndExpand" TextColor="White"  BackgroundColor="#ffbf00"></Button>
+        </StackLayout>
     </AbsoluteLayout>
 
 </ContentPage>

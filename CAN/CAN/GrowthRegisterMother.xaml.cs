@@ -42,7 +42,9 @@ namespace CAN
             BindddlAwcregister();
             btnSave.Text = StaticClass.PageButtonText;
             txtExpectedDeliveryDate2.IsVisible = false;
+            
             txtLastDeliveryDate2.IsVisible = false;
+            txtLastDeliveryDate11.IsVisible = true;
             stacShowAndHide.IsVisible = false;
             Bindpreviousdata();
             if (StaticClass.PageButtonText == "Update")
@@ -667,32 +669,7 @@ namespace CAN
 
             }
         }
-        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-            txtLastDeliveryDate.Focus();
-        }
-
-        private void TxtLastDeliveryDate_DateSelected_1(object sender, DateChangedEventArgs e)
-        {
-            //try
-            //{
-            //    DateTime date_of_submission = Convert.ToDateTime(DateTime.Now.ToString("MM/dd/yyyy"));
-            //    DateTime _effective_date = Convert.ToDateTime(txtLastDeliveryDate.Date);
-            //    int difference = _effective_date.Month - date_of_submission.Month;
-
-            //    txtTotalPregnancyMonths.Text =(9-difference).ToString();
-            //   // txtTotalPregnancyMonths.IsEnabled = false;
-            //   //   txtTotalPregnancyMonths.Text = difference.ToString();
-            //}
-            //catch
-            //{
-
-            //}
-            txtLastDeliveryDate2.IsVisible = true;
-            txtLastDeliveryDate11.IsVisible = false;
-            lastdDate = txtLastDeliveryDate.Date;
-
-        }
+       
 
         private void DdlReceivedMealFromAwcunderAay_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -776,9 +753,8 @@ namespace CAN
                     txtLastDeliveryDate.MaximumDate = DateTime.Now;
                     txtExpectedDeliveryDate2.IsVisible = false;
                     txtExpectedDeliveryDate11.IsVisible = true;
-                   // txtLastDeliveryDate.MinimumDate = dateTime;
-                    txtLastDeliveryDate11.IsVisible = true;
-                    txtLastDeliveryDate2.IsVisible = false;
+                   //txtLastDeliveryDate11.IsVisible = true;
+                    //txtLastDeliveryDate2.IsVisible = false;
                 }
                 else
                 {
@@ -790,8 +766,8 @@ namespace CAN
                     txtExpectedDeliveryDate11.IsVisible = false;
                     //  txtLastDeliveryDate.MinimumDate = dateTime;
                     txtLastDeliveryDate.MaximumDate = DateTime.Now; //new DateTime(dateTime.Year, month, dateTime.Day);
-                    txtLastDeliveryDate11.IsVisible = false;
-                    txtLastDeliveryDate2.IsVisible = true;
+                    //txtLastDeliveryDate11.IsVisible = false;
+                    //txtLastDeliveryDate2.IsVisible = true;
                 }
             }
             catch
@@ -894,5 +870,26 @@ namespace CAN
 
             }
             }
+
+        private void TxtLastDeliveryDate_DateSelected(object sender, DateChangedEventArgs e)
+        {
+            try
+            {
+                
+                    lastdDate = txtLastDeliveryDate.Date;
+                
+            }
+            catch(Exception ex)
+            {
+
+            }
+            }
+
+        private void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
+        {
+            txtLastDeliveryDate2.IsVisible = true;
+            txtLastDeliveryDate11.IsVisible = false;
+            txtLastDeliveryDate.Focus();
+        }
     }
 }
