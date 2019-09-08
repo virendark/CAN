@@ -22,6 +22,27 @@ namespace CAN
             BindList();
             txtactive.IsVisible = false;
             lblmessage.IsVisible = false;
+            BindDatamonths();
+        }
+           public void BindDatamonths()
+           {
+
+            StaticClass.dataManthFormat.Clear();
+            StaticClass.dataManths.Clear();
+            StaticClass.listOfStatus.Clear();
+
+            StaticClass.dataManths = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
+            for (int i = 0; i < StaticClass.dataManths.Count; i++)
+            {
+                DataM dataMonths = new DataM();
+                dataMonths.Datamonthid = StaticClass.dataManths[i].Datamonthid;
+                string formatted = StaticClass.dataManths[i].Datamonth.ToString("MMM-yyyy");
+                dataMonths.Datamonth = formatted;
+                StaticClass.dataManthFormat.Add(dataMonths);
+            }
+            StaticClass.listOfStatus= App.DAUtil.GetColumnValuesBytext(55);
+
+
         }
         private void BindList()
         {

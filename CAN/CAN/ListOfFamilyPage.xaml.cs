@@ -97,7 +97,7 @@ namespace CAN
             await Navigation.PushAsync(new FamilyPage());
         }
 
-        private void BtnPrivious_Clicked(object sender, EventArgs e)
+        private void BtnPrevious_Clicked(object sender, EventArgs e)
         {
             if (previousValue > 0)
             {
@@ -122,7 +122,7 @@ namespace CAN
             }
         }
 
-        private void BtnPriviousnext_Clicked(object sender, EventArgs e)
+        private void BtnPreviousnext_Clicked(object sender, EventArgs e)
         {
             if (previousValue >= 0)
             {

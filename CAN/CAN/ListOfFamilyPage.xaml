@@ -2,49 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:FABControls="clr-namespace:CAN.FABControls;assembly=CAN"
-             x:Class="CAN.ListOfFamilyPage" >
-    <AbsoluteLayout>
+             x:Class="CAN.ListOfFamilyPage">
+        <AbsoluteLayout>
         <Grid>
             <ListView x:Name="listView" SeparatorVisibility="None" ItemsSource="{Binding People}" HasUnevenRows="True" BackgroundColor="#2c2d2c" SeparatorColor="White">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell >
                             <Grid>
-                                <!--<Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        
-                                    </Grid.ColumnDefinitions>-->
-                                <!--<Frame  Padding="1" BackgroundColor="#31b0d5" HasShadow="True" OutlineColor="#bbb">
-                                        <Grid>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="100"/>
-                                                <RowDefinition Height="*"/>
-                                            </Grid.RowDefinitions>
-                                            <Frame BackgroundColor="White" Padding="5" HasShadow="False">
-                                                <Image Source="ic_Camera.png" Aspect="AspectFill"
-                           HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80"/>
-                                            </Frame>
-                                            <StackLayout Grid.Row="1" Padding="5,0,5,5" Spacing="1">
-
-                                                <Label Text="Binding Name" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
-                           TextColor="White" FontAttributes="Bold"/>
-                                                <Label Text="Binding Code" HorizontalOptions="Center" VerticalOptions="Center" FontSize="12" LineBreakMode="TailTruncation"
-                           TextColor="White"/>
-                                                <Label Text="Binding Address" FontSize="12" TextColor="White" HorizontalOptions="Center"  VerticalOptions="Center" LineBreakMode="TailTruncation"/>
-                                                <Grid>
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="*"/>
-                                                        <ColumnDefinition Width="100"/>
-                                                        <ColumnDefinition Width="*"/>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Button Grid.Column="1" Text="Detail" VerticalOptions="Center" BorderRadius="16" FontSize="10" HeightRequest="34" BorderWidth="0"/>
-                                                </Grid>
-                                            </StackLayout>
-                                        </Grid>
-                                    </Frame>-->
-
-                                <Frame  
-                      BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
+                            <Frame  
+                                  BackgroundColor="White" IsClippedToBounds="True" HasShadow="True" Margin="0,2,0,0" OutlineColor="#bbb">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="45"/>
@@ -152,8 +119,8 @@
                                         AbsoluteLayout.LayoutBounds="1.0,1.0,-1,0"
                                         Margin="10,10,10,29" />
         <StackLayout AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" Orientation="Horizontal" AbsoluteLayout.LayoutBounds="0,1,1,40" >
-            <Button x:Name="btnPrivious" Clicked="BtnPrivious_Clicked" Text="Previous" HeightRequest="20"  HorizontalOptions="FillAndExpand"  TextColor="White" BackgroundColor="#ffbf00"></Button>
-            <Button x:Name="btnPriviousnext" Clicked="BtnPriviousnext_Clicked" Text="Next" HeightRequest="20"    HorizontalOptions="FillAndExpand" TextColor="White"  BackgroundColor="#ffbf00"></Button>
+            <Button x:Name="btnPrivious" Clicked="BtnPrevious_Clicked" Text="Previous" HeightRequest="20"  HorizontalOptions="FillAndExpand"  TextColor="White" BackgroundColor="#ffbf00"></Button>
+            <Button x:Name="btnPriviousnext" Clicked="BtnPreviousnext_Clicked" Text="Next" HeightRequest="20"    HorizontalOptions="FillAndExpand" TextColor="White"  BackgroundColor="#ffbf00"></Button>
         </StackLayout> 
         <!--<Button x:Name="btnPrivious" Text="Previous" HeightRequest="20" AbsoluteLayout.LayoutFlags="PositionProportional"   HorizontalOptions="StartAndExpand"  AbsoluteLayout.LayoutBounds="0,1.0,-1,-1" BackgroundColor="Green"></Button>
         <Button x:Name="btnPriviousnext" Text="Next" HeightRequest="20" AbsoluteLayout.LayoutFlags="PositionProportional"   HorizontalOptions="EndAndExpand"  AbsoluteLayout.LayoutBounds="0.6,1.0,-1,-1" BackgroundColor="Green"></Button>-->

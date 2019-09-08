@@ -254,7 +254,7 @@ namespace CAN
                     string selectedElectricityName = selectedElectricity == null ? null : selectedElectricity.Name;
                     // var selectedGas = (CookingGasAvailable)ddlCookingGasAvailable.SelectedItem;
                     //string selectedGasName = selectedGas.Name;
-                    long selectedLocationId = StaticClass.VillageID;//selectedLocation.Id;
+                   // long selectedLocationId = StaticClass.VillageID;//selectedLocation.Id;
                     FamilyRegister familyRegister = new FamilyRegister();
                     if (btnSave.Text == "Update")
                     {
@@ -336,7 +336,7 @@ namespace CAN
                     familyRegister.UpdatedBy = 0;
                     //  var selecteLocatio = (ColumnValue)ddlLocation.SelectedItem;
                     // int selecteLocationID = selecteLocatio.columnValueId;
-                    familyRegister.LocationId = StaticClass.VillageID;
+                   // familyRegister.LocationId = StaticClass.VillageID;
                     var selecteMotherWorkType = (ColumnValue)ddlMotherWorkType.SelectedItem;
                     // int selecteMotherWorkTypeId = selecteMotherWorkType.columnValueId;
                     familyRegister.MotherWorkType = selecteMotherWorkType == null ? (int?)null : selecteMotherWorkType.columnValueId;

@@ -50,5 +50,8 @@ namespace CAN.Models
         public static string MotherOccupation { get; set; }
         public static string FatherOccupation { get; set; }
         public static string ChildName { get; set; }
+        public static List<DataM> dataManthFormat = new List<DataM>();
+        public static List<DataMonths> dataManths = new List<DataMonths>();
+        public static List<ColumnValue> listOfStatus = new List<ColumnValue>();
     }
 }

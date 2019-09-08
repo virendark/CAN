@@ -27,19 +27,19 @@ namespace CAN
         }
         public void BindDatamonths()
         {
-            List<DataM> listdataMonths = new List<DataM>();
+           // List<DataM> listdataMonths = new List<DataM>();
 
-            var ListOfDatamonth = App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
-            for (int i = 0; i < ListOfDatamonth.Count; i++)
-            {
-                DataM dataMonths = new DataM();
-                dataMonths.Datamonthid = ListOfDatamonth[i].Datamonthid;
-                string formatted = ListOfDatamonth[i].Datamonth.ToString("MMM-yyyy");
-                dataMonths.Datamonth = formatted;
-                listdataMonths.Add(dataMonths);
-            }
+            var ListOfDatamonth = StaticClass.dataManths; //App.DAUtil.GetDataMonthsFormate().OrderByDescending(x => x.Datamonthid).ToList();
+            //for (int i = 0; i < ListOfDatamonth.Count; i++)
+            //{
+            //    DataM dataMonths = new DataM();
+            //    dataMonths.Datamonthid = ListOfDatamonth[i].Datamonthid;
+            //    string formatted = ListOfDatamonth[i].Datamonth.ToString("MMM-yyyy");
+            //    dataMonths.Datamonth = formatted;
+            //    listdataMonths.Add(dataMonths);
+            //}
 
-            ddlDataMonth.ItemsSource = listdataMonths;
+            ddlDataMonth.ItemsSource = StaticClass.dataManthFormat;
             for (int j = 0; j< ListOfDatamonth.Count; j++)
             {
                string formatted = ListOfDatamonth[j].Datamonth.ToString("MMM-yyyy");
@@ -57,8 +57,8 @@ namespace CAN
         }
         public void BindDataStatus()
         {
-            var ListOfddlStatusCheck = App.DAUtil.GetColumnValuesBytext(55);
-            ddlStatusCheck.ItemsSource = ListOfddlStatusCheck;
+            // var ListOfddlStatusCheck = App.DAUtil.GetColumnValuesBytext(55);
+            ddlStatusCheck.ItemsSource = StaticClass.listOfStatus; //ListOfddlStatusCheck;
             StaticClass.MotherStatus = ddlStatusCheck.SelectedIndex;
             ddlStatusCheck.SelectedIndex = StaticClass.MotherStatus==-1?0: StaticClass.MotherStatus;
             
