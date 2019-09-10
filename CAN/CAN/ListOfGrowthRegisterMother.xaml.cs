@@ -57,8 +57,8 @@ namespace CAN
         }
         public void BindDataStatus()
         {
-            // var ListOfddlStatusCheck = App.DAUtil.GetColumnValuesBytext(55);
-            ddlStatusCheck.ItemsSource = StaticClass.listOfStatus; //ListOfddlStatusCheck;
+             var ListOfddlStatusCheck = App.DAUtil.GetColumnValuesBytext(55);
+            ddlStatusCheck.ItemsSource =ListOfddlStatusCheck;
             StaticClass.MotherStatus = ddlStatusCheck.SelectedIndex;
             ddlStatusCheck.SelectedIndex = StaticClass.MotherStatus==-1?0: StaticClass.MotherStatus;
             
@@ -69,22 +69,35 @@ namespace CAN
               try
                 {
                     long id = StaticClass.VillageID;
-                 //   var ListData = App.DAUtil.GetAllFamilyByLocation(id);
-                    List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
+                btnPrivious.IsEnabled = false;
+                btnPriviousnext.IsEnabled = true;
+                //   var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+                List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
             
                 List<MotherMonthlyData> ListmotherWithChildDetails = new List<MotherMonthlyData>();
                 //if (ListData != null)
                 //    {
-                        var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
-                        int StatusId = selectedStatusId.columnValueId;
+                //var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
+                       int StatusId = 0; //= selectedStatusId.columnValueId;
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                    // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
-                    MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Take(5).ToList(); ;
-                    int check = 0;
+                var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
+                if (selectedStatusId == null)
+                {
+
+                    
+                    StatusId = 122;
+                }
+                else
+                {
+                    StatusId = selectedStatusId.columnValueId;
+                }
+                // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
+                MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Take(5).ToList(); 
+                   // int check = 0;
                         for (int i = 0; i < MotherWithChildDetails.Count; i++)
                         {
-                        check = i;
+                       // check = i;
                             MotherMonthlyData motherWithChildDetails = new MotherMonthlyData();
                             motherWithChildDetails.ChildExpected = MotherWithChildDetails[i].ChildExpected == null ? MotherWithChildDetails[i].ChildExpected : null;
                             motherWithChildDetails.FamilyId = MotherWithChildDetails[i].FamilyId;
@@ -231,17 +244,17 @@ namespace CAN
         {
             if (previousValue >= 0)
             {
-                btnPriviousnext.IsEnabled = true;
+                btnPrivious.IsEnabled = true;
                 previousValue += 5;
 
                 try
                 {
                     long id = StaticClass.VillageID;
-                    var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+                   // var ListData = App.DAUtil.GetAllFamilyByLocation(id);
                     List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
                     List<MotherMonthlyData> ListmotherWithChildDetails = new List<MotherMonthlyData>();
-                    if (ListData != null)
-                    {
+                    //if (ListData != null)
+                    //{
                         var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
                         int StatusId = selectedStatusId.columnValueId;
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
@@ -303,16 +316,17 @@ namespace CAN
 
                         if (ListmotherWithChildDetails.Count == 0)
                         {
-                            btnPriviousnext.IsEnabled = false;
+                        btnPriviousnext.IsEnabled = false;
 
                         }
                         else
                         {
-                            btnPriviousnext.IsEnabled = true;
-                             listView.ItemsSource = null;
-                            listView.ItemsSource = ListmotherWithChildDetails;
+
+                        btnPriviousnext.IsEnabled = true;
+                        listView.ItemsSource = null;
+                        listView.ItemsSource = ListmotherWithChildDetails;
                         }
-                    }
+                    //}
 
 
                 }
@@ -328,17 +342,17 @@ namespace CAN
         {
             if (previousValue > 0)
             {
-                btnPrivious.IsEnabled = true;
+                btnPriviousnext.IsEnabled = true;
                 previousValue -= 5;
                
                 try
                 {
                     long id = StaticClass.VillageID;
-                    var ListData = App.DAUtil.GetAllFamilyByLocation(id);
+                  //  var ListData = App.DAUtil.GetAllFamilyByLocation(id);
                     List<MotherWithChildDetails> MotherWithChildDetails = new List<MotherWithChildDetails>();
                     List<MotherMonthlyData> ListmotherWithChildDetails = new List<MotherMonthlyData>();
-                    if (ListData != null)
-                    {
+                    //if (ListData != null)
+                    //{
                         var selectedStatusId = (ColumnValue)ddlStatusCheck.SelectedItem;
                         int StatusId = selectedStatusId.columnValueId;
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
@@ -400,17 +414,16 @@ namespace CAN
                        
                         if (ListmotherWithChildDetails.Count == 0)
                         {
-                            btnPriviousnext.IsEnabled = false;
+                        btnPrivious.IsEnabled = false;
 
-                        }
+                    }
                         else
                         {
-                            btnPriviousnext.IsEnabled = true;
-
+                        btnPrivious.IsEnabled = true;
                             listView.ItemsSource = null;
                             listView.ItemsSource = ListmotherWithChildDetails;
                         }
-                    }
+                   // }
                    
 
                 }
@@ -419,6 +432,10 @@ namespace CAN
 
                 }
               
+            }
+            else
+            {
+                btnPrivious.IsEnabled = false;
             }
         }
     }

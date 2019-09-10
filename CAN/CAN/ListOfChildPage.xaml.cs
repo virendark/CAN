@@ -43,7 +43,7 @@ namespace CAN
                 
                 //if (FamilyData.Count > 0)
                 //{
-                    var ChildData = App.DAUtil.FindChildId(StaticClass.PageData.ToString()).OrderByDescending(x=>x.ChildCode).ToList();
+                    var ChildData = App.DAUtil.FindChildId(StaticClass.FamilyId.ToString()).OrderByDescending(x=>x.ChildCode).ToList();
                     if (ChildData.Count < StaticClass.FamilyAliveChildCount)
                     {
                         btnAdd.IsVisible = true;

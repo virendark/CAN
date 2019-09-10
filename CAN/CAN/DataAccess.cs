@@ -38,9 +38,13 @@ namespace CAN
         //{
         //    return dbConn.Query<RedFlagDetails>("select GrowthRegister.GenderID, GrowthRegister.GrowthId,GrowthRegister.ChildId, GrowthRegister.AnyRedFlag,RedFlagRegister.DateMonthId,RedFlagRegister.RedFlagId from [GrowthRegister] left outer join [RedFlagRegister] on GrowthRegister.ChildId=RedFlagRegister.ChildId  and RedFlagRegister.DateMonthId='" + DataMonthId + "' where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
         //}
-        public List<GrowthRegister> GetListOfRedFlag(string ChildId,int DataMonthId)
+        //public List<GrowthRegister> GetListOfRedFlag(string ChildId,int DataMonthId)
+        //{
+        //    return dbConn.Query<GrowthRegister>("select * from [GrowthRegister]  where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
+        //}
+        public List<ChildMonthlyData> GetListOfRedFlag(long LocationID,  int DataMonthId)
         {
-            return dbConn.Query<GrowthRegister>("select * from [GrowthRegister]  where GrowthRegister.DataMonthId='" + DataMonthId + "'  and GrowthRegister.ChildId='" + ChildId + "'");
+            return dbConn.Query<ChildMonthlyData>("SELECT  ChildRegister.ChildName, ChildRegister.DOB, ChildRegister.ChildStatus, ChildRegister.GenderID,ColumnValue.ColumnValue as GenderName, ChildRegister.ChildCode, FamilyRegister.FamilyCode,GrowthRegister.GrowthId,GrowthRegister.AnyRedFlag, ChildRegister.ChildId, GrowthRegister.DataMonthId FROM [ColumnValue] INNER JOIN  [ChildRegister] on ChildRegister.GenderId=ColumnValue.ColumnValueId INNER JOIN [FamilyRegister] on ChildRegister.FamilyId = FamilyRegister.FamilyId  LEFT OUTER JOIN [GrowthRegister] on ChildRegister.ChildId = GrowthRegister.ChildId and GrowthRegister.DataMonthId = " + DataMonthId + " WHERE FamilyRegister.LocationId = " + LocationID);
         }
         public List<RedFlagDetails> GetRedFlagChildData(string ChildId, bool RedFlag, int DataMonthId)
         {
@@ -52,7 +56,7 @@ namespace CAN
         //}
         public List<ChildMonthlyData> GetChildMonthlyData(long LocationID, long StatusId, int DataMonthId)
         {
-            return dbConn.Query<ChildMonthlyData>("SELECT  ChildRegister.ChildName, ChildRegister.DOB, ChildRegister.ChildStatus, ChildRegister.GenderID,ColumnValue.ColumnValue as GenderName, ChildRegister.ChildCode, FamilyRegister.FamilyCode,GrowthRegister.GrowthId, ChildRegister.ChildId, GrowthRegister.DataMonthId FROM ColumnValue INNER JOIN  [ChildRegister] on ChildRegister.GenderId=ColumnValue.ColumnValueId INNER JOIN FamilyRegister on ChildRegister.FamilyId = FamilyRegister.FamilyId  LEFT OUTER JOIN GrowthRegister ON ChildRegister.ChildId = GrowthRegister.ChildId and GrowthRegister.DataMonthId = " + DataMonthId + " WHERE FamilyRegister.LocationId = " + LocationID + " AND ChildRegister.ChildStatus=" + StatusId);
+            return dbConn.Query<ChildMonthlyData>("SELECT  ChildRegister.ChildName, ChildRegister.DOB, ChildRegister.ChildStatus, ChildRegister.GenderID,ColumnValue.ColumnValue as GenderName, ChildRegister.ChildCode, FamilyRegister.FamilyCode,GrowthRegister.GrowthId,GrowthRegister.AnyRedFlag, ChildRegister.ChildId, GrowthRegister.DataMonthId FROM [ColumnValue] INNER JOIN  [ChildRegister] on ChildRegister.GenderId=ColumnValue.ColumnValueId INNER JOIN [FamilyRegister] on ChildRegister.FamilyId = FamilyRegister.FamilyId  LEFT OUTER JOIN [GrowthRegister] on ChildRegister.ChildId = GrowthRegister.ChildId and GrowthRegister.DataMonthId = " + DataMonthId + " WHERE FamilyRegister.LocationId = " + LocationID + " and ChildRegister.ChildStatus=" + StatusId );
         }
         public List<MotherWithChildDetails> GetMotherWithChildDetails(long LocationId,int DataId,int StatusId)
         {

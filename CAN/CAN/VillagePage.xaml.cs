@@ -40,7 +40,7 @@ namespace CAN
                 dataMonths.Datamonth = formatted;
                 StaticClass.dataManthFormat.Add(dataMonths);
             }
-            StaticClass.listOfStatus= App.DAUtil.GetColumnValuesBytext(55);
+            StaticClass.listOfStatus= App.DAUtil.GetColumnValuesBytext(12);
 
 
         }

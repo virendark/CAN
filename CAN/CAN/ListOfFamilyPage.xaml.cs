@@ -30,6 +30,7 @@ namespace CAN
         private void BindList()
         {
             id = StaticClass.VillageID;
+
             var ListData = App.DAUtil.GetAllFamilyByLocation(id).Take(5).OrderByDescending(x=>x.FamilyCode).ToList();
            
             if (ListData.Count > 0)
@@ -50,7 +51,7 @@ namespace CAN
            var d= item.Source.BindingContext;
             FamilyRegister family = (FamilyRegister)d;
             Guid FamilyId = family.FamilyId;
-            //StaticClass.PageData = FamilyId;
+            StaticClass.PageData = FamilyId;
             StaticClass.FamilyId = FamilyId;
             StaticClass.PageButtonText = "Update";
             await Navigation.PushAsync(new FamilyPage());
@@ -63,6 +64,8 @@ namespace CAN
             var d = item.Source.BindingContext;
             FamilyRegister family = (FamilyRegister)d;
             Guid FamilyId = family.FamilyId;
+            StaticClass.PageData = FamilyId;
+            StaticClass.FamilyId = family.FamilyId;
             StaticClass.FamilyAliveChildCount = family.NumberofChildenAlive;
             await Navigation.PushAsync(new ListOfChildPage());
         }
@@ -79,7 +82,9 @@ namespace CAN
             var item = (Xamarin.Forms.Label)sender;
             var d = item.BindingContext;
             FamilyRegister family = (FamilyRegister)d;
-           Guid FamilyId = family.FamilyId;
+            Guid FamilyId = family.FamilyId;
+            StaticClass.PageData = FamilyId;
+            StaticClass.FamilyId = family.FamilyId;
             StaticClass.FamilyAliveChildCount = family.NumberofChildenAlive;
             await Navigation.PushAsync(new ListOfChildPage());
         }
@@ -91,7 +96,7 @@ namespace CAN
             var d = item.BindingContext;
             FamilyRegister family = (FamilyRegister)d;
             Guid FamilyId = family.FamilyId;
-            //StaticClass.PageData = FamilyId;
+            StaticClass.PageData = FamilyId;
             StaticClass.FamilyId = FamilyId;
             StaticClass.PageButtonText = "Update";
             await Navigation.PushAsync(new FamilyPage());
