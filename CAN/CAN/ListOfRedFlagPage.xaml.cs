@@ -19,6 +19,8 @@ namespace CAN
 		{
 			InitializeComponent();
             listView.IsVisible = false;
+            btnPrivious.IsEnabled = false;
+            btnPriviousnext.IsEnabled = false;
             this.Title = StaticClass.LocationName;
             BindDatamonths();
             BindList();
@@ -152,17 +154,18 @@ namespace CAN
               try
                 {
                     long id = StaticClass.VillageID;
-                btnPrivious.IsEnabled = false;
-                btnPriviousnext.IsEnabled = true;
+                
                 List<RedFlagDetails> ListChildMonthlyData = new List<RedFlagDetails>();
 
                     var DataMId = (DataM)ddlDataMonth.SelectedItem;
                     int DataID = DataMId.Datamonthid;
 
-                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Take(5).Where(x => x.AnyRedFlag == true).ToList();
+                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Take(10).Where(x => x.AnyRedFlag == true).ToList();
                     if (chilRedFlagData.Count > 0)
                     {
-                        for (int i = 0; i < chilRedFlagData.Count; i++)
+                    btnPrivious.IsEnabled = false;
+                    btnPriviousnext.IsEnabled = true;
+                    for (int i = 0; i < chilRedFlagData.Count; i++)
                         {
                             RedFlagDetails redFlagDetails = new RedFlagDetails();
                             redFlagDetails.ChildName = chilRedFlagData[i].ChildName;
@@ -384,7 +387,7 @@ namespace CAN
             if (previousValue > 0)
             {
                 btnPriviousnext.IsEnabled = true;
-                previousValue -= 5;
+                previousValue -= 10;
                 try
                 {
                     long id = StaticClass.VillageID;
@@ -394,7 +397,7 @@ namespace CAN
                     var DataMId = (DataM)ddlDataMonth.SelectedItem;
                     int DataID = DataMId.Datamonthid;
                    
-                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Skip(previousValue).Take(5).Where(x => x.AnyRedFlag == true).ToList();
+                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Skip(previousValue).Take(10).Where(x => x.AnyRedFlag == true).ToList();
                     if (chilRedFlagData.Count > 0)
                     {
                         for (int i = 0; i < chilRedFlagData.Count; i++)
@@ -459,7 +462,7 @@ namespace CAN
             {
                 // btnPriviousnext.IsEnabled = true;
                 btnPrivious.IsEnabled = true;
-                previousValue += 5;
+                previousValue += 10;
                 try
                 {
                     long id = StaticClass.VillageID;
@@ -475,7 +478,7 @@ namespace CAN
                             //for (int i = 0; i < ChildList.Count; i++)
                           //  {
                             //  var chilRedFlagData = App.DAUtil.GetListOfRedFlag(ChildList[i].ChildId.ToString(), DataID).Skip(previousValue).Take(5).Where(x => x.AnyRedFlag == true).ToList();
-                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id,DataID).Skip(previousValue).Take(5).Where(x => x.AnyRedFlag == true).ToList();
+                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id,DataID).Skip(previousValue).Take(10).Where(x => x.AnyRedFlag == true).ToList();
                     if (chilRedFlagData.Count > 0)
                     {
                         for (int i = 0; i < chilRedFlagData.Count; i++)

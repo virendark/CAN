@@ -94,7 +94,7 @@ namespace CAN
             monthlyMonitoring.VHNDconductedlastmonth = IsselectedVHNDconductedlastmonth == "Yes" ? true : false;
             App.DAUtil.saveMonthlyMonitoring(monthlyMonitoring);
             StaticClass.PageName = "MonthlyMonitoring";
-            Application.Current.MainPage = new MasterDetailPage1();
+            Application.Current.MainPage = new MasterNavigationPage();
         }
         private void EditData()
         {

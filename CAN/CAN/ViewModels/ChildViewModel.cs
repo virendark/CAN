@@ -15,7 +15,7 @@ namespace CAN.ViewModels
        
 
         public DateTime DOB { get; set; }
-
+        public string ChildCode { get; set; }
         public string Gender { get; set; }
         public Image Img { get; set; }
         public  byte[] Photograph { get; set; }

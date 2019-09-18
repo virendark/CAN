@@ -10,8 +10,12 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
+                                <!--<StackLayout x:Name="MainStackLayouts" HeightRequest="150">
                                     <Label  Text="{Binding locationName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center"></Label>
+
+                                </StackLayout>-->
+                                <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
+                                    <Label  Text="{Binding VillageName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center" FontSize="22"></Label>
 
                                 </StackLayout>
                             </ViewCell.View>

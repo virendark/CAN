@@ -796,7 +796,7 @@ namespace CAN
                     StaticClass.PageName = "HomePage";
                     StaticClass.ChildSeverlysymtoms = null;
                     StaticClass.TabbedIndex = 3;
-                    Application.Current.MainPage = new MasterDetailPage1();
+                    Application.Current.MainPage = new MasterNavigationPage();
                 }
                 catch (Exception ex)
                 {

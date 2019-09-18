@@ -50,23 +50,29 @@
                                         </StackLayout>
                                         <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="4. लिंग(Gender) :-        " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
+                                            <Label Text="लिंग(Gender) :-        " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding Gender}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
                                         <StackLayout Grid.Row="3"  Spacing="1" Orientation="Horizontal">
 
-                                            <Label Text="5. बालकाचे जन्मत: वजन (Birth Weight) :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
+                                            <Label Text="बालकाचा कोड(Child Code) :-        " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
+                                                 FontAttributes="Bold"/>
+                                            <Label Text="{Binding ChildCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                        </StackLayout>
+                                        <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">
+
+                                            <Label Text="बालकाचे जन्मत: वजन (Birth Weight) :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding BirthWeightInKg}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
-                                        <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">
+                                        <StackLayout Grid.Row="5"  Spacing="1" Orientation="Horizontal">
 
                                             <Label Text="AWC Entry W4AZ :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                             <Label Text="{Binding W4AZ}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                         </StackLayout>
-                                        <StackLayout Grid.Row="5"  Spacing="1" Orientation="Horizontal">
+                                        <StackLayout Grid.Row="6"  Spacing="1" Orientation="Horizontal">
 
                                             <Label Text="AWC Entry W4HZ :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
                                                  FontAttributes="Bold"/>

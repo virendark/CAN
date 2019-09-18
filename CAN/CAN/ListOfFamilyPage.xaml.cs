@@ -31,7 +31,7 @@ namespace CAN
         {
             id = StaticClass.VillageID;
 
-            var ListData = App.DAUtil.GetAllFamilyByLocation(id).Take(5).OrderByDescending(x=>x.FamilyCode).ToList();
+            var ListData = App.DAUtil.GetAllFamilyByLocation(id).Take(10).ToList();
            
             if (ListData.Count > 0)
             {
@@ -106,8 +106,8 @@ namespace CAN
         {
             if (previousValue > 0)
             {
-                previousValue -= 5;
-                var ListData = App.DAUtil.GetAllFamilyByLocation(id).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                previousValue -= 10;
+                var ListData = App.DAUtil.GetAllFamilyByLocation(id).Skip(previousValue).Take(10).ToList();
                 if (ListData.Count == 0)
                 {
                     btnPrivious.IsEnabled = false;
@@ -132,8 +132,8 @@ namespace CAN
             if (previousValue >= 0)
             {
                 btnPrivious.IsEnabled = true;
-                previousValue += 5;
-                var ListData = App.DAUtil.GetAllFamilyByLocation(id).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                previousValue += 10;
+                var ListData = App.DAUtil.GetAllFamilyByLocation(id).Skip(previousValue).Take(10).ToList();
                 if (ListData.Count == 0)
                 {
                     btnPriviousnext.IsEnabled = false;

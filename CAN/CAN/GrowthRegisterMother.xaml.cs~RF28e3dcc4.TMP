@@ -450,8 +450,7 @@ namespace CAN
                         App.DAUtil.SaveGrowthRegisterMother(tblGrowthRegisterMother);
                     StaticClass.ANCCheckups = null;
                         StaticClass.PageName = "HomePage";
-
-                        Application.Current.MainPage = new MasterDetailPage1();
+						Application.Current.MainPage = new MasterNavigationPage();
                    
                 }
                 else

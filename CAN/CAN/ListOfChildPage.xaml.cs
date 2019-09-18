@@ -28,7 +28,8 @@ namespace CAN
         protected override bool OnBackButtonPressed()
         {
             StaticClass.TabbedIndex = 0;
-            Application.Current.MainPage = new MasterDetailPage1();
+            StaticClass.PageName = "HomePage";
+            Application.Current.MainPage = new MasterNavigationPage();
             return base.OnBackButtonPressed();
 
         }
@@ -43,7 +44,7 @@ namespace CAN
                 
                 //if (FamilyData.Count > 0)
                 //{
-                    var ChildData = App.DAUtil.FindChildId(StaticClass.FamilyId.ToString()).OrderByDescending(x=>x.ChildCode).ToList();
+                    var ChildData = App.DAUtil.FindChildId(StaticClass.FamilyId.ToString()).ToList();
                     if (ChildData.Count < StaticClass.FamilyAliveChildCount)
                     {
                         btnAdd.IsVisible = true;
@@ -62,6 +63,7 @@ namespace CAN
                             childViewModel.ChildName = child.ChildName;
                             childViewModel.BirthWeightInKg = child.BirthWeightInKg.ToString();
                             childViewModel.FamilyId = child.FamilyId;
+                           childViewModel.ChildCode = child.ChildCode.ToString();
                             if(child.AWCEntryW4AZ<-3)
                             {
                                 childViewModel.W4AZ = "SUW(Severely Under Weight)";
@@ -175,7 +177,7 @@ namespace CAN
         private void MenuItem1_Clicked(object sender, EventArgs e)
         {
             StaticClass.PageName = "HomePage";
-            Application.Current.MainPage = new MasterDetailPage1();
+            Application.Current.MainPage = new MasterNavigationPage();
         }
 
         //private void BtnPriviousnext_Clicked(object sender, EventArgs e)

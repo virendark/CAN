@@ -93,7 +93,7 @@ namespace CAN
                     StatusId = selectedStatusId.columnValueId;
                 }
                 // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
-                MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Take(5).ToList(); 
+                MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Take(10).ToList(); 
                    // int check = 0;
                         for (int i = 0; i < MotherWithChildDetails.Count; i++)
                         {
@@ -245,7 +245,7 @@ namespace CAN
             if (previousValue >= 0)
             {
                 btnPrivious.IsEnabled = true;
-                previousValue += 5;
+                previousValue += 10;
 
                 try
                 {
@@ -260,7 +260,7 @@ namespace CAN
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
                         // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
-                        MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                        MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Skip(previousValue).Take(10).ToList();
                         int check = 0;
                         for (int i = 0; i < MotherWithChildDetails.Count; i++)
                         {
@@ -343,7 +343,7 @@ namespace CAN
             if (previousValue > 0)
             {
                 btnPriviousnext.IsEnabled = true;
-                previousValue -= 5;
+                previousValue -= 10;
                
                 try
                 {
@@ -358,7 +358,7 @@ namespace CAN
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
                         // MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetailsWithOutDataId(id, StatusId);
-                        MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
+                        MotherWithChildDetails = App.DAUtil.GetMotherWithChildDetails(id, DataID, StatusId).Skip(previousValue).Take(10).ToList();
                         int check = 0;
                         for (int i = 0; i < MotherWithChildDetails.Count; i++)
                         {

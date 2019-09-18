@@ -367,9 +367,7 @@ namespace CAN
                     StaticClass.MotherOccupation = null;
                     EmptyText();
                     StaticClass.PageName = "HomePage";
-
-
-                    Application.Current.MainPage = new MasterDetailPage1();
+                    Application.Current.MainPage = new MasterNavigationPage();
                 }
                 catch (Exception ex)
                 {

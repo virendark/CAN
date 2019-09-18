@@ -520,7 +520,7 @@ namespace CAN
                     App.DAUtil.SaveGrowthRegister(growthRegister);
                     StaticClass.PageName = "HomePage";
                     StaticClass.TabbedIndex = 2;
-                    Application.Current.MainPage = new MasterDetailPage1();
+                    Application.Current.MainPage = new MasterNavigationPage();
                 }
                 catch(Exception ex)
                 {

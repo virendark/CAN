@@ -51,7 +51,7 @@
                                             </StackLayout>
                                             <StackLayout Grid.Row="2"  Spacing="1" Orientation="Horizontal">
 
-                                                <Label Text="Mother Code :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
+                                                <Label Text="कुटुंब क्र.(Family Code):- " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="WordWrap" 
                                                  FontAttributes="Bold"/>
                                                 <Label Text="{Binding FamilyCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
                                             </StackLayout>

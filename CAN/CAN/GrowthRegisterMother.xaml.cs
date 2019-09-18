@@ -540,7 +540,7 @@ namespace CAN
                     StaticClass.HighRiskMother = null;
                     StaticClass.PageName = "HomePage";
                     StaticClass.TabbedIndex = 1;
-                    Application.Current.MainPage = new MasterDetailPage1();
+                    Application.Current.MainPage = new MasterNavigationPage();
 
                 }
                 else

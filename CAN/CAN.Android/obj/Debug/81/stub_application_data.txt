@@ -1,2 +1,2 @@
 android.app.Application
-com.proMPTECCASathI.CAN
+com.proMPTecsathI.CAN

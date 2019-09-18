@@ -111,7 +111,7 @@ namespace CAN
                    // {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                        childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Take(5).OrderByDescending(x => x.FamilyCode).Where(f=>f.AnyRedFlag==false).ToList();
+                        childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
                        // var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                         for (int j = 0; j < childMonthlyData.Count; j++)
                         {
@@ -254,7 +254,7 @@ namespace CAN
             {
                 // btnPrivious.IsEnabled = true;
                 btnPriviousnext.IsEnabled = true;
-                previousValue -= 5;
+                previousValue -= 10;
                 try
                 {
                 long id = StaticClass.VillageID;
@@ -270,7 +270,7 @@ namespace CAN
                    // {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).Where(f=>f.AnyRedFlag== false).ToList();
+                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(10).Where(f=>f.AnyRedFlag== false).ToList();
                         //var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                         for (int j = 0; j < childMonthlyData.Count; j++)
                         {
@@ -348,7 +348,7 @@ namespace CAN
             {
                 // btnPriviousnext.IsEnabled = true;
                 btnPrivious.IsEnabled = true;
-                previousValue += 5;
+                previousValue += 10;
                 try
                 {
                     long id = StaticClass.VillageID;
@@ -365,7 +365,7 @@ namespace CAN
                        // {
                             var DataMId = (DataM)ddlDataMonth.SelectedItem;
                             int DataID = DataMId.Datamonthid;
-                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).Where(f=>f.AnyRedFlag==false).ToList();
+                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
                             //childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
                             //var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                             for (int j = 0; j < childMonthlyData.Count; j++)

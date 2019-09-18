@@ -268,7 +268,7 @@ namespace Plugin.RestClient
             }
             catch(Exception ex)
             {
-                return Flag;
+                return Flag=false;
             }
             return Flag;
         }

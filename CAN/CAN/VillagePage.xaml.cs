@@ -92,13 +92,13 @@ namespace CAN
                     StaticClass.PageName = "HomePage";
                     StaticClass.RedFlagButton = "true";
                 }
-                Application.Current.MainPage = new MasterDetailPage1();
+                Application.Current.MainPage = new MasterNavigationPage();
 
             }
             else
             {
                StaticClass.PageName = "MonthlyMonitoring";
-               Application.Current.MainPage = new MasterDetailPage1();
+               Application.Current.MainPage = new MasterNavigationPage();
             }
             // Navigation.PushModalAsync(new EntryPage());
         }
