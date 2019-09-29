@@ -405,7 +405,7 @@
                 <Label x:Name="lblFamilyCodeEng" Text="(Family Code)" TextColor="Gray" FontSize="Micro"  HorizontalOptions="Start"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtFamilyCode"  ReturnType="Done" TextColor="Black" Placeholder="Family Code" VerticalOptions="FillAndExpand" Focused="TxtFamilyCode_Focused"  Unfocused="TxtFamilyCode_Unfocused" HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtFamilyCode"  ReturnType="Done" TextColor="Black" Placeholder="Family Code" VerticalOptions="FillAndExpand" Focused="TxtFamilyCode_Focused"  Unfocused="TxtFamilyCode_Unfocused" HorizontalOptions="FillAndExpand" Keyboard="Numeric">
                 </Entry>
             </StackLayout>
            

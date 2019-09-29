@@ -61,10 +61,11 @@ namespace CAN
                             ChildViewModel childViewModel = new ChildViewModel();
                             childViewModel.ChildId = child.ChildId;
                             childViewModel.ChildName = child.ChildName;
-                            childViewModel.BirthWeightInKg = child.BirthWeightInKg.ToString();
+                            childViewModel.BirthWeightInKg = child.BirthWeightInKg==null?null: child.BirthWeightInKg.ToString();
                             childViewModel.FamilyId = child.FamilyId;
-                           childViewModel.ChildCode = child.ChildCode.ToString();
-                            if(child.AWCEntryW4AZ<-3)
+                            childViewModel.ChildCode = child.ChildCode==null?null: child.ChildCode.ToString();
+                            childViewModel.NewChildCode = child.NewChildCode;
+                         if (child.AWCEntryW4AZ<-3)
                             {
                                 childViewModel.W4AZ = "SUW(Severely Under Weight)";
                             }

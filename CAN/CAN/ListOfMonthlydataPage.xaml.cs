@@ -13,6 +13,7 @@ namespace CAN
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListOfMonthlydataPage : ContentPage
     {
+        List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
         int previousValue = 0;
         long id;
         
@@ -92,7 +93,7 @@ namespace CAN
                 int StatusId = 0;
                 long id = StaticClass.VillageID;
                 //var ListData = App.DAUtil.GetAllFamilyByLocation(id);
-                List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
+                
                 List<ChildMonthlyData> ListChildMonthlyData = new List<ChildMonthlyData>();
              //   if (ListData != null)
                // {
@@ -111,19 +112,24 @@ namespace CAN
                    // {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                        childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
-                       // var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
-                        for (int j = 0; j < childMonthlyData.Count; j++)
+                childMonthlyData = null;
+                // childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
+                childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Where(f => f.AnyRedFlag == false).ToList();
+               var childMonthlyData1 = childMonthlyData.Take(10).ToList();
+                // var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
+                for (int j = 0; j < childMonthlyData1.Count; j++)
                         {
                                 ChildMonthlyData MonthlyData = new ChildMonthlyData();
-                                MonthlyData.DOB = childMonthlyData[j].DOB.Date;
-                                MonthlyData.ChildName = childMonthlyData[j].ChildName;
-                                MonthlyData.GrowthId = childMonthlyData[j].GrowthId;
-                                MonthlyData.ChildId = childMonthlyData[j].ChildId;
-                                MonthlyData.GenderID = childMonthlyData[j].GenderID;
-                               MonthlyData.FamilyCode = childMonthlyData[j].FamilyCode; //FCode.FamilyCode;
-                               MonthlyData.ChildCode = childMonthlyData[j].ChildCode;
-                              MonthlyData.GenderName = childMonthlyData[j].GenderName;
+                                MonthlyData.DOB = childMonthlyData1[j].DOB.Date;
+                                MonthlyData.ChildName = childMonthlyData1[j].ChildName;
+                                MonthlyData.GrowthId = childMonthlyData1[j].GrowthId;
+                                MonthlyData.ChildId = childMonthlyData1[j].ChildId;
+                                MonthlyData.GenderID = childMonthlyData1[j].GenderID;
+                               MonthlyData.FamilyCode = childMonthlyData1[j].FamilyCode; //FCode.FamilyCode;
+                               MonthlyData.ChildCode = childMonthlyData1[j].ChildCode;
+                               MonthlyData.NewFamilyCode = childMonthlyData1[j].NewFamilyCode; //FCode.FamilyCode;
+                               MonthlyData.NewChildCode = childMonthlyData1[j].NewChildCode;
+                                MonthlyData.GenderName = childMonthlyData1[j].GenderName;
                                 //if (childMonthlyData[j].GenderID != 0)
                                 //{
                                 //    var ListofGender = App.DAUtil.GetColumnValuesBytext(3);
@@ -135,9 +141,9 @@ namespace CAN
                                 //        }
                                 //    }
                                 //}
-                                if (childMonthlyData[j].DataMonthId != 0)
+                                if (childMonthlyData1[j].DataMonthId != 0)
                                 {
-                                    var dateId = App.DAUtil.GetDataMonthByID(childMonthlyData[j].DataMonthId);
+                                    var dateId = App.DAUtil.GetDataMonthByID(childMonthlyData1[j].DataMonthId);
                                     if (dateId.Count > 0)
                                         MonthlyData.DataMonth = dateId[0].Datamonth.ToString("MMM-yyyy");
                                     MonthlyData.IsvisuaEdit = true;
@@ -145,7 +151,7 @@ namespace CAN
                                 }
                                 else
                                 {
-                                if (childMonthlyData[j].ChildStatus == 49)
+                                if (childMonthlyData1[j].ChildStatus == 49)
                                 {
                                     MonthlyData.IsvisuaEdit = false;
                                     MonthlyData.IsvisuaAdd = true;
@@ -259,7 +265,7 @@ namespace CAN
                 {
                 long id = StaticClass.VillageID;
                // var ListData = App.DAUtil.GetAllFamilyByLocation(id);
-                List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
+               // List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
                 List<ChildMonthlyData> ListChildMonthlyData = new List<ChildMonthlyData>();
               //  if (ListData != null)
               //  {
@@ -270,19 +276,22 @@ namespace CAN
                    // {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(10).Where(f=>f.AnyRedFlag== false).ToList();
-                        //var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
-                        for (int j = 0; j < childMonthlyData.Count; j++)
+                           // childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(10).Where(f=>f.AnyRedFlag== false).ToList();
+                    
+                    var childMonthlyData1 = childMonthlyData.Skip(previousValue).Take(10).ToList();
+                    for (int j = 0; j < childMonthlyData1.Count; j++)
                         {
                             ChildMonthlyData MonthlyData = new ChildMonthlyData();
-                            MonthlyData.DOB = childMonthlyData[j].DOB.Date;
-                            MonthlyData.ChildName = childMonthlyData[j].ChildName;
-                            MonthlyData.GrowthId = childMonthlyData[j].GrowthId;
-                            MonthlyData.ChildId = childMonthlyData[j].ChildId;
-                            MonthlyData.GenderID = childMonthlyData[j].GenderID;
-                            MonthlyData.FamilyCode = childMonthlyData[j].FamilyCode; //FCode.FamilyCode;
-                            MonthlyData.ChildCode = childMonthlyData[j].ChildCode;
-                        MonthlyData.GenderName = childMonthlyData[j].GenderName;
+                            MonthlyData.DOB = childMonthlyData1[j].DOB.Date;
+                            MonthlyData.ChildName = childMonthlyData1[j].ChildName;
+                            MonthlyData.GrowthId = childMonthlyData1[j].GrowthId;
+                            MonthlyData.ChildId = childMonthlyData1[j].ChildId;
+                            MonthlyData.GenderID = childMonthlyData1[j].GenderID;
+                            MonthlyData.FamilyCode = childMonthlyData1[j].FamilyCode; //FCode.FamilyCode;
+                            MonthlyData.ChildCode = childMonthlyData1[j].ChildCode;
+                            MonthlyData.NewChildCode = childMonthlyData1[j].NewChildCode;
+                            MonthlyData.NewFamilyCode = childMonthlyData1[j].NewFamilyCode;
+                            MonthlyData.GenderName = childMonthlyData1[j].GenderName;
                         //if (childMonthlyData[j].GenderID != 0)
                             //{
                             //    var ListofGender = App.DAUtil.GetColumnValuesBytext(3);
@@ -294,9 +303,9 @@ namespace CAN
                             //        }
                             //    }
                             //}
-                        if (childMonthlyData[j].DataMonthId != 0)
+                        if (childMonthlyData1[j].DataMonthId != 0)
                             {
-                                var dateId = App.DAUtil.GetDataMonthByID(childMonthlyData[j].DataMonthId);
+                                var dateId = App.DAUtil.GetDataMonthByID(childMonthlyData1[j].DataMonthId);
                                 if (dateId.Count > 0)
                                     MonthlyData.DataMonth = dateId[0].Datamonth.ToString("MMM-yyyy");
                                 MonthlyData.IsvisuaEdit = true;
@@ -304,7 +313,7 @@ namespace CAN
                             }
                             else
                             {
-                                if (childMonthlyData[j].ChildStatus == 49)
+                                if (childMonthlyData1[j].ChildStatus == 49)
                                 {
                                     MonthlyData.IsvisuaEdit = false;
                                     MonthlyData.IsvisuaAdd = true;
@@ -353,7 +362,7 @@ namespace CAN
                 {
                     long id = StaticClass.VillageID;
                   //  var ListData = App.DAUtil.GetAllFamilyByLocation(id);
-                    List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
+                   // List<ChildMonthlyData> childMonthlyData = new List<ChildMonthlyData>();
                     List<ChildMonthlyData> ListChildMonthlyData = new List<ChildMonthlyData>();
 
                     //if (ListData != null)
@@ -365,20 +374,21 @@ namespace CAN
                        // {
                             var DataMId = (DataM)ddlDataMonth.SelectedItem;
                             int DataID = DataMId.Datamonthid;
-                            childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
-                            //childMonthlyData = App.DAUtil.GetChildMonthlyData(ListData[i].FamilyId.ToString(), StatusId, DataID).Skip(previousValue).Take(5).OrderByDescending(x => x.FamilyCode).ToList();
-                            //var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
-                            for (int j = 0; j < childMonthlyData.Count; j++)
+                           // childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Skip(previousValue).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
+                    var childMonthlyData1 = childMonthlyData.Skip(previousValue).Take(10).ToList();
+                    for (int j = 0; j < childMonthlyData1.Count; j++)
                             {
                                 ChildMonthlyData MonthlyData = new ChildMonthlyData();
-                                MonthlyData.DOB = childMonthlyData[j].DOB.Date;
-                                MonthlyData.ChildName = childMonthlyData[j].ChildName;
-                                MonthlyData.GrowthId = childMonthlyData[j].GrowthId;
-                                MonthlyData.ChildId = childMonthlyData[j].ChildId;
-                                MonthlyData.GenderID = childMonthlyData[j].GenderID;
-                                MonthlyData.FamilyCode = childMonthlyData[j].FamilyCode; //FCode.FamilyCode;
-                                MonthlyData.ChildCode = childMonthlyData[j].ChildCode;
-                                MonthlyData.GenderName = childMonthlyData[j].GenderName;
+                                MonthlyData.DOB = childMonthlyData1[j].DOB.Date;
+                                MonthlyData.ChildName = childMonthlyData1[j].ChildName;
+                                MonthlyData.GrowthId = childMonthlyData1[j].GrowthId;
+                                MonthlyData.ChildId = childMonthlyData1[j].ChildId;
+                                MonthlyData.GenderID = childMonthlyData1[j].GenderID;
+                                MonthlyData.FamilyCode = childMonthlyData1[j].FamilyCode; //FCode.FamilyCode;
+                                MonthlyData.ChildCode = childMonthlyData1[j].ChildCode;
+                               MonthlyData.NewChildCode = childMonthlyData1[j].NewChildCode;
+                              MonthlyData.NewFamilyCode = childMonthlyData1[j].NewFamilyCode;
+                               MonthlyData.GenderName = childMonthlyData1[j].GenderName;
                                 //if (childMonthlyData[j].GenderID != 0)
                                 //{
                                 //    var ListofGender = App.DAUtil.GetColumnValuesBytext(3);
@@ -390,9 +400,9 @@ namespace CAN
                                 //        }
                                 //    }
                                 //}
-                                if (childMonthlyData[j].DataMonthId != 0)
+                                if (childMonthlyData1[j].DataMonthId != 0)
                                 {
-                                    var dateId = App.DAUtil.GetDataMonthByID(childMonthlyData[j].DataMonthId);
+                                    var dateId = App.DAUtil.GetDataMonthByID(childMonthlyData1[j].DataMonthId);
                                     if (dateId.Count > 0)
                                         MonthlyData.DataMonth = dateId[0].Datamonth.ToString("MMM-yyyy");
                                     MonthlyData.IsvisuaEdit = true;
@@ -400,7 +410,7 @@ namespace CAN
                                 }
                                 else
                                 {
-                                    if (childMonthlyData[j].ChildStatus == 49)
+                                    if (childMonthlyData1[j].ChildStatus == 49)
                                     {
                                         MonthlyData.IsvisuaEdit = false;
                                         MonthlyData.IsvisuaAdd = true;
@@ -452,6 +462,8 @@ namespace CAN
         public bool AnyRedFlag { get; set; }
         public string ChildCode { get; set; }
         public string FamilyCode { get; set; }
+        public int NewChildCode { get; set; }
+        public int NewFamilyCode { get; set; }
         public int LocationId { get; set; }
     }
 }

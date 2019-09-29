@@ -13,6 +13,7 @@ namespace CAN
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListOfRedFlagPage : ContentPage
 	{
+        List<ChildMonthlyData> listchildMonthlyDatas = new List<ChildMonthlyData>();
         int previousValue = 0;
         long id;
         public ListOfRedFlagPage()
@@ -159,22 +160,25 @@ namespace CAN
 
                     var DataMId = (DataM)ddlDataMonth.SelectedItem;
                     int DataID = DataMId.Datamonthid;
-
-                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Take(10).Where(x => x.AnyRedFlag == true).ToList();
-                    if (chilRedFlagData.Count > 0)
+                listchildMonthlyDatas = null;
+                // var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Take(10).Where(x => x.AnyRedFlag == true).ToList();
+                listchildMonthlyDatas = App.DAUtil.GetListOfRedFlag(id, DataID).Where(x=>x.AnyRedFlag==true).ToList();
+                var listchildMonthlyDatas1 = listchildMonthlyDatas.Take(10).ToList();
+                if (listchildMonthlyDatas1.Count > 0)
                     {
                     btnPrivious.IsEnabled = false;
                     btnPriviousnext.IsEnabled = true;
-                    for (int i = 0; i < chilRedFlagData.Count; i++)
+                    for (int i = 0; i < listchildMonthlyDatas1.Count; i++)
                         {
                             RedFlagDetails redFlagDetails = new RedFlagDetails();
-                            redFlagDetails.ChildName = chilRedFlagData[i].ChildName;
-                            redFlagDetails.GrowthId = chilRedFlagData[i].GrowthId;
-                            redFlagDetails.ChildId = chilRedFlagData[i].ChildId;
-                            redFlagDetails.DateMonthId = chilRedFlagData[i].DataMonthId;
-                            redFlagDetails.ChildCode = chilRedFlagData[i].ChildCode;
-                            redFlagDetails.GenderName = chilRedFlagData[i].GenderName;
-                            var RedflagchildId = App.DAUtil.GetAllRedFlagRegisterById(chilRedFlagData[i].ChildId.ToString()).FirstOrDefault();
+                            redFlagDetails.ChildName = listchildMonthlyDatas1[i].ChildName;
+                            redFlagDetails.GrowthId = listchildMonthlyDatas1[i].GrowthId;
+                            redFlagDetails.ChildId = listchildMonthlyDatas1[i].ChildId;
+                            redFlagDetails.DateMonthId = listchildMonthlyDatas1[i].DataMonthId;
+                            redFlagDetails.ChildCode = listchildMonthlyDatas1[i].ChildCode;
+                        redFlagDetails.NewChildCode = listchildMonthlyDatas1[i].NewChildCode;
+                        redFlagDetails.GenderName = listchildMonthlyDatas1[i].GenderName;
+                            var RedflagchildId = App.DAUtil.GetAllRedFlagRegisterById(listchildMonthlyDatas1[i].ChildId.ToString()).FirstOrDefault();
                             if (RedflagchildId != null)
                             {
                                 var dateMFormat = StaticClass.dataManthFormat.Where(x => x.Datamonthid == DataID).FirstOrDefault(); //App.DAUtil.GetDataMonthByID(chilRedFlagData[0].DataMonthId);
@@ -217,7 +221,7 @@ namespace CAN
             var d = item.Source.BindingContext;
             RedFlagDetails Child = (RedFlagDetails)d;
             StaticClass.RedFlagChildId = Child.ChildId;
-          //  StaticClass.RedFlagId = Child.RedFlagId;
+           StaticClass.RedFlagId = Child.RedFlagId;
             StaticClass.PageButtonText = "Update";
             Navigation.PushAsync(new ListOfChildInRedFlag());
             // Navigation.PushAsync(new RedFlagPage());
@@ -271,7 +275,7 @@ namespace CAN
             var d = item.BindingContext;
             RedFlagDetails Child = (RedFlagDetails)d;
             StaticClass.RedFlagChildId = Child.ChildId;
-           // StaticClass.RedFlagId = Child.RedFlagId;
+            StaticClass.RedFlagId = Child.RedFlagId;
             StaticClass.PageButtonText = "Update";
             Navigation.PushAsync(new ListOfChildInRedFlag());
         }
@@ -396,20 +400,22 @@ namespace CAN
                     
                     var DataMId = (DataM)ddlDataMonth.SelectedItem;
                     int DataID = DataMId.Datamonthid;
-                   
-                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Skip(previousValue).Take(10).Where(x => x.AnyRedFlag == true).ToList();
-                    if (chilRedFlagData.Count > 0)
+
+                    //  var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id, DataID).Skip(previousValue).Take(10).Where(x => x.AnyRedFlag == true).ToList();
+                    var listchildMonthlyDatas1 = listchildMonthlyDatas.Skip(previousValue).Take(10).ToList();
+                    if (listchildMonthlyDatas1.Count > 0)
                     {
-                        for (int i = 0; i < chilRedFlagData.Count; i++)
+                        for (int i = 0; i < listchildMonthlyDatas1.Count; i++)
                         {
                             RedFlagDetails redFlagDetails = new RedFlagDetails();
-                            redFlagDetails.ChildName = chilRedFlagData[i].ChildName;
-                            redFlagDetails.GrowthId = chilRedFlagData[i].GrowthId;
-                            redFlagDetails.ChildId = chilRedFlagData[i].ChildId;
-                            redFlagDetails.DateMonthId = chilRedFlagData[i].DataMonthId;
-                            redFlagDetails.ChildCode = chilRedFlagData[i].ChildCode;
-                            redFlagDetails.GenderName = chilRedFlagData[i].GenderName;
-                            var RedflagchildId = App.DAUtil.GetAllRedFlagRegisterById(chilRedFlagData[i].ChildId.ToString()).FirstOrDefault();
+                            redFlagDetails.ChildName = listchildMonthlyDatas1[i].ChildName;
+                            redFlagDetails.GrowthId = listchildMonthlyDatas1[i].GrowthId;
+                            redFlagDetails.ChildId = listchildMonthlyDatas1[i].ChildId;
+                            redFlagDetails.DateMonthId = listchildMonthlyDatas1[i].DataMonthId;
+                            redFlagDetails.ChildCode = listchildMonthlyDatas1[i].ChildCode;
+                            redFlagDetails.NewChildCode = listchildMonthlyDatas1[i].NewChildCode;
+                            redFlagDetails.GenderName = listchildMonthlyDatas1[i].GenderName;
+                            var RedflagchildId = App.DAUtil.GetAllRedFlagRegisterById(listchildMonthlyDatas1[i].ChildId.ToString()).FirstOrDefault();
                             if (RedflagchildId != null)
                             {
                                 var dateMFormat = StaticClass.dataManthFormat.Where(x => x.Datamonthid == DataID).FirstOrDefault(); //App.DAUtil.GetDataMonthByID(chilRedFlagData[0].DataMonthId);
@@ -472,25 +478,22 @@ namespace CAN
                    // {
                         var DataMId = (DataM)ddlDataMonth.SelectedItem;
                         int DataID = DataMId.Datamonthid;
-                        //for (int l = 0; l < ListData.Count; l++)
-                        //{
-                            //var ChildList = App.DAUtil.FindChildId(ListData[l].FamilyId.ToString());
-                            //for (int i = 0; i < ChildList.Count; i++)
-                          //  {
-                            //  var chilRedFlagData = App.DAUtil.GetListOfRedFlag(ChildList[i].ChildId.ToString(), DataID).Skip(previousValue).Take(5).Where(x => x.AnyRedFlag == true).ToList();
-                    var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id,DataID).Skip(previousValue).Take(10).Where(x => x.AnyRedFlag == true).ToList();
-                    if (chilRedFlagData.Count > 0)
+
+                    //var chilRedFlagData = App.DAUtil.GetListOfRedFlag(id,DataID).Skip(previousValue).Take(10).Where(x => x.AnyRedFlag == true).ToList();
+                    var listchildMonthlyDatas1 = listchildMonthlyDatas.Skip(previousValue).Take(10).ToList();
+                    if (listchildMonthlyDatas1.Count > 0)
                     {
-                        for (int i = 0; i < chilRedFlagData.Count; i++)
+                        for (int i = 0; i < listchildMonthlyDatas1.Count; i++)
                         {
                             RedFlagDetails redFlagDetails = new RedFlagDetails();
-                            redFlagDetails.ChildName = chilRedFlagData[i].ChildName;
-                            redFlagDetails.GrowthId = chilRedFlagData[i].GrowthId;
-                            redFlagDetails.ChildId = chilRedFlagData[i].ChildId;
-                            redFlagDetails.DateMonthId = chilRedFlagData[i].DataMonthId;
-                            redFlagDetails.ChildCode = chilRedFlagData[i].ChildCode;
-                            redFlagDetails.GenderName = chilRedFlagData[i].GenderName;
-                            var RedflagchildId = App.DAUtil.GetAllRedFlagRegisterById(chilRedFlagData[i].ChildId.ToString()).FirstOrDefault();
+                            redFlagDetails.ChildName = listchildMonthlyDatas1[i].ChildName;
+                            redFlagDetails.GrowthId = listchildMonthlyDatas1[i].GrowthId;
+                            redFlagDetails.ChildId = listchildMonthlyDatas1[i].ChildId;
+                            redFlagDetails.DateMonthId = listchildMonthlyDatas1[i].DataMonthId;
+                            redFlagDetails.ChildCode = listchildMonthlyDatas1[i].ChildCode;
+                            redFlagDetails.NewChildCode = listchildMonthlyDatas1[i].NewChildCode;
+                            redFlagDetails.GenderName = listchildMonthlyDatas1[i].GenderName;
+                            var RedflagchildId = App.DAUtil.GetAllRedFlagRegisterById(listchildMonthlyDatas1[i].ChildId.ToString()).FirstOrDefault();
                             if (RedflagchildId != null)
                             {
                                 var dateMFormat = StaticClass.dataManthFormat.Where(x => x.Datamonthid == DataID).FirstOrDefault(); //App.DAUtil.GetDataMonthByID(chilRedFlagData[0].DataMonthId);
@@ -631,6 +634,7 @@ namespace CAN
         public bool IsvisuaAdd { get; set; }
         public bool IsvisuaEdit { get; set; }
         public string ChildCode { get; set; }
-       
+        public int NewChildCode { get; set; }
+
     }
 }

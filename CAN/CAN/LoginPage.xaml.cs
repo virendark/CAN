@@ -70,6 +70,7 @@ namespace CAN
                         }
                         else
                         {
+                            App.DAUtil.DeleteUser();
                             DependencyService.Get<Toast>().Show("Time out Please try");
                             txtInductor.IsRunning = false;
                             txtInductor.IsVisible = false;

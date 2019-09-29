@@ -309,7 +309,7 @@
                 <Label x:Name="lblChildCodeEng" Text="Child Code"  TextColor="Gray" FontSize="Micro"   HorizontalOptions="Start"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtChildCode" ReturnType="Done"  Focused="TxtChildCode_Focused"  Unfocused="TxtChildCode_Unfocused"  TextColor="Black" Placeholder="Child Code"  VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
+                <Entry x:Name="txtChildCode" ReturnType="Done"  Focused="TxtChildCode_Focused"  Unfocused="TxtChildCode_Unfocused"  TextColor="Black" Placeholder="Child Code" Keyboard="Numeric"  VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
             

@@ -353,7 +353,7 @@ namespace CAN
                     // int selecteMigrationForId = selecteMigrationFor.columnValueId;
                     familyRegister.MigrationFor = selecteMigrationFor == null ? (int?)null : selecteMigrationFor.columnValueId;
                     familyRegister.MigrationMonthsPerYear = txtMigrationMonthsPerYear.Text == null ? (int?)null : Convert.ToInt32(txtMigrationMonthsPerYear.Text);
-                    familyRegister.FamilyCode = txtFamilyCode.Text;
+                    familyRegister.NewFamilyCode = Convert.ToInt32(txtFamilyCode.Text);
                     familyRegister.LocationId = StaticClass.VillageID;
                     var selecteStatus = (ColumnValue)ddlStatus.SelectedItem;
 
@@ -846,7 +846,7 @@ namespace CAN
                     else
                     {
                         txtMigrationMonthsPerYear.Text = checkFamilydata[0].MigrationMonthsPerYear.HasValue ? checkFamilydata[0].MigrationMonthsPerYear.ToString() : null;
-                        txtFamilyCode.Text = checkFamilydata[0].FamilyCode;
+                        txtFamilyCode.Text = checkFamilydata[0].NewFamilyCode.ToString();
                     }
                 }
                 catch (Exception ex)

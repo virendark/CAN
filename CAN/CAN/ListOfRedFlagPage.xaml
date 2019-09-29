@@ -53,7 +53,7 @@
 
                                                 <Label Text="बालकाचा कोड (Child Code) :-   " TextColor="Black" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" LineBreakMode="TailTruncation" 
                                                  FontAttributes="Bold"/>
-                                                <Label Text="{Binding ChildCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
+                                                <Label Text="{Binding NewChildCode}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="Black" />
 
                                             </StackLayout>
                                             <StackLayout Grid.Row="4"  Spacing="1" Orientation="Horizontal">

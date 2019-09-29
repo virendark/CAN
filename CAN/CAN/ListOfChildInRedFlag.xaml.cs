@@ -63,6 +63,7 @@ namespace CAN
                 listOfChildInRedFlagDetails.DateMonthId = ChildList[j].DateMonthId;
                 listOfChildInRedFlagDetails.RedFlagId = ChildList[j].RedFlagId;
                 listOfChildInRedFlagDetails.ChildCode = ChildDetails==null?null: ChildDetails.ChildCode;
+                listOfChildInRedFlagDetails.NewChildCode = ChildDetails.NewChildCode;
                 if (ChildList[j].OutcomeofReferralbyASHA != 0)
                 {
                     var ReferradTo = App.DAUtil.GetColumnValuesBytext(70);
@@ -161,6 +162,7 @@ namespace CAN
         public bool IsvisuaAdd { get; set; }
         public bool IsvisuaEdit { get; set; }
         public string ChildCode { get; set; }
+        public int NewChildCode { get; set; }
         public int  OutcomeofReferralbyASHA { get; set; }
         public string OutcomeofReferralbyASHAName { get; set; }
 

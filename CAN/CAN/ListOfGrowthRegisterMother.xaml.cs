@@ -104,7 +104,7 @@ namespace CAN
                             motherWithChildDetails.FatherName = MotherWithChildDetails[i].FatherName;
                             motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
                             motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
-                        motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
+                        motherWithChildDetails.NewFamilyCode = Convert.ToInt32(MotherWithChildDetails[i].NewFamilyCode);
                         motherWithChildDetails.IsPregrent= MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
                         motherWithChildDetails.IsLactating = MotherWithChildDetails[i].IsLactating == true ? "True" : "False";
                         if (MotherWithChildDetails[i].HighRiskMotherHistory!=null)
@@ -271,8 +271,9 @@ namespace CAN
                             motherWithChildDetails.FatherName = MotherWithChildDetails[i].FatherName;
                             motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
                             motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
-                            motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
-                            motherWithChildDetails.IsPregrent = MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
+                        // motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
+                        motherWithChildDetails.NewFamilyCode = Convert.ToInt32(MotherWithChildDetails[i].NewFamilyCode);
+                        motherWithChildDetails.IsPregrent = MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
                             motherWithChildDetails.IsLactating = MotherWithChildDetails[i].IsLactating == true ? "True" : "False";
                             if (MotherWithChildDetails[i].HighRiskMotherHistory != null)
                             {
@@ -369,8 +370,9 @@ namespace CAN
                             motherWithChildDetails.FatherName = MotherWithChildDetails[i].FatherName;
                             motherWithChildDetails.MotherName = MotherWithChildDetails[i].MotherName;
                             motherWithChildDetails.GrowthId = MotherWithChildDetails[i].GrowthId;
-                            motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
-                            motherWithChildDetails.IsPregrent = MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
+                        motherWithChildDetails.NewFamilyCode = Convert.ToInt32(MotherWithChildDetails[i].NewFamilyCode);
+                        //motherWithChildDetails.FamilyCode = MotherWithChildDetails[i].FamilyCode;
+                        motherWithChildDetails.IsPregrent = MotherWithChildDetails[i].ChildExpected == true ? "True" : "False";
                             motherWithChildDetails.IsLactating = MotherWithChildDetails[i].IsLactating == true ? "True" : "False";
                             if (MotherWithChildDetails[i].HighRiskMotherHistory != null)
                             {
@@ -457,6 +459,7 @@ namespace CAN
         public bool ?  ChildExpected { get; set; }
         public DateTime ? AwcregistrationDate { get; set; }
         public string FamilyCode { get; set; }
+        public int NewFamilyCode { get; set; }
         public string DataMonthId { get; set; }
         public bool IsvisuaAdd { get; set; }
         public bool IsvisuaEdit { get; set; }

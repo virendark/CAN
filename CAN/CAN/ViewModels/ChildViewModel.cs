@@ -12,8 +12,6 @@ namespace CAN.ViewModels
         public Guid FamilyId { get; set; }
 
         public string ChildName { get; set; }
-       
-
         public DateTime DOB { get; set; }
         public string ChildCode { get; set; }
         public string Gender { get; set; }
@@ -23,5 +21,6 @@ namespace CAN.ViewModels
         public string BirthWeightInKg { get; set; }
         public string W4HZ { get; set; }
         public string W4AZ { get; set; }
-    }
+        public int NewChildCode { get; set; }
+  }
 }

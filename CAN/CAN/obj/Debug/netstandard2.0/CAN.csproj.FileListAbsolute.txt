@@ -442,9 +442,13 @@ F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlydataPage.xam
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfMonthlyMonitoring.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfRedFlagPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\ListOfVillage.xaml.g.cs
+F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\loderpage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterDetailPage1.xaml.g.cs
+F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterNavigationPage.xaml.g.cs
+F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterNavigationPageDetail.xaml.g.cs
+F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterNavigationPageMaster.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyMonitoringPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MonthlyRegisterPage.xaml.g.cs
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MotherOccoupation.xaml.g.cs
@@ -461,7 +465,3 @@ F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
 F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
-F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterNavigationPage.xaml.g.cs
-F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterNavigationPageDetail.xaml.g.cs
-F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\MasterNavigationPageMaster.xaml.g.cs
-F:\24-08-2019\CAN\CAN\CAN\CAN\obj\Debug\netstandard2.0\loderpage.xaml.g.cs

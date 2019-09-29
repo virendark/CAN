@@ -46,6 +46,7 @@ namespace CAN.Models
         public decimal? AWCEntryW4HZ { get; set; }
         public byte[] Photograph { get; set; }
         public string ChildCode { get; set; }
+        public int  NewChildCode { get; set; }
         public string AnyDisability { get; set; }
         public string AnyIllness { get; set; }
         public string AnyLongTermIllnessInFamily { get; set; }

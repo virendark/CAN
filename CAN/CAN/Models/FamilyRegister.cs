@@ -54,6 +54,7 @@ namespace CAN.Models
         public int ? MigrationMonthsPerYear { get; set; }  //Entry Type
         public int ? MigrationFor { get; set; }
         public string FamilyCode { get; set; }
+        public int NewFamilyCode { get; set; }
         public int status { get; set; }
       
         

@@ -258,7 +258,7 @@ namespace CAN
                     childRegister.AWCEntryMUAC = txtAWCEntryMUAC.Text==null?(decimal?)null: Convert.ToDecimal(txtAWCEntryMUAC.Text);
                     childRegister.AWCEntryW4AZ = w4az==null?(decimal?)null: Convert.ToDecimal(w4az);
                     childRegister.AWCEntryW4HZ = w4hz==null?(decimal?)null: Convert.ToDecimal(w4hz);
-                    childRegister.ChildCode = txtChildCode.Text;
+                    childRegister.NewChildCode = Convert.ToInt32(txtChildCode.Text); //txtChildCode.Text;
                     childRegister.Photograph = aBC.imgName;
                     childRegister.AnyDisability = txtAnyDisability.Text==null? "Not Applicable": txtAnyDisability.Text;
                     childRegister.AnyIllness = txtAnyIllness.Text;
@@ -611,7 +611,7 @@ namespace CAN
                     }
                     //  txtAnyLongTermIllnessInFamily.Text = checkChildata[0].AnyLongTermIllnessInFamily;
                     // txtAWCEntryW4HZ.Text = checkChildata[0].AWCEntryW4HZ.ToString();
-                    txtChildCode.Text = checkChildata[0].ChildCode.ToString();
+                    txtChildCode.Text = checkChildata[0].NewChildCode.ToString(); //checkChildata[0].ChildCode.ToString();
                     if (checkChildata[0].Photograph.Length>0)
                     {
                         aBC.imgName = checkChildata[0].Photograph;
