@@ -957,8 +957,8 @@ F:\24-08-2019\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Co
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Release\81\android\assets\Xamarin.Forms.Xaml.pdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.Android.pdb
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\com.prOmptecsathI.CAN.apk
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\com.prOmptecsathI.CAN-Signed.apk
+F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\com.PROMPtecsathl.CAN.apk
+F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\com.PROMPtecsathl.CAN-Signed.apk
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Release\CAN.pdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
@@ -971,7 +971,7 @@ F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\XamlC.stamp
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.csproj.CopyComplete
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\CAN.Android.pdb
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\bin\com.prOmptecsathI.CAN.apk
+F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\android\bin\com.PROMPtecsathl.CAN.apk
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\layout\tabbar.xml
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\layout\toolbar.xml
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Release\81\res\values\styles.xml

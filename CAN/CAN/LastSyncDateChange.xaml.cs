@@ -17,8 +17,9 @@ namespace CAN
         {
             InitializeComponent();
             this.BackgroundColor = Color.FromHex("#696969");
-            txtsyncdata.MaximumDate = DateTime.Now;
             var checkdate = App.DAUtil.Getpushdatatime();
+            txtsyncdata.MaximumDate = DateTime.Now;
+            txtsyncdata.Date = checkdate[0].CheckDate;
             StaticClass.LastsyncDateChange = "";
         }
 

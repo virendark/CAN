@@ -268,6 +268,7 @@ namespace Plugin.RestClient
             }
             catch (Exception ex)
             {
+                App.DAUtil.DeleteUser();
                 return Flag = false;
             }
             return Flag;
@@ -283,105 +284,61 @@ namespace Plugin.RestClient
                 HttpResponseMessage response1 = await client.GetAsync(WebServiceUrl + "api/Sync/SyncGetEntryLevelFamilyDataForAPP?userId=" + userLoginById.userId);
                 HttpContent content = response1.Content;
                 responseBody = content.ReadAsStringAsync().Result;
+                var familyData = JsonConvert.DeserializeObject<RootObject>(responseBody);
                 if (!string.IsNullOrEmpty(responseBody))
                 {
-                    JObject jobject = JObject.Parse(responseBody);
-                    JToken jtoken = jobject.GetValue("familyRegisters");
-                    //JToken jchildRegisters = jobject.GetValue("childRegisters");
-                    //JToken jgrowthRegisters = jobject.GetValue("growthRegisters");
-                    //JToken jredFlagRegisters = jobject.GetValue("redFlagRegisters");
-                    //JToken jgrowthRegisterMothers = jobject.GetValue("growthRegisterMothers");
 
                     bool flageDM = true;
                     App.DAUtil.DeleteFamily();
-                    foreach (var familyRegisterData in jtoken)
+                    foreach (var familyRegisterData in familyData.familyRegisters)
                     {
 
                         FamilyRegister familyRegister = new FamilyRegister();
-                        familyRegister.Assets = familyRegisterData["assets"].ToString(); //familyRegisterData.Assets;
-
-                        familyRegister.CasteTribe = familyRegisterData["casteTribe"].HasValues ? Convert.ToInt32(familyRegisterData["casteTribe"]) : (int?)null; //familyRegisterData.CasteTribe;
-                                                                                                                                                                 // familyRegister.CookingGasAvailable = familyRegisterData.CookingGasAvailable;
-                        familyRegister.CreatedBy = Convert.ToInt32(familyRegisterData["createdBy"]);//familyRegisterData.CreatedBy;
-                        familyRegister.DOE = Convert.ToDateTime(familyRegisterData["doe"]); //familyRegisterData.DOE;
-                        familyRegister.DOU = Convert.ToDateTime(familyRegisterData["dou"]);//familyRegisterData.DOU;
-                        familyRegister.ElectricityAvailable = Convert.ToBoolean(familyRegisterData["electricityAvailable"]); //familyRegisterData.ElectricityAvailable;
-                        familyRegister.FamilyCode = familyRegisterData["familyCode"].ToString();//familyRegisterData.FamilyCode;
-                        try
+                        familyRegister.Assets = familyRegisterData.assets != null ? familyRegisterData.assets.ToString() : null;
+                        familyRegister.CasteTribe = familyRegisterData.casteTribe.HasValue ? Convert.ToInt32(familyRegisterData.casteTribe) : (int?)null;
+                        familyRegister.CreatedBy = Convert.ToInt32(familyRegisterData.createdBy);
+                        familyRegister.DOE = Convert.ToDateTime(familyRegisterData.doe);
+                        familyRegister.DOU = Convert.ToDateTime(familyRegisterData.dou);
+                        familyRegister.ElectricityAvailable = Convert.ToBoolean(familyRegisterData.electricityAvailable);
+                        // familyRegister.FamilyCode = familyRegisterData["familyCode"].ToString();
+                        familyRegister.NewFamilyCode = Convert.ToInt32(familyRegisterData.newFamilyCode);
+                        familyRegister.FamilyId = Guid.Parse(familyRegisterData.familyId.ToString());
+                        familyRegister.FamilyMigrateToEarn = familyRegisterData.familyMigrateToEarn.HasValue ? Convert.ToInt32(familyRegisterData.familyMigrateToEarn) : (int?)null;
+                        familyRegister.FamilyType = familyRegisterData.familyType.HasValue ? Convert.ToInt32(familyRegisterData.familyType) : (int?)null;
+                        familyRegister.FatherEducation = familyRegisterData.fatherEducation.HasValue ? Convert.ToInt32(familyRegisterData.fatherEducation) : (int?)null;
+                        familyRegister.FatherName = familyRegisterData.fatherName!= null? familyRegisterData.fatherName.ToString():null;
+                        familyRegister.FatherOccupation = familyRegisterData.fatherOccupation!=null? familyRegisterData.fatherOccupation.ToString():null;
+                        familyRegister.FatherPastDisease = familyRegisterData.fatherPastDisease!=null? familyRegisterData.fatherPastDisease.ToString():null;
+                        familyRegister.HouseType = familyRegisterData.houseType.HasValue ? Convert.ToInt32(familyRegisterData.houseType) : (int?)null;
+                        familyRegister.IsMotherWorking = familyRegisterData.isMotherWorking.HasValue ? Convert.ToInt32(familyRegisterData.isMotherWorking) : (int?)null;
+                        familyRegister.LocationId = Convert.ToInt32(familyRegisterData.locationId);
+                        familyRegister.MigrationFor = familyRegisterData.migrationFor.HasValue ? Convert.ToInt32(familyRegisterData.migrationFor) : (int?)null;
+                        familyRegister.MigrationMonthsPerYear = familyRegisterData.migrationMonthsPerYear.HasValue ? Convert.ToInt32(familyRegisterData.migrationMonthsPerYear) : (int?)null;
+                        if (familyRegisterData.motherDob.HasValue)
                         {
-                            if (familyRegisterData["newFamilyCode"] == null)
-                            {
-
-                                familyRegister.NewFamilyCode = 0;
-                            }
-                            else
-                            {
-                                familyRegister.NewFamilyCode = Convert.ToInt32(familyRegisterData["newFamilyCode"]);
-                            }
+                            familyRegister.MotherDOB = Convert.ToDateTime(familyRegisterData.motherDob);
                         }
-                        catch (Exception ex)
+                        else
                         {
-                            familyRegister.NewFamilyCode = 0;
+                            familyRegister.MotherDOB = null;
                         }
-                        //familyRegisterData.FamilyCode;
-                        familyRegister.FamilyId = Guid.Parse(familyRegisterData["familyId"].ToString());//familyRegisterData.FamilyId;
-
-                        familyRegister.FamilyMigrateToEarn = familyRegisterData["familyMigrateToEarn"].HasValues ? Convert.ToInt32(familyRegisterData["familyMigrateToEarn"]) : (int?)null; //familyRegisterData.FamilyMigrateToEarn;
-
-
-                        familyRegister.FamilyType = familyRegisterData["familyType"].HasValues ? Convert.ToInt32(familyRegisterData["familyType"]) : (int?)null;//familyRegisterData.FamilyType;
-
-
-                        familyRegister.FatherEducation = familyRegisterData["fatherEducation"].HasValues ? Convert.ToInt32(familyRegisterData["fatherEducation"]) : (int?)null;//familyRegisterData.FatherEducation;
-                        familyRegister.FatherName = familyRegisterData["fatherName"].ToString(); //familyRegisterData.FatherName;
-
-                        familyRegister.FatherOccupation = familyRegisterData["fatherOccupation"].ToString();//.HasValues? Convert.ToInt32(familyRegisterData["fatherOccupation"]):(int?)null; //familyRegisterData.FatherOccupation;
-                        familyRegister.FatherPastDisease = familyRegisterData["fatherPastDisease"].ToString(); //familyRegisterData.FatherPastDisease;
-                        familyRegister.HouseType = familyRegisterData["houseType"].HasValues ? Convert.ToInt32(familyRegisterData["houseType"]) : (int?)null; //familyRegisterData.HouseType;
-
-                        familyRegister.IsMotherWorking = familyRegisterData["isMotherWorking"].HasValues ? Convert.ToInt32(familyRegisterData["isMotherWorking"]) : (int?)null; //familyRegisterData.IsMotherWorking;
-                        familyRegister.LocationId = Convert.ToInt32(familyRegisterData["locationId"]); //familyRegisterData.LocationId;
-
-                        familyRegister.MigrationFor = familyRegisterData["migrationFor"].HasValues ? Convert.ToInt32(familyRegisterData["migrationFor"]) : (int?)null; //familyRegisterData.MigrationFor;
-
-                        familyRegister.MigrationMonthsPerYear = familyRegisterData["migrationMonthsPerYear"].HasValues ? Convert.ToInt32(familyRegisterData["migrationMonthsPerYear"]) : (int?)null;//familyRegisterData.MigrationMonthsPerYear;
-                        JToken chekmotherDob = familyRegisterData["motherDob"];
-                        if (!string.IsNullOrWhiteSpace(chekmotherDob.ToString()))
-                        {
-                            // StaticClass.chekmotherDob = Convert.ToDateTime(chekmotherDob["motherDob"]);
-
-                            //familyRegister.MotherDOB = StaticClass.chekmotherDob.Date;
-                            familyRegister.MotherDOB = Convert.ToDateTime(familyRegisterData["motherDob"]);  //familyRegisterData.MotherDOB;
-                        }
-
-                        familyRegister.MotherEducation = familyRegisterData["motherEducation"].HasValues ? Convert.ToInt32(familyRegisterData["motherEducation"]) : (int?)null;//familyRegisterData.MotherEducation;
-                        familyRegister.MotherName = familyRegisterData["motherName"].ToString(); //familyRegisterData.MotherName;
-
-                        familyRegister.MotherOccupation = familyRegisterData["motherOccupation"].ToString();//.HasValues? Convert.ToInt32(familyRegisterData["motherOccupation"]):(int?)null;//familyRegisterData.MotherOccupation;
-                        familyRegister.MotherPastDisease = familyRegisterData["motherPastDisease"].ToString(); //familyRegisterData.MotherPastDisease;
-
-                        familyRegister.MotherWorkHours = familyRegisterData["motherWorkHours"].HasValues ? Convert.ToInt32(familyRegisterData["motherWorkHours"]) : (int?)null; //familyRegisterData.MotherWorkHours;
-
-                        familyRegister.MotherWorkType = familyRegisterData["motherWorkType"].HasValues ? Convert.ToInt32(familyRegisterData["motherWorkType"]) : (int?)null;//familyRegisterData.MotherWorkType;
-                        familyRegister.NumberofChildenAlive = Convert.ToInt32(familyRegisterData["numberofChildenAlive"]);//familyRegisterData.NumberofChildenAlive;
-
-                        familyRegister.NumberofChildenDied = familyRegisterData["numberofChildenDied"].HasValues ? Convert.ToInt32(familyRegisterData["numberofChildenDied"]) : (int?)null; //familyRegisterData.NumberofChildenDied;
-                        familyRegister.OwnAgriculturalLand = Convert.ToBoolean(familyRegisterData["ownAgriculturalLand"]);  //familyRegisterData.OwnAgriculturalLand;
-
-                        familyRegister.RationCardType = familyRegisterData["rationCardType"].HasValues ? Convert.ToInt32(familyRegisterData["rationCardType"]) : (int?)null;  //familyRegisterData.RationCardType;
-                        familyRegister.RegisterDate = Convert.ToDateTime(familyRegisterData["registerDate"]);//familyRegisterData.RegisterDate;
-
-                        familyRegister.Religion = familyRegisterData["religion"].HasValues ? Convert.ToInt32(familyRegisterData["religion"]) : (int?)null;//familyRegisterData.Religion;
-
-                        familyRegister.ToiletFacility = familyRegisterData["toiletFacility"].HasValues ? Convert.ToInt32(familyRegisterData["toiletFacility"]) : (int?)null;//familyRegisterData.ToiletFacility;
-
-                        familyRegister.WaterSupplyType = familyRegisterData["waterSupplyType"].HasValues ? Convert.ToInt32(familyRegisterData["waterSupplyType"]) : (int?)null;
-                        familyRegister.status = Convert.ToInt32(familyRegisterData["status"]);//familyRegisterData.status;
-
-                        familyRegister.SourceDrinkingWater = familyRegisterData["sourceDrinkingWater"].HasValues ? Convert.ToInt32(familyRegisterData["sourceDrinkingWater"]) : (int?)null; //familyRegisterData.SourceDrinkingWater;
-                        familyRegister.CasteTribeName = familyRegisterData["casteTribeName"].ToString(); //familyRegisterData.CasteTribeName;
-                        familyRegister.UpdatedBy = Convert.ToInt32(familyRegisterData["updatedBy"]);//familyRegisterData.UpdatedBy;
-
+                        familyRegister.MotherEducation = familyRegisterData.motherEducation.HasValue ? Convert.ToInt32(familyRegisterData.motherEducation) : (int?)null;
+                        familyRegister.MotherName = familyRegisterData.motherName!=null? familyRegisterData.motherName.ToString():null;
+                        familyRegister.MotherOccupation = familyRegisterData.motherOccupation!=null? familyRegisterData.motherOccupation.ToString():null;
+                        familyRegister.MotherPastDisease = familyRegisterData.motherPastDisease!=null? familyRegisterData.motherPastDisease.ToString():null;
+                        familyRegister.MotherWorkHours = familyRegisterData.motherWorkHours.HasValue ? Convert.ToInt32(familyRegisterData.motherWorkHours) : (int?)null;
+                        familyRegister.MotherWorkType = familyRegisterData.motherWorkType.HasValue ? Convert.ToInt32(familyRegisterData.motherWorkType) : (int?)null;
+                        familyRegister.NumberofChildenAlive = Convert.ToInt32(familyRegisterData.numberofChildenAlive);
+                        familyRegister.NumberofChildenDied = familyRegisterData.numberofChildenDied.HasValue ? Convert.ToInt32(familyRegisterData.numberofChildenDied) : (int?)null;
+                        familyRegister.OwnAgriculturalLand = Convert.ToBoolean(familyRegisterData.ownAgriculturalLand);
+                        familyRegister.RationCardType = familyRegisterData.rationCardType.HasValue ? Convert.ToInt32(familyRegisterData.rationCardType) : (int?)null;
+                        familyRegister.RegisterDate = Convert.ToDateTime(familyRegisterData.registerDate);
+                        familyRegister.Religion = familyRegisterData.religion.HasValue ? Convert.ToInt32(familyRegisterData.religion) : (int?)null;
+                        familyRegister.ToiletFacility = familyRegisterData.toiletFacility.HasValue ? Convert.ToInt32(familyRegisterData.toiletFacility) : (int?)null;
+                        familyRegister.WaterSupplyType = familyRegisterData.waterSupplyType.HasValue ? Convert.ToInt32(familyRegisterData.waterSupplyType) : (int?)null;
+                        familyRegister.status = Convert.ToInt32(familyRegisterData.status);
+                        familyRegister.SourceDrinkingWater = familyRegisterData.sourceDrinkingWater.HasValue ? Convert.ToInt32(familyRegisterData.sourceDrinkingWater) : (int?)null; familyRegister.CasteTribeName = familyRegisterData.casteTribeName!=null? familyRegisterData.casteTribeName.ToString():null;
+                        familyRegister.UpdatedBy = Convert.ToInt32(familyRegisterData.updatedBy);
                         App.DAUtil.SaveFamilyData(familyRegister);
 
                     }
@@ -394,173 +351,134 @@ namespace Plugin.RestClient
                 responseBody = contentC.ReadAsStringAsync().Result;
                 if (!string.IsNullOrEmpty(responseBody))
                 {
-                    JObject jobject = JObject.Parse(responseBody);
-                    JToken jchildRegisters = jobject.GetValue("childRegisters");
+                    var ChildData = JsonConvert.DeserializeObject<RootObject>(responseBody);
                     App.DAUtil.DeleteChild();
-                    foreach (var childRegisterData in jchildRegisters)
+                    foreach (var chid in ChildData.childRegisters)
                     {
                         ChildRegister childRegister = new ChildRegister();
-                        childRegister.AWCEntryHeightInCms = childRegisterData["awcentryHeightInCms"].HasValues ? Convert.ToDecimal(childRegisterData["awcentryHeightInCms"]) : (decimal?)null;//childRegisterData.AWCEntryHeightInCms;
-                        childRegister.AWCEntryMUAC = childRegisterData["awcentryMuac"].HasValues ? Convert.ToDecimal(childRegisterData["awcentryMuac"]) : (decimal?)null;//childRegisterData.AWCEntryMUAC;
-                        childRegister.AWCEntryW4AZ = childRegisterData["awcentryW4az"].HasValues ? Convert.ToDecimal(childRegisterData["awcentryW4az"]) : (decimal?)null; //childRegisterData.AWCEntryW4AZ;
-                        childRegister.AWCEntryW4HZ = childRegisterData["awcentryW4hz"].HasValues ? Convert.ToDecimal(childRegisterData["awcentryW4hz"]) : (decimal?)null; //childRegisterData.AWCEntryW4HZ;
-                        childRegister.AWCEntryWeightInKG = childRegisterData["awcentryWeightInKg"].HasValues ? Convert.ToDecimal(childRegisterData["awcentryWeightInKg"]) : (decimal?)null;  //childRegisterData.AWCEntryWeightInKG;
-                        childRegister.BirthDeliveryType = childRegisterData["birthDeliveryType"].HasValues ? Convert.ToInt32(childRegisterData["birthDeliveryType"]) : (int?)null;//childRegisterData.BirthDeliveryType;
-                        childRegister.DeliveryTerm = childRegisterData["deliveryTerm"].HasValues ? Convert.ToInt32(childRegisterData["deliveryTerm"]) : (int?)null;//childRegisterData.DeliveryTerm;
-                        childRegister.BirthLengthHeightInCms = childRegisterData["birthLengthHeightInCms"].HasValues ? Convert.ToDecimal(childRegisterData["birthLengthHeightInCms"]) : (decimal?)null;//childRegisterData.BirthLengthHeightInCms;
-                        childRegister.BirthOrder = childRegisterData["birthOrder"].HasValues ? Convert.ToInt32(childRegisterData["birthOrder"]) : (int?)null; //childRegisterData.BirthOrder;
-                        childRegister.BirthPlace = childRegisterData["birthPlace"].HasValues ? Convert.ToInt32(childRegisterData["birthPlace"]) : (int?)null;//childRegisterData.BirthPlace;
-                        childRegister.BirthWeightInKg = childRegisterData["birthWeightInKg"].HasValues ? Convert.ToDecimal(childRegisterData["birthWeightInKg"]) : (decimal?)null; //childRegisterData.BirthWeightInKg;
-                        try
+                        childRegister.AWCEntryHeightInCms = chid.awcentryHeightInCms.HasValue ? Convert.ToDecimal(chid.awcentryHeightInCms) : (decimal?)null;
+                        childRegister.AWCEntryMUAC = chid.awcentryMuac.HasValue ? Convert.ToDecimal(chid.awcentryMuac.HasValue) : (decimal?)null;
+                        childRegister.AWCEntryW4AZ = chid.awcentryW4az.HasValue ? Convert.ToDecimal(chid.awcentryW4az) : (decimal?)null;
+                        childRegister.AWCEntryW4HZ = chid.awcentryW4hz.HasValue ? Convert.ToDecimal(chid.awcentryW4hz) : (decimal?)null;
+                        childRegister.AWCEntryWeightInKG = chid.awcentryWeightInKg.HasValue ? Convert.ToDecimal(chid.awcentryWeightInKg) : (decimal?)null;
+                        childRegister.BirthDeliveryType = chid.birthDeliveryType.HasValue ? Convert.ToInt32(chid.birthDeliveryType) : (int?)null;
+                        childRegister.DeliveryTerm = chid.deliveryTerm.HasValue ? Convert.ToInt32(chid.deliveryTerm) : (int?)null;
+                        childRegister.BirthLengthHeightInCms = chid.birthLengthHeightInCms.HasValue ? Convert.ToDecimal(chid.birthLengthHeightInCms) : (decimal?)null;
+                        childRegister.BirthOrder = chid.birthOrder.HasValue ? Convert.ToInt32(chid.birthOrder) : (int?)null;
+                        childRegister.BirthPlace = chid.birthPlace.HasValue ? Convert.ToInt32(chid.birthPlace) : (int?)null;
+                        childRegister.BirthWeightInKg = chid.birthWeightInKg.HasValue ? Convert.ToDecimal(chid.birthWeightInKg) : (decimal?)null;
+                        //  childRegister.ChildCode = chid.childCode.ToString();
+                        childRegister.ChildId = Guid.Parse(chid.childId.ToString());
+                        childRegister.ChildName = chid.childName!=null? chid.childName.ToString():null;
+                        childRegister.ChildStatus = Convert.ToInt32(chid.childStatus);
+                        childRegister.CreatedBy = Convert.ToInt32(chid.createdBy);
+                        childRegister.DOB = Convert.ToDateTime(chid.dob);
+                        childRegister.DOE = Convert.ToDateTime(chid.doe);
+                        childRegister.DOU = Convert.ToDateTime(chid.dou);
+                        childRegister.FamilyId = Guid.Parse(chid.familyId.ToString());
+                        childRegister.GenderID = Convert.ToInt32(chid.genderId);
+                        if (chid.photograph != null)
                         {
-                            if (childRegisterData["newChildCode"] == null)
-                            {
-                                childRegister.NewChildCode = 0;
-                            }
-                            else
-                            {
-                                childRegister.NewChildCode = Convert.ToInt32(childRegisterData["newChildCode"]);
-                            }
+                            string photo = chid.photograph.ToString();
+                            childRegister.Photograph = Convert.FromBase64String(photo);
                         }
-                        catch (Exception ex)
+                        childRegister.RegisterDate = Convert.ToDateTime(chid.registerDate);
+                        childRegister.UpdatedBy = Convert.ToInt32(chid.updatedBy);
+                        childRegister.GrowthChartGrade = chid.growthChartGrade.HasValue ? Convert.ToInt32(chid.growthChartGrade) : (int?)null;
+                        childRegister.GradeOfChild = chid.gradeOfChild.HasValue ? Convert.ToInt32(chid.gradeOfChild) : (int?)null;
+                        childRegister.AnyDisability = chid.anyDisability!=null?chid.anyDisability.ToString():null;
+                        childRegister.AnyIllness = chid.anyIllness!=null? chid.anyIllness.ToString():null;
+                        childRegister.AnyLongTermIllnessInFamily = chid.anyLongTermIllnessInFamily!=null? chid.anyLongTermIllnessInFamily.ToString():null;
+                        if (chid.awcEntryDate.HasValue)
                         {
-                            childRegister.NewChildCode = 0;
-                        }
-
-                        childRegister.ChildCode = childRegisterData["childCode"].ToString();//childRegisterData.ChildCode;
-                        childRegister.ChildId = Guid.Parse(childRegisterData["childId"].ToString());//childRegisterData.ChildId;
-                        childRegister.ChildName = childRegisterData["childName"].ToString(); //childRegisterData.ChildName;
-                        childRegister.ChildStatus = Convert.ToInt32(childRegisterData["childStatus"]);//childRegisterData.ChildStatus;
-                        childRegister.CreatedBy = Convert.ToInt32(childRegisterData["createdBy"]); //childRegisterData.CreatedBy;
-                        childRegister.DOB = Convert.ToDateTime(childRegisterData["dob"]); //childRegisterData.DOB;
-                        childRegister.DOE = Convert.ToDateTime(childRegisterData["doe"]);//childRegisterData.DOE;
-                        childRegister.DOU = Convert.ToDateTime(childRegisterData["dou"]);//childRegisterData.DOU;
-                        childRegister.FamilyId = Guid.Parse(childRegisterData["familyId"].ToString()); //childRegisterData.FamilyId;
-                        childRegister.GenderID = Convert.ToInt32(childRegisterData["genderId"]);//childRegisterData.GenderID;
-                        string photo = childRegisterData["photograph"].ToString();
-                        childRegister.Photograph = Convert.FromBase64String(photo); //childRegisterData.Photograph;
-                        childRegister.RegisterDate = Convert.ToDateTime(childRegisterData["registerDate"]); //childRegisterData.RegisterDate;
-                        childRegister.UpdatedBy = Convert.ToInt32(childRegisterData["updatedBy"]);//childRegisterData.UpdatedBy;
-                        childRegister.GrowthChartGrade = childRegisterData["growthChartGrade"].HasValues ? Convert.ToInt32(childRegisterData["growthChartGrade"]) : (int?)null; //childRegisterData.GrowthChartGrade;
-                        childRegister.GradeOfChild = childRegisterData["gradeOfChild"].HasValues ? Convert.ToInt32(childRegisterData["gradeOfChild"]) : (int?)null;
-                        childRegister.AnyDisability = childRegisterData["anyDisability"].ToString();
-                        childRegister.AnyIllness = childRegisterData["anyIllness"].ToString(); //childRegisterData.AnyIllness;
-                        childRegister.AnyLongTermIllnessInFamily = childRegisterData["anyLongTermIllnessInFamily"].ToString(); //childRegisterData.AnyLongTermIllnessInFamily;
-                        JToken AWCDate = childRegisterData["awcEntryDate"];
-                        if (!string.IsNullOrWhiteSpace(AWCDate.ToString()))
-                        {
-                            StaticClass.AwcDate = Convert.ToDateTime(childRegisterData["awcEntryDate"]);
+                            StaticClass.AwcDate = Convert.ToDateTime(chid.awcEntryDate);
                             childRegister.AWCEntryDate = StaticClass.AwcDate.Date;//Convert.ToDateTime(childRegisterData["awcentryDate"]);//MotherRegister.ExpectedDeliveryDate;
                         }
                         else
                         {
                             childRegister.AWCEntryDate = null;
                         }
-
+                        childRegister.NewChildCode = Convert.ToInt32(chid.newChildCode);
                         App.DAUtil.SaveChildData(childRegister);
+                        
+
                     }
                     Flag = true;
                 }
+
+
                 HttpClient clientM = new HttpClient();
                 responseBody = "";
                 HttpResponseMessage responseM = await clientM.GetAsync(WebServiceUrl + "api/Sync/SyncGetEntryLevelMotherDataForAPP?userId=" + userLoginById.userId);
 
                 HttpContent contentM = responseM.Content;
                 responseBody = contentM.ReadAsStringAsync().Result;
-
+                
                 if (!string.IsNullOrEmpty(responseBody))
                 {
-                    JObject jobject = JObject.Parse(responseBody);
-                    JToken jgrowthRegisterMothers = jobject.GetValue("growthRegisterMothers");
+                    var growthRegisterMothers = JsonConvert.DeserializeObject<RootObject>(responseBody);
                     App.DAUtil.deleteMother();
-                    foreach (var MotherRegister in jgrowthRegisterMothers)
+                    foreach (var MotherRegister in growthRegisterMothers.growthRegisterMothers)
                     {
                         TblGrowthRegisterMother growthRegisterMother = new TblGrowthRegisterMother();
-                        // growthRegisterMother.AbdomenalCheckup = MotherRegister.AbdomenalCheckup;
-                        //growthRegisterMother.AbnormalHeightLessThan4Ft10Inches = MotherRegister.AbnormalHeightLessThan4Ft10Inches;
-                        //growthRegisterMother.AbnormalWeightOrIncreaseInWeight = MotherRegister.AbnormalWeightOrIncreaseInWeight;
-                        growthRegisterMother.AncregistraionDate = Convert.ToInt32(MotherRegister["ancregistraionDate"]); //MotherRegister.AncregistraionDate;
-                                                                                                                         //growthRegisterMother.AncregistrationMotherWeightInKg = MotherRegister.AncregistrationMotherWeightInKg;
-                        growthRegisterMother.AwcregistrationDate = Convert.ToBoolean(MotherRegister["awcRegistrationDate"]); //MotherRegister.AwcregistrationDate;
-                                                                                                                             //growthRegisterMother.Bpmeasured = MotherRegister.Bpmeasured;
-                                                                                                                             //growthRegisterMother.CheckupDoneInFirstTrimester = MotherRegister.CheckupDoneInFirstTrimester;
-                        growthRegisterMother.ChildExpected = Convert.ToBoolean(MotherRegister["childExpected"]);//MotherRegister.ChildExpected;
-                        growthRegisterMother.ConsumedIfatablets = Convert.ToBoolean(MotherRegister["consumedIfatablets"]); //MotherRegister.ConsumedIfatablets;
-                        growthRegisterMother.CreatedBy = Convert.ToInt32(MotherRegister["createdBy"]);//MotherRegister.CreatedBy;
-                                                                                                      //growthRegisterMother.CriticalDisease = MotherRegister.CriticalDisease;
-                        growthRegisterMother.DataMonthId = Convert.ToInt32(MotherRegister["dataMonthId"]);// MotherRegister.DataMonthId;
-                        growthRegisterMother.DateOfMeasurement = Convert.ToDateTime(MotherRegister["dateOfMeasurement"]); //MotherRegister.DateOfMeasurement;
-                        growthRegisterMother.DOE = Convert.ToDateTime(MotherRegister["doe"]); //MotherRegister.DOE;
-                        growthRegisterMother.DOU = Convert.ToDateTime(MotherRegister["dou"]);//MotherRegister.DOU;
-                                                                                             //growthRegisterMother.EarlierAbortionStillBirthInfacntDeath = MotherRegister.EarlierAbortionStillBirthInfacntDeath;
-                                                                                             //growthRegisterMother.EarlierCesarianDelivery = MotherRegister.EarlierCesarianDelivery;
-                        growthRegisterMother.EatMealRegularlyFromAwc = Convert.ToInt32(MotherRegister["eatMealRegularlyFromAwc"]); //MotherRegister.EatMealRegularlyFromAwc;
-                        growthRegisterMother.EggReceived = Convert.ToInt32(MotherRegister["eggReceived"]); //MotherRegister.EggReceived;
-                        JToken chekExpectedDeliveryDate = MotherRegister["expectedDeliveryDate"];
-                        if (!string.IsNullOrWhiteSpace(chekExpectedDeliveryDate.ToString()))
+                        growthRegisterMother.AncregistraionDate = Convert.ToInt32(MotherRegister.ancregistraionDate); 
+                        growthRegisterMother.AwcregistrationDate = Convert.ToBoolean(MotherRegister.awcregistrationDate); 
+                        growthRegisterMother.ChildExpected = Convert.ToBoolean(MotherRegister.childExpected);
+                        growthRegisterMother.ConsumedIfatablets = Convert.ToBoolean(MotherRegister.consumedIfatablets);
+                        growthRegisterMother.CreatedBy = Convert.ToInt32(MotherRegister.createdBy);
+                        growthRegisterMother.DataMonthId = Convert.ToInt32(MotherRegister.dataMonthId);
+                        growthRegisterMother.DateOfMeasurement = Convert.ToDateTime(MotherRegister.dateOfMeasurement);
+                        growthRegisterMother.DOE = Convert.ToDateTime(MotherRegister.doe);
+                        growthRegisterMother.DOU = Convert.ToDateTime(MotherRegister.dou);
+                        growthRegisterMother.EatMealRegularlyFromAwc = Convert.ToInt32(MotherRegister.eatMealRegularlyFromAwc); 
+                        growthRegisterMother.EggReceived = Convert.ToInt32(MotherRegister.eggReceived);
+                       if (growthRegisterMother.ExpectedDeliveryDate.HasValue)
                         {
-                            // StaticClass.chekExpectedDeliveryDate = Convert.ToDateTime(MotherRegister["expectedDeliveryDate"]);
-
-                            //growthRegisterMother.ExpectedDeliveryDate = StaticClass.chekExpectedDeliveryDate.Date;
-                            growthRegisterMother.ExpectedDeliveryDate = Convert.ToDateTime(MotherRegister["expectedDeliveryDate"]);//MotherRegister.ExpectedDeliveryDate;
+                           growthRegisterMother.ExpectedDeliveryDate = Convert.ToDateTime(MotherRegister.expectedDeliveryDate);
                         }
-                        growthRegisterMother.FamilyId = Guid.Parse(MotherRegister["familyId"].ToString());//MotherRegister.FamilyId;
-                                                                                                          // growthRegisterMother.FirstDeliveryAfterAge35 = MotherRegister.FirstDeliveryAfterAge35;
-                                                                                                          //growthRegisterMother.FrequentVomitAfter4Months = MotherRegister.FrequentVomitAfter4Months;
-                        growthRegisterMother.GettingTreatmentFrom = Convert.ToInt32(MotherRegister["gettingTreatmentFrom"]); //MotherRegister.GettingTreatmentFrom;
-                        growthRegisterMother.GrowthId = Guid.Parse(MotherRegister["growthId"].ToString()); //MotherRegister.GrowthId;
-                                                                                                           //growthRegisterMother.HasDiabetes = MotherRegister.HasDiabetes;
-                                                                                                           //growthRegisterMother.Hbmeasured = MotherRegister.Hbmeasured;
-                                                                                                           //growthRegisterMother.HeightMeasured = MotherRegister.HeightMeasured;
-                                                                                                           // growthRegisterMother.HighBp = MotherRegister.HighBp;
-                        growthRegisterMother.IsFirstPregnancy = Convert.ToBoolean(MotherRegister["isFirstPregnancy"]); //MotherRegister.IsFirstPregnancy;
-                        growthRegisterMother.IsGettingTreatment = Convert.ToBoolean(MotherRegister["isGettingTreatment"]); //MotherRegister.IsGettingTreatment;
-                                                                                                                           // growthRegisterMother.IsHighRisk = MotherRegister.IsHighRisk;
-                        growthRegisterMother.IsLactating = Convert.ToBoolean(MotherRegister["isLactating"]); //MotherRegister.IsLactating;
-                        growthRegisterMother.IsMealEnough = Convert.ToInt32(MotherRegister["isMealEnough"]); //MotherRegister.IsMealEnough;
-                        growthRegisterMother.IsUnderMedication = Convert.ToBoolean(MotherRegister["isUnderMedication"]);//MotherRegister.IsUnderMedication;
-                        JToken chekLastDeliveryDate = MotherRegister["lastDeliveryDate"];
-                        if (!string.IsNullOrWhiteSpace(chekLastDeliveryDate.ToString()))
+                        growthRegisterMother.FamilyId = Guid.Parse(MotherRegister.familyId.ToString());
+                                                                     
+                        growthRegisterMother.GettingTreatmentFrom = Convert.ToInt32(MotherRegister.gettingTreatmentFrom);
+                        growthRegisterMother.GrowthId = Guid.Parse(MotherRegister.growthId.ToString()); 
+                        
+                        growthRegisterMother.IsFirstPregnancy = Convert.ToBoolean(MotherRegister.isFirstPregnancy); 
+                        growthRegisterMother.IsGettingTreatment = Convert.ToBoolean(MotherRegister.isGettingTreatment); 
+                        growthRegisterMother.IsLactating = Convert.ToBoolean(MotherRegister.isLactating);
+                        growthRegisterMother.IsMealEnough = Convert.ToInt32(MotherRegister.isMealEnough);
+                        growthRegisterMother.IsUnderMedication = Convert.ToBoolean(MotherRegister.isUnderMedication);
+                        
+                        if (MotherRegister.lastDeliveryDate.HasValue)
                         {
-                            // StaticClass.chekLastDeliveryDate = Convert.ToDateTime(MotherRegister["lastDeliveryDate"]);
-
-                            //growthRegisterMother.LastDeliveryDate = StaticClass.chekLastDeliveryDate.Date;
-                            growthRegisterMother.LastDeliveryDate = Convert.ToDateTime(MotherRegister["lastDeliveryDate"]); //MotherRegister.LastDeliveryDate;
+                         
+                            growthRegisterMother.LastDeliveryDate = Convert.ToDateTime(MotherRegister.lastDeliveryDate); 
                         }
-                        //growthRegisterMother.LowHb = MotherRegister.LowHb;
-                        growthRegisterMother.MotherWeightIn1Trimester = Convert.ToDecimal(MotherRegister["motherWeightIn1Trimester"]);//MotherRegister.MotherWeightIn1Trimester;
-                        growthRegisterMother.MotherWeightIn2Trimester = Convert.ToDecimal(MotherRegister["motherWeightIn2Trimester"]); //MotherRegister.MotherWeightIn2Trimester;
-                        growthRegisterMother.MotherWeightInDeliveryTime = Convert.ToDecimal(MotherRegister["motherWeightInDeliveryTime"]); //MotherRegister.MotherWeightInDeliveryTime;
-                                                                                                                                           // growthRegisterMother.PreEclampsiaSymptoms = MotherRegister.PreEclampsiaSymptoms;
-                                                                                                                                           //growthRegisterMother.PregnancyAfterLongTreatment = MotherRegister.PregnancyAfterLongTreatment;
-                        growthRegisterMother.QualityOfAwcfood = Convert.ToInt32(MotherRegister["qualityOfAwcfood"]);//MotherRegister.QualityOfAwcfood;
-                        growthRegisterMother.ReceivedCalciumTablets = Convert.ToBoolean(MotherRegister["receivedCalciumTablets"]); //MotherRegister.ReceivedCalciumTablets;
-                        growthRegisterMother.ReceivedDietUnderAay = Convert.ToBoolean(MotherRegister["receivedDietUnderAay"]); //MotherRegister.ReceivedDietUnderAay;
-                        growthRegisterMother.ReceivedIfatablets = Convert.ToBoolean(MotherRegister["receivedIfatablets"]); //MotherRegister.ReceivedIfatablets;
-                        growthRegisterMother.ReceivedMealFromAwcunderAay = Convert.ToBoolean(MotherRegister["receivedMealFromAwcunderAay"]); //MotherRegister.ReceivedMealFromAwcunderAay;
-                        JToken chekHowManyReceivedMealFromAwcunderAay = MotherRegister["howManyMonthsReceiveMealsAWCUnderAAY"];
-                        if (!string.IsNullOrWhiteSpace(chekHowManyReceivedMealFromAwcunderAay.ToString()))
-                            growthRegisterMother.HowManyReceivedMealFromAwcunderAay = Convert.ToInt32(MotherRegister["howManyMonthsReceiveMealsAWCUnderAAY"]);
+                      
+                        growthRegisterMother.MotherWeightIn1Trimester = Convert.ToDecimal(MotherRegister.motherWeightIn1Trimester);
+                        growthRegisterMother.MotherWeightIn2Trimester = Convert.ToDecimal(MotherRegister.motherWeightIn2Trimester); 
+                        growthRegisterMother.MotherWeightInDeliveryTime = Convert.ToDecimal(MotherRegister.motherWeightInDeliveryTime);
+                        growthRegisterMother.QualityOfAwcfood = Convert.ToInt32(MotherRegister.qualityOfAwcfood);
+                        growthRegisterMother.ReceivedCalciumTablets = Convert.ToBoolean(MotherRegister.receivedCalciumTablets);
+                        growthRegisterMother.ReceivedDietUnderAay = Convert.ToBoolean(MotherRegister.receivedDietUnderAay); 
+                        growthRegisterMother.ReceivedIfatablets = Convert.ToBoolean(MotherRegister.receivedIfatablets); 
+                        growthRegisterMother.ReceivedMealFromAwcunderAay = Convert.ToBoolean(MotherRegister.receivedMealFromAwcunderAay);
+                      
+                            growthRegisterMother.HowManyReceivedMealFromAwcunderAay = MotherRegister.howManyMonthsReceiveMealsAWCUnderAAY.HasValue? Convert.ToInt32(MotherRegister.howManyMonthsReceiveMealsAWCUnderAAY):0;
 
-                        growthRegisterMother.ReceivedSnacksFromAwc = Convert.ToInt32(MotherRegister["receivedSnacksFromAwc"]); //MotherRegister.ReceivedSnacksFromAwc;
-                        growthRegisterMother.ReceivedSnacksUnderAay = Convert.ToBoolean(MotherRegister["receivedSnacksUnderAay"]); //MotherRegister.ReceivedSnacksUnderAay;
-                        growthRegisterMother.ResonForNotEatingAwcmeal = Convert.ToInt32(MotherRegister["resonForNotEatingAwcmeal"]); //MotherRegister.ResonForNotEatingAwcmeal;
-                        growthRegisterMother.GetMealAwcUnderAay = Convert.ToBoolean(MotherRegister["getMealAwcUnderAay"]);
+                        growthRegisterMother.ReceivedSnacksFromAwc = Convert.ToInt32(MotherRegister.receivedSnacksFromAwc);
+                        growthRegisterMother.ReceivedSnacksUnderAay = Convert.ToBoolean(MotherRegister.receivedSnacksUnderAay);
+                        growthRegisterMother.ResonForNotEatingAwcmeal = Convert.ToInt32(MotherRegister.resonForNotEatingAwcmeal); 
+                       // growthRegisterMother.GetMealAwcUnderAay = Convert.ToBoolean(MotherRegister["getMealAwcUnderAay"]);
 
-                        //growthRegisterMother.SonographyDone = MotherRegister.SonographyDone;
-                        //growthRegisterMother.Ttgiven = MotherRegister.Ttgiven;
-                        //growthRegisterMother.TwinsOrFrequentPregnancy = MotherRegister.TwinsOrFrequentPregnancy;
-                        growthRegisterMother.TypeOfMeal = Convert.ToInt32(MotherRegister["typeOfMeal"]); //MotherRegister.TypeOfMeal;
-                        growthRegisterMother.UpdatedBy = Convert.ToInt32(MotherRegister["updatedBy"]); //MotherRegister.UpdatedBy;
-                                                                                                       //growthRegisterMother.WeightInKgDuringRegistration = MotherRegister.WeightInKgDuringRegistration;
-                                                                                                       //growthRegisterMother.WeightMeasured = MotherRegister.WeightMeasured;
-                        growthRegisterMother.TotalPregnancyMonths = MotherRegister["totalPregnancyMonths"].ToString();
-                        growthRegisterMother.HighRiskMotherHistory = MotherRegister["highRiskMotherHistory"].ToString();
-                        JToken chekANCCheckups = MotherRegister["ancCheckups"];
-                        if (!string.IsNullOrWhiteSpace(chekANCCheckups.ToString()))
-                            growthRegisterMother.ANCCheckups = MotherRegister["ancCheckups"].ToString();
+                       
+                        growthRegisterMother.TypeOfMeal = Convert.ToInt32(MotherRegister.typeOfMeal);
+                        growthRegisterMother.UpdatedBy = Convert.ToInt32(MotherRegister.updatedBy); 
+                                                                                                     
+                        growthRegisterMother.TotalPregnancyMonths = MotherRegister.totalPregnancyMonths!=null? MotherRegister.totalPregnancyMonths.ToString():null;
+                        growthRegisterMother.HighRiskMotherHistory = MotherRegister.highRiskMotherHistory!=null? MotherRegister.highRiskMotherHistory.ToString():null;
+                        
+                            growthRegisterMother.ANCCheckups = MotherRegister.ancCheckups!=null? MotherRegister.ancCheckups.ToString():null;
 
-                        growthRegisterMother.ANMMarkHighRiskScreening = MotherRegister["anmMarkHighRiskScreening"].ToString();
+                        growthRegisterMother.ANMMarkHighRiskScreening = MotherRegister.anmMarkHighRiskScreening!=null? MotherRegister.anmMarkHighRiskScreening.ToString():null;
                         App.DAUtil.SaveGrowthRegisterMother(growthRegisterMother);
 
                     }
@@ -574,51 +492,47 @@ namespace Plugin.RestClient
 
                 if (!string.IsNullOrEmpty(responseBody))
                 {
-                    JObject jobject = JObject.Parse(responseBody);
-                    JToken jgrowthRegisters = jobject.GetValue("growthRegisters");
+                    var growthRegisters = JsonConvert.DeserializeObject<RootObject>(responseBody);
                     App.DAUtil.DeleteGrowthRegisters();
-                    foreach (var growthRegistersData in jgrowthRegisters)
+                    foreach (var growthRegistersData in growthRegisters.growthRegisters)
                     {
                         GrowthRegister growthRegister = new GrowthRegister();
-                        growthRegister.AdmittedToAWC = Convert.ToBoolean(growthRegistersData["admittedToAwc"]);// growthRegistersData.AdmittedToAWC;
-                        growthRegister.AgeInDays = Convert.ToInt32(growthRegistersData["ageInDays"]); //growthRegistersData.AgeInDays;
-                        growthRegister.AnyDisability = growthRegistersData["anyDisability"].ToString();// growthRegistersData.AnyDisability;
-                        growthRegister.AnyIllness = growthRegistersData["anyIllness"].ToString();//growthRegistersData.AnyIllness;
-                        growthRegister.AnyRedFlag = Convert.ToBoolean(growthRegistersData["anyRedFlag"]); //growthRegistersData.AnyRedFlag;
-                        growthRegister.BMI = growthRegistersData["bmi"].HasValues ? Convert.ToDouble(growthRegistersData["bmi"]) : (double?)null;//growthRegistersData.BMI;
-
-                        growthRegister.BMIZ = growthRegistersData["bmiz"].HasValues ? Convert.ToDouble(growthRegistersData["bmiz"]) : (double?)null;//growthRegistersData.BMIZ;
-                        growthRegister.ChildId = Guid.Parse(growthRegistersData["childId"].ToString());//growthRegistersData.ChildId;
-                        growthRegister.CreatedBy = Convert.ToInt32(growthRegistersData["createdBy"]);//growthRegistersData.CreatedBy;
-                        growthRegister.CurrentlyAttends = Convert.ToInt32(growthRegistersData["currentlyAttends"]); //growthRegistersData.CurrentlyAttends;
-                        growthRegister.DataMonthId = Convert.ToInt32(growthRegistersData["dataMonthId"]); //growthRegistersData.DataMonthId;
-                        growthRegister.Doe = Convert.ToDateTime(growthRegistersData["doe"]); //growthRegistersData.Doe;
-                        growthRegister.Dou = Convert.ToDateTime(growthRegistersData["dou"]); //growthRegistersData.Dou;
-                        growthRegister.GenderID = Convert.ToInt32(growthRegistersData["genderId"]); //growthRegistersData.GenderID;
-                        growthRegister.GrowthId = Guid.Parse(growthRegistersData["growthId"].ToString());//growthRegistersData.GrowthId;
-                        growthRegister.H4AZ = growthRegistersData["h4az"].HasValues ? Convert.ToDouble(growthRegistersData["h4az"]) : (double?)null; //growthRegistersData.H4AZ;
-                        growthRegister.HealthCheckUpDone = Convert.ToBoolean(growthRegistersData["healthCheckUpDone"]); //growthRegistersData.HealthCheckUpDone;
-                        growthRegister.IsBreastfeeding = Convert.ToBoolean(growthRegistersData["isBreastfeeding"]);//growthRegistersData.IsBreastfeeding;
-                        growthRegister.IsZScoreRedFlag = Convert.ToBoolean(growthRegistersData["isZscoreRedFlag"]); //growthRegistersData.IsZScoreRedFlag;
-                        growthRegister.LengthHeight = growthRegistersData["lengthHeight"].HasValues ? Convert.ToDecimal(growthRegistersData["lengthHeight"]) : (decimal?)null; //growthRegistersData.LengthHeight;
-                        growthRegister.MeasurementDate = Convert.ToDateTime(growthRegistersData["measurementDate"]);//growthRegistersData.MeasurementDate;
-                        growthRegister.MUAC = growthRegistersData["muac"].HasValues ? Convert.ToDecimal(growthRegistersData["muac"]) : (decimal?)null; //growthRegistersData.MUAC;
-                        growthRegister.NumberofDaysIll = Convert.ToInt32(growthRegistersData["numberOfDaysIll"]);  //growthRegistersData.NumberofDaysIll;
-                        growthRegister.ReasonAnthropometryNotTaken = Convert.ToInt32(growthRegistersData["reasonAnthropometryNotTaken"]); //growthRegistersData.ReasonAnthropometryNotTaken;
-                        growthRegister.ReceiveAAY = Convert.ToInt32(growthRegistersData["receiveAay"]);// growthRegistersData.ReceiveAAY;
-                        growthRegister.ReceiveCookedFood = Convert.ToBoolean(growthRegistersData["receiveCookedFood"]);// growthRegistersData.ReceiveCookedFood;
-                        growthRegister.ReceiveTakeHomeRation = Convert.ToInt32(growthRegistersData["receiveTakeHomeRation"]); //growthRegistersData.ReceiveTakeHomeRation;
-                        growthRegister.Remark = growthRegistersData["remark"].ToString(); //growthRegistersData.Remark;
-                        growthRegister.TypeOfIllness = growthRegistersData["typeOfIllness"].ToString(); //growthRegistersData.TypeOfIllness;
-                        growthRegister.UpdatedBy = Convert.ToInt32(growthRegistersData["updatedBy"]); //growthRegistersData.UpdatedBy;
-                        growthRegister.W4AZ = growthRegistersData["w4az"].HasValues ? Convert.ToDouble(growthRegistersData["w4az"]) : (double?)null;   //growthRegistersData.W4AZ;
-                        growthRegister.W4LHZ = growthRegistersData["w4lhz"].HasValues ? Convert.ToDouble(growthRegistersData["w4lhz"]) : (double?)null;//growthRegistersData.W4LHZ;
-
-                        growthRegister.WeightInKg = growthRegistersData["weightInKg"].HasValues ? Convert.ToDecimal(growthRegistersData["weightInKg"]) : (decimal?)null; //growthRegistersData.WeightInKg;
-                        growthRegister.ChildIllPreviousMonth = Convert.ToBoolean(growthRegistersData["childIllPreviousMonth"]);//growthRegistersData.ChildIllPreviousMonth;
-                        growthRegister.ImmunisationCard = growthRegistersData["immunisationCard"].ToString(); //growthRegistersData.ImmunisationCard;
-                        growthRegister.ReceiveAAYBananaInDays = Convert.ToInt32(growthRegistersData["receiveAAYBananaInDays"]);
-                        growthRegister.ReceiveAAYEggInDays = Convert.ToInt32(growthRegistersData["receiveAAYEggInDays"]);
+                        growthRegister.AdmittedToAWC = Convert.ToBoolean(growthRegistersData.admittedToAwc);
+                        growthRegister.AgeInDays = Convert.ToInt32(growthRegistersData.ageInDays); 
+                        growthRegister.AnyDisability = growthRegistersData.anyDisability!=null? growthRegistersData.anyDisability.ToString():null;
+                        growthRegister.AnyIllness = growthRegistersData.anyIllness!=null? growthRegistersData.anyIllness.ToString():null;
+                        growthRegister.AnyRedFlag = Convert.ToBoolean(growthRegistersData.anyRedFlag);
+                        growthRegister.BMI = growthRegistersData.bmi.HasValue ? Convert.ToDouble(growthRegistersData.bmi) : (double?)null;
+                        growthRegister.BMIZ = growthRegistersData.bmiz.HasValue ? Convert.ToDouble(growthRegistersData.bmiz) : (double?)null;
+                        growthRegister.ChildId = Guid.Parse(growthRegistersData.childId.ToString());
+                        growthRegister.CreatedBy = Convert.ToInt32(growthRegistersData.createdBy);
+                        growthRegister.CurrentlyAttends = Convert.ToInt32(growthRegistersData.currentlyAttends);
+                        growthRegister.DataMonthId = Convert.ToInt32(growthRegistersData.dataMonthId); 
+                        growthRegister.Dou = Convert.ToDateTime(growthRegistersData.dou); 
+                        growthRegister.GenderID = Convert.ToInt32(growthRegistersData.genderId); 
+                        growthRegister.GrowthId = Guid.Parse(growthRegistersData.growthId.ToString());
+                        growthRegister.H4AZ = growthRegistersData.h4az.HasValue ? Convert.ToDouble(growthRegistersData.h4az) : (double?)null;
+                        growthRegister.HealthCheckUpDone = Convert.ToBoolean(growthRegistersData.healthCheckUpDone);
+                        growthRegister.IsBreastfeeding = Convert.ToBoolean(growthRegistersData.isBreastfeeding);
+                        growthRegister.IsZScoreRedFlag = Convert.ToBoolean(growthRegistersData.isZscoreRedFlag);
+                        growthRegister.LengthHeight = growthRegistersData.lengthHeight.HasValue? Convert.ToDecimal(growthRegistersData.lengthHeight) : (decimal?)null;
+                        growthRegister.MeasurementDate = Convert.ToDateTime(growthRegistersData.measurementDate);
+                        growthRegister.MUAC = growthRegistersData.muac.HasValue ? Convert.ToDecimal(growthRegistersData.muac) : (decimal?)null; 
+                        growthRegister.NumberofDaysIll = Convert.ToInt32(growthRegistersData.numberofDaysIll); 
+                        growthRegister.ReasonAnthropometryNotTaken = Convert.ToInt32(growthRegistersData.reasonAnthropometryNotTaken); 
+                        growthRegister.ReceiveAAY = Convert.ToInt32(growthRegistersData.receiveAay);
+                        growthRegister.ReceiveCookedFood = Convert.ToBoolean(growthRegistersData.receiveCookedFood);
+                        growthRegister.ReceiveTakeHomeRation = Convert.ToInt32(growthRegistersData.receiveTakeHomeRation); 
+                        growthRegister.Remark = growthRegistersData.remark!=null? growthRegistersData.remark.ToString():null;
+                        growthRegister.TypeOfIllness = growthRegistersData.typeOfIllness!=null? growthRegistersData.typeOfIllness.ToString():null;
+                        growthRegister.UpdatedBy = Convert.ToInt32(growthRegistersData.updatedBy);
+                        growthRegister.W4AZ = growthRegistersData.w4az.HasValue ? Convert.ToDouble(growthRegistersData.w4az) : (double?)null;   
+                        growthRegister.W4LHZ = growthRegistersData.w4lhz.HasValue ? Convert.ToDouble(growthRegistersData.w4lhz) : (double?)null;
+                        growthRegister.WeightInKg = growthRegistersData.weightInKg.HasValue ? Convert.ToDecimal(growthRegistersData.weightInKg) : (decimal?)null;
+                        growthRegister.ChildIllPreviousMonth = Convert.ToBoolean(growthRegistersData.childIllPreviousMonth);
+                        growthRegister.ImmunisationCard = growthRegistersData.immunisationCard!=null? growthRegistersData.immunisationCard.ToString():null; 
+                        growthRegister.ReceiveAAYBananaInDays = Convert.ToInt32(growthRegistersData.receiveAAYBananaInDays);
+                        growthRegister.ReceiveAAYEggInDays = Convert.ToInt32(growthRegistersData.receiveAAYEggInDays);
                         App.DAUtil.SaveGrowthRegister(growthRegister);
                     }
                 }
@@ -630,86 +544,68 @@ namespace Plugin.RestClient
 
                 if (!string.IsNullOrEmpty(responseBody))
                 {
-                    JObject jobject = JObject.Parse(responseBody);
-                    JToken jredFlagRegisters = jobject.GetValue("redFlagRegisters");
+                    var redFlagRegisters = JsonConvert.DeserializeObject<RootObject>(responseBody);
                     App.DAUtil.DeleteRedFlagRegisterRegister();
-                    foreach (var redFlagRegistersData in jredFlagRegisters)
+                    foreach (var redFlagRegistersData in redFlagRegisters.redFlagRegisters)
                     {
                         RedFlagRegister redFlagRegister = new RedFlagRegister();
-                        redFlagRegister.AdvicedButNotAdmittedReason = null; //Convert.ToInt32(redFlagRegistersData["advicedButNotAdmittedReason"]); //redFlagRegistersData.AdvicedButNotAdmittedReason;
-                        redFlagRegister.AnyBlockerInLastDiagnose = null; //redFlagRegistersData["anyBlockerInLastDiagnose"].ToString(); //redFlagRegistersData.AnyBlockerInLastDiagnose;
+                        redFlagRegister.AdvicedButNotAdmittedReason = null; 
+                        redFlagRegister.AnyBlockerInLastDiagnose = null; 
                         redFlagRegister.ASHAVisitDate = null;
-                        //JToken chekashaVisitDate = redFlagRegistersData["ashaVisitDate"];
-                        //try
-                        //{
-                        //    if (!string.IsNullOrWhiteSpace(chekashaVisitDate.ToString()))
-                        //        redFlagRegister.ASHAVisitDate = Convert.ToDateTime(redFlagRegistersData["ashaVisitDate"]); //redFlagRegistersData.ASHAVisitDate;
-                        //}
-                        //catch
-                        //{
-
-                        //}
-                        redFlagRegister.AWWVisitWithASHA = null; //Convert.ToBoolean(redFlagRegistersData["awwVisitWithAsha"]); //redFlagRegistersData.AWWVisitWithASHA;
-                        redFlagRegister.CaseOfReferral = null; //Convert.ToBoolean(redFlagRegistersData["CaseOfReferral"]); //redFlagRegistersData.CaseOfReferral;
-                        redFlagRegister.ChildAdmittedInCTCNRC = Convert.ToInt32(redFlagRegistersData["childAdmittedInCtcnrc"]); //redFlagRegistersData.ChildAdmittedInCTCNRC;
-                        redFlagRegister.ChildGoneToHealthCenter = null; //Convert.ToBoolean(redFlagRegistersData["childGoneToHealthCenter"]); //redFlagRegistersData.ChildGoneToHealthCenter;
-                        redFlagRegister.ChildId = Guid.Parse(redFlagRegistersData["childId"].ToString()); //redFlagRegistersData.ChildId;
-                        redFlagRegister.ChildSeverelyUnderweightSymptoms = redFlagRegistersData["childSeverelyUnderweightSymptoms"].ToString(); //Convert.ToInt32(redFlagRegistersData["childSeverelyUnderWeightSymptoms"]);
-                        //redFlagRegistersData.ChildSeverelyUnderweightSymptoms;
-                        redFlagRegister.ConsultancyProvidedToFamily = null;// Convert.ToBoolean(redFlagRegistersData["consultancyProvidedToFamily"]);
-                        //redFlagRegistersData.ConsultancyProvidedToFamily;
-                        redFlagRegister.CreatedBy = Convert.ToInt32(redFlagRegistersData["createdBy"]); //redFlagRegistersData.CreatedBy;
-                        redFlagRegister.CurrentStatus = Convert.ToInt32(redFlagRegistersData["currentStatus"]); //redFlagRegistersData.CurrentStatus;
-                        redFlagRegister.DateMonthId = Convert.ToInt32(redFlagRegistersData["dateMonthId"]); //redFlagRegistersData.DateMonthId;
-
-                        JToken chekdateofAdmission = redFlagRegistersData["dateofAdmission"];
-                        if (!string.IsNullOrWhiteSpace(chekdateofAdmission.ToString()))
+                        redFlagRegister.AWWVisitWithASHA = null;
+                        redFlagRegister.CaseOfReferral = null;
+                        redFlagRegister.ChildAdmittedInCTCNRC = Convert.ToInt32(redFlagRegistersData.childAdmittedInCtcnrc);
+                        redFlagRegister.ChildGoneToHealthCenter = null; 
+                        redFlagRegister.ChildId = Guid.Parse(redFlagRegistersData.childId.ToString()); 
+                        redFlagRegister.ChildSeverelyUnderweightSymptoms = redFlagRegistersData.childSeverelyUnderweightSymptoms!=null? redFlagRegistersData.childSeverelyUnderweightSymptoms.ToString():null; 
+                        redFlagRegister.ConsultancyProvidedToFamily = null;
+                        redFlagRegister.CreatedBy = Convert.ToInt32(redFlagRegistersData.createdBy); 
+                        redFlagRegister.CurrentStatus = Convert.ToInt32(redFlagRegistersData.currentStatus);
+                        redFlagRegister.DateMonthId = Convert.ToInt32(redFlagRegistersData.dateMonthId);
+                       
+                        if (redFlagRegistersData.dateofAdmission.HasValue)
                         {
-                            StaticClass.dateofAdmission = Convert.ToDateTime(redFlagRegistersData["dateofAdmission"]);
+                            StaticClass.dateofAdmission = Convert.ToDateTime(redFlagRegistersData.dateofAdmission);
 
                             redFlagRegister.DateofAdmission = StaticClass.dateofAdmission.Date;
-                            // redFlagRegister.DateofAdmission = Convert.ToDateTime(redFlagRegistersData["dateofAdmission"]);//redFlagRegistersData.DateofAdmission;
+                          
                         }
-                        JToken chekdateOfDischarge = redFlagRegistersData["dateOfDischarge"];
-                        if (!string.IsNullOrWhiteSpace(chekdateOfDischarge.ToString()))
+                        
+                        if (redFlagRegistersData.dateOfDischarge.HasValue)
                         {
-                            StaticClass.dateOfDischarge = Convert.ToDateTime(redFlagRegistersData["dateOfDischarge"]);
+                            StaticClass.dateOfDischarge = Convert.ToDateTime(redFlagRegistersData.dateOfDischarge);
 
                             redFlagRegister.DateOfDischarge = StaticClass.dateOfDischarge.Date;
-                            // redFlagRegister.DateOfDischarge = Convert.ToDateTime(redFlagRegistersData["dateOfDischarge"]); //redFlagRegistersData.DateOfDischarge;
-                            // JToken chekdateOfReferral = redFlagRegistersData["dateOfReferral"];
-                            //if (!string.IsNullOrWhiteSpace(chekdateOfReferral.ToString()))
+                            
                         }
-                        redFlagRegister.DateOfReferral = null; //Convert.ToDateTime(redFlagRegistersData["dateOfReferral"]); //redFlagRegistersData.DateOfReferral;
-
-
-                        redFlagRegister.Diagnose = null; //redFlagRegistersData["diagnose"].ToString(); //redFlagRegistersData.Diagnose;
-                        redFlagRegister.Doe = Convert.ToDateTime(redFlagRegistersData["doe"]);//redFlagRegistersData.Doe;
-                        redFlagRegister.Dou = Convert.ToDateTime(redFlagRegistersData["dou"]);//redFlagRegistersData.Dou;
-                        redFlagRegister.FirstFollowUp = Convert.ToBoolean(redFlagRegistersData["firstFollowUp"]); //redFlagRegistersData.FirstFollowUp;
-                        redFlagRegister.HygeineMaintained = Convert.ToBoolean(redFlagRegistersData["hygeineMaintained"]); //redFlagRegistersData.HygeineMaintained;
-                        redFlagRegister.IsEatingSufficientlyBool = redFlagRegistersData["isEatingSufficientlyBool"].HasValues ? Convert.ToBoolean(redFlagRegistersData["isEatingSufficientlyBool"]) : (bool?)null;
-                        redFlagRegister.IsSuggestedReferral = redFlagRegistersData["isSuggestedReferral"].HasValues ? Convert.ToBoolean(redFlagRegistersData["isSuggestedReferral"]) : (bool?)null;
-                        redFlagRegister.IsEatingSufficiently = Convert.ToInt32(redFlagRegistersData["isEatingSufficiently"]); //redFlagRegistersData.IsEatingSufficiently;
-                        redFlagRegister.LengthHeight = redFlagRegistersData["lengthHeight"].HasValues ? Convert.ToDecimal(redFlagRegistersData["lengthHeight"]) : (decimal?)null; //redFlagRegistersData.LengthHeight;
-                        redFlagRegister.MeasurementDate = Convert.ToDateTime(redFlagRegistersData["measurementDate"]); //redFlagRegistersData.MeasurementDate;
-                        redFlagRegister.MUAC = redFlagRegistersData["muac"].HasValues ? Convert.ToDecimal(redFlagRegistersData["muac"]) : (decimal?)null; //redFlagRegistersData.MUAC;
-                        redFlagRegister.Observation = null; //redFlagRegistersData["observation"].ToString(); //redFlagRegistersData.Observation;
-                        redFlagRegister.RedFlagId = Guid.Parse(redFlagRegistersData["redFlagId"].ToString()); //redFlagRegistersData.RedFlagId;
-                        redFlagRegister.ReferradTo = 0;//Convert.ToInt32(redFlagRegistersData["referradTo"]);//redFlagRegistersData.ReferradTo;
-                        redFlagRegister.OutcomeofReferralbyASHA = Convert.ToInt32(redFlagRegistersData["outcomeofReferralbyASHA"]);
-                        redFlagRegister.ReferredToHealthCenter = null;//Convert.ToInt32(redFlagRegistersData["referredToHealthCenter"]);//redFlagRegistersData.ReferredToHealthCenter;
-                        redFlagRegister.SecondFollowUp = Convert.ToBoolean(redFlagRegistersData["secondFollowUp"]); //redFlagRegistersData.SecondFollowUp;
-                        redFlagRegister.SpecialDietProvided = null; //Convert.ToBoolean(redFlagRegistersData["specialDietProvided"]); //redFlagRegistersData.SpecialDietProvided;
-                        redFlagRegister.ThirdFollowUp = Convert.ToBoolean(redFlagRegistersData["thirdFollowUp"]); //redFlagRegistersData.ThirdFollowUp;
-                        redFlagRegister.UpdatedBy = Convert.ToInt32(redFlagRegistersData["updatedBy"]);//redFlagRegistersData.UpdatedBy;
-                        redFlagRegister.WasOnMedication = Convert.ToInt32(redFlagRegistersData["wasOnMedication"]); //redFlagRegistersData.WasOnMedication;
-                        redFlagRegister.WeightInKg = redFlagRegistersData["weightInKg"].HasValues ? Convert.ToDecimal(redFlagRegistersData["weightInKg"]) : (decimal?)null; //redFlagRegistersData.WeightInKg;
-                        redFlagRegister.FourthFollowUp = Convert.ToBoolean(redFlagRegistersData["fourthFollowUp"]);//redFlagRegistersData.FourthFollowUp;
-                        redFlagRegister.IsCurrentlyIll = Convert.ToBoolean(redFlagRegistersData["isCurrentlyIll"]); //redFlagRegistersData.IsCurrentlyIll;
-                        redFlagRegister.Remark = redFlagRegistersData["remark"].ToString();// redFlagRegistersData.Remark;
+                        redFlagRegister.DateOfReferral = null;
+                        redFlagRegister.Diagnose = null; 
+                        redFlagRegister.Doe = Convert.ToDateTime(redFlagRegistersData.doe);
+                        redFlagRegister.Dou = Convert.ToDateTime(redFlagRegistersData.dou);
+                        redFlagRegister.FirstFollowUp = Convert.ToBoolean(redFlagRegistersData.firstFollowUp); 
+                        redFlagRegister.HygeineMaintained = Convert.ToBoolean(redFlagRegistersData.hygeineMaintained);
+                        redFlagRegister.IsEatingSufficientlyBool = redFlagRegistersData.isEatingSufficientlyBool.HasValue ? Convert.ToBoolean(redFlagRegistersData.isEatingSufficientlyBool) : (bool?)null;
+                        redFlagRegister.IsSuggestedReferral = redFlagRegistersData.isSuggestedReferral.HasValue? Convert.ToBoolean(redFlagRegistersData.isSuggestedReferral) : (bool?)null;
+                        redFlagRegister.IsEatingSufficiently = Convert.ToInt32(redFlagRegistersData.isEatingSufficiently);
+                        redFlagRegister.LengthHeight = redFlagRegistersData.lengthHeight.HasValue? Convert.ToDecimal(redFlagRegistersData.lengthHeight) : (decimal?)null;
+                        redFlagRegister.MeasurementDate = Convert.ToDateTime(redFlagRegistersData.measurementDate); 
+                        redFlagRegister.MUAC = redFlagRegistersData.muac.HasValue? Convert.ToDecimal(redFlagRegistersData.muac) : (decimal?)null; 
+                        redFlagRegister.Observation = null; 
+                        redFlagRegister.RedFlagId = Guid.Parse(redFlagRegistersData.redFlagId.ToString()); 
+                        redFlagRegister.ReferradTo = 0;
+                        redFlagRegister.OutcomeofReferralbyASHA = Convert.ToInt32(redFlagRegistersData.outcomeofReferralbyASHA);
+                        redFlagRegister.ReferredToHealthCenter = null;
+                        redFlagRegister.SecondFollowUp = Convert.ToBoolean(redFlagRegistersData.secondFollowUp); 
+                        redFlagRegister.SpecialDietProvided = null;
+                        redFlagRegister.ThirdFollowUp = Convert.ToBoolean(redFlagRegistersData.thirdFollowUp); 
+                        redFlagRegister.UpdatedBy = Convert.ToInt32(redFlagRegistersData.updatedBy);
+                        redFlagRegister.WasOnMedication = Convert.ToInt32(redFlagRegistersData.wasOnMedication);
+                        redFlagRegister.WeightInKg = redFlagRegistersData.weightInKg.HasValue ? Convert.ToDecimal(redFlagRegistersData.weightInKg) : (decimal?)null; 
+                        redFlagRegister.FourthFollowUp = Convert.ToBoolean(redFlagRegistersData.fourthFollowUp);
+                        redFlagRegister.IsCurrentlyIll = Convert.ToBoolean(redFlagRegistersData.isCurrentlyIll);
+                        redFlagRegister.Remark = redFlagRegistersData.remark!=null? redFlagRegistersData.remark.ToString():null;
                         App.DAUtil.SaveRedFlagRegister(redFlagRegister);
-                        // var ched=App.DAUtil.GetAllRedFlagRegister();
+                     
                     }
                 }
                 else
@@ -719,14 +615,13 @@ namespace Plugin.RestClient
             }
             catch (Exception ex)
             {
+                App.DAUtil.DeleteUser();
                 return Flag = false;
             }
+            LastDateInsert();
             return Flag;
         }
-
-
-
-        public async Task<bool> PushNewData(PushData pushData)
+         public async Task<bool> PushNewData(PushData pushData)
         {
 
             bool Flag = false;
@@ -750,8 +645,12 @@ namespace Plugin.RestClient
                 {
                     StaticClass.ResponceStatus = "Not Found";
                 }
-                string result = content.ReadAsStringAsync().Result;
+               string result = content.ReadAsStringAsync().Result;
                 bool flageDM = Convert.ToBoolean(result);
+                //if(response.IsSuccessStatusCode)
+                //{
+                //    flageDM = true;
+                //}
                 Flag = flageDM;
 
             }
@@ -761,7 +660,7 @@ namespace Plugin.RestClient
             }
             return Flag;
         }
-        public async Task<bool> PutAsync(int id, T t)
+         public async Task<bool> PutAsync(int id, T t)
         {
             var httpClient = new HttpClient();
             var json = JsonConvert.SerializeObject(t);
@@ -773,10 +672,7 @@ namespace Plugin.RestClient
 
             return result.IsSuccessStatusCode;
         }
-
-
-
-        public async Task<bool> DeleteAsync(int id, T t)
+         public async Task<bool> DeleteAsync(int id, T t)
         {
             var httpClient = new HttpClient();
 
@@ -784,6 +680,242 @@ namespace Plugin.RestClient
 
             return response.IsSuccessStatusCode;
         }
-
+        private void LastDateInsert()
+        {
+            TblPushDataTime tblPushDataTime = new TblPushDataTime();
+            tblPushDataTime.Flage = true;
+            tblPushDataTime.CheckDate = DateTime.Now;
+            App.DAUtil.SavepushDataTime(tblPushDataTime);
+        }
     }
+}
+
+public class ChildRegister1
+{
+    public string childId { get; set; }
+    public string familyId { get; set; }
+    public string childName { get; set; }
+    public DateTime dob { get; set; }
+    public int genderId { get; set; }
+    public double? birthWeightInKg { get; set; }
+    public int? birthOrder { get; set; }
+    public DateTime registerDate { get; set; }
+    public DateTime doe { get; set; }
+    public DateTime dou { get; set; }
+    public int createdBy { get; set; }
+    public int updatedBy { get; set; }
+    public int childStatus { get; set; }
+    public double? birthLengthHeightInCms { get; set; }
+    public int? birthPlace { get; set; }
+    public int? birthDeliveryType { get; set; }
+    public int? deliveryTerm { get; set; }
+    public double? awcentryWeightInKg { get; set; }
+    public double? awcentryHeightInCms { get; set; }
+    public double? awcentryMuac { get; set; }
+    public double? awcentryW4az { get; set; }
+    public double? awcentryW4hz { get; set; }
+    public string photograph { get; set; }
+    public string childCode { get; set; }
+    public int newChildCode { get; set; }
+    public DateTime? awcEntryDate { get; set; }
+    public string anyDisability { get; set; }
+    public string anyIllness { get; set; }
+    public string anyLongTermIllnessInFamily { get; set; }
+    public int? growthChartGrade { get; set; }
+    public int? gradeOfChild { get; set; }
+    public object childStatusNavigation { get; set; }
+    public object family { get; set; }
+    public object gender { get; set; }
+    public List<object> growthRegister { get; set; }
+    public List<object> redFlagRegister { get; set; }
+}
+public class FamilyRegister1
+{
+    public string familyId { get; set; }
+    public int? familyType { get; set; }
+    public string fatherName { get; set; }
+    public int? fatherEducation { get; set; }
+    public string fatherOccupation { get; set; }
+    public string fatherPastDisease { get; set; }
+    public string motherName { get; set; }
+    public DateTime? motherDob { get; set; }
+    public int? motherEducation { get; set; }
+    public string motherOccupation { get; set; }
+    public string motherPastDisease { get; set; }
+    public int? isMotherWorking { get; set; }
+    public int numberofChildenAlive { get; set; }
+    public int? numberofChildenDied { get; set; }
+    public int? casteTribe { get; set; }
+    public string casteTribeName { get; set; }
+    public int? religion { get; set; }
+    public int? rationCardType { get; set; }
+    public bool ownAgriculturalLand { get; set; }
+    public int? houseType { get; set; }
+    public int? waterSupplyType { get; set; }
+    public int? sourceDrinkingWater { get; set; }
+    public bool electricityAvailable { get; set; }
+    public string assets { get; set; }
+    public int locationId { get; set; }
+    public DateTime registerDate { get; set; }
+    public DateTime doe { get; set; }
+    public DateTime dou { get; set; }
+    public int createdBy { get; set; }
+    public int updatedBy { get; set; }
+    public int? motherWorkType { get; set; }
+    public int? motherWorkHours { get; set; }
+    public int? toiletFacility { get; set; }
+    public int? familyMigrateToEarn { get; set; }
+    public int? migrationMonthsPerYear { get; set; }
+    public int? migrationFor { get; set; }
+    public string familyCode { get; set; }
+    public int newFamilyCode { get; set; }
+    public int status { get; set; }
+    public object casteTribeNavigation { get; set; }
+    public object familyTypeNavigation { get; set; }
+    public object fatherEducationNavigation { get; set; }
+    public object houseTypeNavigation { get; set; }
+    public object motherEducationNavigation { get; set; }
+    public object rationCardTypeNavigation { get; set; }
+    public object religionNavigation { get; set; }
+    public object waterSupplyTypeNavigation { get; set; }
+    public List<object> childRegister { get; set; }
+}
+public class GrowthRegisterMother1
+{
+    public string growthId { get; set; }
+    public string familyId { get; set; }
+    public int dataMonthId { get; set; }
+    public bool childExpected { get; set; }
+    public DateTime? expectedDeliveryDate { get; set; }
+    public bool isFirstPregnancy { get; set; }
+    public bool isLactating { get; set; }
+    public DateTime? lastDeliveryDate { get; set; }
+    public bool awcregistrationDate { get; set; }
+    public int ancregistraionDate { get; set; }
+    public bool receivedIfatablets { get; set; }
+    public bool receivedCalciumTablets { get; set; }
+    public bool consumedIfatablets { get; set; }
+    public double motherWeightIn1Trimester { get; set; }
+    public double motherWeightIn2Trimester { get; set; }
+    public double motherWeightInDeliveryTime { get; set; }
+    public DateTime dateOfMeasurement { get; set; }
+    public bool isGettingTreatment { get; set; }
+    public int gettingTreatmentFrom { get; set; }
+    public bool isUnderMedication { get; set; }
+    public bool receivedDietUnderAay { get; set; }
+    public bool receivedMealFromAwcunderAay { get; set; }
+    public int? howManyMonthsReceiveMealsAWCUnderAAY { get; set; }
+    public int typeOfMeal { get; set; }
+    public int eggReceived { get; set; }
+    public bool receivedSnacksUnderAay { get; set; }
+    public int receivedSnacksFromAwc { get; set; }
+    public int eatMealRegularlyFromAwc { get; set; }
+    public int isMealEnough { get; set; }
+    public int qualityOfAwcfood { get; set; }
+    public int resonForNotEatingAwcmeal { get; set; }
+    public DateTime doe { get; set; }
+    public DateTime dou { get; set; }
+    public int createdBy { get; set; }
+    public int updatedBy { get; set; }
+    public string totalPregnancyMonths { get; set; }
+    public string highRiskMotherHistory { get; set; }
+    public string ancCheckups { get; set; }
+    public string anmMarkHighRiskScreening { get; set; }
+    public object dataMonth { get; set; }
+}
+public class GrowthRegister1
+{
+    public string growthId { get; set; }
+    public string childId { get; set; }
+    public int dataMonthId { get; set; }
+    public DateTime measurementDate { get; set; }
+    public double? weightInKg { get; set; }
+    public double? lengthHeight { get; set; }
+    public double? muac { get; set; }
+    public bool anyRedFlag { get; set; }
+    public int receiveTakeHomeRation { get; set; }
+    public bool admittedToAwc { get; set; }
+    public double? w4lhz { get; set; }
+    public double? w4az { get; set; }
+    public double? h4az { get; set; }
+    public double? bmi { get; set; }
+    public double? bmiz { get; set; }
+    public bool isZscoreRedFlag { get; set; }
+    public int ageInDays { get; set; }
+    public int genderId { get; set; }
+    public bool isBreastfeeding { get; set; }
+    public bool healthCheckUpDone { get; set; }
+    public string anyDisability { get; set; }
+    public string anyIllness { get; set; }
+    public int numberofDaysIll { get; set; }
+    public string typeOfIllness { get; set; }
+    public int reasonAnthropometryNotTaken { get; set; }
+    public int currentlyAttends { get; set; }
+    public bool receiveCookedFood { get; set; }
+    public int receiveAay { get; set; }
+    public string remark { get; set; }
+    public DateTime doe { get; set; }
+    public DateTime dou { get; set; }
+    public int createdBy { get; set; }
+    public int updatedBy { get; set; }
+    public string immunisationCard { get; set; }
+    public bool childIllPreviousMonth { get; set; }
+    public object child { get; set; }
+    public object dataMonth { get; set; }
+    public int receiveAAYEggInDays { get; set; }
+    public int receiveAAYBananaInDays { get; set; }
+}
+public class RedFlagRegister1
+{
+    public string redFlagId { get; set; }
+    public string childId { get; set; }
+    public int dateMonthId { get; set; }
+    public object referredToHealthCenter { get; set; }
+    public object childGoneToHealthCenter { get; set; }
+    public object consultancyProvidedToFamily { get; set; }
+    public DateTime measurementDate { get; set; }
+    public double? weightInKg { get; set; }
+    public double? lengthHeight { get; set; }
+    public double? muac { get; set; }
+    public object specialDietProvided { get; set; }
+    public int wasOnMedication { get; set; }
+    public object observation { get; set; }
+    public object diagnose { get; set; }
+    public int currentStatus { get; set; }
+    public object anyBlockerInLastDiagnose { get; set; }
+    public object ashavisitDate { get; set; }
+    public int isEatingSufficiently { get; set; }
+    public bool hygeineMaintained { get; set; }
+    public object awwvisitWithAsha { get; set; }
+    public string childSeverelyUnderweightSymptoms { get; set; }
+    public object caseOfReferral { get; set; }
+    public object dateOfReferral { get; set; }
+    public int referradTo { get; set; }
+    public int childAdmittedInCtcnrc { get; set; }
+    public DateTime? dateofAdmission { get; set; }
+    public DateTime? dateOfDischarge { get; set; }
+    public bool firstFollowUp { get; set; }
+    public bool secondFollowUp { get; set; }
+    public bool thirdFollowUp { get; set; }
+    public object advicedButNotAdmittedReason { get; set; }
+    public int createdBy { get; set; }
+    public int updatedBy { get; set; }
+    public DateTime doe { get; set; }
+    public DateTime dou { get; set; }
+    public object child { get; set; }
+    public object dateMonth { get; set; }
+    public bool fourthFollowUp { get; set; }
+    public bool isCurrentlyIll { get; set; }
+    public string remark { get; set; }
+    public int outcomeofReferralbyASHA { get; set; }
+    public bool? isEatingSufficientlyBool { get; set; }
+    public bool? isSuggestedReferral { get; set; }
+}
+public class RootObject
+{
+    public List<ChildRegister1> childRegisters { get; set; }
+    public List<FamilyRegister1> familyRegisters { get; set; }
+    public List<GrowthRegister1> growthRegisters { get; set; }
+    public List<RedFlagRegister1> redFlagRegisters { get; set; }
+    public List<GrowthRegisterMother1> growthRegisterMothers { get; set; }
 }

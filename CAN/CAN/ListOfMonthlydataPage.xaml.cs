@@ -114,8 +114,9 @@ namespace CAN
                         int DataID = DataMId.Datamonthid;
                 childMonthlyData = null;
                 // childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Take(10).Where(f=>f.AnyRedFlag==false).ToList();
-                childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Where(f => f.AnyRedFlag == false).ToList();
-               var childMonthlyData1 = childMonthlyData.Take(10).ToList();
+                //childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).Where(f => f.AnyRedFlag == false).ToList();
+                childMonthlyData = App.DAUtil.GetChildMonthlyData(id, StatusId, DataID).ToList();
+                var childMonthlyData1 = childMonthlyData.Take(10).ToList();
                 // var FCode = App.DAUtil.FindFamilyId(ListData[i].FamilyId).FirstOrDefault();
                 for (int j = 0; j < childMonthlyData1.Count; j++)
                         {

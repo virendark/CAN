@@ -135,14 +135,9 @@ namespace CAN
                         else
                         {
                             long idd = StaticClass.VillageID;
-                            if (CheckDate.Count > 0)
-                            {
-                                checkdateFlag = CheckDate[0].CheckDate;
-                            }
-
                             if (CheckDate.Count > 0 && CheckDate[0].Flage == true)
                             {
-                                // var ListData = App.DAUtil.GetAllFamilyByLocation(idd);
+                                checkdateFlag = CheckDate[0].CheckDate;
                                 var ListOfFamilyData = App.DAUtil.GetAllFamily().Where(x => x.DOU >= checkdateFlag).ToList();
                                 //  var ListOfChildData = App.DAUtil.GetAllChildDatetime(checkdateFlag);
                                 var ListOfChildData = App.DAUtil.GetAllChild().Where(x => x.DOU >= checkdateFlag).ToList();

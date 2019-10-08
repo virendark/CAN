@@ -94,19 +94,19 @@ namespace CAN
                         {
                             var dateId = App.DAUtil.GetDataMonthByID(ChildList[j].DateMonthId);
 
-                    listOfChildInRedFlagDetails.DataMonth = dateId[0].Datamonth.ToString("MMM-yyyy");
-                    if (StaticClass.RedFlagButton == "true")
-                    {
-                        listOfChildInRedFlagDetails.IsvisuaEdit = true;
-                    }
-                    else
+                         listOfChildInRedFlagDetails.DataMonth = dateId[0].Datamonth.ToString("MMM-yyyy");
+                         //if (StaticClass.RedFlagButton == "true")
+                         //{
+                         //  listOfChildInRedFlagDetails.IsvisuaEdit = true;
+                         //}
+                         // else
 
-                    {
-                        listOfChildInRedFlagDetails.IsvisuaEdit = false;
-                    }
+                         // {
+                         //   listOfChildInRedFlagDetails.IsvisuaEdit = false;
+                         // }
                         }
-                       
-                        RedflagList.Add(listOfChildInRedFlagDetails);
+                listOfChildInRedFlagDetails.IsvisuaEdit = true;
+                RedflagList.Add(listOfChildInRedFlagDetails);
 
                     }
                 

@@ -1328,8 +1328,6 @@ F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Toasts.Forms.Plugin.Droid
 F:\24-08-2019\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\CAN.Android.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\CAN.Android.pdb
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\com.pROmptecsathI.CAN.apk
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\com.pROmptecsathI.CAN-Signed.apk
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\CAN.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\CAN.pdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
@@ -1342,7 +1340,6 @@ F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\XamlC.stamp
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\CAN.Android.csproj.CopyComplete
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\CAN.Android.dll
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\CAN.Android.pdb
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\android\bin\com.pROmptecsathI.CAN.apk
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\res\layout\tabbar.xml
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\res\layout\toolbar.xml
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\res\values\styles.xml
@@ -1481,8 +1478,9 @@ F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Plugin.Connectivity.d
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Toasts.Forms.Plugin.Droid.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
-F:\24-08-2019\CAN\CAN\CAN\CAN\bin\Debug\netstandard2.0\CAN.dll
-F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\CAN.dll.mdb
+F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\com.PROMptecsathl.CAN.apk
+F:\24-08-2019\CAN\CAN\CAN\CAN.Android\bin\Debug\com.PROMptecsathl.CAN-Signed.apk
+F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\android\bin\com.PROMptecsathl.CAN.apk
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\CAN.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\FormsViewGroup.dll.mdb
 F:\24-08-2019\CAN\CAN\CAN\CAN.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
