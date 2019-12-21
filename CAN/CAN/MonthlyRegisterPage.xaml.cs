@@ -145,6 +145,7 @@ namespace CAN
                 }
                 var selectedGender = (ColumnValue)ddlGender.SelectedItem;
                 Gender = selectedGender.columnValueId;
+                W4AZCalculation();
             }
             catch
             {
@@ -447,19 +448,21 @@ namespace CAN
                     growthRegister.Remark = txtremark.Text;
                    var ChildData = App.DAUtil.FindSingleChildDetails(StaticClass.GrouthChildID.ToString());
                     int tempnofdays = TempAgeInDays; //(int)(txtMeasurementdate.Date.Subtract(ChildData[0].DOB).TotalDays);
-                    if (!string.IsNullOrEmpty(txtwaightkg.Text) && !string.IsNullOrEmpty(txtLHinCMS.Text))
-                    {
-                        ZScores zScores = new ZScores(ChildData[0].GenderID, Convert.ToInt16(tempnofdays), Convert.ToDouble(txtwaightkg.Text), Convert.ToDouble(txtLHinCMS.Text));
-                    }
+                    //if (!string.IsNullOrEmpty(txtwaightkg.Text) && !string.IsNullOrEmpty(txtLHinCMS.Text))
+                    //{
+                    //    ZScores zScores = new ZScores(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtwaightkg.Text), Convert.ToDouble(txtLHinCMS.Text));
+                    //}
                     CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                    if (!string.IsNullOrEmpty(txtLHinCMS.Text) && !string.IsNullOrEmpty(txtwaightkg.Text))
-                    {
-                        growthRegister.W4LHZ = calculationvalueClass.W4LHZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
-                    }
-                    if (!string.IsNullOrEmpty(txtwaightkg.Text))
-                    {
-                        growthRegister.W4AZ = calculationvalueClass.W4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtwaightkg.Text));
-                    }
+                    //if (!string.IsNullOrEmpty(txtLHinCMS.Text) && !string.IsNullOrEmpty(txtwaightkg.Text))
+                    //{
+                    //}
+                    //if (!string.IsNullOrEmpty(txtwaightkg.Text))
+                    //{
+                    //    growthRegister.W4AZ = calculationvalueClass.W4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtwaightkg.Text));
+                    //}
+                    growthRegister.W4LHZ = calculationvalueClass.W4LHZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+                    growthRegister.W4AZ = calculationvalueClass.W4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtwaightkg.Text));
+
                     //if (!string.IsNullOrEmpty(txtLHinCMS.Text))
                     //{
                     //    growthRegister.H4AZ = calculationvalueClass.H4AZValue(ChildData[0].GenderID, tempnofdays, Convert.ToDouble(txtLHinCMS.Text));
@@ -471,34 +474,46 @@ namespace CAN
                     //      growthRegister.AnyRedFlag =true;
                     //      growthRegister.IsZScoreRedFlag = true;
                     //  }
-                    if (!string.IsNullOrEmpty(txtMUACincms.Text))
+
+                    //if (!string.IsNullOrEmpty(txtMUACincms.Text))
+                    //{
+                    //    double Muacvalue = Convert.ToDouble(txtMUACincms.Text);
+                    //    if (growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2 || Muacvalue <12.6)
+                    //    {
+                    //        growthRegister.AnyRedFlag = true;
+                    //        growthRegister.IsZScoreRedFlag = true;
+                    //    }
+                    //    else
+                    //    {
+                    //        growthRegister.IsZScoreRedFlag = false;
+                    //        growthRegister.AnyRedFlag = false;
+                    //    }
+                    //}
+                    //else
+                    //{
+                    //    if (growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2)
+                    //    {
+                    //        growthRegister.AnyRedFlag = true;
+                    //        growthRegister.IsZScoreRedFlag = true;
+                    //    }
+                    //    else
+                    //    {
+                    //        growthRegister.IsZScoreRedFlag = false;
+                    //        growthRegister.AnyRedFlag = false;
+                    //    }
+                    //}
+                    if ((growthRegister.W4LHZ.HasValue && growthRegister.W4LHZ <= -2) || (growthRegister.W4AZ.HasValue && growthRegister.W4AZ <= -2))
                     {
-                        double Muacvalue = Convert.ToDouble(txtMUACincms.Text);
-                        if (growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2 || Muacvalue <12.6)
-                        {
-                            growthRegister.AnyRedFlag = true;
-                            growthRegister.IsZScoreRedFlag = true;
-                        }
-                        else
-                        {
-                            growthRegister.IsZScoreRedFlag = false;
-                            growthRegister.AnyRedFlag = false;
-                        }
+                        growthRegister.AnyRedFlag = true;
+                        growthRegister.IsZScoreRedFlag = true;
                     }
                     else
                     {
-                        if (growthRegister.W4LHZ <= -2 || growthRegister.W4AZ <= -2)
-                        {
-                            growthRegister.AnyRedFlag = true;
-                            growthRegister.IsZScoreRedFlag = true;
-                        }
-                        else
-                        {
-                            growthRegister.IsZScoreRedFlag = false;
-                            growthRegister.AnyRedFlag = false;
-                        }
+                        growthRegister.IsZScoreRedFlag = false;
+                        growthRegister.AnyRedFlag = false;
                     }
-                    if(string.IsNullOrEmpty(txtegg.Text))
+
+                    if (string.IsNullOrEmpty(txtegg.Text))
                     {
                         growthRegister.ReceiveAAYEggInDays = 0;
                     }
@@ -522,7 +537,7 @@ namespace CAN
                     StaticClass.TabbedIndex = 2;
                     Application.Current.MainPage = new MasterNavigationPage();
                 }
-                catch(Exception ex)
+                catch
                 {
 
                 }
@@ -666,7 +681,7 @@ namespace CAN
                     txtTypeOfIllness.Text = checkMonthlydata[0].TypeOfIllness.ToString() == null ? "" : checkMonthlydata[0].TypeOfIllness.ToString();
                     txtremark.Text = checkMonthlydata[0].Remark.ToString() == null ? "" : checkMonthlydata[0].Remark.ToString();
                 }
-                catch (Exception ex)
+                catch
                 {
                     GetWeight();
                 }
@@ -803,6 +818,7 @@ namespace CAN
             catch
             {
                 txtwaightkg.Text = "";
+                txtwaightkg.TextColor = Color.Black;
             }
             //try
             //{
@@ -874,8 +890,9 @@ namespace CAN
             try
             {
                 //var entry = (Entry)sender;
-                double value = Convert.ToDouble(txtwaightkg.Text);
-                if (value >= 2 && value < 26)
+                double WeightInKG = Math.Round(Convert.ToDouble(txtwaightkg.Text), 3);
+                txtwaightkg.Text = WeightInKG.ToString();
+                if (WeightInKG >= 2 && WeightInKG < 26)
                 {
                     txtwaightkg.TextColor = Color.Black;
                 }
@@ -883,49 +900,58 @@ namespace CAN
                 {
                     txtwaightkg.TextColor = Color.Red;
                 }
-
-                if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
-                {
-                    CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                    double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, value);
-                    if (W4A != null)
-                    {
-                        W4A = Math.Round(W4A.Value);
-                        if (W4A < -3)
-                        {
-                            txtw4az.Text = "SUW(Severely Under Weight)";
-                            txtw4az.TextColor = Color.Black;
-                            txtw4az.BackgroundColor = Color.Red;
-                        }
-                        else
-                        {
-                            if (W4A <= -2)
-                            {
-                                txtw4az.Text = "MUW(Moderately Under Weight)";
-                                txtw4az.TextColor = Color.Black;
-                                txtw4az.BackgroundColor = Color.Yellow;
-                            }
-                            else
-                            {
-
-                                txtw4az.Text = "Normal";
-                                txtw4az.TextColor = Color.Black;
-                                txtw4az.BackgroundColor = Color.Green;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        txtw4az.Text = "Not Applicable";
-                        txtw4az.TextColor = Color.Black;
-                        txtw4az.BackgroundColor = Color.Transparent;
-                    }
-                }
-
             }
             catch
             {
+                txtwaightkg.Text = "";
+                txtwaightkg.TextColor = Color.Black;
+            }
+            finally { W4AZCalculation(); }
+        }
+        private void W4AZCalculation()
+        {
+            try
+            {
+                CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
+                if (W4A != null)
+                {
+                    W4A = Math.Round(W4A.Value);
+                    if (W4A < -3)
+                    {
+                        txtw4az.Text = "SUW(Severely Under Weight)";
+                        txtw4az.TextColor = Color.Black;
+                        txtw4az.BackgroundColor = Color.Red;
+                    }
+                    else
+                    {
+                        if (W4A <= -2)
+                        {
+                            txtw4az.Text = "MUW(Moderately Under Weight)";
+                            txtw4az.TextColor = Color.Black;
+                            txtw4az.BackgroundColor = Color.Yellow;
+                        }
+                        else
+                        {
 
+                            txtw4az.Text = "Normal";
+                            txtw4az.TextColor = Color.Black;
+                            txtw4az.BackgroundColor = Color.Green;
+                        }
+                    }
+                }
+                else
+                {
+                    txtw4az.Text = "Not Applicable";
+                    txtw4az.TextColor = Color.Black;
+                    txtw4az.BackgroundColor = Color.Transparent;
+                }
+            }
+            catch
+            {
+                txtw4az.Text = "Not Applicable";
+                txtw4az.TextColor = Color.Black;
+                txtw4az.BackgroundColor = Color.Transparent;
             }
             finally { H4AZCalculation(); }
         }
@@ -948,6 +974,7 @@ namespace CAN
             catch
             {
                 txtLHinCMS.Text = "";
+                txtLHinCMS.TextColor = Color.Black;
             }
         }
 
@@ -981,43 +1008,45 @@ namespace CAN
         {
             try
             {
-                if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
+                CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                double? w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+                if (w4hz != null)
                 {
-                    CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                    double ? w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
-                    if(w4hz!=null)
+                    if (w4hz < -3)
                     {
-                        if (w4hz < -3)
-                        {
-                            txth4az.Text = "SAM(Severely Acute Malnutrition)";
-                            txtLHinCMS.TextColor = Color.Black;
-                            txth4az.BackgroundColor = Color.Red;
-                        }
-                        else
-                        {
-                            if (w4hz <= -2)
-                            {
-                                txth4az.Text = "MAM(Moderately Acute Malnutrition)";
-                                txtLHinCMS.TextColor = Color.Black;
-                                txth4az.BackgroundColor = Color.Yellow;
-                            }
-                            else
-                            {
-
-                                txth4az.Text = "Normal";
-                                txtLHinCMS.TextColor = Color.Black;
-                                txth4az.BackgroundColor = Color.Green;
-                            }
-                        }
+                        txth4az.Text = "SAM(Severely Acute Malnutrition)";
+                        txth4az.TextColor = Color.Black;
+                        txth4az.BackgroundColor = Color.Red;
                     }
                     else
                     {
+                        if (w4hz <= -2)
+                        {
+                            txth4az.Text = "MAM(Moderately Acute Malnutrition)";
+                            txth4az.TextColor = Color.Black;
+                            txth4az.BackgroundColor = Color.Yellow;
+                        }
+                        else
+                        {
 
+                            txth4az.Text = "Normal";
+                            txth4az.TextColor = Color.Black;
+                            txth4az.BackgroundColor = Color.Green;
+                        }
                     }
+                }
+                else
+                {
+                    txth4az.Text = "Not Applicable";
+                    txth4az.TextColor = Color.Black;
+                    txth4az.BackgroundColor = Color.Transparent;
                 }
             }
             catch
             {
+                txth4az.Text = "Not Applicable";
+                txth4az.TextColor = Color.Black;
+                txth4az.BackgroundColor = Color.Transparent;
 
             }
         }

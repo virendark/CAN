@@ -112,7 +112,7 @@ namespace CAN.Helper
             }
         }
 
-        public double H4AZValue(int Gender,int AgeInDays,double HeightInCM)
+        public double? H4AZValue(int Gender,int AgeInDays,double HeightInCM)
         {
             try
             {
@@ -128,10 +128,10 @@ namespace CAN.Helper
             }
             catch
             {
-                return H4AZ = 0;
+                return null;
             }
         }
-        public double BMIValue(double WeightInKG,double HeightInCM)
+        public double? BMIValue(double WeightInKG,double HeightInCM)
         {
             try
             {
@@ -140,10 +140,10 @@ namespace CAN.Helper
             }
             catch
             {
-                return BMI=0;
+                return null;
             }
         }
-        public double BMIZValue(int Gender,int AgeInDays,double WeightInKG,double HeightInCM)
+        public double? BMIZValue(int Gender,int AgeInDays,double WeightInKG,double HeightInCM)
         {
             try
             {
@@ -175,7 +175,7 @@ namespace CAN.Helper
             }
             catch
             {
-                return BMIZ=0;
+                return null;
             }
         }
        

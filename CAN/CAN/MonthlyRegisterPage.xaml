@@ -149,7 +149,7 @@
             </StackLayout>-->
             <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="45">
                 <Label x:Name="lblw4az" Text="9.ग्रोथ चार्ट नुसार पोषण स्थिती (SUW/MUW/ Normal)" TextColor="Black"  HorizontalOptions="FillAndExpand"></Label>
-                <Label x:Name="lblw4azEng" Text="(W4AZ InterpretationEng)" TextColor="Gray" FontSize="Micro"  HorizontalOptions="FillAndExpand"></Label>
+                <Label x:Name="lblw4azEng" Text="(W4AZ Interpretation)" TextColor="Gray" FontSize="Micro"  HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Vertical" HeightRequest="50">
                 <StackLayout Orientation="Vertical">

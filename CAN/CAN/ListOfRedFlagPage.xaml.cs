@@ -205,7 +205,7 @@ namespace CAN
                     
 
                 }
-                catch (Exception ex)
+                catch
                 {
 
                 }
@@ -452,7 +452,7 @@ namespace CAN
                     
 
                 }
-                catch (Exception ex)
+                catch
                 {
 
                 }
@@ -609,7 +609,7 @@ namespace CAN
                     // }
 
                 }
-                catch (Exception ex)
+                catch
                 {
 
                 }

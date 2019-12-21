@@ -22,6 +22,6 @@ TargetFrameworkVersion=v8.1
 AndroidCreatePackagePerAbi=
 AndroidGenerateJniMarshalMethods=False
 OS=Windows_NT
-DesignTimeBuild=true
+DesignTimeBuild=True
 AndroidIncludeDebugSymbols=True
 AndroidPackageNamingPolicy=LowercaseCrc64
