@@ -788,70 +788,147 @@ namespace CAN
         {
             try
             {
-                var entry = (Entry)sender;
-                double value = Convert.ToDouble(entry.Text);
-                if (value >= 2 && value < 26)
+                Regex regex = new Regex(@"^\d{0,3}(\.\d{1,3})?$");
+                var match = regex.Match(txtwaightkg.Text);
+                if (match.Success)
                 {
-                    Regex regex = new Regex(@"^\d{0,2}(\.\d{1,3})?$");
-                    var match = regex.Match(txtwaightkg.Text);
-                    if (match.Success)
-                    {
-                        txtwaightkg.Text = match.Value;
-                        txtwaightkg.TextColor = Color.Black;
-                        if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
-                        {
-                            CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-                            double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
-                            if (W4A != null)
-                            {
-                                W4A = Math.Round(W4A.Value);
-                                if (W4A < -3)
-                                {
-                                    txtw4az.Text = "SUW(Severely Under Weight)";
-                                    txtw4az.TextColor = Color.Black;
-                                    txtw4az.BackgroundColor = Color.Red;
-                                }
-                                else
-                                {
-                                    if (W4A <= -2)
-                                    {
-                                        txtw4az.Text = "MUW(Moderately Under Weight)";
-                                        txtw4az.TextColor = Color.Black;
-                                        txtw4az.BackgroundColor = Color.Yellow;
-                                    }
-                                    else
-                                    {
-
-                                        txtw4az.Text = "Normal";
-                                        txtw4az.TextColor = Color.Black;
-                                        txtw4az.BackgroundColor = Color.Green;
-                                    }
-                                }
-                                H4AZCalculation();
-                            }
-                            else
-                            {
-
-                            }
-                        }
-                    }
-                    else
-                    {
-                        txtwaightkg.TextColor = Color.Red;
-                    }
+                    txtwaightkg.Text = match.Value;
+                    txtwaightkg.TextColor = Color.Black;
                 }
                 else
                 {
                     txtwaightkg.TextColor = Color.Red;
                 }
+            }
+            catch
+            {
+                txtwaightkg.Text = "";
+            }
+            //try
+            //{
+            //    var entry = (Entry)sender;
+            //    double value = Convert.ToDouble(entry.Text);
+            //    if (value >= 2 && value < 26)
+            //    {
+            //        Regex regex = new Regex(@"^\d{0,2}(\.\d{1,3})?$");
+            //        var match = regex.Match(txtwaightkg.Text);
+            //        if (match.Success)
+            //        {
+            //            txtwaightkg.Text = match.Value;
+            //            txtwaightkg.TextColor = Color.Black;
+            //            if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
+            //            {
+            //                CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+            //                double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, Convert.ToDouble(txtwaightkg.Text));
+            //                if (W4A != null)
+            //                {
+            //                    W4A = Math.Round(W4A.Value);
+            //                    if (W4A < -3)
+            //                    {
+            //                        txtw4az.Text = "SUW(Severely Under Weight)";
+            //                        txtw4az.TextColor = Color.Black;
+            //                        txtw4az.BackgroundColor = Color.Red;
+            //                    }
+            //                    else
+            //                    {
+            //                        if (W4A <= -2)
+            //                        {
+            //                            txtw4az.Text = "MUW(Moderately Under Weight)";
+            //                            txtw4az.TextColor = Color.Black;
+            //                            txtw4az.BackgroundColor = Color.Yellow;
+            //                        }
+            //                        else
+            //                        {
+
+            //                            txtw4az.Text = "Normal";
+            //                            txtw4az.TextColor = Color.Black;
+            //                            txtw4az.BackgroundColor = Color.Green;
+            //                        }
+            //                    }
+            //                    H4AZCalculation();
+            //                }
+            //                else
+            //                {
+
+            //                }
+            //            }
+            //        }
+            //        else
+            //        {
+            //            txtwaightkg.TextColor = Color.Red;
+            //        }
+            //    }
+            //    else
+            //    {
+            //        txtwaightkg.TextColor = Color.Red;
+            //    }
                 
+            //}
+            //catch
+            //{
+
+            //}
+        }
+        private void txtwaightkg_Unfocused(object sender, FocusEventArgs e)
+        {
+            try
+            {
+                //var entry = (Entry)sender;
+                double value = Convert.ToDouble(txtwaightkg.Text);
+                if (value >= 2 && value < 26)
+                {
+                    txtwaightkg.TextColor = Color.Black;
+                }
+                else
+                {
+                    txtwaightkg.TextColor = Color.Red;
+                }
+
+                if (txtwaightkg.Text != "" && txtwaightkg.Text != null)
+                {
+                    CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
+                    double? W4A = calculationvalueClass.W4AZValue(Gender, TempAgeInDays, value);
+                    if (W4A != null)
+                    {
+                        W4A = Math.Round(W4A.Value);
+                        if (W4A < -3)
+                        {
+                            txtw4az.Text = "SUW(Severely Under Weight)";
+                            txtw4az.TextColor = Color.Black;
+                            txtw4az.BackgroundColor = Color.Red;
+                        }
+                        else
+                        {
+                            if (W4A <= -2)
+                            {
+                                txtw4az.Text = "MUW(Moderately Under Weight)";
+                                txtw4az.TextColor = Color.Black;
+                                txtw4az.BackgroundColor = Color.Yellow;
+                            }
+                            else
+                            {
+
+                                txtw4az.Text = "Normal";
+                                txtw4az.TextColor = Color.Black;
+                                txtw4az.BackgroundColor = Color.Green;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        txtw4az.Text = "Not Applicable";
+                        txtw4az.TextColor = Color.Black;
+                        txtw4az.BackgroundColor = Color.Transparent;
+                    }
+                }
+
             }
             catch
             {
 
             }
+            finally { H4AZCalculation(); }
         }
-
         private void TxtLHinCMS_TextChanged(object sender, TextChangedEventArgs e)
         {
             try
@@ -862,7 +939,6 @@ namespace CAN
                 {
                     txtLHinCMS.Text = match.Value;
                     txtLHinCMS.TextColor = Color.Black;
-                    H4AZCalculation();
                 }
                 else
                 {
@@ -871,50 +947,34 @@ namespace CAN
             }
             catch
             {
-
+                txtLHinCMS.Text = "";
             }
-            //try
-            //{
-            //    Regex regex = new Regex(@"^\d{0,3}(\.\d{1,2})?$");
-            //    var match = regex.Match(txtLHinCMS.Text);
-            //    if (match.Success)
-            //    {
-            //        txtLHinCMS.Text = match.Value;
-            //        txtLHinCMS.TextColor = Color.Black;
-            //        if (txtwaightkg.Text != "" && txtwaightkg.Text != null && txtLHinCMS.Text != "" && txtLHinCMS.Text != null)
-            //        {
-            //            CalculationvalueClass calculationvalueClass = new CalculationvalueClass();
-            //            double w4hz = calculationvalueClass.W4LHZValue(Gender, TempAgeInDays, Convert.ToDouble(txtLHinCMS.Text), Convert.ToDouble(txtwaightkg.Text));
+        }
 
-            //            if (w4hz < -3)
-            //            {
-            //                txth4az.Text = "SAM(Severely Acute Malnutrition)";
-            //            }
-            //            else
-            //            {
-            //                if (w4hz <= -2)
-            //                {
-            //                    txth4az.Text = "MAM(Moderately Acute Malnutrition)";
-            //                }
-            //                else
-            //                {
-
-            //                    txth4az.Text = "Normal";
-
-            //                }
-            //            }
-            //        }
-            //    }
-            //    else
-            //    {
-            //        txtLHinCMS.TextColor = Color.Red;
-            //    }
-
-            //}
-            //catch
-            //{
-
-            //}
+        private void TxtLHinCMS_Unfocused(object sender, FocusEventArgs e)
+        {
+            try
+            {
+                double LHinCms = Math.Round(Convert.ToDouble(txtLHinCMS.Text), 3);
+                txtLHinCMS.Text = LHinCms.ToString();
+                if (LHinCms <= 45)
+                {
+                    txtLHinCMS.Text = "45";
+                }
+                else if (LHinCms >= 120)
+                {
+                    txtLHinCMS.Text = "120";
+                }
+            }
+            catch
+            {
+                txtLHinCMS.Text = "";
+                txtLHinCMS.TextColor = Color.Black;
+            }
+            finally
+            {
+                H4AZCalculation();
+            }
         }
 
         private void H4AZCalculation()
@@ -1054,33 +1114,6 @@ namespace CAN
             BindIllness();
         }
 
-        private void TxtLHinCMS_Unfocused(object sender, FocusEventArgs e)
-        {
-            try
-            {
-                if (Convert.ToDouble(txtLHinCMS.Text) <= 45)
-                {
-                    txtLHinCMS.Text = "45";
-                }
-                else
-                {
-                    if (Convert.ToDouble(txtLHinCMS.Text) <= 120 && Convert.ToDouble(txtLHinCMS.Text) > 45)
-                    {
-
-                    }
-                    else
-                    {
-                        txtLHinCMS.Text = "120";
-                    }
-                }
-                H4AZCalculation();
-            }
-            catch
-            {
-
-            }
-        }
-
         private void Txtegg_TextChanged(object sender, TextChangedEventArgs e)
         {
             try
@@ -1182,5 +1215,7 @@ namespace CAN
         {
             stackaay.IsVisible = true;
         }
+
+        
     }
 }

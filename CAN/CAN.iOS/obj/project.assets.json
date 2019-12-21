@@ -1516,7 +1516,7 @@
   },
   "libraries": {
     "ExifLib.PCL/1.0.1": {
-      "sha512": "lJ7gc1nU7mbHS6tclfDaMbfqKUixYotmqMCcEiva3s478/IXcC7Z+v88OQpGTOYkKfzhP6reibBPmdmogv1m6Q==",
+      "sha512": "16KG9oXTPJkjCRq2xQmfPfJqCfcCjK3h034oazOE61LM4kddMr50a6EgrOV+F7RtIzVVd5ATEZRCiNWnnWqDkA==",
       "type": "package",
       "path": "exiflib.pcl/1.0.1",
       "files": [
@@ -1528,7 +1528,7 @@
       ]
     },
     "Microsoft.Bcl/1.1.10": {
-      "sha512": "BT7l/NmBorDS6ZEZhUyzaREaVg0jGrALySl1OM+ffV/Hjh9CSj3Qfa8nvdSoph1VDX9zDVXH/UBZMAJ5SISg3g==",
+      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
       "type": "package",
       "path": "microsoft.bcl/1.1.10",
       "files": [
@@ -1620,7 +1620,7 @@
       ]
     },
     "Microsoft.Bcl.Build/1.0.14": {
-      "sha512": "57EJ/NGEDQkIlQs9aO4adkYeaHMdg+pn5D8RfO1ZXQJgHOjTfGH+kWfppEaD6cg0PE2kGn9/GsACcu2LLyJM0g==",
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
       "type": "package",
       "path": "microsoft.bcl.build/1.0.14",
       "hasTools": true,
@@ -1642,7 +1642,7 @@
       ]
     },
     "Microsoft.Net.Http/2.2.29": {
-      "sha512": "ls9yfwKS/5F4nBUq34U0HKAke+m4Jy0AFEQVvgHHdP7QccfFQFR1iq99qLms1lfd1OjfvfdBMA7o3bP2IMakwQ==",
+      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
       "type": "package",
       "path": "microsoft.net.http/2.2.29",
       "files": [
@@ -1711,9 +1711,10 @@
       ]
     },
     "Newtonsoft.Json/8.0.2": {
-      "sha512": "zjVy7Np8MDbCP9yeeScjgiJMlQuSQJxc+VgLymCR9/LZiYfGR+F6t/UMnSOnnXQ1c5SrKkunsewzbL/wWNOFpQ==",
+      "sha512": "e5yWmEfu68rmtG431zl9N/7PlNKQDIuiDW5MHlEFAZcecakcxrIGnKqrPAtWNILzK2oNanRB5cD150MYhECK3g==",
       "type": "package",
       "path": "newtonsoft.json/8.0.2",
+      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1735,7 +1736,7 @@
       ]
     },
     "Plugin.Permissions/3.0.0.12": {
-      "sha512": "R8Rlzfci1byoPBGOiJfCMzu0HhhN6Q4Vq4YizlF41W946NEmoL/Mb8U5caP5t5KfSbdPQpzdQ9JfM8fxPG8pfw==",
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
       "type": "package",
       "path": "plugin.permissions/3.0.0.12",
       "files": [
@@ -1770,13 +1771,14 @@
       ]
     },
     "Rg.Plugins.Popup/1.1.5.180": {
-      "sha512": "/UROZ5HlAgDwRzkrERUu9i4bnfZ3wisgK0H8yWcXprXH6DcfZUkIhr6JJh9DpVqDJ7Z54JIOjk52zNJPCn+zdg==",
+      "sha512": "LsvRRUvmKfMexeyHXbZb8jSqGTULZ2ZkhhuuFZql/ZCbnCsiilQloB1Xc4O3aN6NTxh/nm+6rYKP1y+VjekWgg==",
       "type": "package",
       "path": "rg.plugins.popup/1.1.5.180",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
+        "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll.mdb",
         "lib/MonoAndroid/Rg.Plugins.Popup.Droid.pdb",
         "lib/MonoAndroid/Rg.Plugins.Popup.dll",
         "lib/MonoAndroid/Rg.Plugins.Popup.pdb",
@@ -1800,7 +1802,7 @@
       ]
     },
     "sqlite-net-pcl/1.5.231": {
-      "sha512": "Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
+      "sha512": "B9jScvqkishSMkpa9Mc4Q85LTHxRTzcUXZx9EQqgrvdz7MFEDHfpiPcKdjy1qXHdmHttEXfY4h6gu4FlgWP2Sw==",
       "type": "package",
       "path": "sqlite-net-pcl/1.5.231",
       "files": [
@@ -1816,7 +1818,7 @@
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.11": {
-      "sha512": "HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
+      "sha512": "Hqp8IF/RLjbypkLm+t+1RqAX8EKuWEkj7wkLXplfENQoPnE127cvTmaDvaQKtt7a5QsD/HNjFDr1z5f9q2wdPg==",
       "type": "package",
       "path": "sqlitepclraw.bundle_green/1.1.11",
       "files": [
@@ -1863,7 +1865,7 @@
       ]
     },
     "SQLitePCLRaw.core/1.1.11": {
-      "sha512": "bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
+      "sha512": "QT17CyQAQIbTCu6pW5+uVA8BXqRzquiDI1tr5Un6c1YZcQydPmGPuYYng9xMs2UHUDYHbTu+JDkp55WR+qo9bQ==",
       "type": "package",
       "path": "sqlitepclraw.core/1.1.11",
       "files": [
@@ -1889,7 +1891,7 @@
       ]
     },
     "SQLitePCLRaw.provider.sqlite3.ios_unified/1.1.11": {
-      "sha512": "pgdrdeXCK6l5yLrRK9JjU0a6rVNJN64IKICKtDRI4zXc2Vv/4aBZNJfoivv/AFHaq/KJKR/1vAHI6mJTbeK8GA==",
+      "sha512": "hWk/vgFthsTedjorVFNErd5xk0x0UtlYr/ndmDUYhAcA9Y9g0IJXBMn1Z2QYsLMlvE6Qj5yVvjfkUOARhXezQw==",
       "type": "package",
       "path": "sqlitepclraw.provider.sqlite3.ios_unified/1.1.11",
       "files": [
@@ -1901,7 +1903,7 @@
       ]
     },
     "Toasts.Forms.Plugin/3.3.2": {
-      "sha512": "saIl6R4GeW9MbqdZLEWm6EAl+YQARDEpjOYXtiwtHqmklaMDG7tOJmC0Qwtr6AuukgFu57L3HiLw/Eo2WRDf9g==",
+      "sha512": "Cg+uc+GPV2rfGLYl/gyW7oo5YPPZ0/jG1Bj6KRihecoOy0Ju4HfKith9pd8CIXerS9DH7x8vqV5jrPaKXEGenA==",
       "type": "package",
       "path": "toasts.forms.plugin/3.3.2",
       "files": [
@@ -1910,6 +1912,7 @@
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll.mdb",
         "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.pdb",
         "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
         "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
@@ -1925,7 +1928,7 @@
       ]
     },
     "Xam.Plugin.Connectivity/3.2.0": {
-      "sha512": "V0IKUjLnWO4zl1VI/7Keclez5kk21PIpVUqacbMtbl1Ky7PrUNUOrO8Xmfrxn5E38ihzrmgGpuC6TXCwL3Sl+Q==",
+      "sha512": "ZV45TaBTCJg7XQNEl3fPyyJcuMMhdDEQ6BCLc/5pMuTv38M226ER0WTu5sbmba8jlliDuzeRqkRFHwrGdWAgyg==",
       "type": "package",
       "path": "xam.plugin.connectivity/3.2.0",
       "files": [
@@ -1935,6 +1938,7 @@
         "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
         "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
         "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll.mdb",
         "lib/MonoAndroid10/Plugin.Connectivity.pdb",
         "lib/MonoAndroid10/Plugin.Connectivity.xml",
         "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
@@ -1992,7 +1996,7 @@
       ]
     },
     "Xam.Plugin.Media/4.0.1.5": {
-      "sha512": "PxL0vcTXpS79l2KgtaJBShcPVMRK2HC5J08vG6hKTC7hk5+3RjgFrdX0N6Gd4oF8pxVxV2ia7rhYnjxRCMWZtw==",
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
       "type": "package",
       "path": "xam.plugin.media/4.0.1.5",
       "files": [
@@ -2017,7 +2021,7 @@
       ]
     },
     "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
-      "sha512": "in+ZqtkN2MC7oF/bQWqr84M/n6drISzFEL5QFB6fKLwF2yshTZRnmLvyhXtFGOCfy9ZpIfY1sDjSc6r2mbEwTw==",
+      "sha512": "59HyuAaUzuloQmu/PVCDCJQMRuuhqmIpCQ+d5hH5Qp8AZsa/vDi5ulrXDKRMZSZt/xbXsyZV+aZ/W/SZaYt2Mg==",
       "type": "package",
       "path": "xam.plugins.forms.imagecircle/3.0.0.5",
       "files": [
@@ -2039,7 +2043,7 @@
       ]
     },
     "Xamarin.Forms/3.3.0.967583": {
-      "sha512": "aebAEUHkER6WRo4WpsDd8jq4EudSl3WS4n7Pxcq8ea+x9fHi9PstCU0dU2D5PGvSeKa3yEFSpRljOEjI7qtsNA==",
+      "sha512": "+Y5j017bAHyZquRMj4vWyudJeJw7xQk+8BUNpMXg91ttO7sGWGGd6TuAuJubF0iEihzMDY1McZV8ZLZCjqjwUQ==",
       "type": "package",
       "path": "xamarin.forms/3.3.0.967583",
       "files": [
@@ -2187,7 +2191,7 @@
       ]
     },
     "XLabs.Core/2.0.5782": {
-      "sha512": "P9UednVxp04toC0NJBb5Y6Wr6K2n3Jg5S3I3rlwfhSjey92VBB/NsZRQS/UmKj+qEJVYeV7kHVU0ORGa41qJaw==",
+      "sha512": "XLRztFIAjUYfjaaur4aPa/gjBNOwnAoelnmm83v4U0R5dJcWhll5Sci3s8nJWpHv1unwX1TuRsWT0rqMNm0PzA==",
       "type": "package",
       "path": "xlabs.core/2.0.5782",
       "files": [
@@ -2204,7 +2208,7 @@
       ]
     },
     "XLabs.Forms/2.0.5782": {
-      "sha512": "Uff8iD3stDf7QamEpR2w+1mbW57VdVIhKUPR9WW2S+/QVVUGkHw7WKzCOF6lr0yZVADyMzJSA37cy9HS9aYZkQ==",
+      "sha512": "ky3fCcqK1jaSMyIavo8g4Jb/KWhMGH7AlDzFtmP/vNNxiYWHnkmCz1kIvuBNodEwbqJgINpPUcvfW5IbBxbVYg==",
       "type": "package",
       "path": "xlabs.forms/2.0.5782",
       "files": [
@@ -2233,7 +2237,7 @@
       ]
     },
     "XLabs.IoC/2.0.5782": {
-      "sha512": "JQEKWFHQygnRNdvwEqudm1nfpAMFKDC2mwX1Ok8ykNfGaRRHOApK1TzsYaSJw5ptpQZZLLbh8pabtRiP6+tZ4Q==",
+      "sha512": "lFhk1z7pJSlwz2OnxGsZexpzrq5pmH1jvu07oX92ZZEMbJzmvlK9s76G54yE6hQwpv3DVrNtcZ4ubVT1/makRA==",
       "type": "package",
       "path": "xlabs.ioc/2.0.5782",
       "files": [
@@ -2248,7 +2252,7 @@
       ]
     },
     "XLabs.Platform/2.0.5782": {
-      "sha512": "UL5iO/PogYlZsoRdViiu6bBb95qY0s4EotMUR3alfrzCWeQ0eEqZOZObMdOCwcMtkeFvuqgo0o8/lwdC2wcwOg==",
+      "sha512": "n5ZgLrh4Ut7EflUKmVii4feQ5xsLQTyTPYf8IDuldOi2furuxSPfHr2H4dpGTbmDxiB21sS0ZA6tdhoQQM27uA==",
       "type": "package",
       "path": "xlabs.platform/2.0.5782",
       "files": [
@@ -2283,7 +2287,7 @@
       ]
     },
     "XLabs.Serialization/2.0.5782": {
-      "sha512": "gW7zI5CJhQNmUZYzjHyNlO8fMViuoOM79L/STraVsJ/P4BtaJ9yDYzBIfnSgE8sVIwipEVmyGcTZIKMq0hsrkw==",
+      "sha512": "lObYD+cpUv6pnUd9IsWYj5i0sSO8EUT60KaiDKxv2VHr1oAsNC37HpWcetGezYO2nfQN5AZzVtE8ENbYOqx2Dg==",
       "type": "package",
       "path": "xlabs.serialization/2.0.5782",
       "files": [
@@ -2323,21 +2327,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\viru\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PSPL Project\\CAN\\App\\Latest\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
       "projectName": "CAN.iOS",
-      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
-      "packagesPath": "C:\\Users\\viru\\.nuget\\packages\\",
-      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\PSPL Project\\CAN\\App\\Latest\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\PSPL Project\\CAN\\App\\Latest\\CAN\\CAN\\CAN.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\viru\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -2349,8 +2358,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.csproj": {
-              "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.csproj"
+            "C:\\Users\\Admin\\Desktop\\PSPL Project\\CAN\\App\\Latest\\CAN\\CAN\\CAN\\CAN.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\PSPL Project\\CAN\\App\\Latest\\CAN\\CAN\\CAN\\CAN.csproj"
             }
           }
         }

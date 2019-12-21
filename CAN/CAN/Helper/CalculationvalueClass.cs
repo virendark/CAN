@@ -13,7 +13,7 @@ namespace CAN.Helper
         public double H4AZ;
         public double BMI;
         public double BMIZ;
-        public double W4LHZValue(int Gender, int AgeInDays, double HeightInCM, double WeightInKG)
+        public double? W4LHZValue(int Gender, int AgeInDays, double HeightInCM, double WeightInKG)
         {
             try
             {
@@ -74,10 +74,10 @@ namespace CAN.Helper
             }
             catch
             {
-                return W4LHZ = 0;
+                return null;
             }
         }
-        public double W4AZValue( int Gender,int AgeInDays,double WeightInKG)
+        public double? W4AZValue( int Gender,int AgeInDays,double WeightInKG)
         {
             try
             {
@@ -108,7 +108,7 @@ namespace CAN.Helper
             }
             catch
             {
-                return W4AZ=0;
+                return null;
             }
         }
 
