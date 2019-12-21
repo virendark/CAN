@@ -105,7 +105,7 @@
                 <Label x:Name="lblwaightkgEng" Text="(Weight in kg)" TextColor="Gray" FontSize="Micro" HorizontalOptions="FillAndExpand"></Label>
             </StackLayout>
             <StackLayout Margin="15,0,15,0" Orientation="Horizontal" HeightRequest="50">
-                <Entry x:Name="txtwaightkg" TextChanged="Txtwaightkg_TextChanged"  TextColor="Black" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
+                <Entry x:Name="txtwaightkg" TextChanged="Txtwaightkg_TextChanged" Unfocused="txtwaightkg_Unfocused"  TextColor="Black" Keyboard="Numeric" Placeholder="Not recorded" VerticalOptions="FillAndExpand"
                        HorizontalOptions="FillAndExpand">
                 </Entry>
             </StackLayout>
