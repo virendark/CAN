@@ -44,7 +44,7 @@
           "dependencies": {
             "Rg.Plugins.Popup": {
               "target": "Package",
-              "version": "[1.1.5.180, )"
+              "version": "[1.2.0.223, )"
             },
             "Toasts.Forms.Plugin": {
               "target": "Package",
@@ -68,31 +68,31 @@
             },
             "Xamarin.Android.Support.Design": {
               "target": "Package",
-              "version": "[27.0.2.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v4": {
               "target": "Package",
-              "version": "[27.0.2.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.AppCompat": {
               "target": "Package",
-              "version": "[27.0.2.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.CardView": {
               "target": "Package",
-              "version": "[27.0.2.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Android.Support.v7.MediaRouter": {
               "target": "Package",
-              "version": "[27.0.2.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[3.3.0.967583, )"
+              "version": "[4.4.0.991265, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.5.231, )"
+              "version": "[1.6.292, )"
             }
           }
         }
@@ -148,7 +148,7 @@
             },
             "Rg.Plugins.Popup": {
               "target": "Package",
-              "version": "[1.1.5.180, )"
+              "version": "[1.2.0.223, )"
             },
             "Toasts.Forms.Plugin": {
               "target": "Package",
@@ -172,11 +172,11 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[3.3.0.967583, )"
+              "version": "[4.4.0.991265, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.5.231, )"
+              "version": "[1.6.292, )"
             }
           },
           "imports": [

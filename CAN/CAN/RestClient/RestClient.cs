@@ -42,9 +42,9 @@ namespace Plugin.RestClient
                 var byteArray = Encoding.ASCII.GetBytes(loginData.UserName + ":" + loginData.Password);
                 //var byteArray = Encoding.ASCII.GetBytes("admin:admin@123");
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
-
+                
                 HttpResponseMessage response = await client.GetAsync(WebServiceUrl + "api/Auth/Token");
-                HttpContent content = response.Content;
+                HttpContent content = (await client.GetAsync(WebServiceUrl + "api/Auth/Token")).Content;//response.Content;
                 StaticClass.ResponceStatus = "";
                 string result = content.ReadAsStringAsync().Result;
                 if (result == "Wrong Request")

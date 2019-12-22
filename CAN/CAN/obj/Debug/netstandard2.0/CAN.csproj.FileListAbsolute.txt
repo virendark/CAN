@@ -515,3 +515,4 @@ C:\Users\Admin\Desktop\PSPL Project\CAN\App\Latest\CAN\CAN\CAN\obj\Debug\netstan
 C:\Users\Admin\Desktop\PSPL Project\CAN\App\Latest\CAN\CAN\CAN\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Admin\Desktop\PSPL Project\CAN\App\Latest\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.dll
 C:\Users\Admin\Desktop\PSPL Project\CAN\App\Latest\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.pdb
+C:\Users\Admin\Desktop\PSPL Project\CAN\App\Latest\CAN\CAN\CAN\obj\Debug\netstandard2.0\CAN.csprojAssemblyReference.cache
