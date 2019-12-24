@@ -5,7 +5,7 @@
                Title="Village List">
     <StackLayout Orientation="Vertical">
         <AbsoluteLayout>
-            <ListView x:Name="listView" ItemSelected="ListView_ItemSelected"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White">
+            <ListView x:Name="listView" ItemSelected="ListView_ItemSelected" HasUnevenRows="True"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White" Margin="0,0,0,10">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -14,8 +14,8 @@
                                     <Label  Text="{Binding locationName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center"></Label>
 
                                 </StackLayout>-->
-                                <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
-                                    <Label  Text="{Binding VillageName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center" FontSize="22"></Label>
+                                <StackLayout x:Name="MainStackLayouts" HeightRequest="55" VerticalOptions="Center">
+                                    <Label  Text="{Binding VillageName}" TextColor="White"  HorizontalTextAlignment="Center" FontSize="22"></Label>
 
                                 </StackLayout>
                             </ViewCell.View>

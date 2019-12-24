@@ -6,6 +6,7 @@ namespace CAN.Models
 {
   public  class TblGrowthRegisterMother
     {
+        private DateTime _doe = new DateTime(2015, 01, 01);
         public Guid GrowthId { get; set; }
         public Guid FamilyId { get; set; }
         public int DataMonthId { get; set; }
@@ -37,7 +38,19 @@ namespace CAN.Models
         public int IsMealEnough { get; set; }
         public int QualityOfAwcfood { get; set; }
         public int ResonForNotEatingAwcmeal { get; set; }
-        public DateTime DOE { get; set; }
+        public DateTime DOE
+        {
+            get
+            {
+                return _doe;
+            }
+
+            set
+            {
+                if (_doe == value) return;
+                _doe = value;
+            }
+        }
         public DateTime DOU { get; set; }
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }

@@ -4168,35 +4168,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background com.PROMPtecsathl.CAN:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit com.PROMPtecsathl.CAN:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked com.PROMPtecsathl.CAN:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd com.PROMPtecsathl.CAN:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.PROMPtecsathl.CAN:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft com.PROMPtecsathl.CAN:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight com.PROMPtecsathl.CAN:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart com.PROMPtecsathl.CAN:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.PROMPtecsathl.CAN:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout com.PROMPtecsathl.CAN:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions com.PROMPtecsathl.CAN:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider com.PROMPtecsathl.CAN:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation com.PROMPtecsathl.CAN:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height com.PROMPtecsathl.CAN:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.PROMPtecsathl.CAN:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.PROMPtecsathl.CAN:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout com.PROMPtecsathl.CAN:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon com.PROMPtecsathl.CAN:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.PROMPtecsathl.CAN:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding com.PROMPtecsathl.CAN:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo com.PROMPtecsathl.CAN:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode com.PROMPtecsathl.CAN:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme com.PROMPtecsathl.CAN:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding com.PROMPtecsathl.CAN:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle com.PROMPtecsathl.CAN:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle com.PROMPtecsathl.CAN:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.PROMPtecsathl.CAN:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title com.PROMPtecsathl.CAN:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle com.PROMPtecsathl.CAN:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.PROMPtecsatHl.CAN:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.PROMPtecsatHl.CAN:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.PROMPtecsatHl.CAN:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.PROMPtecsatHl.CAN:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.PROMPtecsatHl.CAN:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.PROMPtecsatHl.CAN:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.PROMPtecsatHl.CAN:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.PROMPtecsatHl.CAN:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.PROMPtecsatHl.CAN:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.PROMPtecsatHl.CAN:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.PROMPtecsatHl.CAN:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.PROMPtecsatHl.CAN:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.PROMPtecsatHl.CAN:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.PROMPtecsatHl.CAN:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.PROMPtecsatHl.CAN:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.PROMPtecsatHl.CAN:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.PROMPtecsatHl.CAN:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.PROMPtecsatHl.CAN:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.PROMPtecsatHl.CAN:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.PROMPtecsatHl.CAN:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.PROMPtecsatHl.CAN:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.PROMPtecsatHl.CAN:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.PROMPtecsatHl.CAN:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.PROMPtecsatHl.CAN:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.PROMPtecsatHl.CAN:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.PROMPtecsatHl.CAN:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.PROMPtecsatHl.CAN:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.PROMPtecsatHl.CAN:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.PROMPtecsatHl.CAN:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -4239,17 +4239,17 @@ containing a value of this type.
             0x7f010085
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#background}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:background
+          @attr name com.PROMPtecsatHl.CAN:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4257,11 +4257,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:backgroundSplit
+          @attr name com.PROMPtecsatHl.CAN:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4269,11 +4269,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:backgroundStacked
+          @attr name com.PROMPtecsatHl.CAN:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4285,11 +4285,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetEnd
+          @attr name com.PROMPtecsatHl.CAN:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4301,11 +4301,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetEndWithActions
+          @attr name com.PROMPtecsatHl.CAN:contentInsetEndWithActions
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4317,11 +4317,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetLeft
+          @attr name com.PROMPtecsatHl.CAN:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4333,11 +4333,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetRight
+          @attr name com.PROMPtecsatHl.CAN:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4349,11 +4349,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetStart
+          @attr name com.PROMPtecsatHl.CAN:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4365,21 +4365,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetStartWithNavigation
+          @attr name com.PROMPtecsatHl.CAN:contentInsetStartWithNavigation
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:customNavigationLayout
+          @attr name com.PROMPtecsatHl.CAN:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4397,21 +4397,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:displayOptions
+          @attr name com.PROMPtecsatHl.CAN:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:divider
+          @attr name com.PROMPtecsatHl.CAN:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4423,11 +4423,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:elevation
+          @attr name com.PROMPtecsatHl.CAN:elevation
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#height}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4439,11 +4439,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:height
+          @attr name com.PROMPtecsatHl.CAN:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4453,51 +4453,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:hideOnContentScroll
+          @attr name com.PROMPtecsatHl.CAN:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:homeAsUpIndicator
+          @attr name com.PROMPtecsatHl.CAN:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:homeLayout
+          @attr name com.PROMPtecsatHl.CAN:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:icon
+          @attr name com.PROMPtecsatHl.CAN:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:indeterminateProgressStyle
+          @attr name com.PROMPtecsatHl.CAN:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4509,21 +4509,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:itemPadding
+          @attr name com.PROMPtecsatHl.CAN:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:logo
+          @attr name com.PROMPtecsatHl.CAN:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4537,21 +4537,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:navigationMode
+          @attr name com.PROMPtecsatHl.CAN:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:popupTheme
+          @attr name com.PROMPtecsatHl.CAN:popupTheme
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4563,21 +4563,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:progressBarPadding
+          @attr name com.PROMPtecsatHl.CAN:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:progressBarStyle
+          @attr name com.PROMPtecsatHl.CAN:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4587,21 +4587,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:subtitle
+          @attr name com.PROMPtecsatHl.CAN:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:subtitleTextStyle
+          @attr name com.PROMPtecsatHl.CAN:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#title}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4611,17 +4611,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:title
+          @attr name com.PROMPtecsatHl.CAN:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:titleTextStyle
+          @attr name com.PROMPtecsatHl.CAN:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -4673,12 +4673,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background com.PROMPtecsathl.CAN:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit com.PROMPtecsathl.CAN:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout com.PROMPtecsathl.CAN:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height com.PROMPtecsathl.CAN:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.PROMPtecsathl.CAN:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle com.PROMPtecsathl.CAN:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.PROMPtecsatHl.CAN:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.PROMPtecsatHl.CAN:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.PROMPtecsatHl.CAN:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.PROMPtecsatHl.CAN:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.PROMPtecsatHl.CAN:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.PROMPtecsatHl.CAN:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -4692,17 +4692,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010030, 0x7f010040
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#background}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:background
+          @attr name com.PROMPtecsatHl.CAN:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4710,21 +4710,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:backgroundSplit
+          @attr name com.PROMPtecsatHl.CAN:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:closeItemLayout
+          @attr name com.PROMPtecsatHl.CAN:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#height}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4736,27 +4736,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:height
+          @attr name com.PROMPtecsatHl.CAN:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:subtitleTextStyle
+          @attr name com.PROMPtecsatHl.CAN:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:titleTextStyle
+          @attr name com.PROMPtecsatHl.CAN:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4765,8 +4765,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.PROMPtecsathl.CAN:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.PROMPtecsathl.CAN:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.PROMPtecsatHl.CAN:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.PROMPtecsatHl.CAN:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4775,17 +4775,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010041, 0x7f010042
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:expandActivityOverflowButtonDrawable
+          @attr name com.PROMPtecsatHl.CAN:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4795,7 +4795,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:initialActivityCount
+          @attr name com.PROMPtecsatHl.CAN:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -4805,12 +4805,12 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.PROMPtecsathl.CAN:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout com.PROMPtecsathl.CAN:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout com.PROMPtecsathl.CAN:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.PROMPtecsathl.CAN:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_showTitle com.PROMPtecsathl.CAN:showTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.PROMPtecsathl.CAN:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.PROMPtecsatHl.CAN:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout com.PROMPtecsatHl.CAN:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout com.PROMPtecsatHl.CAN:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.PROMPtecsatHl.CAN:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_showTitle com.PROMPtecsatHl.CAN:showTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.PROMPtecsatHl.CAN:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4831,47 +4831,47 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonPanelSideLayout
+          @attr name com.PROMPtecsatHl.CAN:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:listItemLayout
+          @attr name com.PROMPtecsatHl.CAN:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:listLayout
+          @attr name com.PROMPtecsatHl.CAN:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:multiChoiceItemLayout
+          @attr name com.PROMPtecsatHl.CAN:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#showTitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#showTitle}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -4881,17 +4881,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:showTitle
+          @attr name com.PROMPtecsatHl.CAN:showTitle
         */
         public static final int AlertDialog_showTitle = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:singleChoiceItemLayout
+          @attr name com.PROMPtecsatHl.CAN:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4903,8 +4903,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
            <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation com.PROMPtecsathl.CAN:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded com.PROMPtecsathl.CAN:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation com.PROMPtecsatHl.CAN:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded com.PROMPtecsatHl.CAN:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_android_keyboardNavigationCluster
@@ -4935,7 +4935,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_touchscreenBlocksFocus = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4947,11 +4947,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:elevation
+          @attr name com.PROMPtecsatHl.CAN:elevation
         */
         public static final int AppBarLayout_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expanded}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4961,7 +4961,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:expanded
+          @attr name com.PROMPtecsatHl.CAN:expanded
         */
         public static final int AppBarLayout_expanded = 4;
         /** Attributes that can be used with a AppBarLayoutStates.
@@ -4970,8 +4970,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.PROMPtecsathl.CAN:state_collapsed}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.PROMPtecsathl.CAN:state_collapsible}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.PROMPtecsatHl.CAN:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.PROMPtecsatHl.CAN:state_collapsible}</code></td><td></td></tr>
            </table>
            @see #AppBarLayoutStates_state_collapsed
            @see #AppBarLayoutStates_state_collapsible
@@ -4980,7 +4980,7 @@ containing a value of this type.
             0x7f010119, 0x7f01011a
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#state_collapsed}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#state_collapsed}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4990,11 +4990,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:state_collapsed
+          @attr name com.PROMPtecsatHl.CAN:state_collapsed
         */
         public static final int AppBarLayoutStates_state_collapsed = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#state_collapsible}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#state_collapsible}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -5004,7 +5004,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:state_collapsible
+          @attr name com.PROMPtecsatHl.CAN:state_collapsible
         */
         public static final int AppBarLayoutStates_state_collapsible = 1;
         /** Attributes that can be used with a AppBarLayout_Layout.
@@ -5013,8 +5013,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.PROMPtecsathl.CAN:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.PROMPtecsathl.CAN:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.PROMPtecsatHl.CAN:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.PROMPtecsatHl.CAN:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_Layout_layout_scrollFlags
            @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -5023,7 +5023,7 @@ containing a value of this type.
             0x7f01011b, 0x7f01011c
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
@@ -5039,17 +5039,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:layout_scrollFlags
+          @attr name com.PROMPtecsatHl.CAN:layout_scrollFlags
         */
         public static final int AppBarLayout_Layout_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:layout_scrollInterpolator
+          @attr name com.PROMPtecsatHl.CAN:layout_scrollInterpolator
         */
         public static final int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -5059,9 +5059,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat com.PROMPtecsathl.CAN:srcCompat}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tint com.PROMPtecsathl.CAN:tint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tintMode com.PROMPtecsathl.CAN:tintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat com.PROMPtecsatHl.CAN:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tint com.PROMPtecsatHl.CAN:tint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tintMode com.PROMPtecsatHl.CAN:tintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -5078,17 +5078,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:srcCompat
+          @attr name com.PROMPtecsatHl.CAN:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tint}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -5099,11 +5099,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tint
+          @attr name com.PROMPtecsatHl.CAN:tint
         */
         public static final int AppCompatImageView_tint = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tintMode}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -5120,7 +5120,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:tintMode
+          @attr name com.PROMPtecsatHl.CAN:tintMode
         */
         public static final int AppCompatImageView_tintMode = 3;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -5130,9 +5130,9 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark com.PROMPtecsathl.CAN:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.PROMPtecsathl.CAN:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.PROMPtecsathl.CAN:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark com.PROMPtecsatHl.CAN:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.PROMPtecsatHl.CAN:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.PROMPtecsatHl.CAN:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -5149,17 +5149,17 @@ containing a value of this type.
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:tickMark
+          @attr name com.PROMPtecsatHl.CAN:tickMark
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -5170,11 +5170,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tickMarkTint
+          @attr name com.PROMPtecsatHl.CAN:tickMarkTint
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -5191,7 +5191,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:tickMarkTintMode
+          @attr name com.PROMPtecsatHl.CAN:tickMarkTintMode
         */
         public static final int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -5269,13 +5269,13 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.PROMPtecsathl.CAN:autoSizeMaxTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.PROMPtecsathl.CAN:autoSizeMinTextSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.PROMPtecsathl.CAN:autoSizePresetSizes}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.PROMPtecsathl.CAN:autoSizeStepGranularity}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.PROMPtecsathl.CAN:autoSizeTextType}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_fontFamily com.PROMPtecsathl.CAN:fontFamily}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.PROMPtecsathl.CAN:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.PROMPtecsatHl.CAN:autoSizeMaxTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.PROMPtecsatHl.CAN:autoSizeMinTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.PROMPtecsatHl.CAN:autoSizePresetSizes}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.PROMPtecsatHl.CAN:autoSizeStepGranularity}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.PROMPtecsatHl.CAN:autoSizeTextType}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_fontFamily com.PROMPtecsatHl.CAN:fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps com.PROMPtecsatHl.CAN:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_autoSizeMaxTextSize
@@ -5297,7 +5297,7 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#autoSizeMaxTextSize}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#autoSizeMaxTextSize}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5309,11 +5309,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:autoSizeMaxTextSize
+          @attr name com.PROMPtecsatHl.CAN:autoSizeMaxTextSize
         */
         public static final int AppCompatTextView_autoSizeMaxTextSize = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#autoSizeMinTextSize}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#autoSizeMinTextSize}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5325,21 +5325,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:autoSizeMinTextSize
+          @attr name com.PROMPtecsatHl.CAN:autoSizeMinTextSize
         */
         public static final int AppCompatTextView_autoSizeMinTextSize = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#autoSizePresetSizes}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#autoSizePresetSizes}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:autoSizePresetSizes
+          @attr name com.PROMPtecsatHl.CAN:autoSizePresetSizes
         */
         public static final int AppCompatTextView_autoSizePresetSizes = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#autoSizeStepGranularity}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#autoSizeStepGranularity}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5351,11 +5351,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:autoSizeStepGranularity
+          @attr name com.PROMPtecsatHl.CAN:autoSizeStepGranularity
         */
         public static final int AppCompatTextView_autoSizeStepGranularity = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#autoSizeTextType}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#autoSizeTextType}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5368,11 +5368,11 @@ containing a value of this type.
 <tr><td><code>none</code></td><td>0</td><td></td></tr>
 <tr><td><code>uniform</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:autoSizeTextType
+          @attr name com.PROMPtecsatHl.CAN:autoSizeTextType
         */
         public static final int AppCompatTextView_autoSizeTextType = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontFamily}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontFamily}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
@@ -5382,18 +5382,18 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fontFamily
+          @attr name com.PROMPtecsatHl.CAN:fontFamily
         */
         public static final int AppCompatTextView_fontFamily = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.PROMPtecsathl.CAN:textAllCaps
+          @attr name com.PROMPtecsatHl.CAN:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -5402,125 +5402,125 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.PROMPtecsathl.CAN:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.PROMPtecsathl.CAN:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.PROMPtecsathl.CAN:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.PROMPtecsathl.CAN:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.PROMPtecsathl.CAN:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.PROMPtecsathl.CAN:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.PROMPtecsathl.CAN:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.PROMPtecsathl.CAN:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.PROMPtecsathl.CAN:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.PROMPtecsathl.CAN:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.PROMPtecsathl.CAN:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.PROMPtecsathl.CAN:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.PROMPtecsathl.CAN:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.PROMPtecsathl.CAN:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.PROMPtecsathl.CAN:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.PROMPtecsathl.CAN:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.PROMPtecsathl.CAN:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.PROMPtecsathl.CAN:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.PROMPtecsathl.CAN:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.PROMPtecsathl.CAN:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.PROMPtecsathl.CAN:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.PROMPtecsathl.CAN:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.PROMPtecsathl.CAN:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.PROMPtecsathl.CAN:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.PROMPtecsathl.CAN:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.PROMPtecsathl.CAN:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.PROMPtecsathl.CAN:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.PROMPtecsathl.CAN:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.PROMPtecsathl.CAN:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.PROMPtecsathl.CAN:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.PROMPtecsathl.CAN:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.PROMPtecsathl.CAN:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.PROMPtecsathl.CAN:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.PROMPtecsathl.CAN:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.PROMPtecsathl.CAN:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.PROMPtecsatHl.CAN:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.PROMPtecsatHl.CAN:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.PROMPtecsatHl.CAN:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize com.PROMPtecsatHl.CAN:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.PROMPtecsatHl.CAN:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.PROMPtecsatHl.CAN:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.PROMPtecsatHl.CAN:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.PROMPtecsatHl.CAN:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.PROMPtecsatHl.CAN:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.PROMPtecsatHl.CAN:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.PROMPtecsatHl.CAN:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.PROMPtecsatHl.CAN:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.PROMPtecsatHl.CAN:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.PROMPtecsatHl.CAN:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.PROMPtecsatHl.CAN:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.PROMPtecsatHl.CAN:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.PROMPtecsatHl.CAN:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.PROMPtecsatHl.CAN:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.PROMPtecsatHl.CAN:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.PROMPtecsatHl.CAN:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.PROMPtecsatHl.CAN:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.PROMPtecsatHl.CAN:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.PROMPtecsatHl.CAN:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.PROMPtecsatHl.CAN:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.PROMPtecsatHl.CAN:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.PROMPtecsatHl.CAN:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.PROMPtecsatHl.CAN:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.PROMPtecsatHl.CAN:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.PROMPtecsatHl.CAN:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.PROMPtecsatHl.CAN:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.PROMPtecsatHl.CAN:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.PROMPtecsatHl.CAN:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.PROMPtecsatHl.CAN:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.PROMPtecsatHl.CAN:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.PROMPtecsatHl.CAN:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.PROMPtecsathl.CAN:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.PROMPtecsathl.CAN:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.PROMPtecsathl.CAN:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.PROMPtecsathl.CAN:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.PROMPtecsathl.CAN:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.PROMPtecsathl.CAN:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.PROMPtecsathl.CAN:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.PROMPtecsathl.CAN:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.PROMPtecsathl.CAN:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.PROMPtecsathl.CAN:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.PROMPtecsathl.CAN:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent com.PROMPtecsathl.CAN:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.PROMPtecsathl.CAN:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.PROMPtecsathl.CAN:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.PROMPtecsathl.CAN:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.PROMPtecsathl.CAN:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.PROMPtecsathl.CAN:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorError com.PROMPtecsathl.CAN:colorError}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.PROMPtecsathl.CAN:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.PROMPtecsathl.CAN:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.PROMPtecsathl.CAN:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground com.PROMPtecsathl.CAN:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.PROMPtecsathl.CAN:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.PROMPtecsathl.CAN:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.PROMPtecsathl.CAN:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.PROMPtecsathl.CAN:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.PROMPtecsathl.CAN:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.PROMPtecsathl.CAN:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.PROMPtecsathl.CAN:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor com.PROMPtecsathl.CAN:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.PROMPtecsathl.CAN:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.PROMPtecsathl.CAN:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.PROMPtecsathl.CAN:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.PROMPtecsathl.CAN:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.PROMPtecsathl.CAN:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.PROMPtecsathl.CAN:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.PROMPtecsathl.CAN:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.PROMPtecsathl.CAN:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.PROMPtecsathl.CAN:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.PROMPtecsathl.CAN:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.PROMPtecsathl.CAN:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.PROMPtecsathl.CAN:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground com.PROMPtecsathl.CAN:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.PROMPtecsathl.CAN:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.PROMPtecsathl.CAN:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.PROMPtecsathl.CAN:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.PROMPtecsathl.CAN:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.PROMPtecsathl.CAN:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.PROMPtecsathl.CAN:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.PROMPtecsathl.CAN:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.PROMPtecsathl.CAN:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.PROMPtecsathl.CAN:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.PROMPtecsathl.CAN:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.PROMPtecsathl.CAN:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.PROMPtecsathl.CAN:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.PROMPtecsathl.CAN:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.PROMPtecsathl.CAN:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle com.PROMPtecsathl.CAN:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.PROMPtecsathl.CAN:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.PROMPtecsathl.CAN:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.PROMPtecsathl.CAN:textAppearanceListItemSecondary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.PROMPtecsathl.CAN:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.PROMPtecsathl.CAN:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.PROMPtecsathl.CAN:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.PROMPtecsathl.CAN:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.PROMPtecsathl.CAN:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.PROMPtecsathl.CAN:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.PROMPtecsathl.CAN:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.PROMPtecsathl.CAN:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.PROMPtecsathl.CAN:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.PROMPtecsathl.CAN:tooltipForegroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.PROMPtecsathl.CAN:tooltipFrameBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.PROMPtecsathl.CAN:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.PROMPtecsathl.CAN:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.PROMPtecsathl.CAN:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.PROMPtecsathl.CAN:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.PROMPtecsathl.CAN:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.PROMPtecsathl.CAN:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.PROMPtecsathl.CAN:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.PROMPtecsathl.CAN:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.PROMPtecsathl.CAN:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.PROMPtecsathl.CAN:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.PROMPtecsatHl.CAN:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.PROMPtecsatHl.CAN:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.PROMPtecsatHl.CAN:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.PROMPtecsatHl.CAN:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.PROMPtecsatHl.CAN:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.PROMPtecsatHl.CAN:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.PROMPtecsatHl.CAN:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle com.PROMPtecsatHl.CAN:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.PROMPtecsatHl.CAN:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.PROMPtecsatHl.CAN:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.PROMPtecsatHl.CAN:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent com.PROMPtecsatHl.CAN:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.PROMPtecsatHl.CAN:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.PROMPtecsatHl.CAN:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.PROMPtecsatHl.CAN:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.PROMPtecsatHl.CAN:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.PROMPtecsatHl.CAN:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorError com.PROMPtecsatHl.CAN:colorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary com.PROMPtecsatHl.CAN:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.PROMPtecsatHl.CAN:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.PROMPtecsatHl.CAN:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground com.PROMPtecsatHl.CAN:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.PROMPtecsatHl.CAN:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme com.PROMPtecsatHl.CAN:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.PROMPtecsatHl.CAN:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical com.PROMPtecsatHl.CAN:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.PROMPtecsatHl.CAN:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.PROMPtecsatHl.CAN:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground com.PROMPtecsatHl.CAN:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor com.PROMPtecsatHl.CAN:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle com.PROMPtecsatHl.CAN:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.PROMPtecsatHl.CAN:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.PROMPtecsatHl.CAN:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.PROMPtecsatHl.CAN:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.PROMPtecsatHl.CAN:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.PROMPtecsatHl.CAN:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.PROMPtecsatHl.CAN:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.PROMPtecsatHl.CAN:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.PROMPtecsatHl.CAN:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.PROMPtecsatHl.CAN:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.PROMPtecsatHl.CAN:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.PROMPtecsatHl.CAN:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground com.PROMPtecsatHl.CAN:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.PROMPtecsatHl.CAN:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.PROMPtecsatHl.CAN:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.PROMPtecsatHl.CAN:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.PROMPtecsatHl.CAN:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.PROMPtecsatHl.CAN:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.PROMPtecsatHl.CAN:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.PROMPtecsatHl.CAN:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.PROMPtecsatHl.CAN:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.PROMPtecsatHl.CAN:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.PROMPtecsatHl.CAN:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.PROMPtecsatHl.CAN:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.PROMPtecsatHl.CAN:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.PROMPtecsatHl.CAN:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.PROMPtecsatHl.CAN:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle com.PROMPtecsatHl.CAN:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.PROMPtecsatHl.CAN:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.PROMPtecsatHl.CAN:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.PROMPtecsatHl.CAN:textAppearanceListItemSecondary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.PROMPtecsatHl.CAN:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.PROMPtecsatHl.CAN:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.PROMPtecsatHl.CAN:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.PROMPtecsatHl.CAN:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.PROMPtecsatHl.CAN:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.PROMPtecsatHl.CAN:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.PROMPtecsatHl.CAN:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.PROMPtecsatHl.CAN:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.PROMPtecsatHl.CAN:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.PROMPtecsatHl.CAN:tooltipForegroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.PROMPtecsatHl.CAN:tooltipFrameBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar com.PROMPtecsatHl.CAN:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.PROMPtecsatHl.CAN:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.PROMPtecsatHl.CAN:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.PROMPtecsatHl.CAN:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.PROMPtecsatHl.CAN:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.PROMPtecsatHl.CAN:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.PROMPtecsatHl.CAN:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.PROMPtecsatHl.CAN:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.PROMPtecsatHl.CAN:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.PROMPtecsatHl.CAN:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -5675,37 +5675,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100c8, 0x7f0100c9, 0x7f0100ca
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarDivider
+          @attr name com.PROMPtecsatHl.CAN:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarItemBackground
+          @attr name com.PROMPtecsatHl.CAN:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarPopupTheme
+          @attr name com.PROMPtecsatHl.CAN:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5725,111 +5725,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:actionBarSize
+          @attr name com.PROMPtecsatHl.CAN:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarSplitStyle
+          @attr name com.PROMPtecsatHl.CAN:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarStyle
+          @attr name com.PROMPtecsatHl.CAN:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarTabBarStyle
+          @attr name com.PROMPtecsatHl.CAN:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarTabStyle
+          @attr name com.PROMPtecsatHl.CAN:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarTabTextStyle
+          @attr name com.PROMPtecsatHl.CAN:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarTheme
+          @attr name com.PROMPtecsatHl.CAN:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionBarWidgetTheme
+          @attr name com.PROMPtecsatHl.CAN:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionDropDownStyle
+          @attr name com.PROMPtecsatHl.CAN:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionMenuTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5837,181 +5837,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionMenuTextColor
+          @attr name com.PROMPtecsatHl.CAN:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeBackground
+          @attr name com.PROMPtecsatHl.CAN:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeCloseButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeCloseDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeCopyDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeCutDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeFindDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModePasteDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModePopupWindowStyle
+          @attr name com.PROMPtecsatHl.CAN:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeSelectAllDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeShareDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeSplitBackground
+          @attr name com.PROMPtecsatHl.CAN:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeStyle
+          @attr name com.PROMPtecsatHl.CAN:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionModeWebSearchDrawable
+          @attr name com.PROMPtecsatHl.CAN:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionOverflowButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionOverflowMenuStyle
+          @attr name com.PROMPtecsatHl.CAN:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:activityChooserViewStyle
+          @attr name com.PROMPtecsatHl.CAN:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:alertDialogButtonGroupStyle
+          @attr name com.PROMPtecsatHl.CAN:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 95;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6021,27 +6021,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:alertDialogCenterButtons
+          @attr name com.PROMPtecsatHl.CAN:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 96;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:alertDialogStyle
+          @attr name com.PROMPtecsatHl.CAN:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:alertDialogTheme
+          @attr name com.PROMPtecsatHl.CAN:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 97;
         /**
@@ -6057,117 +6057,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:autoCompleteTextViewStyle
+          @attr name com.PROMPtecsatHl.CAN:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:borderlessButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonBarButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonBarNegativeButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonBarNeutralButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonBarPositiveButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonBarStyle
+          @attr name com.PROMPtecsatHl.CAN:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonStyle
+          @attr name com.PROMPtecsatHl.CAN:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:buttonStyleSmall
+          @attr name com.PROMPtecsatHl.CAN:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 104;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:checkboxStyle
+          @attr name com.PROMPtecsatHl.CAN:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:checkedTextViewStyle
+          @attr name com.PROMPtecsatHl.CAN:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6178,11 +6178,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorAccent
+          @attr name com.PROMPtecsatHl.CAN:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 86;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6193,11 +6193,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorBackgroundFloating
+          @attr name com.PROMPtecsatHl.CAN:colorBackgroundFloating
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 93;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6208,11 +6208,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorButtonNormal
+          @attr name com.PROMPtecsatHl.CAN:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6223,11 +6223,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorControlActivated
+          @attr name com.PROMPtecsatHl.CAN:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 88;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6238,11 +6238,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorControlHighlight
+          @attr name com.PROMPtecsatHl.CAN:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 89;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6253,11 +6253,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorControlNormal
+          @attr name com.PROMPtecsatHl.CAN:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 87;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorError}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorError}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6265,11 +6265,11 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:colorError
+          @attr name com.PROMPtecsatHl.CAN:colorError
         */
         public static final int AppCompatTheme_colorError = 118;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6280,11 +6280,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorPrimary
+          @attr name com.PROMPtecsatHl.CAN:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 84;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6295,11 +6295,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorPrimaryDark
+          @attr name com.PROMPtecsatHl.CAN:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 85;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6310,21 +6310,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:colorSwitchThumbNormal
+          @attr name com.PROMPtecsatHl.CAN:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 91;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:controlBackground
+          @attr name com.PROMPtecsatHl.CAN:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 92;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6336,51 +6336,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:dialogPreferredPadding
+          @attr name com.PROMPtecsatHl.CAN:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:dialogTheme
+          @attr name com.PROMPtecsatHl.CAN:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:dividerHorizontal
+          @attr name com.PROMPtecsatHl.CAN:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:dividerVertical
+          @attr name com.PROMPtecsatHl.CAN:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:dropDownListViewStyle
+          @attr name com.PROMPtecsatHl.CAN:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6392,21 +6392,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:dropdownListPreferredItemHeight
+          @attr name com.PROMPtecsatHl.CAN:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:editTextBackground
+          @attr name com.PROMPtecsatHl.CAN:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6414,81 +6414,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:editTextColor
+          @attr name com.PROMPtecsatHl.CAN:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:editTextStyle
+          @attr name com.PROMPtecsatHl.CAN:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:homeAsUpIndicator
+          @attr name com.PROMPtecsatHl.CAN:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:imageButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:listChoiceBackgroundIndicator
+          @attr name com.PROMPtecsatHl.CAN:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 83;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:listDividerAlertDialog
+          @attr name com.PROMPtecsatHl.CAN:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:listMenuViewStyle
+          @attr name com.PROMPtecsatHl.CAN:listMenuViewStyle
         */
         public static final int AppCompatTheme_listMenuViewStyle = 115;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:listPopupWindowStyle
+          @attr name com.PROMPtecsatHl.CAN:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6500,11 +6500,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:listPreferredItemHeight
+          @attr name com.PROMPtecsatHl.CAN:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6516,11 +6516,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:listPreferredItemHeightLarge
+          @attr name com.PROMPtecsatHl.CAN:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6532,11 +6532,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:listPreferredItemHeightSmall
+          @attr name com.PROMPtecsatHl.CAN:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6548,11 +6548,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:listPreferredItemPaddingLeft
+          @attr name com.PROMPtecsatHl.CAN:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6564,31 +6564,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:listPreferredItemPaddingRight
+          @attr name com.PROMPtecsatHl.CAN:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:panelBackground
+          @attr name com.PROMPtecsatHl.CAN:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 80;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:panelMenuListTheme
+          @attr name com.PROMPtecsatHl.CAN:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 82;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6600,221 +6600,221 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:panelMenuListWidth
+          @attr name com.PROMPtecsatHl.CAN:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 81;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:popupMenuStyle
+          @attr name com.PROMPtecsatHl.CAN:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:popupWindowStyle
+          @attr name com.PROMPtecsatHl.CAN:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:radioButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:ratingBarStyle
+          @attr name com.PROMPtecsatHl.CAN:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:ratingBarStyleIndicator
+          @attr name com.PROMPtecsatHl.CAN:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 110;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:ratingBarStyleSmall
+          @attr name com.PROMPtecsatHl.CAN:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 111;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:searchViewStyle
+          @attr name com.PROMPtecsatHl.CAN:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:seekBarStyle
+          @attr name com.PROMPtecsatHl.CAN:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:selectableItemBackground
+          @attr name com.PROMPtecsatHl.CAN:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:selectableItemBackgroundBorderless
+          @attr name com.PROMPtecsatHl.CAN:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:spinnerDropDownItemStyle
+          @attr name com.PROMPtecsatHl.CAN:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:spinnerStyle
+          @attr name com.PROMPtecsatHl.CAN:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:switchStyle
+          @attr name com.PROMPtecsatHl.CAN:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceLargePopupMenu
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceListItem
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceListItemSecondary}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceListItemSecondary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceListItemSecondary
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceListItemSecondary
         */
         public static final int AppCompatTheme_textAppearanceListItemSecondary = 78;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceListItemSmall
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 79;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearancePopupMenuHeader
+          @attr name com.PROMPtecsatHl.CAN:textAppearancePopupMenuHeader
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceSearchResultSubtitle
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceSearchResultTitle
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textAppearanceSmallPopupMenu
+          @attr name com.PROMPtecsatHl.CAN:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6822,11 +6822,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textColorAlertDialogListItem
+          @attr name com.PROMPtecsatHl.CAN:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 98;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6834,31 +6834,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textColorSearchUrl
+          @attr name com.PROMPtecsatHl.CAN:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:toolbarNavigationButtonStyle
+          @attr name com.PROMPtecsatHl.CAN:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:toolbarStyle
+          @attr name com.PROMPtecsatHl.CAN:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tooltipForegroundColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tooltipForegroundColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6866,21 +6866,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:tooltipForegroundColor
+          @attr name com.PROMPtecsatHl.CAN:tooltipForegroundColor
         */
         public static final int AppCompatTheme_tooltipForegroundColor = 117;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tooltipFrameBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tooltipFrameBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:tooltipFrameBackground
+          @attr name com.PROMPtecsatHl.CAN:tooltipFrameBackground
         */
         public static final int AppCompatTheme_tooltipFrameBackground = 116;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6890,11 +6890,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowActionBar
+          @attr name com.PROMPtecsatHl.CAN:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6904,11 +6904,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowActionBarOverlay
+          @attr name com.PROMPtecsatHl.CAN:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6918,11 +6918,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowActionModeOverlay
+          @attr name com.PROMPtecsatHl.CAN:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6937,11 +6937,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowFixedHeightMajor
+          @attr name com.PROMPtecsatHl.CAN:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6956,11 +6956,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowFixedHeightMinor
+          @attr name com.PROMPtecsatHl.CAN:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6975,11 +6975,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowFixedWidthMajor
+          @attr name com.PROMPtecsatHl.CAN:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6994,11 +6994,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowFixedWidthMinor
+          @attr name com.PROMPtecsatHl.CAN:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7013,11 +7013,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowMinWidthMajor
+          @attr name com.PROMPtecsatHl.CAN:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7032,11 +7032,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowMinWidthMinor
+          @attr name com.PROMPtecsatHl.CAN:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -7046,7 +7046,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:windowNoTitle
+          @attr name com.PROMPtecsatHl.CAN:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomNavigationView.
@@ -7055,11 +7055,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomNavigationView_elevation com.PROMPtecsathl.CAN:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemBackground com.PROMPtecsathl.CAN:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemIconTint com.PROMPtecsathl.CAN:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemTextColor com.PROMPtecsathl.CAN:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_menu com.PROMPtecsathl.CAN:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_elevation com.PROMPtecsatHl.CAN:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemBackground com.PROMPtecsatHl.CAN:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemIconTint com.PROMPtecsatHl.CAN:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemTextColor com.PROMPtecsatHl.CAN:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_menu com.PROMPtecsatHl.CAN:menu}</code></td><td></td></tr>
            </table>
            @see #BottomNavigationView_elevation
            @see #BottomNavigationView_itemBackground
@@ -7072,7 +7072,7 @@ containing a value of this type.
             0x7f010146
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#elevation}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -7084,21 +7084,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:elevation
+          @attr name com.PROMPtecsatHl.CAN:elevation
         */
         public static final int BottomNavigationView_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemBackground}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:itemBackground
+          @attr name com.PROMPtecsatHl.CAN:itemBackground
         */
         public static final int BottomNavigationView_itemBackground = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemIconTint}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -7109,11 +7109,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:itemIconTint
+          @attr name com.PROMPtecsatHl.CAN:itemIconTint
         */
         public static final int BottomNavigationView_itemIconTint = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemTextColor}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -7124,17 +7124,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:itemTextColor
+          @attr name com.PROMPtecsatHl.CAN:itemTextColor
         */
         public static final int BottomNavigationView_itemTextColor = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#menu}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:menu
+          @attr name com.PROMPtecsatHl.CAN:menu
         */
         public static final int BottomNavigationView_menu = 1;
         /** Attributes that can be used with a BottomSheetBehavior_Layout.
@@ -7143,9 +7143,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.PROMPtecsathl.CAN:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.PROMPtecsathl.CAN:behavior_peekHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.PROMPtecsathl.CAN:behavior_skipCollapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.PROMPtecsatHl.CAN:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.PROMPtecsatHl.CAN:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.PROMPtecsatHl.CAN:behavior_skipCollapsed}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Layout_behavior_hideable
            @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -7155,7 +7155,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01011d, 0x7f01011e, 0x7f01011f
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -7165,11 +7165,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:behavior_hideable
+          @attr name com.PROMPtecsatHl.CAN:behavior_hideable
         */
         public static final int BottomSheetBehavior_Layout_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -7189,11 +7189,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>auto</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:behavior_peekHeight
+          @attr name com.PROMPtecsatHl.CAN:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#behavior_skipCollapsed}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#behavior_skipCollapsed}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -7203,7 +7203,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:behavior_skipCollapsed
+          @attr name com.PROMPtecsatHl.CAN:behavior_skipCollapsed
         */
         public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -7212,7 +7212,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.PROMPtecsathl.CAN:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking com.PROMPtecsatHl.CAN:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -7220,7 +7220,7 @@ containing a value of this type.
             0x7f0100cb
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -7230,7 +7230,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:allowStacking
+          @attr name com.PROMPtecsatHl.CAN:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -7241,17 +7241,17 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor com.PROMPtecsathl.CAN:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius com.PROMPtecsathl.CAN:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation com.PROMPtecsathl.CAN:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation com.PROMPtecsathl.CAN:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.PROMPtecsathl.CAN:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding com.PROMPtecsathl.CAN:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding com.PROMPtecsathl.CAN:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom com.PROMPtecsathl.CAN:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft com.PROMPtecsathl.CAN:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight com.PROMPtecsathl.CAN:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop com.PROMPtecsathl.CAN:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor com.PROMPtecsatHl.CAN:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius com.PROMPtecsatHl.CAN:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation com.PROMPtecsatHl.CAN:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation com.PROMPtecsatHl.CAN:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.PROMPtecsatHl.CAN:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding com.PROMPtecsatHl.CAN:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding com.PROMPtecsatHl.CAN:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom com.PROMPtecsatHl.CAN:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft com.PROMPtecsatHl.CAN:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight com.PROMPtecsatHl.CAN:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop com.PROMPtecsatHl.CAN:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_android_minHeight
            @see #CardView_android_minWidth
@@ -7286,7 +7286,7 @@ containing a value of this type.
         */
         public static final int CardView_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7297,11 +7297,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:cardBackgroundColor
+          @attr name com.PROMPtecsatHl.CAN:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7313,11 +7313,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:cardCornerRadius
+          @attr name com.PROMPtecsatHl.CAN:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7329,11 +7329,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:cardElevation
+          @attr name com.PROMPtecsatHl.CAN:cardElevation
         */
         public static final int CardView_cardElevation = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7345,11 +7345,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:cardMaxElevation
+          @attr name com.PROMPtecsatHl.CAN:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7359,11 +7359,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:cardPreventCornerOverlap
+          @attr name com.PROMPtecsatHl.CAN:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7373,11 +7373,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:cardUseCompatPadding
+          @attr name com.PROMPtecsatHl.CAN:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7389,11 +7389,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentPadding
+          @attr name com.PROMPtecsatHl.CAN:contentPadding
         */
         public static final int CardView_contentPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7405,11 +7405,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentPaddingBottom
+          @attr name com.PROMPtecsatHl.CAN:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7421,11 +7421,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentPaddingLeft
+          @attr name com.PROMPtecsatHl.CAN:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7437,11 +7437,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentPaddingRight
+          @attr name com.PROMPtecsatHl.CAN:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -7453,7 +7453,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentPaddingTop
+          @attr name com.PROMPtecsatHl.CAN:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 11;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -7462,22 +7462,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.PROMPtecsathl.CAN:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.PROMPtecsathl.CAN:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.PROMPtecsathl.CAN:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.PROMPtecsathl.CAN:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.PROMPtecsathl.CAN:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.PROMPtecsathl.CAN:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.PROMPtecsathl.CAN:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.PROMPtecsathl.CAN:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.PROMPtecsathl.CAN:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.PROMPtecsathl.CAN:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.PROMPtecsathl.CAN:scrimAnimationDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.PROMPtecsathl.CAN:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.PROMPtecsathl.CAN:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title com.PROMPtecsathl.CAN:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.PROMPtecsathl.CAN:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.PROMPtecsathl.CAN:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.PROMPtecsatHl.CAN:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.PROMPtecsatHl.CAN:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.PROMPtecsatHl.CAN:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.PROMPtecsatHl.CAN:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.PROMPtecsatHl.CAN:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.PROMPtecsatHl.CAN:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.PROMPtecsatHl.CAN:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.PROMPtecsatHl.CAN:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.PROMPtecsatHl.CAN:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.PROMPtecsatHl.CAN:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.PROMPtecsatHl.CAN:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.PROMPtecsatHl.CAN:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.PROMPtecsatHl.CAN:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title com.PROMPtecsatHl.CAN:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.PROMPtecsatHl.CAN:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.PROMPtecsatHl.CAN:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -7503,7 +7503,7 @@ containing a value of this type.
             0x7f01012b, 0x7f01012c, 0x7f01012d, 0x7f01012e
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7524,21 +7524,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:collapsedTitleGravity
+          @attr name com.PROMPtecsatHl.CAN:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:collapsedTitleTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7549,11 +7549,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentScrim
+          @attr name com.PROMPtecsatHl.CAN:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7574,11 +7574,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:expandedTitleGravity
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7590,11 +7590,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:expandedTitleMargin
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7606,11 +7606,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:expandedTitleMarginBottom
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7622,11 +7622,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:expandedTitleMarginEnd
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7638,11 +7638,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:expandedTitleMarginStart
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7654,21 +7654,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:expandedTitleMarginTop
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:expandedTitleTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#scrimAnimationDuration}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#scrimAnimationDuration}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7678,11 +7678,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:scrimAnimationDuration
+          @attr name com.PROMPtecsatHl.CAN:scrimAnimationDuration
         */
         public static final int CollapsingToolbarLayout_scrimAnimationDuration = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#scrimVisibleHeightTrigger}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#scrimVisibleHeightTrigger}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7694,11 +7694,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:scrimVisibleHeightTrigger
+          @attr name com.PROMPtecsatHl.CAN:scrimVisibleHeightTrigger
         */
         public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7709,11 +7709,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:statusBarScrim
+          @attr name com.PROMPtecsatHl.CAN:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#title}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7723,11 +7723,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:title
+          @attr name com.PROMPtecsatHl.CAN:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7737,17 +7737,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleEnabled
+          @attr name com.PROMPtecsatHl.CAN:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:toolbarId
+          @attr name com.PROMPtecsatHl.CAN:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
@@ -7756,8 +7756,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.PROMPtecsathl.CAN:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.PROMPtecsathl.CAN:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.PROMPtecsatHl.CAN:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.PROMPtecsatHl.CAN:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_Layout_layout_collapseMode
            @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -7766,7 +7766,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01012f, 0x7f010130
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -7780,11 +7780,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:layout_collapseMode
+          @attr name com.PROMPtecsatHl.CAN:layout_collapseMode
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -7794,7 +7794,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:layout_collapseParallaxMultiplier
+          @attr name com.PROMPtecsatHl.CAN:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
@@ -7803,7 +7803,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha com.PROMPtecsathl.CAN:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha com.PROMPtecsatHl.CAN:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -7815,7 +7815,7 @@ containing a value of this type.
             0x010101a5, 0x0101031f, 0x7f0100cc
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#alpha}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -7825,7 +7825,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:alpha
+          @attr name com.PROMPtecsatHl.CAN:alpha
         */
         public static final int ColorStateListItem_alpha = 2;
         /**
@@ -7847,8 +7847,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint com.PROMPtecsathl.CAN:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode com.PROMPtecsathl.CAN:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint com.PROMPtecsatHl.CAN:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode com.PROMPtecsatHl.CAN:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -7864,7 +7864,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7875,11 +7875,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:buttonTint
+          @attr name com.PROMPtecsatHl.CAN:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7896,7 +7896,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:buttonTintMode
+          @attr name com.PROMPtecsatHl.CAN:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -7905,8 +7905,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines com.PROMPtecsathl.CAN:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.PROMPtecsathl.CAN:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines com.PROMPtecsatHl.CAN:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.PROMPtecsatHl.CAN:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -7915,23 +7915,23 @@ containing a value of this type.
             0x7f010131, 0x7f010132
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#keylines}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:keylines
+          @attr name com.PROMPtecsatHl.CAN:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:statusBarBackground
+          @attr name com.PROMPtecsatHl.CAN:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_Layout.
@@ -7941,12 +7941,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.PROMPtecsathl.CAN:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.PROMPtecsathl.CAN:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.PROMPtecsathl.CAN:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.PROMPtecsathl.CAN:layout_dodgeInsetEdges}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.PROMPtecsathl.CAN:layout_insetEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.PROMPtecsathl.CAN:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.PROMPtecsatHl.CAN:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.PROMPtecsatHl.CAN:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.PROMPtecsatHl.CAN:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.PROMPtecsatHl.CAN:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.PROMPtecsatHl.CAN:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.PROMPtecsatHl.CAN:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_Layout_android_layout_gravity
            @see #CoordinatorLayout_Layout_layout_anchor
@@ -7967,17 +7967,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:layout_anchor
+          @attr name com.PROMPtecsatHl.CAN:layout_anchor
         */
         public static final int CoordinatorLayout_Layout_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -8002,11 +8002,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:layout_anchorGravity
+          @attr name com.PROMPtecsatHl.CAN:layout_anchorGravity
         */
         public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -8016,11 +8016,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:layout_behavior
+          @attr name com.PROMPtecsatHl.CAN:layout_behavior
         */
         public static final int CoordinatorLayout_Layout_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_dodgeInsetEdges}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_dodgeInsetEdges}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -8039,11 +8039,11 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 <tr><td><code>all</code></td><td>0x77</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:layout_dodgeInsetEdges
+          @attr name com.PROMPtecsatHl.CAN:layout_dodgeInsetEdges
         */
         public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_insetEdge}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_insetEdge}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -8061,11 +8061,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:layout_insetEdge
+          @attr name com.PROMPtecsatHl.CAN:layout_insetEdge
         */
         public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -8075,7 +8075,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:layout_keyline
+          @attr name com.PROMPtecsatHl.CAN:layout_keyline
         */
         public static final int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -8084,9 +8084,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.PROMPtecsathl.CAN:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.PROMPtecsathl.CAN:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError com.PROMPtecsathl.CAN:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.PROMPtecsatHl.CAN:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.PROMPtecsatHl.CAN:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError com.PROMPtecsatHl.CAN:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -8096,27 +8096,27 @@ containing a value of this type.
             0x7f010139, 0x7f01013a, 0x7f01013b
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:bottomSheetDialogTheme
+          @attr name com.PROMPtecsatHl.CAN:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:bottomSheetStyle
+          @attr name com.PROMPtecsatHl.CAN:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -8124,7 +8124,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:textColorError
+          @attr name com.PROMPtecsatHl.CAN:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -8133,14 +8133,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.PROMPtecsathl.CAN:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.PROMPtecsathl.CAN:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength com.PROMPtecsathl.CAN:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color com.PROMPtecsathl.CAN:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.PROMPtecsathl.CAN:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.PROMPtecsathl.CAN:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.PROMPtecsathl.CAN:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness com.PROMPtecsathl.CAN:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.PROMPtecsatHl.CAN:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.PROMPtecsatHl.CAN:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength com.PROMPtecsatHl.CAN:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.PROMPtecsatHl.CAN:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.PROMPtecsatHl.CAN:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.PROMPtecsatHl.CAN:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.PROMPtecsatHl.CAN:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.PROMPtecsatHl.CAN:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -8156,7 +8156,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100d3, 0x7f0100d4, 0x7f0100d5, 0x7f0100d6
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8168,11 +8168,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:arrowHeadLength
+          @attr name com.PROMPtecsatHl.CAN:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8184,11 +8184,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:arrowShaftLength
+          @attr name com.PROMPtecsatHl.CAN:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#barLength}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8200,11 +8200,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:barLength
+          @attr name com.PROMPtecsatHl.CAN:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#color}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8215,11 +8215,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:color
+          @attr name com.PROMPtecsatHl.CAN:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8231,11 +8231,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:drawableSize
+          @attr name com.PROMPtecsatHl.CAN:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8247,11 +8247,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:gapBetweenBars
+          @attr name com.PROMPtecsatHl.CAN:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8261,11 +8261,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:spinBars
+          @attr name com.PROMPtecsatHl.CAN:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -8277,7 +8277,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:thickness
+          @attr name com.PROMPtecsatHl.CAN:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -8286,14 +8286,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.PROMPtecsathl.CAN:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.PROMPtecsathl.CAN:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth com.PROMPtecsathl.CAN:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation com.PROMPtecsathl.CAN:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize com.PROMPtecsathl.CAN:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.PROMPtecsathl.CAN:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor com.PROMPtecsathl.CAN:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.PROMPtecsathl.CAN:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint com.PROMPtecsatHl.CAN:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.PROMPtecsatHl.CAN:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth com.PROMPtecsatHl.CAN:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation com.PROMPtecsatHl.CAN:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize com.PROMPtecsatHl.CAN:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.PROMPtecsatHl.CAN:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor com.PROMPtecsatHl.CAN:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.PROMPtecsatHl.CAN:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -8309,7 +8309,7 @@ containing a value of this type.
             0x7f01013d, 0x7f01013e, 0x7f01013f, 0x7f010140
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8320,11 +8320,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:backgroundTint
+          @attr name com.PROMPtecsatHl.CAN:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8341,11 +8341,11 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:backgroundTintMode
+          @attr name com.PROMPtecsatHl.CAN:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8357,11 +8357,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:borderWidth
+          @attr name com.PROMPtecsatHl.CAN:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8373,11 +8373,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:elevation
+          @attr name com.PROMPtecsatHl.CAN:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8391,11 +8391,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:fabSize
+          @attr name com.PROMPtecsatHl.CAN:fabSize
         */
         public static final int FloatingActionButton_fabSize = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8407,11 +8407,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:pressedTranslationZ
+          @attr name com.PROMPtecsatHl.CAN:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8422,11 +8422,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:rippleColor
+          @attr name com.PROMPtecsatHl.CAN:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -8436,7 +8436,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:useCompatPadding
+          @attr name com.PROMPtecsatHl.CAN:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 7;
         /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
@@ -8445,7 +8445,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.PROMPtecsathl.CAN:behavior_autoHide}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.PROMPtecsatHl.CAN:behavior_autoHide}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
          */
@@ -8453,7 +8453,7 @@ containing a value of this type.
             0x7f010141
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#behavior_autoHide}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#behavior_autoHide}
           attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
 
 
@@ -8463,7 +8463,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:behavior_autoHide
+          @attr name com.PROMPtecsatHl.CAN:behavior_autoHide
         */
         public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
         /** Attributes that can be used with a FontFamily.
@@ -8472,12 +8472,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderAuthority com.PROMPtecsathl.CAN:fontProviderAuthority}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderCerts com.PROMPtecsathl.CAN:fontProviderCerts}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.PROMPtecsathl.CAN:fontProviderFetchStrategy}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.PROMPtecsathl.CAN:fontProviderFetchTimeout}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderPackage com.PROMPtecsathl.CAN:fontProviderPackage}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamily_fontProviderQuery com.PROMPtecsathl.CAN:fontProviderQuery}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderAuthority com.PROMPtecsatHl.CAN:fontProviderAuthority}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderCerts com.PROMPtecsatHl.CAN:fontProviderCerts}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.PROMPtecsatHl.CAN:fontProviderFetchStrategy}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.PROMPtecsatHl.CAN:fontProviderFetchTimeout}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderPackage com.PROMPtecsatHl.CAN:fontProviderPackage}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamily_fontProviderQuery com.PROMPtecsatHl.CAN:fontProviderQuery}</code></td><td></td></tr>
            </table>
            @see #FontFamily_fontProviderAuthority
            @see #FontFamily_fontProviderCerts
@@ -8491,7 +8491,7 @@ containing a value of this type.
             0x7f01016e, 0x7f01016f
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontProviderAuthority}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontProviderAuthority}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -8501,21 +8501,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fontProviderAuthority
+          @attr name com.PROMPtecsatHl.CAN:fontProviderAuthority
         */
         public static final int FontFamily_fontProviderAuthority = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontProviderCerts}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontProviderCerts}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:fontProviderCerts
+          @attr name com.PROMPtecsatHl.CAN:fontProviderCerts
         */
         public static final int FontFamily_fontProviderCerts = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontProviderFetchStrategy}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontProviderFetchStrategy}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -8528,11 +8528,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>blocking</code></td><td>0</td><td></td></tr>
 <tr><td><code>async</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:fontProviderFetchStrategy
+          @attr name com.PROMPtecsatHl.CAN:fontProviderFetchStrategy
         */
         public static final int FontFamily_fontProviderFetchStrategy = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontProviderFetchTimeout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontProviderFetchTimeout}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -8550,11 +8550,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>forever</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:fontProviderFetchTimeout
+          @attr name com.PROMPtecsatHl.CAN:fontProviderFetchTimeout
         */
         public static final int FontFamily_fontProviderFetchTimeout = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontProviderPackage}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontProviderPackage}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -8564,11 +8564,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fontProviderPackage
+          @attr name com.PROMPtecsatHl.CAN:fontProviderPackage
         */
         public static final int FontFamily_fontProviderPackage = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontProviderQuery}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontProviderQuery}
           attribute's value can be found in the {@link #FontFamily} array.
 
 
@@ -8578,7 +8578,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fontProviderQuery
+          @attr name com.PROMPtecsatHl.CAN:fontProviderQuery
         */
         public static final int FontFamily_fontProviderQuery = 2;
         /** Attributes that can be used with a FontFamilyFont.
@@ -8590,9 +8590,9 @@ containing a value of this type.
            <tr><td><code>{@link #FontFamilyFont_android_font android:font}</code></td><td></td></tr>
            <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #FontFamilyFont_android_fontWeight android:fontWeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_font com.PROMPtecsathl.CAN:font}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_fontStyle com.PROMPtecsathl.CAN:fontStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #FontFamilyFont_fontWeight com.PROMPtecsathl.CAN:fontWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_font com.PROMPtecsatHl.CAN:font}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_fontStyle com.PROMPtecsatHl.CAN:fontStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #FontFamilyFont_fontWeight com.PROMPtecsatHl.CAN:fontWeight}</code></td><td></td></tr>
            </table>
            @see #FontFamilyFont_android_font
            @see #FontFamilyFont_android_fontStyle
@@ -8624,17 +8624,17 @@ containing a value of this type.
         */
         public static final int FontFamilyFont_android_fontWeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#font}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#font}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:font
+          @attr name com.PROMPtecsatHl.CAN:font
         */
         public static final int FontFamilyFont_font = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontStyle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontStyle}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
@@ -8647,11 +8647,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>italic</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:fontStyle
+          @attr name com.PROMPtecsatHl.CAN:fontStyle
         */
         public static final int FontFamilyFont_fontStyle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontWeight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontWeight}
           attribute's value can be found in the {@link #FontFamilyFont} array.
 
 
@@ -8661,7 +8661,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fontWeight
+          @attr name com.PROMPtecsatHl.CAN:fontWeight
         */
         public static final int FontFamilyFont_fontWeight = 5;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -8672,7 +8672,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.PROMPtecsathl.CAN:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.PROMPtecsatHl.CAN:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -8694,7 +8694,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -8704,7 +8704,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:foregroundInsidePadding
+          @attr name com.PROMPtecsatHl.CAN:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -8718,10 +8718,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider com.PROMPtecsathl.CAN:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.PROMPtecsathl.CAN:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.PROMPtecsathl.CAN:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.PROMPtecsathl.CAN:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.PROMPtecsatHl.CAN:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.PROMPtecsatHl.CAN:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.PROMPtecsatHl.CAN:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.PROMPtecsatHl.CAN:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -8769,17 +8769,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:divider
+          @attr name com.PROMPtecsatHl.CAN:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8791,11 +8791,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:dividerPadding
+          @attr name com.PROMPtecsatHl.CAN:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8805,11 +8805,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:measureWithLargestChild
+          @attr name com.PROMPtecsatHl.CAN:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8824,7 +8824,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:showDividers
+          @attr name com.PROMPtecsatHl.CAN:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -8905,8 +8905,8 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable com.PROMPtecsathl.CAN:externalRouteEnabledDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #MediaRouteButton_mediaRouteButtonTint com.PROMPtecsathl.CAN:mediaRouteButtonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable com.PROMPtecsatHl.CAN:externalRouteEnabledDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #MediaRouteButton_mediaRouteButtonTint com.PROMPtecsatHl.CAN:mediaRouteButtonTint}</code></td><td></td></tr>
            </table>
            @see #MediaRouteButton_android_minHeight
            @see #MediaRouteButton_android_minWidth
@@ -8929,17 +8929,17 @@ containing a value of this type.
         */
         public static final int MediaRouteButton_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#externalRouteEnabledDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#externalRouteEnabledDrawable}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:externalRouteEnabledDrawable
+          @attr name com.PROMPtecsatHl.CAN:externalRouteEnabledDrawable
         */
         public static final int MediaRouteButton_externalRouteEnabledDrawable = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#mediaRouteButtonTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#mediaRouteButtonTint}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
@@ -8950,7 +8950,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:mediaRouteButtonTint
+          @attr name com.PROMPtecsatHl.CAN:mediaRouteButtonTint
         */
         public static final int MediaRouteButton_mediaRouteButtonTint = 3;
         /** Attributes that can be used with a MenuGroup.
@@ -9019,10 +9019,10 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout com.PROMPtecsathl.CAN:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass com.PROMPtecsathl.CAN:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass com.PROMPtecsathl.CAN:actionViewClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_alphabeticModifiers com.PROMPtecsathl.CAN:alphabeticModifiers}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.PROMPtecsatHl.CAN:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.PROMPtecsatHl.CAN:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.PROMPtecsatHl.CAN:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_alphabeticModifiers com.PROMPtecsatHl.CAN:alphabeticModifiers}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -9036,12 +9036,12 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_contentDescription com.PROMPtecsathl.CAN:contentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_iconTint com.PROMPtecsathl.CAN:iconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_iconTintMode com.PROMPtecsathl.CAN:iconTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_numericModifiers com.PROMPtecsathl.CAN:numericModifiers}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction com.PROMPtecsathl.CAN:showAsAction}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_tooltipText com.PROMPtecsathl.CAN:tooltipText}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_contentDescription com.PROMPtecsatHl.CAN:contentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_iconTint com.PROMPtecsatHl.CAN:iconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_iconTintMode com.PROMPtecsatHl.CAN:iconTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_numericModifiers com.PROMPtecsatHl.CAN:numericModifiers}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.PROMPtecsatHl.CAN:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_tooltipText com.PROMPtecsatHl.CAN:tooltipText}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -9076,17 +9076,17 @@ containing a value of this type.
             0x7f0100e1, 0x7f0100e2, 0x7f0100e3
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:actionLayout
+          @attr name com.PROMPtecsatHl.CAN:actionLayout
         */
         public static final int MenuItem_actionLayout = 16;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9096,11 +9096,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:actionProviderClass
+          @attr name com.PROMPtecsatHl.CAN:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 18;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9110,11 +9110,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:actionViewClass
+          @attr name com.PROMPtecsatHl.CAN:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 17;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#alphabeticModifiers}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#alphabeticModifiers}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9131,7 +9131,7 @@ containing a value of this type.
 <tr><td><code>SYM</code></td><td>0x4</td><td></td></tr>
 <tr><td><code>FUNCTION</code></td><td>0x8</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:alphabeticModifiers
+          @attr name com.PROMPtecsatHl.CAN:alphabeticModifiers
         */
         public static final int MenuItem_alphabeticModifiers = 13;
         /**
@@ -9213,7 +9213,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentDescription}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentDescription}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9223,11 +9223,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentDescription
+          @attr name com.PROMPtecsatHl.CAN:contentDescription
         */
         public static final int MenuItem_contentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#iconTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#iconTint}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9238,11 +9238,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:iconTint
+          @attr name com.PROMPtecsatHl.CAN:iconTint
         */
         public static final int MenuItem_iconTint = 21;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#iconTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#iconTintMode}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9259,11 +9259,11 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:iconTintMode
+          @attr name com.PROMPtecsatHl.CAN:iconTintMode
         */
         public static final int MenuItem_iconTintMode = 22;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#numericModifiers}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#numericModifiers}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9280,11 +9280,11 @@ containing a value of this type.
 <tr><td><code>SYM</code></td><td>0x4</td><td></td></tr>
 <tr><td><code>FUNCTION</code></td><td>0x8</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:numericModifiers
+          @attr name com.PROMPtecsatHl.CAN:numericModifiers
         */
         public static final int MenuItem_numericModifiers = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9300,11 +9300,11 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:showAsAction
+          @attr name com.PROMPtecsatHl.CAN:showAsAction
         */
         public static final int MenuItem_showAsAction = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tooltipText}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tooltipText}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -9314,7 +9314,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tooltipText
+          @attr name com.PROMPtecsatHl.CAN:tooltipText
         */
         public static final int MenuItem_tooltipText = 20;
         /** Attributes that can be used with a MenuView.
@@ -9330,8 +9330,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing com.PROMPtecsathl.CAN:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow com.PROMPtecsathl.CAN:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.PROMPtecsatHl.CAN:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow com.PROMPtecsatHl.CAN:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -9391,7 +9391,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -9401,17 +9401,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:preserveIconSpacing
+          @attr name com.PROMPtecsatHl.CAN:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:subMenuArrow
+          @attr name com.PROMPtecsatHl.CAN:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
         /** Attributes that can be used with a NavigationView.
@@ -9423,13 +9423,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation com.PROMPtecsathl.CAN:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout com.PROMPtecsathl.CAN:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground com.PROMPtecsathl.CAN:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint com.PROMPtecsathl.CAN:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance com.PROMPtecsathl.CAN:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor com.PROMPtecsathl.CAN:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu com.PROMPtecsathl.CAN:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation com.PROMPtecsatHl.CAN:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout com.PROMPtecsatHl.CAN:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground com.PROMPtecsatHl.CAN:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint com.PROMPtecsatHl.CAN:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance com.PROMPtecsatHl.CAN:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor com.PROMPtecsatHl.CAN:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu com.PROMPtecsatHl.CAN:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -9466,7 +9466,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -9478,31 +9478,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:elevation
+          @attr name com.PROMPtecsatHl.CAN:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:headerLayout
+          @attr name com.PROMPtecsatHl.CAN:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:itemBackground
+          @attr name com.PROMPtecsatHl.CAN:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -9513,21 +9513,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:itemIconTint
+          @attr name com.PROMPtecsatHl.CAN:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:itemTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -9538,17 +9538,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:itemTextColor
+          @attr name com.PROMPtecsatHl.CAN:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#menu}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:menu
+          @attr name com.PROMPtecsatHl.CAN:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -9559,7 +9559,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor com.PROMPtecsathl.CAN:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.PROMPtecsatHl.CAN:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
@@ -9581,7 +9581,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -9591,7 +9591,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:overlapAnchor
+          @attr name com.PROMPtecsatHl.CAN:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -9600,7 +9600,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.PROMPtecsathl.CAN:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.PROMPtecsatHl.CAN:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -9608,7 +9608,7 @@ containing a value of this type.
             0x7f0100e7
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -9618,7 +9618,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:state_above_anchor
+          @attr name com.PROMPtecsatHl.CAN:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecycleListView.
@@ -9627,8 +9627,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.PROMPtecsathl.CAN:paddingBottomNoButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.PROMPtecsathl.CAN:paddingTopNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.PROMPtecsatHl.CAN:paddingBottomNoButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.PROMPtecsatHl.CAN:paddingTopNoTitle}</code></td><td></td></tr>
            </table>
            @see #RecycleListView_paddingBottomNoButtons
            @see #RecycleListView_paddingTopNoTitle
@@ -9637,7 +9637,7 @@ containing a value of this type.
             0x7f0100e8, 0x7f0100e9
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#paddingBottomNoButtons}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#paddingBottomNoButtons}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -9649,11 +9649,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:paddingBottomNoButtons
+          @attr name com.PROMPtecsatHl.CAN:paddingBottomNoButtons
         */
         public static final int RecycleListView_paddingBottomNoButtons = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#paddingTopNoTitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#paddingTopNoTitle}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -9665,7 +9665,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:paddingTopNoTitle
+          @attr name com.PROMPtecsatHl.CAN:paddingTopNoTitle
         */
         public static final int RecycleListView_paddingTopNoTitle = 1;
         /** Attributes that can be used with a RecyclerView.
@@ -9676,15 +9676,15 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.PROMPtecsathl.CAN:fastScrollEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.PROMPtecsathl.CAN:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.PROMPtecsathl.CAN:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.PROMPtecsathl.CAN:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.PROMPtecsathl.CAN:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager com.PROMPtecsathl.CAN:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout com.PROMPtecsathl.CAN:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount com.PROMPtecsathl.CAN:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd com.PROMPtecsathl.CAN:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.PROMPtecsatHl.CAN:fastScrollEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.PROMPtecsatHl.CAN:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.PROMPtecsatHl.CAN:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.PROMPtecsatHl.CAN:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.PROMPtecsatHl.CAN:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager com.PROMPtecsatHl.CAN:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout com.PROMPtecsatHl.CAN:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount com.PROMPtecsatHl.CAN:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd com.PROMPtecsatHl.CAN:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_descendantFocusability
            @see #RecyclerView_android_orientation
@@ -9716,7 +9716,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fastScrollEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fastScrollEnabled}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9726,51 +9726,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fastScrollEnabled
+          @attr name com.PROMPtecsatHl.CAN:fastScrollEnabled
         */
         public static final int RecyclerView_fastScrollEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fastScrollHorizontalThumbDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fastScrollHorizontalThumbDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:fastScrollHorizontalThumbDrawable
+          @attr name com.PROMPtecsatHl.CAN:fastScrollHorizontalThumbDrawable
         */
         public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fastScrollHorizontalTrackDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fastScrollHorizontalTrackDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:fastScrollHorizontalTrackDrawable
+          @attr name com.PROMPtecsatHl.CAN:fastScrollHorizontalTrackDrawable
         */
         public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fastScrollVerticalThumbDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fastScrollVerticalThumbDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:fastScrollVerticalThumbDrawable
+          @attr name com.PROMPtecsatHl.CAN:fastScrollVerticalThumbDrawable
         */
         public static final int RecyclerView_fastScrollVerticalThumbDrawable = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fastScrollVerticalTrackDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fastScrollVerticalTrackDrawable}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:fastScrollVerticalTrackDrawable
+          @attr name com.PROMPtecsatHl.CAN:fastScrollVerticalTrackDrawable
         */
         public static final int RecyclerView_fastScrollVerticalTrackDrawable = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9780,11 +9780,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:layoutManager
+          @attr name com.PROMPtecsatHl.CAN:layoutManager
         */
         public static final int RecyclerView_layoutManager = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9794,11 +9794,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:reverseLayout
+          @attr name com.PROMPtecsatHl.CAN:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9808,11 +9808,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:spanCount
+          @attr name com.PROMPtecsatHl.CAN:spanCount
         */
         public static final int RecyclerView_spanCount = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -9822,7 +9822,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:stackFromEnd
+          @attr name com.PROMPtecsatHl.CAN:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 5;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -9831,7 +9831,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.PROMPtecsathl.CAN:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.PROMPtecsatHl.CAN:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -9839,7 +9839,7 @@ containing a value of this type.
             0x7f010149
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -9847,7 +9847,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name com.PROMPtecsathl.CAN:insetForeground
+          @attr name com.PROMPtecsatHl.CAN:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Layout.
@@ -9856,7 +9856,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.PROMPtecsathl.CAN:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.PROMPtecsatHl.CAN:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Layout_behavior_overlapTop
          */
@@ -9864,7 +9864,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01014a
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
 
 
@@ -9876,7 +9876,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:behavior_overlapTop
+          @attr name com.PROMPtecsatHl.CAN:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -9889,19 +9889,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon com.PROMPtecsathl.CAN:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon com.PROMPtecsathl.CAN:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint com.PROMPtecsathl.CAN:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon com.PROMPtecsathl.CAN:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault com.PROMPtecsathl.CAN:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout com.PROMPtecsathl.CAN:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground com.PROMPtecsathl.CAN:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint com.PROMPtecsathl.CAN:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon com.PROMPtecsathl.CAN:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon com.PROMPtecsathl.CAN:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground com.PROMPtecsathl.CAN:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout com.PROMPtecsathl.CAN:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon com.PROMPtecsathl.CAN:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.PROMPtecsatHl.CAN:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.PROMPtecsatHl.CAN:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint com.PROMPtecsatHl.CAN:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.PROMPtecsatHl.CAN:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.PROMPtecsatHl.CAN:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.PROMPtecsatHl.CAN:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.PROMPtecsatHl.CAN:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.PROMPtecsatHl.CAN:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon com.PROMPtecsatHl.CAN:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.PROMPtecsatHl.CAN:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.PROMPtecsatHl.CAN:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.PROMPtecsatHl.CAN:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.PROMPtecsatHl.CAN:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -9953,27 +9953,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:closeIcon
+          @attr name com.PROMPtecsatHl.CAN:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:commitIcon
+          @attr name com.PROMPtecsatHl.CAN:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9983,21 +9983,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:defaultQueryHint
+          @attr name com.PROMPtecsatHl.CAN:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:goIcon
+          @attr name com.PROMPtecsatHl.CAN:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -10007,31 +10007,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:iconifiedByDefault
+          @attr name com.PROMPtecsatHl.CAN:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:layout
+          @attr name com.PROMPtecsatHl.CAN:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:queryBackground
+          @attr name com.PROMPtecsatHl.CAN:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -10041,57 +10041,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:queryHint
+          @attr name com.PROMPtecsatHl.CAN:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:searchHintIcon
+          @attr name com.PROMPtecsatHl.CAN:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:searchIcon
+          @attr name com.PROMPtecsatHl.CAN:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:submitBackground
+          @attr name com.PROMPtecsatHl.CAN:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:suggestionRowLayout
+          @attr name com.PROMPtecsatHl.CAN:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:voiceIcon
+          @attr name com.PROMPtecsatHl.CAN:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -10101,8 +10101,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation com.PROMPtecsathl.CAN:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.PROMPtecsathl.CAN:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation com.PROMPtecsatHl.CAN:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.PROMPtecsatHl.CAN:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -10118,7 +10118,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -10130,11 +10130,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:elevation
+          @attr name com.PROMPtecsatHl.CAN:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -10146,7 +10146,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:maxActionInlineWidth
+          @attr name com.PROMPtecsatHl.CAN:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -10159,7 +10159,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme com.PROMPtecsathl.CAN:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme com.PROMPtecsatHl.CAN:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -10196,13 +10196,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:popupTheme
+          @attr name com.PROMPtecsatHl.CAN:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -10214,17 +10214,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText com.PROMPtecsathl.CAN:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack com.PROMPtecsathl.CAN:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.PROMPtecsathl.CAN:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding com.PROMPtecsathl.CAN:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.PROMPtecsathl.CAN:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.PROMPtecsathl.CAN:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint com.PROMPtecsathl.CAN:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode com.PROMPtecsathl.CAN:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track com.PROMPtecsathl.CAN:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint com.PROMPtecsathl.CAN:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode com.PROMPtecsathl.CAN:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.PROMPtecsatHl.CAN:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.PROMPtecsatHl.CAN:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.PROMPtecsatHl.CAN:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.PROMPtecsatHl.CAN:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.PROMPtecsatHl.CAN:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.PROMPtecsatHl.CAN:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint com.PROMPtecsatHl.CAN:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode com.PROMPtecsatHl.CAN:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.PROMPtecsatHl.CAN:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint com.PROMPtecsatHl.CAN:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode com.PROMPtecsatHl.CAN:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -10266,7 +10266,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10276,11 +10276,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:showText
+          @attr name com.PROMPtecsatHl.CAN:showText
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10290,11 +10290,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:splitTrack
+          @attr name com.PROMPtecsatHl.CAN:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10306,11 +10306,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:switchMinWidth
+          @attr name com.PROMPtecsatHl.CAN:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10322,21 +10322,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:switchPadding
+          @attr name com.PROMPtecsatHl.CAN:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:switchTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10348,11 +10348,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:thumbTextPadding
+          @attr name com.PROMPtecsatHl.CAN:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10363,11 +10363,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:thumbTint
+          @attr name com.PROMPtecsatHl.CAN:thumbTint
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10384,21 +10384,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:thumbTintMode
+          @attr name com.PROMPtecsatHl.CAN:thumbTintMode
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#track}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:track
+          @attr name com.PROMPtecsatHl.CAN:track
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10409,11 +10409,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:trackTint
+          @attr name com.PROMPtecsatHl.CAN:trackTint
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -10430,7 +10430,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:trackTintMode
+          @attr name com.PROMPtecsatHl.CAN:trackTintMode
         */
         public static final int SwitchCompat_trackTintMode = 7;
         /** Attributes that can be used with a TabItem.
@@ -10474,22 +10474,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground com.PROMPtecsathl.CAN:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart com.PROMPtecsathl.CAN:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity com.PROMPtecsathl.CAN:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.PROMPtecsathl.CAN:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.PROMPtecsathl.CAN:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth com.PROMPtecsathl.CAN:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth com.PROMPtecsathl.CAN:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode com.PROMPtecsathl.CAN:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding com.PROMPtecsathl.CAN:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.PROMPtecsathl.CAN:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.PROMPtecsathl.CAN:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart com.PROMPtecsathl.CAN:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop com.PROMPtecsathl.CAN:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.PROMPtecsathl.CAN:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance com.PROMPtecsathl.CAN:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor com.PROMPtecsathl.CAN:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground com.PROMPtecsatHl.CAN:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart com.PROMPtecsatHl.CAN:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity com.PROMPtecsatHl.CAN:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor com.PROMPtecsatHl.CAN:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.PROMPtecsatHl.CAN:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth com.PROMPtecsatHl.CAN:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth com.PROMPtecsatHl.CAN:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode com.PROMPtecsatHl.CAN:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding com.PROMPtecsatHl.CAN:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom com.PROMPtecsatHl.CAN:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd com.PROMPtecsatHl.CAN:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart com.PROMPtecsatHl.CAN:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop com.PROMPtecsatHl.CAN:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.PROMPtecsatHl.CAN:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance com.PROMPtecsatHl.CAN:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor com.PROMPtecsatHl.CAN:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -10515,17 +10515,17 @@ containing a value of this type.
             0x7f010158, 0x7f010159, 0x7f01015a, 0x7f01015b
         };
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:tabBackground
+          @attr name com.PROMPtecsatHl.CAN:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10537,11 +10537,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabContentStart
+          @attr name com.PROMPtecsatHl.CAN:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10554,11 +10554,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:tabGravity
+          @attr name com.PROMPtecsatHl.CAN:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10569,11 +10569,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabIndicatorColor
+          @attr name com.PROMPtecsatHl.CAN:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10585,11 +10585,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabIndicatorHeight
+          @attr name com.PROMPtecsatHl.CAN:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10601,11 +10601,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabMaxWidth
+          @attr name com.PROMPtecsatHl.CAN:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10617,11 +10617,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabMinWidth
+          @attr name com.PROMPtecsatHl.CAN:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10634,11 +10634,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:tabMode
+          @attr name com.PROMPtecsatHl.CAN:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10650,11 +10650,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabPadding
+          @attr name com.PROMPtecsatHl.CAN:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10666,11 +10666,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabPaddingBottom
+          @attr name com.PROMPtecsatHl.CAN:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10682,11 +10682,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabPaddingEnd
+          @attr name com.PROMPtecsatHl.CAN:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10698,11 +10698,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabPaddingStart
+          @attr name com.PROMPtecsatHl.CAN:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10714,11 +10714,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabPaddingTop
+          @attr name com.PROMPtecsatHl.CAN:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10729,21 +10729,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabSelectedTextColor
+          @attr name com.PROMPtecsatHl.CAN:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:tabTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -10754,7 +10754,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:tabTextColor
+          @attr name com.PROMPtecsatHl.CAN:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -10774,8 +10774,8 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_fontFamily com.PROMPtecsathl.CAN:fontFamily}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps com.PROMPtecsathl.CAN:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_fontFamily com.PROMPtecsatHl.CAN:fontFamily}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps com.PROMPtecsatHl.CAN:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_fontFamily
            @see #TextAppearance_android_shadowColor
@@ -10864,7 +10864,7 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#fontFamily}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#fontFamily}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
@@ -10874,18 +10874,18 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:fontFamily
+          @attr name com.PROMPtecsatHl.CAN:fontFamily
         */
         public static final int TextAppearance_fontFamily = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name com.PROMPtecsathl.CAN:textAllCaps
+          @attr name com.PROMPtecsatHl.CAN:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 11;
         /** Attributes that can be used with a TextInputLayout.
@@ -10896,20 +10896,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled com.PROMPtecsathl.CAN:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.PROMPtecsathl.CAN:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.PROMPtecsathl.CAN:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.PROMPtecsathl.CAN:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled com.PROMPtecsathl.CAN:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.PROMPtecsathl.CAN:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.PROMPtecsathl.CAN:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled com.PROMPtecsathl.CAN:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.PROMPtecsathl.CAN:hintTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.PROMPtecsathl.CAN:passwordToggleContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.PROMPtecsathl.CAN:passwordToggleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.PROMPtecsathl.CAN:passwordToggleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.PROMPtecsathl.CAN:passwordToggleTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.PROMPtecsathl.CAN:passwordToggleTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled com.PROMPtecsatHl.CAN:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength com.PROMPtecsatHl.CAN:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.PROMPtecsatHl.CAN:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.PROMPtecsatHl.CAN:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled com.PROMPtecsatHl.CAN:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.PROMPtecsatHl.CAN:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.PROMPtecsatHl.CAN:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled com.PROMPtecsatHl.CAN:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.PROMPtecsatHl.CAN:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.PROMPtecsatHl.CAN:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.PROMPtecsatHl.CAN:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.PROMPtecsatHl.CAN:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.PROMPtecsatHl.CAN:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.PROMPtecsatHl.CAN:passwordToggleTintMode}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -10947,7 +10947,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10957,11 +10957,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:counterEnabled
+          @attr name com.PROMPtecsatHl.CAN:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10971,31 +10971,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:counterMaxLength
+          @attr name com.PROMPtecsatHl.CAN:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:counterOverflowTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:counterTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11005,21 +11005,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:errorEnabled
+          @attr name com.PROMPtecsatHl.CAN:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:errorTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11029,11 +11029,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:hintAnimationEnabled
+          @attr name com.PROMPtecsatHl.CAN:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11043,21 +11043,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:hintEnabled
+          @attr name com.PROMPtecsatHl.CAN:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:hintTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#passwordToggleContentDescription}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#passwordToggleContentDescription}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11067,21 +11067,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:passwordToggleContentDescription
+          @attr name com.PROMPtecsatHl.CAN:passwordToggleContentDescription
         */
         public static final int TextInputLayout_passwordToggleContentDescription = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#passwordToggleDrawable}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#passwordToggleDrawable}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:passwordToggleDrawable
+          @attr name com.PROMPtecsatHl.CAN:passwordToggleDrawable
         */
         public static final int TextInputLayout_passwordToggleDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#passwordToggleEnabled}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#passwordToggleEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11091,11 +11091,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:passwordToggleEnabled
+          @attr name com.PROMPtecsatHl.CAN:passwordToggleEnabled
         */
         public static final int TextInputLayout_passwordToggleEnabled = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#passwordToggleTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#passwordToggleTint}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11106,11 +11106,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:passwordToggleTint
+          @attr name com.PROMPtecsatHl.CAN:passwordToggleTint
         */
         public static final int TextInputLayout_passwordToggleTint = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#passwordToggleTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#passwordToggleTintMode}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -11126,7 +11126,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:passwordToggleTintMode
+          @attr name com.PROMPtecsatHl.CAN:passwordToggleTintMode
         */
         public static final int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
@@ -11137,33 +11137,33 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity com.PROMPtecsathl.CAN:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription com.PROMPtecsathl.CAN:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon com.PROMPtecsathl.CAN:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd com.PROMPtecsathl.CAN:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.PROMPtecsathl.CAN:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft com.PROMPtecsathl.CAN:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight com.PROMPtecsathl.CAN:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart com.PROMPtecsathl.CAN:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.PROMPtecsathl.CAN:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo com.PROMPtecsathl.CAN:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription com.PROMPtecsathl.CAN:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight com.PROMPtecsathl.CAN:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription com.PROMPtecsathl.CAN:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon com.PROMPtecsathl.CAN:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme com.PROMPtecsathl.CAN:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle com.PROMPtecsathl.CAN:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.PROMPtecsathl.CAN:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor com.PROMPtecsathl.CAN:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title com.PROMPtecsathl.CAN:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin com.PROMPtecsathl.CAN:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom com.PROMPtecsathl.CAN:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd com.PROMPtecsathl.CAN:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart com.PROMPtecsathl.CAN:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop com.PROMPtecsathl.CAN:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins com.PROMPtecsathl.CAN:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance com.PROMPtecsathl.CAN:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor com.PROMPtecsathl.CAN:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity com.PROMPtecsatHl.CAN:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.PROMPtecsatHl.CAN:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.PROMPtecsatHl.CAN:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.PROMPtecsatHl.CAN:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.PROMPtecsatHl.CAN:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.PROMPtecsatHl.CAN:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.PROMPtecsatHl.CAN:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.PROMPtecsatHl.CAN:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.PROMPtecsatHl.CAN:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo com.PROMPtecsatHl.CAN:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription com.PROMPtecsatHl.CAN:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.PROMPtecsatHl.CAN:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.PROMPtecsatHl.CAN:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.PROMPtecsatHl.CAN:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.PROMPtecsatHl.CAN:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.PROMPtecsatHl.CAN:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.PROMPtecsatHl.CAN:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor com.PROMPtecsatHl.CAN:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.PROMPtecsatHl.CAN:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin com.PROMPtecsatHl.CAN:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.PROMPtecsatHl.CAN:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.PROMPtecsatHl.CAN:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.PROMPtecsatHl.CAN:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.PROMPtecsatHl.CAN:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.PROMPtecsatHl.CAN:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.PROMPtecsatHl.CAN:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor com.PROMPtecsatHl.CAN:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -11218,7 +11218,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11231,11 +11231,11 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:buttonGravity
+          @attr name com.PROMPtecsatHl.CAN:buttonGravity
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11245,21 +11245,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:collapseContentDescription
+          @attr name com.PROMPtecsatHl.CAN:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:collapseIcon
+          @attr name com.PROMPtecsatHl.CAN:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11271,11 +11271,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetEnd
+          @attr name com.PROMPtecsatHl.CAN:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11287,11 +11287,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetEndWithActions
+          @attr name com.PROMPtecsatHl.CAN:contentInsetEndWithActions
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11303,11 +11303,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetLeft
+          @attr name com.PROMPtecsatHl.CAN:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11319,11 +11319,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetRight
+          @attr name com.PROMPtecsatHl.CAN:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11335,11 +11335,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetStart
+          @attr name com.PROMPtecsatHl.CAN:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11351,21 +11351,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:contentInsetStartWithNavigation
+          @attr name com.PROMPtecsatHl.CAN:contentInsetStartWithNavigation
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:logo
+          @attr name com.PROMPtecsatHl.CAN:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11375,11 +11375,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:logoDescription
+          @attr name com.PROMPtecsatHl.CAN:logoDescription
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11391,11 +11391,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:maxButtonHeight
+          @attr name com.PROMPtecsatHl.CAN:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11405,31 +11405,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:navigationContentDescription
+          @attr name com.PROMPtecsatHl.CAN:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:navigationIcon
+          @attr name com.PROMPtecsatHl.CAN:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:popupTheme
+          @attr name com.PROMPtecsatHl.CAN:popupTheme
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11439,21 +11439,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:subtitle
+          @attr name com.PROMPtecsatHl.CAN:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:subtitleTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11464,11 +11464,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:subtitleTextColor
+          @attr name com.PROMPtecsatHl.CAN:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#title}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11478,11 +11478,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:title
+          @attr name com.PROMPtecsatHl.CAN:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11494,11 +11494,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleMargin
+          @attr name com.PROMPtecsatHl.CAN:titleMargin
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11510,11 +11510,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleMarginBottom
+          @attr name com.PROMPtecsatHl.CAN:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11526,11 +11526,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleMarginEnd
+          @attr name com.PROMPtecsatHl.CAN:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11542,11 +11542,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleMarginStart
+          @attr name com.PROMPtecsatHl.CAN:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11558,11 +11558,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleMarginTop
+          @attr name com.PROMPtecsatHl.CAN:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11574,21 +11574,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleMargins
+          @attr name com.PROMPtecsatHl.CAN:titleMargins
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:titleTextAppearance
+          @attr name com.PROMPtecsatHl.CAN:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -11599,7 +11599,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:titleTextColor
+          @attr name com.PROMPtecsatHl.CAN:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 27;
         /** Attributes that can be used with a View.
@@ -11610,9 +11610,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd com.PROMPtecsathl.CAN:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart com.PROMPtecsathl.CAN:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme com.PROMPtecsathl.CAN:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.PROMPtecsatHl.CAN:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.PROMPtecsatHl.CAN:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme com.PROMPtecsatHl.CAN:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -11637,7 +11637,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -11649,11 +11649,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:paddingEnd
+          @attr name com.PROMPtecsatHl.CAN:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -11665,17 +11665,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:paddingStart
+          @attr name com.PROMPtecsatHl.CAN:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name com.PROMPtecsathl.CAN:theme
+          @attr name com.PROMPtecsatHl.CAN:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -11685,8 +11685,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.PROMPtecsathl.CAN:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.PROMPtecsathl.CAN:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.PROMPtecsatHl.CAN:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.PROMPtecsatHl.CAN:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -11702,7 +11702,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -11713,11 +11713,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.PROMPtecsathl.CAN:backgroundTint
+          @attr name com.PROMPtecsatHl.CAN:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link com.PROMPtecsathl.CAN.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link com.PROMPtecsatHl.CAN.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -11734,7 +11734,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name com.PROMPtecsathl.CAN:backgroundTintMode
+          @attr name com.PROMPtecsatHl.CAN:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.

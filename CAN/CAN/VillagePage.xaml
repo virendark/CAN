@@ -5,13 +5,13 @@
             Title="List Of Village">
     <StackLayout Orientation="Vertical">
         <AbsoluteLayout>
-            <ListView x:Name="listView" ItemSelected="listView_ItemSelected"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White">
+            <ListView x:Name="listView" ItemSelected="listView_ItemSelected" HasUnevenRows="True"  ItemsSource="{Binding Monkeys}" BackgroundColor="#2c2d2c" SeparatorColor="White">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout x:Name="MainStackLayouts" HeightRequest="150">
-                                    <Label  Text="{Binding VillageName}" TextColor="White" Margin="0,12,0,8" HorizontalTextAlignment="Center" FontSize="22"></Label>
+                                <StackLayout x:Name="MainStackLayouts" HeightRequest="55" VerticalOptions="Center">
+                                    <Label  Text="{Binding VillageName}" TextColor="White" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" FontSize="22"></Label>
 
                                 </StackLayout>
                                

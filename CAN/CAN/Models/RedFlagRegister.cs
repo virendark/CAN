@@ -6,6 +6,7 @@ namespace CAN.Models
 {
   public   class RedFlagRegister
     {
+        private DateTime _doe = new DateTime(2015, 01, 01);
         public Guid RedFlagId { get; set; }
         public Guid ChildId { get; set; }
         public int DateMonthId { get; set; }
@@ -39,7 +40,19 @@ namespace CAN.Models
         public bool ThirdFollowUp { get; set; }
         public bool FourthFollowUp { get; set; }
         public int? AdvicedButNotAdmittedReason { get; set; } //dropdown
-        public DateTime Doe { get; set; }
+        public DateTime Doe
+        {
+            get
+            {
+                return _doe;
+            }
+
+            set
+            {
+                if (_doe == value) return;
+                _doe = value;
+            }
+        }
         public DateTime Dou { get; set; }
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }

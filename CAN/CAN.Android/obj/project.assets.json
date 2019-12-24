@@ -1764,11 +1764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
+      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
       "projectName": "CAN.Android",
-      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
+      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.Android\\CAN.Android.csproj",
       "packagesPath": "C:\\Users\\viru\\.nuget\\packages\\",
-      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.Android\\obj\\",
+      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1785,8 +1785,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.csproj": {
-              "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.csproj"
+            "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN\\CAN.csproj": {
+              "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN\\CAN.csproj"
             }
           }
         }

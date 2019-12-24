@@ -7,6 +7,7 @@ namespace CAN.Models
 {
   public  class GrowthRegister
     {
+        private DateTime _doe = new DateTime(2015, 01, 01);
         [PrimaryKey]
         public Guid GrowthId { get; set; }
         public Guid ChildId { get; set; }
@@ -18,7 +19,19 @@ namespace CAN.Models
         public bool AnyRedFlag { get; set; }
         public int ReceiveTakeHomeRation { get; set; } // rename ReceiveTakeHomeRation
         public bool AdmittedToAWC { get; set; } // rename AdmittedToAWC
-        public DateTime Doe { get; set; }
+        public DateTime Doe
+        {
+            get
+            {
+                return _doe;
+            }
+
+            set
+            {
+                if (_doe == value) return;
+                _doe = value;
+            }
+        }
         public DateTime Dou { get; set; }
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }

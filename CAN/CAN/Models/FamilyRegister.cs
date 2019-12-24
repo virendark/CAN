@@ -6,6 +6,7 @@ namespace CAN.Models
 {
     public class FamilyRegister
     {
+        private DateTime _doe = new DateTime(2015, 01, 01);
         [PrimaryKey]
         public Guid FamilyId { get; set; }
         public int ? FamilyType { get; set; }
@@ -43,7 +44,19 @@ namespace CAN.Models
         public int LocationId { get; set; }
         //public string Remark { get; set; }// extra
         public DateTime RegisterDate { get; set; }
-        public DateTime DOE { get; set; }
+        public DateTime DOE
+        {
+            get
+            {
+               return _doe;
+            }
+
+            set
+            {
+                if (_doe== value) return;
+                _doe = value;
+            }
+        }
         public DateTime DOU { get; set; }
         public int CreatedBy { get; set; }
         public int UpdatedBy { get; set; }

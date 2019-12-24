@@ -197,7 +197,42 @@ namespace CAN
                                 pushData.growthRegisterMotherData = ListofMotherData;
                                 pushData.redFlagData = ListOfredFlagData;
                             }
-
+                            //foreach(var fData in pushData.familyData)
+                            //{
+                            //    if("0001-01-01T00:00:00"== fData.DOE.ToString())
+                            //    {
+                            //        fData.DOE = DateTime.Now;
+                            //    }
+                            //}
+                            //foreach (var cData in pushData.childData)
+                            //{
+                            //    if ("0001-01-01T00:00:00" == cData.DOE.ToString())
+                            //    {
+                            //        cData.DOE = DateTime.Now;
+                            //    }
+                            //}
+                            //foreach (var mData in pushData.growthRegisterMotherData)
+                            //{
+                            //    if ("0001-01-01T00:00:00" == mData.DOE.ToString())
+                            //    {
+                            //        mData.DOE = DateTime.Now;
+                            //    }
+                            //}
+                            //foreach (var gData in pushData.growthData)
+                            //{
+                            //    if ("0001-01-01T00:00:00" == gData.Doe.ToString())
+                            //    {
+                            //        gData.Doe = DateTime.Now;
+                            //    }
+                            //}
+                            //foreach (var rData in pushData.redFlagData)
+                            //{
+                            //    if ("0001-01-01T00:00:00" == rData.Doe.ToString())
+                            //    {
+                            //        rData.Doe = DateTime.Now;
+                            //    }
+                            //}
+                           
                             RestClient<PushData> getLogin = new RestClient<PushData>();
                             var GetData = await getLogin.PushNewData(pushData);
                             if (StaticClass.ResponceStatus == "Not Found")

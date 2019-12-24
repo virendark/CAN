@@ -2328,11 +2328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
+      "projectUniqueName": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
       "projectName": "CAN.iOS",
-      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
+      "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.iOS\\CAN.iOS.csproj",
       "packagesPath": "C:\\Users\\viru\\.nuget\\packages\\",
-      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN.iOS\\obj\\",
+      "outputPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2349,8 +2349,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.csproj": {
-              "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN.csproj"
+            "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN\\CAN.csproj": {
+              "projectPath": "F:\\24-08-2019\\CAN\\CAN\\CAN\\CAN\\CAN\\CAN.csproj"
             }
           }
         }

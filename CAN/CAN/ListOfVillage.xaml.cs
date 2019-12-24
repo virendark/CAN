@@ -33,14 +33,14 @@ namespace CAN
                     villageClass.Id = villagelist[i].locationId;
                     villageClass.TabId = 0;
                     string Name = villagelist[i].locationName;
-                    villageClass.VillageName = Name + "(" + villagelist[i].DCType + ")";
+                    villageClass.VillageName = Name + "(" + villagelist[i].DCType + ")" +" (" + villagelist[i].locationId + ")";
                 }
                 else
                 {
                     villageClass.Id = villagelist[i].locationId;
                    
                     villageClass.TabId = villagelist[i].locationId;
-                    villageClass.VillageName = villagelist[i].locationName;
+                    villageClass.VillageName = villagelist[i].locationName + " (" + villagelist[i].locationId + ")";
                 }
                 BindVillageList.Add(villageClass);
             }
@@ -52,7 +52,8 @@ namespace CAN
             txtactive.IsVisible = true;
             lblmessage.IsVisible = true;
             VillageClass villageN = (VillageClass)listView.SelectedItem;
-            string villageName = villageN.VillageName;
+            //string villageName = villageN.VillageName;
+            StaticClass.LocationName = villageN.VillageName;
             StaticClass.VillageID = villageN.Id;
             StaticClass.PageName = "HomePage";
 
